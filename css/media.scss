@@ -1,0 +1,343 @@
+@media screen and (max-width: 1280px) { /* 작은 PC : 1px = 0.078125vw */
+  html {
+    font-size: 0.08vw;
+  }
+
+  nav  {
+    min-width: 100%;
+    .navigation {
+      width: 100%;
+    }
+  }
+
+  .anchor {
+    min-width: 100%;
+    .content {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) { /* 아이패드 가로 : 1px = 0.09vw */
+  html {
+    font-size: 0.09vw
+  }
+
+  nav {
+    .navigation {
+      grid-template-columns: 1fr; gap:0;
+      .icon-group {
+        .icon {
+          display: block;
+        }
+      }
+      ul {
+        display: none;
+      }
+    }
+    &.responsive {
+      height: 100vh;
+      .navigation {
+        position: relative;
+        ul {
+          display: flex; flex-direction: column; justify-content: center; gap: 30rem;
+          position: absolute; top: 60px;
+          height: calc(100vh - 60px);
+          width: 100%;
+          li {
+            font-size: 36rem;
+          }
+        }
+      }
+    }
+  }
+
+  #certification {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  #rack {
+    .container {
+      .col1 {
+        padding: 30rem 0;
+        .row {
+          .sub {
+            img {
+              height: 54rem;
+            }
+            .text-group {
+              margin-top: 3rem;
+              p {
+                margin-top: 3rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #logo-group {
+    grid-template-columns: repeat(3, 1fr);
+    .partner-logo {
+      img.lg {height: 39rem;}
+      img.asml {height: 33rem;}
+      img.doosan {height: 24rem;}
+      img.honeywell {height: 30rem;}
+      img.valeo {height: 39rem;}
+      img.hyundai {height: 27rem;}
+      img.hynix {height: 48rem;}
+      img.swatch {height: 27rem;}
+      img.krri {height: 21rem;}
+      img.ex {height: 21rem;}
+      img.defense {height: 36rem;}
+      img.kepco {height: 24rem;}
+      img.hongik {height: 36rem;}
+      img.hanyang {height: 39rem;}
+      img.pec {height: 39rem;}
+      img.ajin {height: 21rem;}
+      img.ni {height: 36rem;}
+      img.hexagon {height: 45rem;}
+
+      img.krri-en {height: 36rem;}
+      img.ex-en {height: 27rem;}
+      img.defense-en {height: 33rem;}
+      img.kepco-en {height: 33rem;}
+      img.hongik-en {height: 24rem;}
+      img.hanyang-en {height: 36rem;}
+    }
+  }
+}
+
+@media screen and (max-width: 768px) { /* 아이패드 세로, 갤럭시 폴드 펼쳤을때 세로 : 1px = 0.12vw */
+  .off-768 {
+    display: none;
+  }
+  html {
+    font-size: 0.12vw
+  }
+
+  .anchor {
+    .content {
+      .title-group {
+        text-align: center;
+        h2 {
+          font-weight: 700;
+        }
+        p {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  #footer {
+    .info {
+      h2 {
+        font-weight: 700;
+      }
+      .address {
+        font-weight: 400;
+      }
+      .contact-group {
+        .contact {
+          font-weight: 400;
+          span {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .copyright {
+      font-weight: 400;
+    }
+  }
+
+  #certification {
+    .sub {
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+
+  #diagram1 {
+    grid-template-columns: 1fr; gap: 60rem;
+    text-align: center;
+    .sub {
+      padding: 0;
+      border-right: 0;
+      .text-group {
+        h3 {
+          font-weight: 700;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  #diagram2 {
+    grid-template-columns: 1fr; gap: 60rem;
+    text-align: center;
+    .sub {
+      padding: 0;
+      background-image: none;
+      .text-group {
+        h3 {
+          font-weight: 700;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  #rack {
+    .container {
+      min-width: 1080rem;
+      .col1 {
+        .row {
+          .sub {
+            .text-group {
+              h3 {
+                font-weight: 700;
+              }
+              p {
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #slider {
+    flex-direction: column;
+    height: 600rem;
+    .slides {
+      .text-group {
+        h3 {
+          font-weight: 700;
+        }
+        p {
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  #tab {
+    grid-template-columns: auto;
+    .col1 {
+      grid-template-columns: 1fr 1fr;
+      padding: 0;
+      hr {
+        display: none;
+      }
+      .sub {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        .text-group {
+          h3 {
+            font-weight: 700;
+          }
+          p {
+            font-weight: 400;
+          }
+          .link {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .col2 {
+      .slides {
+        height: 400rem;
+      }
+    }
+  }
+
+  #down {
+    grid-template-columns: 1fr;
+    a {
+      font-weight: 700;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) { /* 스마트폰 화면 : 1px = 0.2vw */
+  .off-450 {
+    display: none;
+  }
+
+  html {
+    font-size: 0.21vw
+  }
+
+  nav {
+    .navigation {
+      padding: 0 21rem;
+    }
+  }
+
+  .anchor {
+    .content {
+      padding: 120rem 21rem;
+    }
+  }
+  
+  #rack {
+    .container {
+      min-width: 960rem;
+    }
+  }
+  #certification {
+    grid-template-columns: repeat(2, 1fr); gap: 15rem;
+  }
+
+  #slider {
+    .slides {
+      &.active {
+        .text-group {
+          padding: 21rem;
+        }
+      }
+    }
+  }
+
+  #logo-group {
+    grid-template-columns: repeat(2, 1fr); gap: 15rem;
+    .partner-logo {
+      img.lg {height: 36rem;}
+      img.asml {height: 30rem;}
+      img.doosan {height: 21rem;}
+      img.honeywell {height: 27rem;}
+      img.valeo {height: 36rem;}
+      img.hyundai {height: 24rem;}
+      img.hynix {height: 45rem;}
+      img.swatch {height: 24rem;}
+      img.krri {height: 18rem;}
+      img.ex {height: 18rem;}
+      img.defense {height: 33rem;}
+      img.kepco {height: 21rem;}
+      img.hongik {height: 33rem;}
+      img.hanyang {height: 36rem;}
+      img.pec {height: 33rem;}
+      img.ajin {height: 18rem;}
+      img.ni {height: 33rem;}
+      img.hexagon {height: 42rem;}
+
+      img.krri-en {height: 33rem;}
+      img.ex-en {height: 24rem;}
+      img.defense-en {height: 30rem;}
+      img.kepco-en {height: 30rem;}
+      img.hongik-en {height: 21rem;}
+      img.hanyang-en {height: 33rem;}
+    }
+  }
+}
