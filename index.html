@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon-16.png" sizes="16x16">
@@ -11,56 +11,74 @@
     <link rel="stylesheet" href="css/pretendard-subset.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
+    <link rel="stylesheet" href="css/button.css">
     <!-- <link rel="stylesheet" href="css/media.css"> -->
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript" src="js/mobile-menu.js"></script>
-    <script type="text/javascript" src="js/open-page.js" defer></script>
-    <script type="text/javascript" src="js/slider.js" defer></script>
+
+    <script type="text/javascript" src="js/drop-down.js" defer></script>
+    <script type="text/javascript" src="js/menu-activate.js" defer></script>
+
+    <title>Home</title>
 
 </head>
 <body>
    
-<!--Menu 시작-->
+<!--Menu Starts-->
   <nav id="myTopnav" class="topnav">
     <div class="navigation">
       <ul class="mega-menu">
-        <li class="logo">
-          <a href="index.html"><img src="img/logo.svg" alt="logo"></a>
+        <li>
+          <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
         </li>
-        <li class="menu-content">
-          <p class="title">HOME</p>
+        <li>
+          <a id="p-index" href="index.html" class="title">Home</a>
         </li>
-        <li class="menu-content">
-          <p class="title">K-CA Online Platform</p>
-          <ul class="detail">
-            <li class="tablinks" onclick="openPage(event, 
-            '1-1')">About Platform</li>
-            <li class="tablinks" onclick="openPage(event, 
-            '1-2')">About K-CA FTA</li>
+        <li>
+          <p id="p-1" class="title dropdown-btn" onclick="dropDown(event)">K-CA Online Platform</p>
+          <ul class="dropdown-group">
+            <li>
+              <a id="p-1-1" href="1-1.html">About Platform</a>
+            </li>
+            <li>
+              <a id="p-1-2" href="1-2.html">About K-CA FTA</a>
+            </li>
           </ul>
         </li>
-        <li class="menu-content">
-          <p class="title">ROK Market</p>
-          <ul class="detail">
-            <li>Overview</li>
-            <li>Info & Requirement</li>
-            <li>Logistics</li>
-            <li>Success Stories</li>
+        <li>
+          <p id="p-2" class="title dropdown-btn" onclick="dropDown(event)">ROK Market</p>
+          <ul class="dropdown-group">
+            <li>
+              <a id="p-2-1" href="2-1.html">Overview</a>
+            </li>
+            <li>
+              <a id="p-2-2" href="2-2.html">Info & Requirement</a>
+            </li>
+            <li>
+              <a id="p-2-3" href="2-3.html">Logistics</a>
+            </li>
+            <li>
+              <a id="p-2-4" href="2-4.html">Success Stories</a>
+            </li>
           </ul>
         </li>
-        <li class="menu-content">
-          <p class="title">Resources</p>
-          <ul class="detail">
-            <li>E-learning</li>
-            <li>Publication</li>
-            <li>Events</li>
-            <li>Related-Site</li>
-            <li>FAQ</li>
+        <li>
+          <p id="p-3" class="title dropdown-btn" onclick="dropDown(event)">Resources</p>
+          <ul class="dropdown-group">
+            <li>
+              <a id="p-3-1" href="3-1.html">E-learning</a>
+            </li>
+            <li>
+              <a id="p-3-2" href="3-2.html">Publication</a>
+            </li>
+            <li>
+              <a id="p-3-3" href="3-3.html">Events</a>
+            </li>
+            <li>
+              <a id="p-3-4" href="3-4.html">Related-Site</a>
+            </li>
+            <li>
+              <a id="p-3-5" href="3-5.html">FAQ</a>
+            </li>
           </ul>
-        </li>
-        <li class="menu-content">
-          <p class="title">Contact</p>
         </li>
       </ul>
 
@@ -71,142 +89,522 @@
         <div id="mypage">
           My Page
         </div>
-        <button>Login</button>
-        <button>Sign Up</button>
+        <button class="btn1-1">Login</button>
+        <button class="btn1-2">Sign Up</button>
       </div>
       
     </div>
   </nav>
+<!--Menu Ends-->
+
+
+<!--Header Starts-->
+  <header id="h-index">
+    <h1>K-CA FTA Online Platform</h1>
+  </header>
+  <!--Header Ends-->
+
+<!--Header Starts-->
+  <header id="h-1-1">
+    <h1>About Platform</h1>
+  </header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-1-2">
+  <h1>About K-CA FTA</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-1">
+  <h1>ROK Market Overview</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2">
+  <h1>ROK Market Information & Requirement</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2-1">
+  <h1>Animal & Vegetable Products</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2-2">
+  <h1>Prepared Foodstuffs</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2-3">
+  <h1>Metal & Mineral Products</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2-4">
+  <h1>Chemicals & Machinery Parts</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-2-5">
+  <h1>Medical Instruments</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-3">
+  <h1>Logistics</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-2-4">
+  <h1>Success Stories</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-3-1">
+  <h1>E-learning</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-3-2">
+  <h1>Publications</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-3-3">
+  <h1>Events</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-3-4">
+  <h1>Related-Site</h1>
+</header>
+<!--Header Ends-->
+
+<!--Header Starts-->
+<header id="h-3-5">
+  <h1>FAQ</h1>
+</header>
+<!--Header Ends-->
+
+<!--Section Starts-->
+<div class="section-group">
+  <section class="first">
+    <div class="module module1">
+      <div class="s2-1">
+        <h2>About K-CA FTA</h2>
+        <p>History and Status of the K-CA FTA (effactuated and agreed) and Text of Free Agreeement between ROK and CA Countries</p>
+        <div class="btn-group">
+          <button class="btn2-2" onclick="location.href='1-2.html'">History of K-CA FTA</button>
+          <button class="btn2-1" onclick="location.href='1-2.html'">Per Country FTA Text</button>
+        </div>
+      </div>
+      <div class="s2-2">
+        <img src="img/main/h-2-1.jpeg" alt="">
+      </div>
+    </div>
+  </section>
   
-<!--Menu 끝-->
+  <section class="second">
+    <div class="module module1">
+      <div class="s2-2">
+        <img src="img/main/h-3-2.jpeg" alt="">
+      </div>
+      <div class="s2-1">
+        <h2>E-Learning Course</h2>
+        <p>Learn the key information your company needs to ignite your own path of success in Korean market. These free online courses will help update your knowledge on doing Business in Korea, the FTA, market opportunities and more, from the comfort of your home or office, on your time, at your pace.</p>
+        <div class="btn-group">
+          <button class="btn2-2" onclick="location.href='3-1.html'">See Course Curriculum</button>
+          <button class="btn2-1" onclick="location.href='3-1.html'">Access the Video</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="first">
+    <div class="module module1">
+      <div class="s2-1">
+        <h2>ROK Market Overview</h2>
+        <ul>
+          <li>Business environment and practice in ROK</li>
+          <li>Market projection of the pre-selected product based on estimated demand and supply</li>
+          <li>Analysis for each products in their respective ROK market</li>
+          <li>Business cas for each selected products., etc.</li>
+        </ul>
+        <div class="btn-group">
+          <button class="btn2-2" onclick="location.href='2-1.html'">ROK Market Overview</button>
+          <button class="btn2-1" onclick="location.href='2-2.html'">ROK Market Info and Requirment</button>
+        </div>
+      </div>
+      <div class="s2-2">
+        <div class="img">
+          <img src="img/main/h-2-2.jpeg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="second">
+    <div class="module module1">
+        <div class="s2-2">
+          <img src="img/main/h-3-3.jpeg" alt="">
+        </div>
+        <div class="s2-1">
+          <h2>Success Story</h2>
+          <p>The stories of remarkable exporters and importers to assist Central American (CA) businesses in paving the way to success in the ROK market.</p>
+          <div class="btn-group">
+            <button class="btn2-2" onclick="location.href='2-4.html'">LATIDA</button>
+            <button class="btn2-1" onclick="location.href='2-4.html'">EREZ CORPORATION</button>
+          </div>
+        </div>
+    </div>
+  </section>
+</div>
+<!--Section Ends-->
 
-<section class="first anchor tabcontent" id="1-1">
-  <p>hello#1</p>
-</section>
-<section class="second anchor tabcontent" id="1-2">
-  <p>hello#2</p>
-</section>
-
-
-<!--Contents#1 시작-->
-<section class="anchor second">
-  <div class="content">
-    <div class="title-group">
-      <h2>Sports Diagnosis Program é</h2>
+<!--Section Starts-->
+<div class="section-group">
+  <section class="first">
+    <div class="module module2">
+      <h2>Initative and Objectives</h2>
       <p>
-        Improving starts with objectifying yourself. This program allows athlete and coaches to move forward together in a better direction. Figure skating is a demanding sport that requires skill, artistry, and program composition strategy all within a limited amount of time. Owl Sports helps athletes achieve self-objectification by diagnosing their current programs and physical condition based on rules and scoring methods that are in line with trends.
+        The K-CAFTA online platform is the initiative aiming to bolster trade and investment<br> between the Republic of Korea (ROK) and Central American (CA) countries<br>
+        by providing a centralized hub for trade information and capacity building.<br>
+        <br>
+        The Platform is the 1st Central America-focused online platform dedicated to promoting<br>
+        business between ROK and CA under Republic of Korea – Central America FTA (K-CA FTA).<br>
+        <br>
+        It seeks to help CA businesses facilitate and expedite their exportation towards ROK<br>
+        by addressing information asymmetry and enhancing stakeholders’ access<br>
+        to ROK market information.<br>
+        <br>
+        In addition, under the K-CA FTA, it targets to contribute to the diversification and<br> expansion of CA’s economy, as well as strengthening partnerships with ROK businesses,<br>
+        and fostering sustainable economic development of both regions.
       </p>
     </div>
-    <div id="diagram1">
-      <div class="sub">
-        <img src="img/diag-1.jpg" alt="dia-1">
-        <div class="text-group">
-          <h3>Experts in each field</h3>
+  </section>
+  <section class="second">
+    <div class="module module3">
+      <div class="s3-1">
+        <h3>Sponsed by</h3>
+        <div class="aaa">
           <p>
-            A group of experts who understand the characteristics of the sports and the latest trends.
+            The Central American Bank for Economic Integration (CABEI), is an international multilateral development financial institution. Its resources are continuously invested in projects that foster development to reduce poverty and inequality; strengthen regional integration and the competitive insertion of its member countries in the global economy; providing special attention to environmental sustainability.
           </p>
+          <div class="aaaa">
+          </div>
         </div>
       </div>
-      <div class="sub">
-        <img src="img/diag-2.png" alt="dia-2">
-        <div class="text-group">
-          <h3>Based on precision measurement and data</h3>
+      <div class="s3-2">
+        <h3>Operated by</h3>
+        <div class="aaa">
           <p>
-            Objective monitoring of the athlete's current status with quantification of measurable areas.
+            The Chamber of Commerce Korea-LAC (CAMCOR)  is the host and operator of the platform in partnership with CABEI. Based on the expertise of trade facilitation and business advisory services for CA firms, as well as relationships with Korean market players from both public and private sector the host ensures the continuation of the provision of service and information of the online platform..
           </p>
+          <div class="aaaa">
+          </div>
         </div>
       </div>
-      <div class="sub">
-        <img src="img/diag-3.webp" alt="dia-3">
-        <div class="text-group">
-          <h3>Report</h3>
-          <p>
-            Provides analysis reports with expert opinions to help determine their future direction.
-          </p>
+      <div class="s3-3">
+        <h3>Partners</h3>
+        <p>
+          To support and promote the trade facilitation between the Republic of Korea and the Central American region, the online platform is collaborating with multiple partners that have knowledge, networks, and resources for business transactions in both ROK and CA.
+        </p>
+        <div class="bbb">
+          <div class="bbbb"></div>
+          <div class="bbbb"></div>
+          <div class="bbbb"></div>
+          <div class="bbbb"></div>
+          <div class="bbbb"></div>
+          <div class="bbbb"></div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!--Contents#1 끝-->
 
-<!--Contents#2 시작-->
-<section class="anchor first">
-  <div class="content">
-    <div class="title-group">
-      <h2>Technical Diagnosis - for Figure skating</h2>
+    </div>
+  </section>
+</div>
+<!--Section Ends-->
+
+<!--Section Starts-->
+<div class="section-group">
+  <section class="first">
+    <div class="module module2">
+      <h2>Initative and Objectives</h2>
       <p>
-        It is important to create a complete program by strengthening strengths and complementing weaknesses. It is necessary to structure the program so that the athlete can achieve the maximum performance at his/her level. Receive an assessment of the current program structure and skills through an assessment that reflects the latest scoring trends and guides the athlete in accordance with the current ISU standard trends.
+        To encourage expansion and diversification of trade between ROK and CA countries,<br>
+        the first official FTA negotiation was kicked off in June 2015 and the final agreement<br>
+        was reached in November 2016 after seven rounds of negotiation meetings.<br>
+        <br>
+        As a result, in February 2018, ROK signed FTA with five Central American countries<br>
+        : Costa Rica, El Salvador Honduras, Nicaragua, and Panama,<br>
+        and ROK became the first East Asian country to sign a joint FTA with these five economies.<br>
+        <br>
+        In case of Guatemala, an initial participant of the K-CA FTA negotiation<br>
+        from the initial stage in 2015, the negotiation was concluded<br>
+        and the FTA with ROK was signed in September 2023.<br>
+        <br>
+        While the ratification of the FTA between ROK and Guatemala is pending as of May 2024,<br>
+        an official letter of Guatemala’s intent for the accession to the K-CA FTA agreement<br>
+        was sent to ROK in January 2024.<br>
+        <br>
+        The effective years of the FTA with the five Central American countries,<br>
+        excluding Guatemala, are as follows: Nicaragua and Honduras in October 2019,<br>
+        Costa Rica in November 2019, El Salvador in January 2020, and Panama in March 2021.<br>
+        The effective year of Korea-Guatemala FTA is expected to be 2024.
       </p>
     </div>
-    <div id="slider">
-      <div id="slider1-1" class="slides active">
-        <div class="text-group">
-          <h3>Technical Elements</h3>
-          <p>
-            Diagnose whether the skills corresponding to the technical sector are being used well. In particular, check whether the skills appropriate to the program are organized to match the player's level check whether the player is digesting them well and drawing out their strengths, etc.
-          </p>
+  </section>
+  <section class="second">
+    <div class="module module4">
+      <h2>History of K-CAFTA</h2>
+      <div class="history">
+        <div class="year-group">
+          <h3 class="year">2024</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2024. 01. 08</h4>
+              <div class="text-group">
+                <p class="text">Guatemala officially signs K-CA FTA accession protocol</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div id="slider1-2" class="slides">
-        <div class="text-group">
-          <h3>Program Components</h3>
-          <p>
-            Experts such as the judge and technical panel will assess the overall program composition and scoring strategy.
-          </p>
+        <div class="year-group">
+          <h3 class="year">2023</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2023. 09. 03</h4>
+              <div class="text-group">
+                <p class="text">Guatemala concludes negotiations to join K-CA FTA</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2021</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2021. 03. 01</h4>
+              <div class="text-group">
+                <p class="text">K-CA FTA fully enters into force</p>
+                <p class="detail">* Five Central American countries participating in joint research<br>: Panama, Costa Rica, Honduras, El Salvador and Dominican Republic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2019</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2019. 10. 01</h4>
+              <div class="text-group">
+                <p class="text">Partially entry into force of K-CA FTA</p>
+                <p class="detail">* (2019.10) Nicaragua, Honduras | (2019.11) Costa Rica | (2020.01) El Salvador</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2018</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2018. 02. 21</h4>
+              <div class="text-group">
+                <p class="text">K-CA FTA officially signed</p>
+                <p class="detail">* Five Central American countries participating in joint research<br>: Panama, Costa Rica, Honduras, El Salvador and Dominican Republic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2017</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2017. 03. 10</h4>
+              <div class="text-group">
+                <p class="text">K-CA FTA tentative name</p>
+                <p class="detail">* Guatemala plans to participate through formal membership procedures<br>after the agreement takes effect</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2016</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2016. 11. 16</h4>
+              <div class="text-group">
+                <p class="text">Declaration of substantive conclusion of K-CA FTA in Managua</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 10. 24 ~ 31</h4>
+              <div class="text-group">
+                <p class="text">The 7th round of K-CA FTA negotiations in Seoul</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 09. 26 ~ 30</h4>
+              <div class="text-group">
+                <p class="text">The 6th round of K-CA FTA negotiations in Managua</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 08. 08 ~ 12</h4>
+              <div class="text-group">
+                <p class="text">The 5th round of K-CA FTA negotiations in Seoul</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 05. 23 ~ 27</h4>
+              <div class="text-group">
+                <p class="text">The 4th round of K-CA FTA negotiations in Tegucigalpa</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 03. 29 ~ 04. 01</h4>
+              <div class="text-group">
+                <p class="text">Intersessional meeting with six K-CA FTA countries in Seoul</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2016. 02. 22 ~ 26</h4>
+              <div class="text-group">
+                <p class="text">The 3rd round of K-CA FTA negotiations in San Francisco</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2015</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2015. 11. 23 ~ 27</h4>
+              <div class="text-group">
+                <p class="text">The 2nd round of K-CA FTA negotiations in El Salvador</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2015. 09. 21 ~ 25</h4>
+              <div class="text-group">
+                <p class="text">The 1st round of K-CA FTA negotiations in Seoul</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2015. 07. 28 ~ 30</h4>
+              <div class="text-group">
+                <p class="text">Held K-CA FTA preliminary talks in San Salvador</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2015. 06. 18</h4>
+              <div class="text-group">
+                <p class="text">The public hearing on K-CA FTA promotion</p>
+              </div>
+            </div>
+            <div class="date-group">
+              <h4 class="date">2015. 04</h4>
+              <div class="text-group">
+                <p class="text">The 4th round of K-CA FTA negotiations in Tegucigalpa</p>
+                <p class="detail">* Six Central American countries<br>: Panama, Costa Rica, Guatemala, Honduras, El Salvador Dominican Republic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2012</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2012. 10</h4>
+              <div class="text-group">
+                <p class="text">The review meeting on the feasibility of K-CA FTA in Costa Rica</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2011</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2011. 04</h4>
+              <div class="text-group">
+                <p class="text">The joint research completed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="year-group">
+          <h3 class="year">2010</h3>
+          <div class="month-group">
+            <div class="date-group">
+              <h4 class="date">2010. 10</h4>
+              <div class="text-group">
+                <p class="text">Start of joint research</p>
+                <p class="detail">* Six Central American countries participating in joint research<br>: Panama, Costa Rica, Guatemala, Honduras, El Salvador, and Dominican Republic</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--Contents#2 끝-->
-
-<!--Contents#3 시작-->
-<section class="anchor second">
-  <div class="content">
-    <div class="title-group">
-      <h2>Physical Performance</h2>
+  </section>
+  <section class="first">
+    <div class="module module5">
+      <h2>Per Country FTA Text</h2>
       <p>
-        Based on a healthy body, you can continuously improve your exercise ability. Accurately identify your current condition through basic exercise ability and body structure diagnosis. Provide solutions for improving problems.
+        The details of the documented agreements per each country<br>
+        can be found from the direct link in the table below :
       </p>
-    </div>
-    <div id="slider">
-      <div id="slider2-1" class="slides active">
-        <div class="text-group">
-          <h3>Basic Examination</h3>
-          <p>
-            Using various medical measurement equipment, measure basic exercise performance abilities such as muscle strength, muscle endurance, and lung capacity, and identify areas that need strengthening based on numerical data.
-          </p>
+      <div class="part-group">
+        <div class="part">
+          <h3>K-CA FTA Text</h3>
+          <ul>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/00%20Preamble_EN.pdf')">[Preamble]</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/01%20Initial%20Provisions%20and%20Definitions_EN.pdf')">[Chapter #1] Initial Provisions and General Definitions</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02%20National%20Treatment%20and%20Market%20Access%20for%20Goods_EN.pdf')">[Chapter #2] National Treatment and Market Access for Good; Annex 2-A; Annex 2-B</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02b%20KOR-CR_EN.pdf')">[Chapter #2] Annex 2-B Elimination of Customs Duties: Korea - Costa Rica</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02b%20KOR-ES_EN.pdf')">[Chapter #2] Annex 2-B Elimination of Customs Duties: Korea - El Salvador</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02b%20KOR-HO_EN.pdf')">[Chapter #2] Annex 2-B Elimination of Customs Duties: Korea - Honduras</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02b%20KOR-NI_EN.pdf')">[Chapter #2] Annex 2-B Elimination of Customs Duties: Korea - Nicaragua</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/02b%20KOR_PA_EN.pdf')">[Chapter #2] Annex 2-B Elimination of Customs Duties: Korea - Panama</li>
+            <li onclick="window.open('https://www.fta.go.kr/main/situation/kfta/lov5/c_america/2/')">[Chapter #3] Annex 3</li>
+          </ul>
         </div>
-      </div>
-      <div id="slider2-2" class="slides">
-        <div class="text-group">
-          <h3>Body Structure Diagnosis</h3>
-          <p>
-            Diagnose the player's current body based on objective data. Recognize that physical structural defects may be caused by posture or habits, etc., and use this as basis for supplementation
-          </p>
-        </div>
-      </div>
-      <div id="slider2-3" class="slides">
-        <div class="text-group">
-          <h3>Establishment of Correction Strategy</h3>
-          <p>
-            Compile diagnostic data to provide solutions for improving your body and physical skills. Suggest massage, exercise, and eating habits for correction and help you train efficiently
-          </p>
-        </div>
-      </div>
-      <div id="slider2-4" class="slides">
-        <div class="text-group">
-          <h3>Custom Item Creation</h3>
-          <p>
-            Discover, produce, and provide customized items exclusively for athletes to improve performance and basic abilities. For example, you can improve foot condition and athletic performance through customized insoles.
-          </p>
+        <div class="part">
+          <h3>K-CA FTA Accession Protocol for Guatemala</h3>
+          <ul>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/PROTOCOL%20ON%20THE%20ACCESSION%20OF%20THE%20REPUBLIC%20OF%20GUATEMALA%20TO%20THE%20FREE%20TRADE%20AGREEMENT%20BETWEEN%20THE%20REPUBLIC%20OF%20KOREA%20AND%20THE%20REPUBLICS%20OF%20CENTRAL%20AMERICA_eng.pdf')">Protocol on the Accession of Guatemala to the K-CA FTA</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/Annex%201%20(Tariff%20Schedule)_submitted%20to%20Legislation%20Office.pdf')">Annex 2-B Elimination of Customs Duties: Korea - Guatemala</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/PROTOCOL%20ON%20THE%20ACCESSION%20OF%20THE%20REPUBLIC%20OF%20GUATEMALA%20TO%20THE%20FREE%20TRADE%20AGREEMENT%20BETWEEN%20THE%20REPUBLIC%20OF%20KOREA%20AND%20THE%20REPUBLICS%20OF%20CENTRAL%20AMERICA_eng.pdf')">Annex 8-A Government Procurement Coverage: Korea - Guatemala</li>
+            <li onclick="window.open('https://www.fta.go.kr/webmodule/_PSD_FTA/c_america/2/eng/Annex%203%20(Services%20and%20Investment)_submitted%20to%20Legislation%20Office.pdf')">Annexes Service and Investment: Korea - Guatemala</li>
+          </ul>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!--Contents#3 끝-->
+  </section>
+</div>
+<!--Section Ends-->
+
+<!--Footer Starts-->
+  <footer>
+    <div class="module">
+      <p class="copyright">&copy; 2024 K-CA FTA</p>
+    </div>
+  </footer>
+<!--Footer Ends-->
 
 </body>
 </html>

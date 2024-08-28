@@ -1,0 +1,50 @@
+.btn1-1 {
+  cursor: pointer;
+  color: rgba(53, 99, 233, 1);
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 15rem;
+  padding: 9rem;
+  border: 2rem solid rgba(53, 99, 233, 1);
+  border-radius: 6rem;
+  &:hover {
+    background-color: rgba(53, 99, 233, 0.1);
+  }
+}
+.btn1-2 {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(53, 99, 233, 0.9);
+  font-size: 15rem;
+  padding: 9rem;
+  border: 2rem solid rgba(53, 99, 233, 1);
+  border-radius: 6rem;
+  &:hover {
+    background-color: rgba(53, 99, 233, 0.75);
+  }
+}
+
+.btn2-1 {
+  cursor: pointer;
+  color: rgba(53, 99, 233, 1);
+  background-color: rgba(255, 255, 255, 0);
+  font-size: 16rem;
+  padding: 12rem;
+  border: 2rem solid rgba(53, 99, 233, 1);
+  border-radius: 6rem;
+  &:hover {
+    background-color: rgba(53, 99, 233, 0.1);
+  }
+  height: 100%;
+}
+.btn2-2 {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(53, 99, 233, 0.9);
+  font-size: 16rem;
+  padding: 12rem;
+  border: 2rem solid rgba(53, 99, 233, 1);
+  border-radius: 6rem;
+  &:hover {
+    background-color: rgba(53, 99, 233, 0.75);
+  }
+}
