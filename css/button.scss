@@ -1,4 +1,4 @@
-.btn1-1 {
+.btn-1-1 { // Login, Sign Up Buttons
   cursor: pointer;
   color: rgba(53, 99, 233, 1);
   background-color: rgba(255, 255, 255, 0);
@@ -10,7 +10,7 @@
     background-color: rgba(53, 99, 233, 0.1);
   }
 }
-.btn1-2 {
+.btn-1-2 { // Login, Sign Up Buttons
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(53, 99, 233, 0.9);
@@ -23,7 +23,7 @@
   }
 }
 
-.btn2-1 {
+.btn-2-1 { // Index Page Buttons
   cursor: pointer;
   color: rgba(53, 99, 233, 1);
   background-color: rgba(255, 255, 255, 0);
@@ -36,7 +36,7 @@
   }
   height: 100%;
 }
-.btn2-2 {
+.btn-2-2 { // Index Page Buttons
   cursor: pointer;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(53, 99, 233, 0.9);
@@ -46,5 +46,54 @@
   border-radius: 6rem;
   &:hover {
     background-color: rgba(53, 99, 233, 0.75);
+  }
+}
+
+.btn-tab { // LATIDA, EREZ Buttons
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-position: under;
+  height: 60rem;
+  font-size: 18rem;
+  border: 0;
+  outline: 0;
+  background-color: rgba(53, 99, 233, 0.1);
+  color: rgba(53, 99, 233, 1);
+  &.active {
+    background-color: rgba(53, 99, 233, 0.75);
+    color: rgba(255, 255, 255, 1);
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-text-1 { // 자료 외부 링크
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 6rem;
+  color:rgba(53, 99, 233, 1);
+  &:hover {
+    color:rgba(53, 99, 233, 0.45);
+  }
+}
+
+.btn-text-2 { // Learn more
+  margin-top: 15rem;
+  width: fit-content;
+  cursor: pointer;
+  color: rgba(53, 99, 233, 1);
+  text-decoration: underline;
+  text-underline-offset: 6rem;
+  &:hover {
+    color: rgba(53, 99, 233, 0.45);
+  }
+}
+
+.btn-text-3 { // 회사 웹사이트
+  color: rgba(53, 99, 233, 1);
+  text-underline-offset: 3rem;
+  &:hover {
+    opacity: 0.6;
   }
 }

@@ -1,4 +1,4 @@
-.btn1-1 {
+.btn-1-1 {
   cursor: pointer;
   color: rgb(53, 99, 233);
   background-color: rgba(255, 255, 255, 0);
@@ -7,11 +7,11 @@
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 6rem;
 }
-.btn1-1:hover {
+.btn-1-1:hover {
   background-color: rgba(53, 99, 233, 0.1);
 }
 
-.btn1-2 {
+.btn-1-2 {
   cursor: pointer;
   color: rgb(255, 255, 255);
   background-color: rgba(53, 99, 233, 0.9);
@@ -20,11 +20,11 @@
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 6rem;
 }
-.btn1-2:hover {
+.btn-1-2:hover {
   background-color: rgba(53, 99, 233, 0.75);
 }
 
-.btn2-1 {
+.btn-2-1 {
   cursor: pointer;
   color: rgb(53, 99, 233);
   background-color: rgba(255, 255, 255, 0);
@@ -34,11 +34,11 @@
   border-radius: 6rem;
   height: 100%;
 }
-.btn2-1:hover {
+.btn-2-1:hover {
   background-color: rgba(53, 99, 233, 0.1);
 }
 
-.btn2-2 {
+.btn-2-2 {
   cursor: pointer;
   color: rgb(255, 255, 255);
   background-color: rgba(53, 99, 233, 0.9);
@@ -47,6 +47,56 @@
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 6rem;
 }
-.btn2-2:hover {
+.btn-2-2:hover {
   background-color: rgba(53, 99, 233, 0.75);
+}
+
+.btn-tab {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-position: under;
+  height: 60rem;
+  font-size: 18rem;
+  border: 0;
+  outline: 0;
+  background-color: rgba(53, 99, 233, 0.1);
+  color: rgb(53, 99, 233);
+}
+.btn-tab.active {
+  background-color: rgba(53, 99, 233, 0.75);
+  color: rgb(255, 255, 255);
+}
+.btn-tab:hover {
+  opacity: 0.6;
+}
+
+.btn-text-1 {
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 6rem;
+  color: rgb(53, 99, 233);
+}
+.btn-text-1:hover {
+  color: rgba(53, 99, 233, 0.45);
+}
+
+.btn-text-2 {
+  margin-top: 15rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  color: rgb(53, 99, 233);
+  text-decoration: underline;
+  text-underline-offset: 6rem;
+}
+.btn-text-2:hover {
+  color: rgba(53, 99, 233, 0.45);
+}
+
+.btn-text-3 {
+  color: rgb(53, 99, 233);
+  text-underline-offset: 3rem;
+}
+.btn-text-3:hover {
+  opacity: 0.6;
 }/*# sourceMappingURL=button.css.map */

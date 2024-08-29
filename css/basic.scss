@@ -9,42 +9,31 @@ $fs-menu2: 15rem; // 드롭 메뉴 폰트 사이즈
 $fw-menu2: 400; // 드롭 메뉴 폰트 웨이트2
 $fw-menu-active: 600; // 메뉴 active 폰트 웨이트
 
-$fs-main: 42rem; // 메인 타이틀 폰트 사이즈
-$fw-main: 600; // 메인 타이틀 폰트 사이즈
-
-$fs-title1: 33rem; // Module 타이틀 폰트 사이즈
-$fw-title1: 800; // Module 타이틀 폰트 웨이트
-$lh-title1: 18rem; // Module 타이틀 line-height
-$fs-des1: 16.5rem; // Module 설명 폰트 사이즈
-$fw-des1: 300; // Module 설명 폰트 웨이트
-$lh-des1: 21rem; // Module 설명 line-height
-
-$fs-title2: 16rem; // 다이어그램, 탭 타이틀 폰트 사이즈
-$fw-title2: 500; // 다이어그램, 탭 타이틀 폰트 웨이트
-$fs-des2: 14rem; // 다이어그램, 탭 설명 폰트 사이즈
-$fw-des2: 300; // 다이어그램, 탭 설명 폰트 웨이트
-
 $fs-copy: 16rem; // 카피라이트 폰트 사이즈
 $fw-copy: 300; // 카피라이트 폰트 웨이트
 
-/* 공통 Starts */
+
 html {
   font-size: 1px; //rem 사용
 }
 body {
   font-family: 'Pretendard', sans-serif;
 }
+
+nav, header, section, footer {
+  display: flex; justify-content: center; align-items: center;
+  width: 100%; min-width: 1280px;
+}
+
 nav {
   user-select: none;
   position: sticky;
   top: 0; z-index: 998;
-  width: 100%; min-width: 1280px;
-  display: flex; justify-content: center;
   background-color: rgba(255, 255, 255, 0.95);
   .navigation {
+    display: flex; justify-content: space-between;
     height: 60px; width: 1200px; 
     padding: 0 40rem;
-    display: flex; justify-content: space-between;
     font-size: $fs-menu1; font-weight: $fw-menu1;
     .mega-menu {
       display: flex; align-items: center; gap: 45rem;
@@ -55,6 +44,9 @@ nav {
         .logo {
           display: block;
           line-height: 0;
+          height: 40rem; width: 40rem;
+          background-color: rgba(53, 99, 233, 0.6);
+          border-radius: 20rem;
           img {
             height: 40rem;
           }
@@ -105,95 +97,87 @@ nav {
   }
 }
 header {
-  display: flex; align-items: center; justify-content: center;
-  position: relative;
   height: 300rem;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(53, 99, 233, 0.45);
   background-blend-mode: screen;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  h1 {
-    color: rgba(255, 255, 255, 1);
-    font-size: $fs-main; font-weight: $fw-main;
-    text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
-  }
-
   &#h-index {
-    background-image: url('/img/main/h-index.jpeg');
+    background-image: url('../img/main/h-index.jpeg');
   }
   &#h-1-1 {
-    background-image: url('/img/main/h-1-1.jpeg');
+    background-image: url('../img/main/h-1-1.jpeg');
   }
   &#h-1-2 {
-    background-image: url('/img/main/h-1-2.jpeg');
+    background-image: url('../img/main/h-1-2.jpeg');
   }
   &#h-2-1 {
-    background-image: url('/img/main/h-2-1.jpeg');
+    background-image: url('../img/main/h-2-1.jpeg');
   }
   &#h-2-2 {
-    background-image: url('/img/main/h-2-2.jpeg');
+    background-image: url('../img/main/h-2-2.jpeg');
   }
   &#h-2-2-1 {
-    background-image: url('/img/main/h-2-2-1.jpeg');
+    background-image: url('../img/main/h-2-2-1.jpeg');
   }
   &#h-2-2-2 {
-    background-image: url('/img/main/h-2-2-2.jpeg');
+    background-image: url('../img/main/h-2-2-2.jpeg');
   }
   &#h-2-2-3 {
-    background-image: url('/img/main/h-2-2-3.jpeg');
+    background-image: url('../img/main/h-2-2-3.jpeg');
   }
   &#h-2-2-4 {
-    background-image: url('/img/main/h-2-2-4.jpeg');
+    background-image: url('../img/main/h-2-2-4.jpeg');
   }
   &#h-2-2-5 {
-    background-image: url('/img/main/h-2-2-5.jpeg');
+    background-image: url('../img/main/h-2-2-5.jpeg');
   }
   &#h-2-3 {
-    background-image: url('/img/main/h-2-3.jpeg');
+    background-image: url('../img/main/h-2-3.jpeg');
   }
   &#h-2-4 {
-    background-image: url('/img/main/h-2-4.jpeg');
+    background-image: url('../img/main/h-2-4.jpeg');
   }
   &#h-3-1 {
-    background-image: url('/img/main/h-3-1.jpeg');
+    background-image: url('../img/main/h-3-1.jpeg');
   }
   &#h-3-2 {
-    background-image: url('/img/main/h-3-2.jpeg');
+    background-image: url('../img/main/h-3-2.jpeg');
   }
   &#h-3-3 {
-    background-image: url('/img/main/h-3-3.jpeg');
+    background-image: url('../img/main/h-3-3.jpeg');
   }
   &#h-3-4 {
-    background-image: url('/img/main/h-3-4.jpeg');
+    background-image: url('../img/main/h-3-4.jpeg');
   }
   &#h-3-5 {
-    background-image: url('/img/main/h-3-5.jpeg');
+    background-image: url('../img/main/h-3-5.jpeg');
   }
 }
 
-.section-group {
-  section {
-    width: 100%; min-width: 1280px;
-    display: flex; justify-content: center;
-    .module {
-      overflow: hidden;
-      width: 1200px;
-      padding: 120rem 40rem;
+section {
+  &#sticky-menu-container { 
+    position: sticky; top: 60rem;
+    padding-bottom: 150rem;
+    .sticky-menu {
+      display: flex; justify-content: center; align-items: end;
+      height: 75rem; width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      .btn-group {
+        display: grid; grid-template-columns: repeat(2, 1fr);
+        width: 1200px;
+      }
     }
   }
 }
 
 footer {
-  width: 100%; min-width: 1280px;
-  display: flex; justify-content: center;
   background-color: $color-main;
-  .module {
-    overflow: hidden;
-    width: 1200px;
+  .content {
     padding: 15rem 40rem;
-    .copyright {
+    p.copyright {
       font-size: $fs-copy; font-weight: $fw-copy;
       text-align: center;
       color: white;
@@ -201,14 +185,57 @@ footer {
   }
 }
 
-/* Module Starts */
-.module1 {
+.content {
+  overflow: hidden;
+  width: 1200px;
+  padding: 120rem 40rem;
+  text-align: center;
+  .head1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 45rem; font-weight: 700;
+    text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+  }
+  .head2 {
+    font-size: 42rem; font-weight: 700;
+  }
+  .head3 {
+    font-size: 27rem; font-weight: 600;
+  }
+  .head4 {
+    // font-size: 18rem; font-weight: 500;
+  }
+  .para1 {
+    font-size: 21rem; font-weight: 400; line-height: 30rem;
+    span {
+      font-weight: 700;
+    }
+  }
+  .para2 {
+    font-size: 18rem; font-weight: 400; line-height: 27rem; 
+    span {
+      font-weight: 600;
+    }
+  }
+  .para3 { // Text parts of History
+    font-size: 16.5rem; font-weight: 400; line-height: 24rem;
+    span {
+      font-weight: 600;
+    }
+  }
+  .para4 { // Detail parts of History
+    // font-size: 15rem; font-weight: 300;
+  }
+}
+
+/* Module Starts (페이지 구성의 고유 요소들 묶음) */
+
+.module-1 { // Index
   display: grid; grid-template-columns: 1fr 1fr; gap: 75rem;
   text-align: left;
-  .s2-1 {
-    display: flex; flex-direction: column; justify-content: center; gap: 30rem;
+  .part {
+    display: flex; flex-direction: column; justify-content: center;
     h2 {
-      font-size: $fs-title1; font-weight: $fw-title1; line-height: $lh-title1;
+      margin-bottom: 30rem;
     }
     ul {
       display: flex; flex-direction: column; gap: 6rem;
@@ -218,121 +245,195 @@ footer {
         list-style-position: outside;
       }
     }
-    p, li {
-      font-size: $fs-des1; font-weight: $fw-des1; line-height: $lh-des1;
-    }
     .btn-group {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      margin-top: 30rem;
       gap: 24rem;
     }
-  }
-  .s2-2 {
     img {
       border-radius: 15rem;
       margin: 0; padding: 0;
       width: 100%;
       height: 360rem;
     }
+    .logo {
+      height: 300rem;
+      width: 100%;
+      background-color: rgba(53, 99, 233, 0.15);
+    }
   }
 }
-.module2 {
-  text-align: center;
+.module-2 { // Extra Link List
   h2 {
-    font-size: 45rem; font-weight: 800;
+    margin-bottom: 30rem;
+  }
+  .part-group {
+    margin: 72rem auto 0 auto;
+    display: flex; flex-direction: column; gap: 60rem;
+    text-align: left;
+    width: fit-content;
+    .part {
+      ul {
+        display: flex; flex-direction: column; gap: 15rem;
+        margin-top: 15rem;
+        padding-left: 18rem;
+        li {
+          list-style-type: disc;
+          list-style-position: outside;
+          width: fit-content;
+        }
+      }
+    }
+  }
+}
+.module-3 { // Description
+  text-align: left;
+  h2 {
+    margin-bottom: 30rem;
+  }
+  h3 {
+    margin-top: 45rem;
+  }
+  ul {
+    display: flex; flex-direction: column; gap: 15rem;
+    padding-left: 18rem;
+    li {
+      list-style-type: disc;
+      list-style-position: outside;
+      width: fit-content;
+    }
+  }
+  table {
+    width: 100%;
+    margin: 12rem 0 30rem 0;
+    font-size: 18rem;
+    caption-side: bottom;
+    th, td {
+      border: 1px solid black;
+      padding: 24rem 30rem;
+      text-align: center;
+      vertical-align: middle;
+      ul {
+        display: inline-flex;
+      }
+    }
+    thead {
+      th {
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        background-color: rgba(53, 99, 233, 0.9);
+      }
+    }
+    tbody {
+      th {
+        background-color: rgba(53, 99, 233, 0.15)
+      }
+    }
+    caption {
+      padding-top: 6rem;
+      font-size: 16.5rem;
+      text-align: left;
+      color: rgba(53, 99, 233, 0.75);
+    }
+    &.table-even { // Making the width of cells same
+      table-layout: fixed;
+    }
+    &#cost-table {
+      font-size: 15rem;
+      th, td {
+        padding: 3rem 0;
+      }
+      caption {
+        text-indent: -27rem;
+        font-size: 15rem;
+        ul {
+          gap: 9rem;
+          padding-left: 27rem;
+          li {
+            list-style: none;
+          }
+        }
+      }
+    }
+  }
+  .img {
+    width: 100%; height: 600rem;
+    margin-bottom: 21rem;
+    background-color: rgba(53, 99, 233, 0.15);
+  }
+}
+.module-4 { // Company
+  .img {
+    display: inline-block;
+    height: 180rem; width: 450rem;
+    background-color: rgba(53, 99, 233, 0.45);
     margin-bottom: 60rem;
   }
-  p {
-    font-size: 21rem; font-weight: 400;
-  }
-}
-.module3 {
-  display: grid;
-  grid-column-gap: 90rem; grid-row-gap: 60rem;
-  h3 {
-    font-size: 30rem; font-weight: 600;
-    margin-bottom: 12rem;
-  }
-  p {
-    font-size: 16rem; font-weight: 400;
-  }
-  .s3-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .s3-2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-  }
-  .s3-3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-  }
-  .s3-1, .s3-2 {
-    .aaa {
-      display: flex; align-items: center; justify-content: space-between; gap: 30rem;
-      .aaaa {
-        min-width: 180px; height: 180px; background-color: rgba(255, 0, 0, 0.3);
+  .profile {
+    display: grid; grid-template-columns: repeat(2, 1fr);
+    margin-top: 60rem;
+    .photo {
+      display: inline-block;
+      height: 360rem; width: 100%;
+      background-color: rgba(53, 99, 233, 0.45);
+    }
+    .info-container {
+      border: 1px solid red;
+      display: flex; align-items: center; justify-content: center;
+      height: 100%; width: 100%;
+      .info {
+        display: flex; flex-direction: column; gap: 15rem;
+        text-align: left;
+        list-style-type: disc;
       }
     }
+    
+
   }
-  .s3-3 {
-    .bbb {
-      display: grid; gap: 30rem;
-      grid-template-columns: repeat(auto-fill, 180px);
-      grid-template-rows: repeat(auto-fill, 180px);
-      justify-content: space-between;
-      align-content: space-between;
-      // grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      margin-top: 15rem;
-      .bbbb {
-        max-width: 180px; height: 180px; background-color: rgba(255, 0, 0, 0.3);
-      }
+  .qna {
+    display: flex; flex-direction: column; gap: 15rem;
+    text-align: justify;
+    margin-top: 60rem;
+    .question {
+    }
+    .answer {
+      margin-left: 6rem;
+      padding-left: 21rem;
+      border-left: 9px solid rgba(53, 99, 233, 0.3);
     }
   }
+
 }
-.module4 {
-  text-align: center;
-  h2 {
-    font-size: 45rem; font-weight: 800;
-    margin-bottom: 75rem;
-  }
-  .history {
+#history {
+  .calendar {
     display: flex; flex-direction: column; gap: 48rem;
     width: fit-content;
-    margin: 0 auto;
+    margin: 60rem auto 0 auto;
     .year-group {
       display: flex; gap: 24rem;
-      .year {
-        text-align: center;
-        font-size: 30rem; font-weight: 600;
+      h3.year {
+        font-size: 27rem; font-weight: 600;
         color: $color-main;
         width: 120rem;
         background-color: rgba(53, 99, 233, 0.1);
         display: flex; align-items: center; justify-content: center;
-
       }
       .month-group {
         display: flex; flex-direction: column; gap: 27rem;
         text-align: left;
         .date-group {
           padding-bottom: 3rem;
-          .date {
+          h4.date {
             font-size: 18rem; font-weight: 500;
             color: rgba(53, 99, 233, 0.7);
           }
           .text-group {
             margin-top: 3rem;
-            .text {
+            p.text {
               font-size: 18rem; font-weight: 400;
             }
-            .detail {
+            p.detail {
               margin-top: 3rem;
               padding-left: 12rem;
               font-size: 15rem; font-weight: 300;
@@ -345,44 +446,13 @@ footer {
     }
   }
 }
-.module5 {
-  text-align: center;
-  h2 {
-    font-size: 45rem; font-weight: 800;
-    margin-bottom: 60rem;
-  }
-  p {
-    font-size: 21rem; font-weight: 300;
-  }
-  h3 {
-    font-size: 30rem; font-weight: 600;
-    margin-bottom: 15rem;
-  }
-  .part-group {
-    margin: 72rem auto 0  auto;
-    display: flex; flex-direction: column; gap: 60rem;
-    text-align: left;
-    width: fit-content;
-    .part {
-      ul {
-        display: flex; flex-direction: column; gap: 15rem;
-        
-        padding-left: 18rem;
-        li {
-          cursor: pointer;
-          list-style-type: disc;
-          list-style-position: outside;
-          width: fit-content;
-          font-size: 18rem;
-          color:rgba(53, 99, 233, 1);
-          &:hover {
-            text-decoration: underline;
-          }
-        }
-      }
-    }
-  }
+#before-sticky {
+  padding-bottom: 60rem;
 }
+#Erez {
+  display: none;
+}
+
 /* Module Ends */
 
 /* Important */
@@ -394,5 +464,8 @@ footer {
 }
 .second {
   background-color: rgba(53, 99, 233, 0.05) !important;
+}
+.align-justify {
+  text-align: justify !important;
 }
 /* Important Ends */
