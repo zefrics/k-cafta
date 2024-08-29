@@ -15,6 +15,17 @@ function openCompany(e, companyName) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(companyName).style.display = "block";
+  var element = document.getElementById(companyName);
+
+  element.style.display = "block";
   e.currentTarget.className += " active";
+
+  var headerOffset = 135;
+  var elementPosition = element.getBoundingClientRect().top;
+  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
 }
