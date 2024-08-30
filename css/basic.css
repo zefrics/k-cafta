@@ -31,8 +31,8 @@ nav .navigation {
   height: 60px;
   width: 1200px;
   padding: 0 40rem;
-  font-size: 16.5rem;
-  font-weight: 300;
+  font-size: 16.5rem !important;
+  font-weight: 300 !important;
 }
 nav .navigation .mega-menu {
   display: flex;
@@ -68,8 +68,7 @@ nav .navigation .mega-menu li .title.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-nav .navigation .mega-menu li .dropdown-group {
-  display: none;
+nav .navigation .mega-menu li .menu-drop {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -82,22 +81,22 @@ nav .navigation .mega-menu li .dropdown-group {
   background-color: rgb(255, 255, 255);
   box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
 }
-nav .navigation .mega-menu li .dropdown-group a {
+nav .navigation .mega-menu li .menu-drop li {
+  display: block;
+}
+nav .navigation .mega-menu li .menu-drop li a {
   display: block;
   padding: 6rem 21rem;
   font-size: 15rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-nav .navigation .mega-menu li .dropdown-group a.active {
+nav .navigation .mega-menu li .menu-drop li a.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-nav .navigation .mega-menu li .dropdown-group a:hover {
+nav .navigation .mega-menu li .menu-drop li a:hover {
   background-color: rgba(53, 99, 233, 0.15);
-}
-nav .navigation .mega-menu li .dropdown-group.show {
-  display: block;
 }
 nav .navigation .function {
   display: flex;
@@ -123,23 +122,22 @@ nav .navigation .function .my-container #my-menu {
   background-color: rgb(255, 255, 255);
   box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
 }
-nav .navigation .function .my-container #my-menu .list {
+nav .navigation .function .my-container #my-menu a {
   display: block;
   padding: 6rem 21rem;
-  font-size: 16.5rem;
+  font-size: 15rem;
   text-align: right;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-nav .navigation .function .my-container #my-menu .list.active {
+nav .navigation .function .my-container #my-menu a.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-nav .navigation .function .my-container #my-menu .list:hover {
+nav .navigation .function .my-container #my-menu a:hover {
   background-color: rgba(53, 99, 233, 0.15);
 }
-nav .navigation .function .my-container #my-menu .list.sign-out {
-  cursor: pointer;
+nav .navigation .function .my-container #my-menu a.sign-out {
   font-weight: 500;
   color: rgb(255, 0, 0);
 }

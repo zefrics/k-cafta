@@ -5,8 +5,12 @@
   border: 0;
   border-radius: 20rem;
   font-size: 16.5rem;
+  font-weight: 400;
   color: rgb(255, 255, 255);
   background-color: rgba(53, 99, 233, 0.9);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 .btn-1-1:hover {
   opacity: 0.75;
@@ -25,7 +29,7 @@
   opacity: 0.75;
 }
 
-.btn-my {
+#btn-my {
   cursor: pointer;
   height: 40rem;
   width: 40rem;
@@ -36,7 +40,7 @@
   color: rgb(255, 255, 255);
   background-color: rgba(53, 99, 233, 0.9);
 }
-.btn-my:hover {
+#btn-my:hover {
   opacity: 0.75;
 }
 

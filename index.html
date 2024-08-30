@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/button.css">
     <!-- <link rel="stylesheet" href="css/media.css"> -->
 
-    <script type="text/javascript" src="js/drop-down.js" defer></script>
+    <script type="text/javascript" src="js/menu-drop.js" defer></script>
     <script type="text/javascript" src="js/menu-activate.js" defer></script>
     <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
@@ -31,57 +31,57 @@
           <a id="p-index" href="index.html" class="title">Home</a>
         </li>
         <li>
-          <p id="p-1" class="title dropdown-btn" onclick="dropDown(event)">K-CA Online Platform</p>
-          <ul class="dropdown-group">
-            <a id="p-1-1" href="1-1.html">
-              <li>About Platform</li>
-            </a>
-            <a id="p-1-2" href="1-2.html">
-              <li>About K-CA FTA</li>
-            </a>
+          <div id="p-1" class="title btn-menu-drop" onclick="menuDrop(event)">K-CA Online Platform</div>
+          <ul class="menu-drop hide">
+            <li>
+              <a id="p-1-1" href="1-1.html">About Platform</a>
+            </li>
+            <li>
+              <a id="p-1-2" href="1-2.html">About K-CA FTA</a>
+            </li>
           </ul>
         </li>
         <li>
-          <p id="p-2" class="title dropdown-btn" onclick="dropDown(event)">ROK Market</p>
-          <ul class="dropdown-group">
-            <a id="p-2-1" href="2-1.html">
-              <li>Overview</li>
-            </a>
-            <a id="p-2-2" href="2-2.html">
-              <li>Info & Requirement</li>
-            </a>
-            <a id="p-2-3" href="2-3.html">
-              <li>Logistics</li>
-            </a>
-            <a id="p-2-4" href="2-4.html">
-              <li>Success Stories</li>
-            </a>
+          <div id="p-2" class="title btn-menu-drop" onclick="menuDrop(event)">ROK Market</div>
+          <ul class="menu-drop hide">
+            <li>
+              <a id="p-2-1" href="2-1.html">Overview</a>
+            </li>
+            <li>
+              <a id="p-2-2" href="2-2.html">Info & Requirement</a>
+            </li>
+            <li>
+              <a id="p-2-3" href="2-3.html">Logistics</a>
+            </li>
+            <li>
+              <a id="p-2-4" href="2-4.html">Success Stories</a>
+            </li>
           </ul>
         </li>
         <li>
-          <p id="p-3" class="title dropdown-btn" onclick="dropDown(event)">Resources</p>
-          <ul class="dropdown-group">
-            <a id="p-3-1" href="3-1.html">
-              <li>E-learning</li>
-            </a>
-            <a id="p-3-2" href="3-2.html">
-              <li>Publication</li>
-            </a>
-            <a id="p-3-3" href="3-3.html">
-              <li>Events</li>
-            </a>
-            <a id="p-3-4" href="3-4.html">
-              <li>Related-Site</li>
-            </a>
-            <a id="p-3-5" href="3-5.html">
-              <li>FAQ</li>
-            </a>
+          <div id="p-3" class="title btn-menu-drop" onclick="menuDrop(event)">Resources</div>
+          <ul class="menu-drop hide">
+            <li>
+              <a id="p-3-1" href="3-1.html">E-learning</a>
+            </li>
+            <li>
+              <a id="p-3-2" href="3-2.html">Publication</a>
+            </li>
+            <li>
+              <a id="p-3-3" href="3-3.html">Events</a>
+            </li>
+            <li>
+              <a id="p-3-4" href="3-4.html">Related-Site</a>
+            </li>
+            <li>
+              <a id="p-3-5" href="3-5.html">FAQ</a>
+            </li>
           </ul>
         </li>
       </ul>
 
-      <div class="function">
-        <div class="lang-group">
+      <ul class="function">
+        <li class="lang-group">
           <div class="btn-lang" id="lang-es">
             <img src="/img/icon/lang.svg" alt="language change icon">
             <p>ES</p>
@@ -90,21 +90,25 @@
             <img src="/img/icon/lang.svg" alt="language change icon">
             <p>EN</p>
           </div>  
-        </div>
-        <button class="btn-1-1" onClick="location.href='sign-in.html'">Sign in</button>
-        <div class="my-container">
-          <button class="btn-my" onclick="myToggle(event)">MY</button>
-          <ul class="hide" id="my-menu">
-            <a class="list" href="myaccount.html">
-              <li>My Account</li>
-            </a>
-            <a class="list" href="qna.html">
-              <li>Q&A</li>
-            </a>
-            <li class="list sign-out" onclick="location.href='index.html'">Sign out</li>
+        </li>
+        <li>
+          <a class="btn-1-1" href='sign-in.html'>Sign in</a>
+        </li>
+        <li class="my-container">
+          <button class="btn-menu-drop" id="btn-my" onclick="menuDrop(event)">MY</button>
+          <ul class="menu-drop hide" id="my-menu">
+            <li>
+              <a class="list" href="myaccount.html">My Account</a>
+            </li>
+            <li>
+              <a class="list" href="qna.html">Q&A</a>
+            </li>
+            <li>
+              <a class="list sign-out" href="#">Sign out</a>
+            </li>
           </ul>
-        </div>
-      </div>
+        </li>
+      </ul>
       
     </div>
   </nav>
@@ -246,8 +250,8 @@
 </header>
 <!--Header Ends-->
 
-<!--Article Starts-->
-<article id="pg-index">
+<!--Main Starts-->
+<main id="pg-index">
   <section class="first">
     <div class="content module-1">
       <div class="part">
@@ -317,11 +321,11 @@
         </div>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-1-1">
+<!--Main Starts-->
+<main id="pg-1-1">
   <section class="first">
     <div class="content">
       <p class="para1">
@@ -381,11 +385,11 @@
       </div>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-1-2">
+<!--Main Starts-->
+<main id="pg-1-2">
   <section class="first">
     <div class="content">
       <p class="para1">
@@ -640,11 +644,11 @@
       </div>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-2-1">
+<!--Main Starts-->
+<main id="pg-2-1">
   <section class="first">
     <div class="content">
       <p class="para1">
@@ -824,11 +828,11 @@
       </table>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-2-2">
+<!--Main Starts-->
+<main id="pg-2-2">
   <section class="first">
     <div class="content">
       <p class="para1">
@@ -916,11 +920,11 @@
       </div>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-2-3">
+<!--Main Starts-->
+<main id="pg-2-3">
   <section class="first">
     <div class="content">
       <p class="para1 align-justify">
@@ -1211,11 +1215,11 @@
       </table>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
-<!--Article Starts-->
-<article id="pg-2-4">
+<!--Main Starts-->
+<main id="pg-2-4">
   <section class="first">
     <div class="content" id="before-sticky">
       <p class="para1">
@@ -1352,8 +1356,8 @@
       </div>
     </div>
   </section>
-</article>
-<!--Article Ends-->
+</main>
+<!--Main Ends-->
 
 <!--Footer Starts-->
 <footer>
