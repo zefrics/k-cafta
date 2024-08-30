@@ -25,18 +25,19 @@ nav {
   background-color: rgba(255, 255, 255, 0.95);
 }
 nav .navigation {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 60rem;
   height: 60px;
   width: 1200px;
   padding: 0 40rem;
   font-size: 16.5rem;
-  font-weight: 400;
+  font-weight: 300;
 }
 nav .navigation .mega-menu {
   display: flex;
   align-items: center;
-  gap: 45rem;
+  justify-content: space-between;
 }
 nav .navigation .mega-menu li {
   display: flex;
@@ -57,7 +58,7 @@ nav .navigation .mega-menu li .logo img {
 }
 nav .navigation .mega-menu li .title {
   text-decoration: none;
-  color: #999999;
+  color: rgba(0, 0, 0, 0.45);
 }
 nav .navigation .mega-menu li .title:hover {
   cursor: pointer;
@@ -65,7 +66,7 @@ nav .navigation .mega-menu li .title:hover {
 }
 nav .navigation .mega-menu li .title.active {
   color: rgb(53, 99, 233);
-  font-weight: 600;
+  font-weight: 500;
 }
 nav .navigation .mega-menu li .dropdown-group {
   display: none;
@@ -84,14 +85,14 @@ nav .navigation .mega-menu li .dropdown-group {
 nav .navigation .mega-menu li .dropdown-group a {
   font-size: 15rem;
   text-decoration: none;
-  color: #aaaaaa;
+  color: rgba(0, 0, 0, 0.45);
 }
 nav .navigation .mega-menu li .dropdown-group a:hover {
   color: rgb(53, 99, 233);
 }
 nav .navigation .mega-menu li .dropdown-group a.active {
   color: rgb(53, 99, 233);
-  font-weight: 600;
+  font-weight: 500;
 }
 nav .navigation .mega-menu li .dropdown-group.show {
   display: flex;
@@ -103,6 +104,18 @@ nav .navigation .function {
   align-items: center;
   justify-content: flex-end;
   gap: 24rem;
+}
+nav .navigation .function #mypage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
+  width: 40rem;
+  border-radius: 20rem;
+  font-size: 16.5rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.6);
 }
 
 header {
@@ -171,17 +184,16 @@ section#sticky-menu-container {
   padding-bottom: 150rem;
 }
 section#sticky-menu-container .sticky-menu {
+  padding: 6rem 0 24rem 0;
   display: flex;
   justify-content: center;
-  align-items: end;
-  height: 75rem;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
 }
 section#sticky-menu-container .sticky-menu .btn-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 1200px;
+  gap: 60rem;
 }
 
 footer {
@@ -210,17 +222,17 @@ footer .content p.copyright {
   text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
 }
 .content .head2 {
-  font-size: 42rem;
+  font-size: 36rem;
   font-weight: 700;
 }
 .content .head3 {
-  font-size: 27rem;
+  font-size: 24rem;
   font-weight: 600;
 }
 .content .para1 {
   font-size: 21rem;
   font-weight: 400;
-  line-height: 30rem;
+  line-height: 27rem;
 }
 .content .para1 span {
   font-weight: 700;
@@ -228,7 +240,7 @@ footer .content p.copyright {
 .content .para2 {
   font-size: 18rem;
   font-weight: 400;
-  line-height: 27rem;
+  line-height: 24rem;
 }
 .content .para2 span {
   font-weight: 600;
@@ -236,16 +248,21 @@ footer .content p.copyright {
 .content .para3 {
   font-size: 16.5rem;
   font-weight: 400;
-  line-height: 24rem;
+  line-height: 21rem;
 }
 .content .para3 span {
   font-weight: 600;
 }
+.content .para4 {
+  font-size: 15rem;
+  font-weight: 300;
+}
+
 /* Module Starts (페이지 구성의 고유 요소들 묶음) */
 .module-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 75rem;
+  gap: 60rem;
   text-align: left;
 }
 .module-1 .part {
@@ -388,50 +405,46 @@ footer .content p.copyright {
   background-color: rgba(53, 99, 233, 0.15);
 }
 
+.module-4 {
+  text-align: left;
+}
 .module-4 .img {
   display: inline-block;
-  height: 180rem;
+  height: 90rem;
   width: 450rem;
-  background-color: rgba(53, 99, 233, 0.45);
-  margin-bottom: 60rem;
+  background-color: rgba(53, 99, 233, 0.15);
+  margin-bottom: 45rem;
 }
 .module-4 .profile {
   display: grid;
+  grid-gap: 60rem;
   grid-template-columns: repeat(2, 1fr);
-  margin-top: 60rem;
-}
-.module-4 .profile .photo {
-  display: inline-block;
-  height: 360rem;
-  width: 100%;
-  background-color: rgba(53, 99, 233, 0.45);
-}
-.module-4 .profile .info-container {
-  border: 1px solid red;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 .module-4 .profile .info-container .info {
   display: flex;
   flex-direction: column;
-  gap: 15rem;
+  gap: 3rem;
   text-align: left;
   list-style-type: disc;
+  margin-bottom: 24rem;
+  padding-left: 18rem;
 }
-.module-4 .qna {
+.module-4 .photo {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(53, 99, 233, 0.15);
+}
+.module-4 .qna-group {
   display: flex;
   flex-direction: column;
-  gap: 15rem;
-  text-align: justify;
-  margin-top: 60rem;
+  gap: 54rem;
+  margin-top: 75rem;
 }
-.module-4 .qna .answer {
-  margin-left: 6rem;
+.module-4 .qna-group .qna .answer {
+  margin: 15rem 0 0 6rem;
   padding-left: 21rem;
-  border-left: 9px solid rgba(53, 99, 233, 0.3);
+  border-left: 6rem solid rgba(53, 99, 233, 0.3);
 }
 
 #history .calendar {
@@ -451,7 +464,7 @@ footer .content p.copyright {
   font-weight: 600;
   color: rgb(53, 99, 233);
   width: 120rem;
-  background-color: rgba(53, 99, 233, 0.1);
+  background-color: rgba(53, 99, 233, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -468,7 +481,7 @@ footer .content p.copyright {
 #history .calendar .year-group .month-group .date-group h4.date {
   font-size: 18rem;
   font-weight: 500;
-  color: rgba(53, 99, 233, 0.7);
+  color: rgba(53, 99, 233, 0.75);
 }
 #history .calendar .year-group .month-group .date-group .text-group {
   margin-top: 3rem;

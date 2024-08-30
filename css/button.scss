@@ -1,67 +1,105 @@
+$color-m1: rgba(53, 99, 233, 1);
+$color-m2: rgba(53, 99, 233, 0.9);
+$color-m3: rgba(53, 99, 233, 0.75);
+$color-m4: rgba(53, 99, 233, 0.6);
+$color-m5: rgba(53, 99, 233, 0.45);
+$color-m6: rgba(53, 99, 233, 0.3);
+$color-m7: rgba(53, 99, 233, 0.15);
+$color-m8: rgba(53, 99, 233, 0.05);
+
+$color-w1: rgba(255, 255, 255, 1);
+$color-w2: rgba(255, 255, 255, 0.95);
+$color-w3: rgba(255, 255, 255, 0.75);
+$color-w4: rgba(255, 255, 255, 0.6);
+$color-w5: rgba(255, 255, 255, 0.45);
+$color-w6: rgba(255, 255, 255, 0.3);
+$color-w7: rgba(255, 255, 255, 0.15);
+$color-w8: rgba(255, 255, 255, 0.05);
+
 .btn-1-1 { // Login, Sign Up Buttons
   cursor: pointer;
-  color: rgba(53, 99, 233, 1);
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 15rem;
   padding: 9rem;
-  border: 2rem solid rgba(53, 99, 233, 1);
+  border: 2rem solid $color-m1;
   border-radius: 6rem;
+  font-size: 15rem;
+  color: $color-m1;
+  background-color: $color-w1;
   &:hover {
-    background-color: rgba(53, 99, 233, 0.1);
+    opacity: 0.75;
   }
 }
+
 .btn-1-2 { // Login, Sign Up Buttons
   cursor: pointer;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(53, 99, 233, 0.9);
-  font-size: 15rem;
   padding: 9rem;
-  border: 2rem solid rgba(53, 99, 233, 1);
+  border: 2rem solid $color-m1;
   border-radius: 6rem;
+  font-size: 15rem;
+  color: $color-w1;
+  background-color: $color-m3;
   &:hover {
-    background-color: rgba(53, 99, 233, 0.75);
+    opacity: 0.75;
   }
 }
 
 .btn-2-1 { // Index Page Buttons
   cursor: pointer;
-  color: rgba(53, 99, 233, 1);
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 16rem;
+  border: 2rem solid $color-m1;
+  border-radius: 9rem;
   padding: 12rem;
-  border: 2rem solid rgba(53, 99, 233, 1);
-  border-radius: 6rem;
+  font-size: 16rem;
+  color: $color-m1;
+  background-color: $color-w1;
   &:hover {
-    background-color: rgba(53, 99, 233, 0.1);
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 6rem;
   }
-  height: 100%;
 }
 .btn-2-2 { // Index Page Buttons
   cursor: pointer;
-  color: rgba(255, 255, 255, 1);
-  background-color: rgba(53, 99, 233, 0.9);
-  font-size: 16rem;
+  background-color: $color-m3;
+  border: 2rem solid $color-m1;
+  border-radius: 9rem;
   padding: 12rem;
-  border: 2rem solid rgba(53, 99, 233, 1);
-  border-radius: 6rem;
+  font-size: 16rem;
+  color: $color-w1;
   &:hover {
-    background-color: rgba(53, 99, 233, 0.75);
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 6rem;
   }
 }
 
 .btn-tab { // LATIDA, EREZ Buttons
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-position: under;
-  height: 60rem;
+  height: 48rem; width: 330rem;
+  border: 2rem solid $color-m1;
   font-size: 18rem;
-  border: 0;
-  outline: 0;
-  background-color: rgba(53, 99, 233, 0.1);
-  color: rgba(53, 99, 233, 1);
+  color: $color-m1;
+  background-color: $color-w1;
+  
+  transition: 0.1s;
   &.active {
-    background-color: rgba(53, 99, 233, 0.75);
-    color: rgba(255, 255, 255, 1);
+    color: $color-w1;
+    background-color: $color-m3;
+  }
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 6rem;
+  }
+}
+
+.btn-lang {
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  img {
+    height: 21rem; width: 21rem;
+  }
+  p {
+    margin-left: 6rem;
+    font-size: 18rem; font-weight: 500;
   }
   &:hover {
     opacity: 0.6;
@@ -70,30 +108,31 @@
 
 .btn-text-1 { // 자료 외부 링크
   cursor: pointer;
+  color:$color-m1;
   text-decoration: underline;
   text-underline-offset: 6rem;
-  color:rgba(53, 99, 233, 1);
   &:hover {
-    color:rgba(53, 99, 233, 0.45);
+    opacity: 0.75;
   }
 }
 
 .btn-text-2 { // Learn more
-  margin-top: 15rem;
-  width: fit-content;
   cursor: pointer;
-  color: rgba(53, 99, 233, 1);
+  width: fit-content;
+  margin-top: 15rem;
+  color: $color-m1;
   text-decoration: underline;
   text-underline-offset: 6rem;
   &:hover {
-    color: rgba(53, 99, 233, 0.45);
+    opacity: 0.75;
   }
 }
 
 .btn-text-3 { // 회사 웹사이트
-  color: rgba(53, 99, 233, 1);
+  color: $color-m1;
+  text-decoration: underline;
   text-underline-offset: 3rem;
   &:hover {
-    opacity: 0.6;
+    opacity: 0.75;
   }
 }

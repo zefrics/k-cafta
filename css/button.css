@@ -1,102 +1,126 @@
 .btn-1-1 {
   cursor: pointer;
-  color: rgb(53, 99, 233);
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 15rem;
   padding: 9rem;
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 6rem;
+  font-size: 15rem;
+  color: rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
 }
 .btn-1-1:hover {
-  background-color: rgba(53, 99, 233, 0.1);
+  opacity: 0.75;
 }
 
 .btn-1-2 {
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
-  font-size: 15rem;
   padding: 9rem;
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 6rem;
+  font-size: 15rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.75);
 }
 .btn-1-2:hover {
-  background-color: rgba(53, 99, 233, 0.75);
+  opacity: 0.75;
 }
 
 .btn-2-1 {
   cursor: pointer;
-  color: rgb(53, 99, 233);
-  background-color: rgba(255, 255, 255, 0);
-  font-size: 16rem;
-  padding: 12rem;
   border: 2rem solid rgb(53, 99, 233);
-  border-radius: 6rem;
-  height: 100%;
+  border-radius: 9rem;
+  padding: 12rem;
+  font-size: 16rem;
+  color: rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
 }
 .btn-2-1:hover {
-  background-color: rgba(53, 99, 233, 0.1);
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 6rem;
 }
 
 .btn-2-2 {
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
-  font-size: 16rem;
-  padding: 12rem;
+  background-color: rgba(53, 99, 233, 0.75);
   border: 2rem solid rgb(53, 99, 233);
-  border-radius: 6rem;
+  border-radius: 9rem;
+  padding: 12rem;
+  font-size: 16rem;
+  color: rgb(255, 255, 255);
 }
 .btn-2-2:hover {
-  background-color: rgba(53, 99, 233, 0.75);
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 6rem;
 }
 
 .btn-tab {
   cursor: pointer;
-  text-decoration: underline;
-  text-underline-position: under;
-  height: 60rem;
+  height: 48rem;
+  width: 330rem;
+  border: 2rem solid rgb(53, 99, 233);
   font-size: 18rem;
-  border: 0;
-  outline: 0;
-  background-color: rgba(53, 99, 233, 0.1);
   color: rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
+  transition: 0.1s;
 }
 .btn-tab.active {
-  background-color: rgba(53, 99, 233, 0.75);
   color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.75);
 }
 .btn-tab:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 6rem;
+}
+
+.btn-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-lang img {
+  height: 21rem;
+  width: 21rem;
+}
+.btn-lang p {
+  margin-left: 6rem;
+  font-size: 18rem;
+  font-weight: 500;
+}
+.btn-lang:hover {
   opacity: 0.6;
 }
 
 .btn-text-1 {
   cursor: pointer;
+  color: rgb(53, 99, 233);
   text-decoration: underline;
   text-underline-offset: 6rem;
-  color: rgb(53, 99, 233);
 }
 .btn-text-1:hover {
-  color: rgba(53, 99, 233, 0.45);
+  opacity: 0.75;
 }
 
 .btn-text-2 {
-  margin-top: 15rem;
+  cursor: pointer;
   width: -moz-fit-content;
   width: fit-content;
-  cursor: pointer;
+  margin-top: 15rem;
   color: rgb(53, 99, 233);
   text-decoration: underline;
   text-underline-offset: 6rem;
 }
 .btn-text-2:hover {
-  color: rgba(53, 99, 233, 0.45);
+  opacity: 0.75;
 }
 
 .btn-text-3 {
   color: rgb(53, 99, 233);
+  text-decoration: underline;
   text-underline-offset: 3rem;
 }
 .btn-text-3:hover {
-  opacity: 0.6;
+  opacity: 0.75;
 }/*# sourceMappingURL=button.css.map */

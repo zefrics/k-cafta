@@ -1,13 +1,36 @@
 // 메뉴 폰트 사이즈 및 웨이트 재정의, 색상 코드 재정의, 웹폰트 매기기
-$color-main: rgba(53, 99, 233, 1);
-$color-hover: rgba(53, 99, 233, 1);
-$color-active: rgba(53, 99, 233, 1);
+$color-m1: rgba(53, 99, 233, 1);
+$color-m2: rgba(53, 99, 233, 0.9);
+$color-m3: rgba(53, 99, 233, 0.75);
+$color-m4: rgba(53, 99, 233, 0.6);
+$color-m5: rgba(53, 99, 233, 0.45);
+$color-m6: rgba(53, 99, 233, 0.3);
+$color-m7: rgba(53, 99, 233, 0.15);
+$color-m8: rgba(53, 99, 233, 0.05);
+
+$color-w1: rgba(255, 255, 255, 1);
+$color-w2: rgba(255, 255, 255, 0.95);
+$color-w3: rgba(255, 255, 255, 0.75);
+$color-w4: rgba(255, 255, 255, 0.6);
+$color-w5: rgba(255, 255, 255, 0.45);
+$color-w6: rgba(255, 255, 255, 0.3);
+$color-w7: rgba(255, 255, 255, 0.15);
+$color-w8: rgba(255, 255, 255, 0.05);
+
+$color-k1: rgba(0, 0, 0, 1);
+$color-k2: rgba(0, 0, 0, 0.9);
+$color-k3: rgba(0, 0, 0, 0.75);
+$color-k4: rgba(0, 0, 0, 0.6);
+$color-k5: rgba(0, 0, 0, 0.45);
+$color-k6: rgba(0, 0, 0, 0.3);
+$color-k7: rgba(0, 0, 0, 0.15);
+$color-k8: rgba(0, 0, 0, 0.05);
 
 $fs-menu1: 16.5rem; // 메뉴1 폰트 사이즈
-$fw-menu1: 400; // 메뉴1 폰트 웨이트1 (일반)
+$fw-menu1: 300; // 메뉴1 폰트 웨이트1 (일반)
 $fs-menu2: 15rem; // 드롭 메뉴 폰트 사이즈
-$fw-menu2: 400; // 드롭 메뉴 폰트 웨이트2
-$fw-menu-active: 600; // 메뉴 active 폰트 웨이트
+$fw-menu2: 300; // 드롭 메뉴 폰트 웨이트2
+$fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
 $fs-copy: 16rem; // 카피라이트 폰트 사이즈
 $fw-copy: 300; // 카피라이트 폰트 웨이트
@@ -29,14 +52,14 @@ nav {
   user-select: none;
   position: sticky;
   top: 0; z-index: 998;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: $color-w2;
   .navigation {
-    display: flex; justify-content: space-between;
+    display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 60rem;
     height: 60px; width: 1200px; 
     padding: 0 40rem;
     font-size: $fs-menu1; font-weight: $fw-menu1;
     .mega-menu {
-      display: flex; align-items: center; gap: 45rem;
+      display: flex; align-items: center; justify-content: space-between;
       li {
         display: flex; align-items: center;
         height: 100%;
@@ -45,7 +68,7 @@ nav {
           display: block;
           line-height: 0;
           height: 40rem; width: 40rem;
-          background-color: rgba(53, 99, 233, 0.6);
+          background-color: $color-m4;
           border-radius: 20rem;
           img {
             height: 40rem;
@@ -53,13 +76,13 @@ nav {
         }
         .title {
           text-decoration: none;
-          color: #999999;
+          color: $color-k5;
           &:hover {
             cursor: pointer;
-            color: $color-main;
+            color: $color-m1;
           }
           &.active {
-            color: $color-active;
+            color: $color-m1;
             font-weight: $fw-menu-active;
           }
         }
@@ -69,19 +92,19 @@ nav {
           transform: translateX(-50%);
           width: max-content;
           padding: 15rem 21rem;
-          border: 1px solid rgba(0, 0, 0, 0.15);
+          border: 1px solid $color-k7;
           border-radius: 9rem;
-          background-color: rgba(255, 255, 255, 1);
-          box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
+          background-color: $color-w1;
+          box-shadow: 1rem 1rem 3rem 0rem $color-k6;
           a {
             font-size: $fs-menu2;
             text-decoration: none;
-            color: #aaaaaa;
+            color: $color-k5;
             &:hover {
-              color: $color-main;
+              color: $color-m1;
             }
             &.active {
-              color: $color-active;
+              color: $color-m1;
               font-weight: $fw-menu-active;
             }
           }
@@ -93,12 +116,21 @@ nav {
     }
     .function {
       display: flex; align-items: center; justify-content: flex-end; gap: 24rem;
+      #mypage {
+        display: flex; align-items: center; justify-content: center;
+        height: 40rem; width: 40rem;
+        border-radius: 20rem;
+        font-size: 16.5rem; font-weight: 500;
+        color: $color-w1;
+        background-color: $color-m4;
+      }
     }
   }
 }
+
 header {
   height: 300rem;
-  background-color: rgba(53, 99, 233, 0.45);
+  background-color: $color-m5;
   background-blend-mode: screen;
   background-position: center;
   background-repeat: no-repeat;
@@ -162,19 +194,19 @@ section {
     position: sticky; top: 60rem;
     padding-bottom: 150rem;
     .sticky-menu {
-      display: flex; justify-content: center; align-items: end;
-      height: 75rem; width: 100%;
-      background-color: rgba(255, 255, 255, 0.95);
+      padding: 6rem 0 24rem 0;
+      display: flex; justify-content: center;
+      width: 100%;
+      background-color: $color-w2;
       .btn-group {
-        display: grid; grid-template-columns: repeat(2, 1fr);
-        width: 1200px;
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 60rem;
       }
     }
   }
 }
 
 footer {
-  background-color: $color-main;
+  background-color: $color-m1;
   .content {
     padding: 15rem 40rem;
     p.copyright {
@@ -191,46 +223,44 @@ footer {
   padding: 120rem 40rem;
   text-align: center;
   .head1 {
-    color: rgba(255, 255, 255, 1);
+    color: $color-w1;
     font-size: 45rem; font-weight: 700;
-    text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+    text-shadow: 3rem 3rem 3rem $color-k3;
   }
   .head2 {
-    font-size: 42rem; font-weight: 700;
+    font-size: 36rem; font-weight: 700;
   }
   .head3 {
-    font-size: 27rem; font-weight: 600;
+    font-size: 24rem; font-weight: 600;
   }
-  .head4 {
-    // font-size: 18rem; font-weight: 500;
-  }
+
   .para1 {
-    font-size: 21rem; font-weight: 400; line-height: 30rem;
+    font-size: 21rem; font-weight: 400; line-height: 27rem;
     span {
       font-weight: 700;
     }
   }
   .para2 {
-    font-size: 18rem; font-weight: 400; line-height: 27rem; 
+    font-size: 18rem; font-weight: 400; line-height: 24rem; 
     span {
       font-weight: 600;
     }
   }
   .para3 { // Text parts of History
-    font-size: 16.5rem; font-weight: 400; line-height: 24rem;
+    font-size: 16.5rem; font-weight: 400; line-height: 21rem;
     span {
       font-weight: 600;
     }
   }
   .para4 { // Detail parts of History
-    // font-size: 15rem; font-weight: 300;
+    font-size: 15rem; font-weight: 300;
   }
 }
 
 /* Module Starts (페이지 구성의 고유 요소들 묶음) */
 
 .module-1 { // Index
-  display: grid; grid-template-columns: 1fr 1fr; gap: 75rem;
+  display: grid; grid-template-columns: 1fr 1fr; gap: 60rem;
   text-align: left;
   .part {
     display: flex; flex-direction: column; justify-content: center;
@@ -260,7 +290,7 @@ footer {
     .logo {
       height: 300rem;
       width: 100%;
-      background-color: rgba(53, 99, 233, 0.15);
+      background-color: $color-m7;
     }
   }
 }
@@ -321,20 +351,20 @@ footer {
     thead {
       th {
         font-weight: 500;
-        color: rgba(255, 255, 255, 1);
-        background-color: rgba(53, 99, 233, 0.9);
+        color: $color-w1;
+        background-color: $color-m2;
       }
     }
     tbody {
       th {
-        background-color: rgba(53, 99, 233, 0.15)
+        background-color: $color-m7;
       }
     }
     caption {
       padding-top: 6rem;
       font-size: 16.5rem;
       text-align: left;
-      color: rgba(53, 99, 233, 0.75);
+      color: $color-m3;
     }
     &.table-even { // Making the width of cells same
       table-layout: fixed;
@@ -360,51 +390,53 @@ footer {
   .img {
     width: 100%; height: 600rem;
     margin-bottom: 21rem;
-    background-color: rgba(53, 99, 233, 0.15);
+    background-color: $color-m7;
   }
 }
 .module-4 { // Company
+  text-align: left;
   .img {
+    
     display: inline-block;
-    height: 180rem; width: 450rem;
-    background-color: rgba(53, 99, 233, 0.45);
-    margin-bottom: 60rem;
+    height: 90rem; width: 450rem;
+    background-color: $color-m7;
+    margin-bottom: 45rem;
   }
   .profile {
-    display: grid; grid-template-columns: repeat(2, 1fr);
-    margin-top: 60rem;
-    .photo {
-      display: inline-block;
-      height: 360rem; width: 100%;
-      background-color: rgba(53, 99, 233, 0.45);
-    }
+    display: grid; grid-gap: 60rem;
+    grid-template-columns: repeat(2, 1fr);
     .info-container {
-      border: 1px solid red;
-      display: flex; align-items: center; justify-content: center;
-      height: 100%; width: 100%;
       .info {
-        display: flex; flex-direction: column; gap: 15rem;
+        display: flex; flex-direction: column; gap: 3rem;
         text-align: left;
         list-style-type: disc;
+        margin-bottom: 24rem;
+        padding-left: 18rem;
       }
     }
-    
-
   }
-  .qna {
-    display: flex; flex-direction: column; gap: 15rem;
-    text-align: justify;
-    margin-top: 60rem;
-    .question {
-    }
-    .answer {
-      margin-left: 6rem;
-      padding-left: 21rem;
-      border-left: 9px solid rgba(53, 99, 233, 0.3);
+  
+  .photo {
+    display: inline-block;
+    height: 100%; width: 100%;
+    background-color: $color-m7;
+  }
+  .qna-group {
+    display: flex; flex-direction: column; gap: 54rem;
+    margin-top: 75rem;
+
+    .qna {
+      .answer {
+        margin: 15rem 0 0 6rem;
+        padding-left: 21rem;
+        border-left: 6rem solid $color-m6;
+      }
     }
   }
-
+  
 }
+  
+
 #history {
   .calendar {
     display: flex; flex-direction: column; gap: 48rem;
@@ -414,9 +446,9 @@ footer {
       display: flex; gap: 24rem;
       h3.year {
         font-size: 27rem; font-weight: 600;
-        color: $color-main;
+        color: $color-m1;
         width: 120rem;
-        background-color: rgba(53, 99, 233, 0.1);
+        background-color: $color-m7;
         display: flex; align-items: center; justify-content: center;
       }
       .month-group {
@@ -426,7 +458,7 @@ footer {
           padding-bottom: 3rem;
           h4.date {
             font-size: 18rem; font-weight: 500;
-            color: rgba(53, 99, 233, 0.7);
+            color: $color-m3;
           }
           .text-group {
             margin-top: 3rem;
@@ -460,10 +492,10 @@ footer {
   display: none !important;
 }
 .first {
-  background-color: rgba(255, 255, 255, 1) !important;
+  background-color: $color-w1 !important;
 }
 .second {
-  background-color: rgba(53, 99, 233, 0.05) !important;
+  background-color: $color-m8 !important;
 }
 .align-justify {
   text-align: justify !important;

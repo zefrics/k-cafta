@@ -26,6 +26,6 @@ function openCompany(e, companyName) {
   
   window.scrollTo({
     top: offsetPosition,
-    behavior: "smooth"
+    // behavior: "smooth"
   });
 }
