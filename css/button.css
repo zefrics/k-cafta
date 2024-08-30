@@ -1,11 +1,12 @@
 .btn-1-1 {
   cursor: pointer;
-  padding: 9rem;
-  border: 2rem solid rgb(53, 99, 233);
-  border-radius: 6rem;
-  font-size: 15rem;
-  color: rgb(53, 99, 233);
-  background-color: rgb(255, 255, 255);
+  height: 40rem;
+  padding: 0 21rem;
+  border: 0;
+  border-radius: 20rem;
+  font-size: 16.5rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.9);
 }
 .btn-1-1:hover {
   opacity: 0.75;
@@ -13,21 +14,55 @@
 
 .btn-1-2 {
   cursor: pointer;
-  padding: 9rem;
+  padding: 9rem 15rem;
   border: 2rem solid rgb(53, 99, 233);
-  border-radius: 6rem;
-  font-size: 15rem;
-  color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.75);
+  border-radius: 20rem;
+  font-size: 16.5rem;
+  color: rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
 }
 .btn-1-2:hover {
   opacity: 0.75;
 }
 
+.btn-my {
+  cursor: pointer;
+  height: 40rem;
+  width: 40rem;
+  border: 0;
+  border-radius: 20rem;
+  font-size: 16.5rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.9);
+}
+.btn-my:hover {
+  opacity: 0.75;
+}
+
+.btn-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.btn-lang img {
+  height: 21rem;
+  width: 21rem;
+}
+.btn-lang p {
+  margin-left: 9rem;
+  font-size: 16.5rem;
+  font-weight: 500;
+}
+.btn-lang:hover {
+  opacity: 0.6;
+}
+
 .btn-2-1 {
   cursor: pointer;
   border: 2rem solid rgb(53, 99, 233);
-  border-radius: 9rem;
+  border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
   color: rgb(53, 99, 233);
@@ -36,14 +71,14 @@
 .btn-2-1:hover {
   opacity: 0.75;
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 4rem;
 }
 
 .btn-2-2 {
   cursor: pointer;
   background-color: rgba(53, 99, 233, 0.75);
   border: 2rem solid rgb(53, 99, 233);
-  border-radius: 9rem;
+  border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
   color: rgb(255, 255, 255);
@@ -74,30 +109,11 @@
   text-underline-offset: 6rem;
 }
 
-.btn-lang {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-.btn-lang img {
-  height: 21rem;
-  width: 21rem;
-}
-.btn-lang p {
-  margin-left: 6rem;
-  font-size: 18rem;
-  font-weight: 500;
-}
-.btn-lang:hover {
-  opacity: 0.6;
-}
-
 .btn-text-1 {
   cursor: pointer;
   color: rgb(53, 99, 233);
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 4rem;
 }
 .btn-text-1:hover {
   opacity: 0.75;
@@ -110,7 +126,7 @@
   margin-top: 15rem;
   color: rgb(53, 99, 233);
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 3rem;
 }
 .btn-text-2:hover {
   opacity: 0.75;
@@ -119,7 +135,7 @@
 .btn-text-3 {
   color: rgb(53, 99, 233);
   text-decoration: underline;
-  text-underline-offset: 3rem;
+  text-underline-offset: 4rem;
 }
 .btn-text-3:hover {
   opacity: 0.75;

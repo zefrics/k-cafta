@@ -1,10 +1,10 @@
-// 내가 클릭한 것의 드롭다운 컨텐츠
+// 메뉴 드롭다운
 
 function dropDown(e) {
   var current = e.currentTarget; // 선택한 것
   var parent = current.parentNode; // 선택한 것의 부모 Node
-  var target = parent.getElementsByClassName("dropdown-group"); // 부모 Node 중 "dropdown-group"를 갖는 자식들
-  var dropdowns = document.getElementsByClassName("dropdown-group"); // 모든 "dropdown-group"
+  var target = parent.getElementsByClassName("dropdown-group"); // 부모 Node의 자손들 중 "dropdown-group"를 갖는 요소
+  var dropdowns = document.getElementsByClassName("dropdown-group"); // 문서 전체에서 "dropdown-group"를 갖는 요소
 
   // 1. 만약 target의 클래스에 show가 없다면 -> dropdowns 비활성화 시킨 후, target에 show 추가
   // 2. 만약 target의 클래스에 show가 있다면 -> dropdowns 비활성화 (또는 target비활성화)

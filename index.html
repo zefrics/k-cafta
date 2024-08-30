@@ -10,6 +10,7 @@
 
     <script type="text/javascript" src="js/drop-down.js" defer></script>
     <script type="text/javascript" src="js/menu-activate.js" defer></script>
+    <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
 
     <title>Home</title>
@@ -32,68 +33,77 @@
         <li>
           <p id="p-1" class="title dropdown-btn" onclick="dropDown(event)">K-CA Online Platform</p>
           <ul class="dropdown-group">
-            <li>
-              <a id="p-1-1" href="1-1.html">About Platform</a>
-            </li>
-            <li>
-              <a id="p-1-2" href="1-2.html">About K-CA FTA</a>
-            </li>
+            <a id="p-1-1" href="1-1.html">
+              <li>About Platform</li>
+            </a>
+            <a id="p-1-2" href="1-2.html">
+              <li>About K-CA FTA</li>
+            </a>
           </ul>
         </li>
         <li>
           <p id="p-2" class="title dropdown-btn" onclick="dropDown(event)">ROK Market</p>
           <ul class="dropdown-group">
-            <li>
-              <a id="p-2-1" href="2-1.html">Overview</a>
-            </li>
-            <li>
-              <a id="p-2-2" href="2-2.html">Info & Requirement</a>
-            </li>
-            <li>
-              <a id="p-2-3" href="2-3.html">Logistics</a>
-            </li>
-            <li>
-              <a id="p-2-4" href="2-4.html">Success Stories</a>
-            </li>
+            <a id="p-2-1" href="2-1.html">
+              <li>Overview</li>
+            </a>
+            <a id="p-2-2" href="2-2.html">
+              <li>Info & Requirement</li>
+            </a>
+            <a id="p-2-3" href="2-3.html">
+              <li>Logistics</li>
+            </a>
+            <a id="p-2-4" href="2-4.html">
+              <li>Success Stories</li>
+            </a>
           </ul>
         </li>
         <li>
           <p id="p-3" class="title dropdown-btn" onclick="dropDown(event)">Resources</p>
           <ul class="dropdown-group">
-            <li>
-              <a id="p-3-1" href="3-1.html">E-learning</a>
-            </li>
-            <li>
-              <a id="p-3-2" href="3-2.html">Publication</a>
-            </li>
-            <li>
-              <a id="p-3-3" href="3-3.html">Events</a>
-            </li>
-            <li>
-              <a id="p-3-4" href="3-4.html">Related-Site</a>
-            </li>
-            <li>
-              <a id="p-3-5" href="3-5.html">FAQ</a>
-            </li>
+            <a id="p-3-1" href="3-1.html">
+              <li>E-learning</li>
+            </a>
+            <a id="p-3-2" href="3-2.html">
+              <li>Publication</li>
+            </a>
+            <a id="p-3-3" href="3-3.html">
+              <li>Events</li>
+            </a>
+            <a id="p-3-4" href="3-4.html">
+              <li>Related-Site</li>
+            </a>
+            <a id="p-3-5" href="3-5.html">
+              <li>FAQ</li>
+            </a>
           </ul>
         </li>
       </ul>
 
       <div class="function">
-        <div class="btn-lang">
-          <img src="/img/icon/lang.svg" alt="language change icon">
-          <p>ES</p>
+        <div class="lang-group">
+          <div class="btn-lang" id="lang-es">
+            <img src="/img/icon/lang.svg" alt="language change icon">
+            <p>ES</p>
+          </div>
+          <div class="btn-lang hide" id="lang-en">
+            <img src="/img/icon/lang.svg" alt="language change icon">
+            <p>EN</p>
+          </div>  
         </div>
-        <div class="btn-lang hide">
-          <img src="/img/icon/lang.svg" alt="language change icon">
-          <p>EN</p>
+        <button class="btn-1-1" onClick="location.href='sign-in.html'">Sign in</button>
+        <div class="my-container">
+          <button class="btn-my" onclick="myToggle(event)">MY</button>
+          <ul class="hide" id="my-menu">
+            <a class="list" href="myaccount.html">
+              <li>My Account</li>
+            </a>
+            <a class="list" href="qna.html">
+              <li>Q&A</li>
+            </a>
+            <li class="list sign-out" onclick="location.href='index.html'">Sign out</li>
+          </ul>
         </div>
-        <div id="mypage">
-          MY
-        </div>
-        <button class="btn-1-1">Login</button>
-        <button class="btn-1-2">Logout</button>
-        <!-- <button class="btn-1-2">My page</button> -->
       </div>
       
     </div>
@@ -1287,9 +1297,7 @@
       </div>
 
     </div>
-  </section>
-  <section class="second">
-    <div class="content module-4 tabcontent" id="Erez">
+    <div class="content module-4 tabcontent hide" id="Erez">
       <h2 class="head2">Erez</h2>
       <p class="para2">
         Step into the world of Juan Juwon Sul, the visionary CEO driving the success of LATIDA,<br>

@@ -5,27 +5,28 @@ function openCompany(e, companyName) {
   // Get all elements with class="tabcontent" and hide them
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+    tabcontent[i].classList.add("hide");
   }
 
   // Get all elements with class="btn-tab" and remove the class "active"
   tablinks = document.getElementsByClassName("btn-tab");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tablinks[i].classList.remove("active");
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
   var element = document.getElementById(companyName);
 
-  element.style.display = "block";
-  e.currentTarget.className += " active";
+  // element.style.display = "block";
+  element.classList.remove("hide");
+  e.currentTarget.classList.add("active");
 
-  var headerOffset = 135;
+  var headerOffset = 135; // Height of (Menu + Sticky)
   var elementPosition = element.getBoundingClientRect().top;
-  var offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
-  window.scrollTo({
+  var offsetPosition = elementPosition - headerOffset;
+
+  window.scrollBy({
     top: offsetPosition,
-    // behavior: "smooth"
+    behavior: "smooth",
   });
 }

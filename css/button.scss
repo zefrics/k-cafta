@@ -16,12 +16,25 @@ $color-w6: rgba(255, 255, 255, 0.3);
 $color-w7: rgba(255, 255, 255, 0.15);
 $color-w8: rgba(255, 255, 255, 0.05);
 
-.btn-1-1 { // Login, Sign Up Buttons
+.btn-1-1 { // Sign in, Sing out
   cursor: pointer;
-  padding: 9rem;
+  height: 40rem;
+  padding: 0 21rem;
+  border: 0;
+  border-radius: 20rem;
+  font-size: 16.5rem;
+  color: $color-w1;
+  background-color: $color-m2;
+  &:hover {
+    opacity: 0.75;
+  }
+}
+.btn-1-2 {
+  cursor: pointer;
+  padding: 9rem 15rem;
   border: 2rem solid $color-m1;
-  border-radius: 6rem;
-  font-size: 15rem;
+  border-radius: 20rem;
+  font-size: 16.5rem;
   color: $color-m1;
   background-color: $color-w1;
   &:hover {
@@ -29,23 +42,38 @@ $color-w8: rgba(255, 255, 255, 0.05);
   }
 }
 
-.btn-1-2 { // Login, Sign Up Buttons
+.btn-my {
   cursor: pointer;
-  padding: 9rem;
-  border: 2rem solid $color-m1;
-  border-radius: 6rem;
-  font-size: 15rem;
+  height: 40rem; width: 40rem;
+  border: 0;
+  border-radius: 20rem;
+  font-size: 16.5rem; font-weight: 400;
   color: $color-w1;
-  background-color: $color-m3;
+  background-color: $color-m2;
   &:hover {
     opacity: 0.75;
+  }
+}
+
+.btn-lang {
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  img {
+    height: 21rem; width: 21rem;
+  }
+  p {
+    margin-left: 9rem;
+    font-size: 16.5rem; font-weight: 500;
+  }
+  &:hover {
+    opacity: 0.6;
   }
 }
 
 .btn-2-1 { // Index Page Buttons
   cursor: pointer;
   border: 2rem solid $color-m1;
-  border-radius: 9rem;
+  border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
   color: $color-m1;
@@ -53,14 +81,14 @@ $color-w8: rgba(255, 255, 255, 0.05);
   &:hover {
     opacity: 0.75;
     text-decoration: underline;
-    text-underline-offset: 6rem;
+    text-underline-offset: 4rem;
   }
 }
 .btn-2-2 { // Index Page Buttons
   cursor: pointer;
   background-color: $color-m3;
   border: 2rem solid $color-m1;
-  border-radius: 9rem;
+  border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
   color: $color-w1;
@@ -91,26 +119,11 @@ $color-w8: rgba(255, 255, 255, 0.05);
   }
 }
 
-.btn-lang {
-  display: flex; align-items: center; justify-content: center;
-  cursor: pointer;
-  img {
-    height: 21rem; width: 21rem;
-  }
-  p {
-    margin-left: 6rem;
-    font-size: 18rem; font-weight: 500;
-  }
-  &:hover {
-    opacity: 0.6;
-  }
-}
-
 .btn-text-1 { // 자료 외부 링크
   cursor: pointer;
   color:$color-m1;
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 4rem;
   &:hover {
     opacity: 0.75;
   }
@@ -122,7 +135,7 @@ $color-w8: rgba(255, 255, 255, 0.05);
   margin-top: 15rem;
   color: $color-m1;
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 3rem;
   &:hover {
     opacity: 0.75;
   }
@@ -131,7 +144,7 @@ $color-w8: rgba(255, 255, 255, 0.05);
 .btn-text-3 { // 회사 웹사이트
   color: $color-m1;
   text-decoration: underline;
-  text-underline-offset: 3rem;
+  text-underline-offset: 4rem;
   &:hover {
     opacity: 0.75;
   }
