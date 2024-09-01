@@ -274,8 +274,12 @@ main .content.module-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 75rem;
-  align-items: center;
   text-align: left;
+}
+main .content.module-1 .part {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 main .content.module-1 .part h2 {
   margin-bottom: 21rem;

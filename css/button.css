@@ -124,8 +124,6 @@
 
 .btn-text-2 {
   cursor: pointer;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-top: 6rem;
   font-size: 18rem;
   color: rgb(53, 99, 233);

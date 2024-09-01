@@ -278,147 +278,148 @@ main {
     /* Module Starts (페이지 구성의 고유 요소들 묶음) */
 
     &.module-1 { // Index
-    display: grid; grid-template-columns: repeat(2, 1fr); gap: 75rem;
-    align-items: center;
-    text-align: left;
-    .part {
-      h2 {
-        margin-bottom: 21rem;
-      }
-      ul {
-        display: flex; flex-direction: column; gap: 6rem;
-        padding-left: 15rem;
-        li {
-          list-style-type: disc;
-          list-style-position: outside;
-        }
-      }
-      .btn-group {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 30rem;
-        gap: 24rem;
-      }
-      img {
-        border-radius: 15rem;
-        height: 360rem;
-        width: 100%;
-        margin: 0; padding: 0;
-      }
-      .logo {
-        display: flex; align-items: center; justify-content: center;
-        height: 180rem;
-        background-color: $color-w1;
-        border: 1px solid $color-k7;
-        padding: 45rem 0rem;
-
-        img {
-          height: 100%;
-          width: auto;
-          margin: 0; padding: 0;
-        }
-      }
-    }
-    }
-    &.module-2 { // Extra Link List
-    h2 {
-      margin-bottom: 30rem;
-    }
-    .part-group {
-      margin: 72rem auto 0 auto;
-      display: flex; flex-direction: column; gap: 60rem;
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 75rem;
       text-align: left;
-      width: fit-content;
       .part {
+        display: flex; flex-direction: column; justify-content: center;
+        h2 {
+          margin-bottom: 21rem;
+        }
         ul {
-          display: flex; flex-direction: column; gap: 15rem;
-          margin-top: 15rem;
-          padding-left: 18rem;
+          display: flex; flex-direction: column; gap: 6rem;
+          padding-left: 15rem;
           li {
-            color: $color-m1;
             list-style-type: disc;
             list-style-position: outside;
-            width: fit-content;
+          }
+        }
+        .btn-group {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          margin-top: 30rem;
+          gap: 24rem;
+        }
+
+        img {
+          border-radius: 15rem;
+          height: 360rem;
+          width: 100%;
+          margin: 0; padding: 0;
+        }
+        .logo {
+          display: flex; align-items: center; justify-content: center;
+          height: 180rem;
+          background-color: $color-w1;
+          border: 1px solid $color-k7;
+          padding: 45rem 0rem;
+
+          img {
+            height: 100%;
+            width: auto;
+            margin: 0; padding: 0;
           }
         }
       }
     }
-    }
-    &.module-3 { // Description
-    text-align: left;
-    h2 {
-      margin-bottom: 30rem;
-    }
-    h3 {
-      margin-top: 45rem;
-    }
-    ul {
-      display: flex; flex-direction: column; gap: 15rem;
-      padding-left: 18rem;
-      li {
-        list-style-type: disc;
-        list-style-position: outside;
-        width: fit-content;
+    &.module-2 { // Extra Link List
+      h2 {
+        margin-bottom: 30rem;
       }
-    }
-    table {
-      width: 100%;
-      margin: 12rem 0 30rem 0;
-      font-size: 18rem;
-      caption-side: bottom;
-      th, td {
-        border: 1rem solid black;
-        padding: 24rem 30rem;
-        text-align: center;
-        vertical-align: middle;
-        ul {
-          display: inline-flex;
-        }
-      }
-      thead {
-        th {
-          font-weight: 500;
-          color: $color-w1;
-          background-color: $color-m2;
-        }
-      }
-      tbody {
-        th {
-          background-color: $color-m7;
-        }
-      }
-      caption {
-        padding-top: 6rem;
-        font-size: 16.5rem;
+      .part-group {
+        margin: 72rem auto 0 auto;
+        display: flex; flex-direction: column; gap: 60rem;
         text-align: left;
-        color: $color-m3;
-      }
-      &.table-even { // Making the width of cells same
-        table-layout: fixed;
-      }
-      &#cost-table {
-        font-size: 15rem;
-        th, td {
-          padding: 3rem 0;
-        }
-        caption {
-          text-indent: -27rem;
-          font-size: 15rem;
+        width: fit-content;
+        .part {
           ul {
-            gap: 9rem;
-            padding-left: 27rem;
+            display: flex; flex-direction: column; gap: 15rem;
+            margin-top: 15rem;
+            padding-left: 18rem;
             li {
-              list-style: none;
+              color: $color-m1;
+              list-style-type: disc;
+              list-style-position: outside;
+              width: fit-content;
             }
           }
         }
       }
     }
-    .img {
-      width: 100%; height: 600rem;
-      margin-bottom: 21rem;
-      background-color: $color-m7;
-    }
+    &.module-3 { // Description
+      text-align: left;
+      h2 {
+        margin-bottom: 30rem;
+      }
+      h3 {
+        margin-top: 45rem;
+      }
+      ul {
+        display: flex; flex-direction: column; gap: 15rem;
+        padding-left: 18rem;
+        li {
+          list-style-type: disc;
+          list-style-position: outside;
+          width: fit-content;
+        }
+      }
+      table {
+        width: 100%;
+        margin: 12rem 0 30rem 0;
+        font-size: 18rem;
+        caption-side: bottom;
+        th, td {
+          border: 1rem solid black;
+          padding: 24rem 30rem;
+          text-align: center;
+          vertical-align: middle;
+          ul {
+            display: inline-flex;
+          }
+        }
+        thead {
+          th {
+            font-weight: 500;
+            color: $color-w1;
+            background-color: $color-m2;
+          }
+        }
+        tbody {
+          th {
+            background-color: $color-m7;
+          }
+        }
+        caption {
+          padding-top: 6rem;
+          font-size: 16.5rem;
+          text-align: left;
+          color: $color-m3;
+        }
+        &.table-even { // Making the width of cells same
+          table-layout: fixed;
+        }
+        &#cost-table {
+          font-size: 15rem;
+          th, td {
+            padding: 3rem 0;
+          }
+          caption {
+            text-indent: -27rem;
+            font-size: 15rem;
+            ul {
+              gap: 9rem;
+              padding-left: 27rem;
+              li {
+                list-style: none;
+              }
+            }
+          }
+        }
+      }
+      .img {
+        width: 100%; height: 600rem;
+        margin-bottom: 21rem;
+        background-color: $color-m7;
+      }
     }
     &.module-4 { // Company
       text-align: left;
@@ -445,8 +446,6 @@ main {
           height: auto;
         }
       }
-      
-      
       .interview-group {
         display: flex; flex-direction: column; gap: 60rem;
         margin-top: 75rem;
@@ -652,7 +651,6 @@ main {
         
       }
     }
-
     &.module-8 { // bb-site
       padding-top: 0;
       .bb-site-list {
@@ -762,6 +760,7 @@ main {
         }
       }
     }
+
     &#before-sticky {
       padding-bottom: 42rem;
     }
