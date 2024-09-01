@@ -19,3 +19,7 @@ if (document.getElementById("p-"+extract2)) {
 if (document.getElementById("p-"+extract3)) {
   document.getElementById("p-"+extract3).classList.add('active')
 } // 2-2-1 페이지 접속 시, 2가 있으면 켜준다.
+
+if (lastItem == '') {
+  document.getElementById("p-index").classList.add('active')
+} // 만약 비어있으면, p-index를 켜준다.
