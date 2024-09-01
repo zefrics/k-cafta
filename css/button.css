@@ -69,13 +69,13 @@
   border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
+  text-align: center;
+  text-decoration: none;
   color: rgb(53, 99, 233);
   background-color: rgb(255, 255, 255);
 }
 .btn-2-1:hover {
   opacity: 0.75;
-  text-decoration: underline;
-  text-underline-offset: 4rem;
 }
 
 .btn-2-2 {
@@ -85,12 +85,12 @@
   border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
+  text-align: center;
+  text-decoration: none;
   color: rgb(255, 255, 255);
 }
 .btn-2-2:hover {
   opacity: 0.75;
-  text-decoration: underline;
-  text-underline-offset: 6rem;
 }
 
 .btn-tab {
@@ -116,24 +116,23 @@
 .btn-text-1 {
   cursor: pointer;
   color: rgb(53, 99, 233);
-  text-decoration: underline;
   text-underline-offset: 4rem;
 }
 .btn-text-1:hover {
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .btn-text-2 {
   cursor: pointer;
   width: -moz-fit-content;
   width: fit-content;
-  margin-top: 15rem;
+  margin-top: 6rem;
+  font-size: 18rem;
   color: rgb(53, 99, 233);
-  text-decoration: underline;
   text-underline-offset: 3rem;
 }
 .btn-text-2:hover {
-  opacity: 0.75;
+  opacity: 0.6;
 }
 
 .btn-text-3 {
@@ -142,5 +141,5 @@
   text-underline-offset: 4rem;
 }
 .btn-text-3:hover {
-  opacity: 0.75;
+  opacity: 0.6;
 }/*# sourceMappingURL=button.css.map */
