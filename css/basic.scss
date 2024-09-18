@@ -270,7 +270,7 @@ main {
   }
 
   .content {
-    overflow: hidden;
+    // overflow: hidden;
     width: 1200px;
     padding: 90rem 40rem;
     text-align: center;
@@ -796,3 +796,18 @@ footer {
   text-align: justify !important;
 }
 /* Important Ends */
+
+.test {
+  details {
+    summary {
+      position: sticky; top: 60rem;
+      padding: 60rem;
+      border: 1px solid red;
+      background-color: #dddddd;
+    }
+    .text {
+      height: 500rem;
+      background-color: $color-k8;
+    }
+  }
+}

@@ -263,7 +263,6 @@ main section#sticky-menu-container .sticky-menu .btn-group {
   gap: 75rem;
 }
 main .content {
-  overflow: hidden;
   width: 1200px;
   padding: 90rem 40rem;
   text-align: center;
@@ -814,4 +813,15 @@ footer .content p.copyright {
   text-align: justify !important;
 }
 
-/* Important Ends *//*# sourceMappingURL=basic.css.map */
+/* Important Ends */
+.test details summary {
+  position: sticky;
+  top: 60rem;
+  padding: 60rem;
+  border: 1px solid red;
+  background-color: #dddddd;
+}
+.test details .text {
+  height: 500rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}/*# sourceMappingURL=basic.css.map */
