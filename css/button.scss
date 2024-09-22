@@ -55,8 +55,11 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   border: 2rem solid $color-m1;
   border-radius: 20rem;
   font-size: 16.5rem;
+  font-weight: 400;
   color: $color-m1;
   background-color: $color-w1;
+  text-decoration: none;
+  display: flex; align-items: center;
   &:hover {
     opacity: 0.75;
   }
