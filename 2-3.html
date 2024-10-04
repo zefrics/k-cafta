@@ -13,7 +13,7 @@
     <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
 
-    <title>Logistics</title>
+    <title>Success Stories</title>
 
 </head>
 <body>
@@ -32,10 +32,10 @@
           <div id="p-1" class="title btn-menu-drop" onclick="menuDrop(event)">K-CA Online Platform</div>
           <ul class="menu-drop hide">
             <li>
-              <a id="p-1-1" href="1-1.html">About Platform</a>
+              <a id="p-1-1" href="1-1.html">About K-CA FTA</a>
             </li>
             <li>
-              <a id="p-1-2" href="1-2.html">About K-CA FTA</a>
+              <a id="p-1-2" href="1-2.html">ROK Country Overview</a>
             </li>
           </ul>
         </li>
@@ -43,16 +43,13 @@
           <div id="p-2" class="title btn-menu-drop" onclick="menuDrop(event)">ROK Market</div>
           <ul class="menu-drop hide">
             <li>
-              <a id="p-2-1" href="2-1.html">Overview</a>
+              <a id="p-2-1" href="2-1.html">ROK Market Information</a>
             </li>
             <li>
-              <a id="p-2-2" href="2-2.html">Info & Requirement</a>
+              <a id="p-2-2" href="2-2.html">Logistics</a>
             </li>
             <li>
-              <a id="p-2-3" href="2-3.html">Logistics</a>
-            </li>
-            <li>
-              <a id="p-2-4" href="2-4.html">Success Stories</a>
+              <a id="p-2-3" href="2-3.html">Success Stories</a>
             </li>
           </ul>
         </li>
@@ -113,298 +110,195 @@
     </nav>
   </header>
 
-  <main id="pg-2-3">
+  <main>
     <div class="main-title" id="h-2-3">
-      <h1 class="head1">Logistics</h1>
+      <h1 class="head1">Success Stories</h1>
     </div>
     <section class="first">
-      <div class="content module-0">
-        <p class="para1 align-justify">
-          <span>Busan Port</span> is the world's 2nd busiest transshipment port and the world's No.7 container port, handling 76.6% of domestic container cargo as of 2022.<br>
-          As such, Busan port is the largest seaport in Korea, and a global transshipment hub. It is a super port recording 21.91 million TEU of annual container throughput in 2022, 
-          and a Northeast Asia logistics hub connected with 500 ports around 150 countries through operation of over 179 weekly voyages.<br>
+      <div class="content module-0" id="before-sticky">
+        <p class="para1">
+          We present the stories of remarkable exporters and importers<br>
+          to assist Central American (CA) businesses<br>
+          in paving the way to success in the ROK market.<br>
           <br>
-          Considering the largest cargo service capacity, as well as its convenient location to reach from the Americas, the marine transport route and cost estimate between CA and South Korea will be based on setting Busan Port as the destination.<br>
-          <br>
-          The ocean transportation routes from Central America to Korea typically follow similar paths, with major ports requiring transshipments in locations such as Mexico or Panama. A direct shipping option is not available, except for Panama.<br>
-          <br>
-          Shipping companies and routes from Central American countries to South Korea are shown in the Figure below. In addition, when shipping from the Americas to the (north)east Asia, it is usual to arrive at Yokohama, Japan first, and then to the destinations in South Korea and PR China.
+          The visitors can uncover the invaluable lessons<br>
+          learned from these pioneers who offer insights<br>
+          and knowhow to navigate the intricacies of trade with ROK.
         </p>
       </div>
     </section>
-    <section class="second">
-      <div class="content module-3">
-        <h2 class="head2">Shipping Route</h2>
-        <div class="img"></div>
-        <p class="para2">
-          Overall, it takes at least <span>2 ports</span> and <span>minimum 29 days to maximum 62 days</span> to ship freight from CA ports to Busan port, Korea.
-        </p>
+    <section id="sticky-menu-container">
+      <div class="sticky-menu">
+        <div class="btn-group">
+          <button class="btn-tab active" onclick="openCompany(event, 'Latida')">LATIDA →</button>
+          <button class="btn-tab" onclick="openCompany(event, 'Erez')">EREZ Corporation →</button>
+        </div>
       </div>
     </section>
-    <section class="first">
-      <div class="content module-3">
-        <h2 class="head2">Shipping Cost Estimate</h2>
-        <p class="para2 align-justify">
-          The standard shipping cost for a 40' General Purpose container (GP) is minimum 643 USD and maximum 2,841 USD, showing that there is a large difference in transportation costs depending on the country and carrier. Also, a 40’ Reefer container costs minimum 4,145 USD and maximum 5,595 USD and there are some routes and carriers in certain country where reefer containers are not available.
-        </p>
-        <table id="cost-table">
-          <thead>
-            <tr>
-              <th rowspan="2">Country</th>
-              <th rowspan="2">Port of<br>Loading</th>
-              <th rowspan="2">Port of<br>Destination</th>
-              <th rowspan="2">Carrier</th>
-              <th rowspan="2">Direct<br>/ Transshipment</th>
-              <th rowspan="2">Frequency</th>
-              <th rowspan="2">Port of<br>Transshipment</th>
-              <th rowspan="2">Transit<br>Time<br>(days)</th>
-              <th colspan="5">Ocean Freight (O/F)</th>
-              <th rowspan="2">Origin<br>THC</th>
-              <th rowspan="2">B/L<br>Fee</th>
-              <th rowspan="2">Free<br>time at<br>POL</th>
-              <th rowspan="2">Free<br>time at<br>POD</th>
-            </tr>
-            <tr>
-              <th>20'GP</th>
-              <th>40'GP</th>
-              <th>40'HC</th>
-              <th>20'RF</th>
-              <th>40'RF</th>
-          </tr>
-          </thead>
-          <tbody>
-            <tr class="Costa Rica">
-              <th rowspan="2">Costa Rica</th>
-              <td rowspan="2">Puerto<br>Caldera</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Manzanillio,<br>Mexico</td>
-              <td>43</td>
-              <td>$1,946</td>
-              <td>$1,507</td>
-              <td>$2,507</td>
-              <td>$4,575</td>
-              <td>$5,281</td>
-              <td>N/A</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Balboa,<br>Panama</td>
-              <td>47</td>
-              <td>$609</td>
-              <td>$700</td>
-              <td>$700</td>
-              <td>N/A</td>
-              <td>$4,545</td>
-              <td>$260<br>/ RF</td>
-              <td>$60</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr class="El Salvador">
-              <th rowspan="2">El Salvador</th>
-              <td rowspan="2">Acajutla</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Manzanillio,<br>Mexico</td>
-              <td>46</td>
-              <td>$994</td>
-              <td>$1,242</td>
-              <td>$1,242</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Balboa,<br>Panama</td>
-              <td>45</td>
-              <td>$1,458</td>
-              <td>$717</td>
-              <td>$717</td>
-              <td>N/A</td>
-              <td>$4,445</td>
-              <td>$255<br>/ RF</td>
-              <td>$55</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr class="Guatemala">
-              <th rowspan="2">Guatemala</th>
-              <td rowspan="2">Puerto<br>Quetzal</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ 2 Week</td>
-              <td>Manzanillio,<br>Mexico</td>
-              <td>29</td>
-              <td>$2,299</td>
-              <td>$2,841</td>
-              <td>$2,841</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ 2 Week</td>
-              <td>Balboa,<br>Panama</td>
-              <td>56</td>
-              <td>$863</td>
-              <td>$730</td>
-              <td>$730</td>
-              <td>N/A</td>
-              <td>$4,445</td>
-              <td>$255<br>/ RF</td>
-              <td>$55</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr class="Honduras">
-              <th rowspan="2">Honduras</th>
-              <td rowspan="2">Puerto<br>Cortes</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ 2 Week</td>
-              <td>Manzanillio,<br>Mexico</td>
-              <td>30</td>
-              <td>$2,157</td>
-              <td>$2,699</td>
-              <td>$2,699</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>$142<br>/ GP</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Manzanillio,<br>Mexico<br>Balboa,<br>Panama</td>
-              <td>48</td>
-              <td>$863</td>
-              <td>$806</td>
-              <td>$806</td>
-              <td>N/A</td>
-              <td>$5,595</td>
-              <td>$280<br>/ RF</td>
-              <td>$55</td>
-              <td>7 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr class="Nicaragua">
-              <th rowspan="2">Nicaragua</th>
-              <td rowspan="2">Puerto<br>Corinto</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Balboa,<br>Panama</td>
-              <td>40</td>
-              <td>$2,073</td>
-              <td>$2,788</td>
-              <td>$2,788</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Transshipment</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>Balboa,<br>Panama</td>
-              <td>44</td>
-              <td>$988</td>
-              <td>$580</td>
-              <td>$580</td>
-              <td>N/A</td>
-              <td>$4,945</td>
-              <td>$170<br>/ RF</td>
-              <td>$30</td>
-              <td>7 Days(GP)<br>/ 5 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr class="Panama">
-              <th rowspan="2">Panama</th>
-              <td rowspan="2">Balboa</td>
-              <td rowspan="2">Busan</td>
-              <td>HAPAG</td>
-              <td>Direct</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>-</td>
-              <td>62</td>
-              <td>$2,181</td>
-              <td>$2,825</td>
-              <td>$2,825</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>N/A</td>
-              <td>$50</td>
-              <td>10 Days(GP)<br>/ 7 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-            <tr>
-              <td>MAERSK</td>
-              <td>Direct</td>
-              <td>1 Voyage<br>/ Week</td>
-              <td>-</td>
-              <td>37</td>
-              <td>$648</td>
-              <td>$643</td>
-              <td>$643</td>
-              <td>N/A</td>
-              <td>$4,145</td>
-              <td>$43<br>/ GP,<br>$245<br>/ RF</td>
-              <td>$60</td>
-              <td>7 Days(GP)<br>/ 7 days(RF)</td>
-              <td>10 Days(GP)<br>/ 6 days(RF)</td>
-            </tr>
-          </tbody>
-          <caption>
-            <ul>
-              <li>
-                * 1. The estimated cost is based on the CIF (Cost, Insurance and Freight) contract.
-              </li>
-              <li>
-                * 2. GP (General Purpose Container), HC (High Cubic Container), RF (Reefer Container), THC (Terminal Handling Charge),<br>
-                B/L (Bill of Landing), POL (Port of Loading), POD (Port of Discharge)
-              </li>
-              <li>
-                * 3. Rate validity : 14th / MAR / 2024
-              </li>
-              <li>
-                * 4. In case of additional services or special packaging/container type is required for certain products, the actual cost may differ from the above offered estimate.<br>
-                It is advised to consult with the exporters' logistics partners.
-              </li>
+    <section class="second" id="sticky-point">
+      <div class="content module-4 tabcontent" id="Latida">
+        <h2 class="logo"></h2>
+        <div class="profile">
+          <img src="img/2-4-p1.jpg" alt="">
+          <div class="info-container">
+            <ul class="info">
+              <li class="para2"><span>Company :</span>&nbsp;&nbsp;LATIDA</li>
+              <li class="para2"><span>Name :</span>&nbsp;&nbsp;Juan Juwon Sul (CEO)</li>
+              <li class="para2"><span>Webpage :</span>&nbsp;&nbsp;<a class="btn-text-3" href="https://www.latidaglobal.com" target="_blank" >https://www.latidaglobal.com</a></li>
+              <li class="para2"><span>Email :</span>&nbsp;&nbsp;juanito@latidaglobal.com</li>
             </ul>
-            
-            
-          </caption>
-        </table>
+            <p class="para2 align-justify">
+              Step into the world of Juan Juwon Sul, the visionary CEO driving the success of LATIDA,
+              a fruit and food importing and distributing powerhouse in Korea.<br>
+              <br>
+              With roots tracing back to his upbringing in Chile,
+              Juan brings a unique perspective and a wealth of experience to the table.<br>
+              <br>
+              Juan unveils the journey that led him to the forefront of Korea's import industry,
+              offering invaluable lessons for aspiring entrepreneurs.
+            </p>
+          </div>
+        </div>
+        <div class="interview-group">
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Please introduce your company.
+            </h3>
+            <p class="answer para3 align-justify">
+              LATIDA saw a huge potential in doing business with the region considering the limited number of ROK importers despite many LAC exporters interested in the ROK market.<br>
+              <br>
+              LATIDA stands for <span>'La Tierra Prometida'</span>, which embodies the vision of creating a sustainable trading ecosystem that benefits all stakeholders. LATIDA aims to bridge the two distant markets and lead to success by well managing and mitigating the risks of long distance and cultural differences. With a commitment to more than mere transactions, LATIDA empowers exporters with market insights and years of sales data, fostering a collaborative approach that ensures mutual success.<br>
+              <br>
+              Since its founding in 2021, LATIDA has orchestrated partnerships with major Korean players like Starbucks, Coupang, and Baemin, revolutionizing the import landscape with quality products sourced from across the globe, with a special focus on Latin America.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Please introduce your company's trade experience with CA.
+            </h3>
+            <p class="answer para3 align-justify">
+              LATIDA has been importing <span>fruit animal & vegetable products</span> from Latin America and the Caribbean with a focus on fruits and particularly for <span>bananas and pineapples.</span><br>
+              <br>
+              In case of Banana, although the ROK market had been dominated by the Philippines until recently, accounting for 99% of the total market size, the ROK consumers recently started to realize the excellent quality of bananas from LAC and the LAC region succeeded in gaining market strong market presence, up to 30%. There are clients here that only want bananas from the LAC region because they say it tastes better, which means sweeter and less bitter taste when not fully ripened.<br>
+              <br>
+              In 2022 and 2023, LATIDA imported a total of 300 containers of bananas mainly from Colombia. As for pineapples, LATIDA imported 4 containers from Panama in 2022.<br>
+              <br>
+              Utilizing LATIDA’s networks with giant retail and distributers, the fruits imported from CA as well as the LAC region were supplied to Kim's Club, Starbucks, Emart, Coupang, Baemin, Foodist, Korea Mart Association, among others.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. What are the factors you consider important when identifying potential supplier/exporter?
+            </h3>
+            <p class="answer para3 align-justify">
+              The creditworthiness of the supplier and the reliability of their product quality are the most important references when choosing a partner. At LATIDA, we prefer to be introduced to a new supplier by an existing partner and conduct our due diligence to learn about the market/industry reputation of the potential supplier. In addition, as international business works the best when there is strong relationship, building connection and trust is the key factors for a long-term partnership.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Have you received external support when importing Central American products? If yes, please provide more information.
+            </h3>
+            <p class="answer para3 align-justify">
+              From trade promotion agencies in Latin America, such as Embassy of Guatemala, ProColombia, PromPeru, LATIDA received budgetary support for the trips to the region, particularly for flights and accommodations costs. Also, LATIDA received invitations to participate in their online and offline trade expo and exhibition events.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. What difficulties did you face when importing products from Central America, and how did you overcome them?
+            </h3>
+            <p class="answer para3 align-justify">
+              The biggest challenge when importing fruit is the long transit time from CA to ROK. Even the shortest route takes at least 23 days with possibilities of extensions due to various factors, including extreme drought in Panama and the reduced number of daily transit of ships at the Panama Canal.<br>
+              <br>
+              Considering the fact that the quality inspection could be taken place about one month after the shipment, it implies that it takes a very long time to correct a problem if there are any. So, it is very important to work with the right partner who can guarantee all the export process and product quality.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Based on the current situation of the banana and pineapple market in Korea/Central America, how do you predict the demand-supply in the short-term (1-3 years)?
+            </h3>
+            <p class="answer para3 align-justify">
+              Bananas from Latin America will slowly increase despite a possible decrease in 2024 due to the decreased transits times at the Panama Canal. In fact, shipping lines like Maersk had temporarily halted routes that pass through the canal in the beginning of 2024. This caused producers in the Atlantic side to miss the highest consumption season in the ROK which is from February to May. If the upcoming rain season can restore things back to the pre-drought times, it is expected that the import from Latin America to ROK will gradually increase.<br>
+              <br>
+              As for the pineapple, the rotting of the crown area is difficult to deal with and is the main risk of importing pineapples from CA. Unless a product or packaging that can prolong the shelf-life of pineapples are discovered and applied, it could be difficult to import pineapples from Latin America to Korea due to the distance.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Do you have any suggestions or advice for Central American companies wishing to export Banana & Pineapple to Korea?
+            </h3>
+            <p class="answer para3 align-justify">
+              A. Korea is a very picky market with a high-quality standard which requires maintaining of the product quality as the utmost important factor. While it is not an easy market, it does have the ability to reward those who succeed in creating a good brand image.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content module-4 tabcontent hide" id="Erez">
+        <h2 class="logo"></h2>
+        <div class="profile">
+          <img src="img/2-4-p2.jpg" alt="">
+          <div class="info-container">
+            <ul class="info">
+              <li class="para2"><span>Company :</span>&nbsp;&nbsp;EREZ Corporation</li>
+              <li class="para2"><span>Name :</span>&nbsp;&nbsp;Kyu-Chin An (CEO)</li>
+              <li class="para2"><span>Email :</span>&nbsp;&nbsp;comoestaan@naver.com</li>
+            </ul>
+            <p class="para2 align-justify">
+              Explore the journey of Kyu-chin An, a trailblazer in the coffee import industry and a key figure in fostering Korea-Guatemala trade relations. As the CEO of EREZ Corporation, An brings a wealth of experience shaped by 23 years of living in Guatemala as a coffee farm owner and cupper & roaster.<br>
+              <br>
+              His commitment to introduce the quality and authenticity in Guatemalan coffee led him to become the first Korean member of ANACAFÉ, the Guatemalan National Coffee Association, where he earned a coffee cupping certification and honed his skills in coffee roasting.
+            </p>
+          </div>
+          
+        </div>
+        <div class="interview-group">
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Please introduce your company.
+            </h3>
+            <p class="answer para3 align-justify">
+              Since 2013, EREZ Corporation has been connecting Korean buyers with exporters/suppliers of the <span>high-quality green coffee beans from Guatemala.</span> Every year, EREZ collects green beans samples from Guatemala’s major coffee farms and host public cupping sessions with five to nine Korean importers to ensure that only the best beans make their way to the ROK market. Generally, 5 to 9 importers jointly make purchases to transport the coffee beans in a container.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Please introduce your company's trade experience with CA.
+            </h3>
+            <p class="answer para3 align-justify">
+              EREZ Corporation currently deals with <br>green coffee beans from Guatemala only.<br> Before the pandemic, we imported in bulk, but now we import by container. In 2022, we imported three containers, one container in 2023, and plan to import five containers in 2024. Typically, a 20ft container holds 250 bags, valued at around 100 million KRW or about $76,000 USD.<br>
+              <br>
+              Green bean is an agricultural product, so its taste can vary from month to month. Therefore, maintaining contracts with the same suppliers each year is rare. Every transaction requires thorough verification through coffee hunting and cupping. Hence, with my coffee cupping certification from ANACAFÉ, I personally handle coffee hunting.<br>
+              <br>
+              The primary reason for starting imports from Central America was the high quality of Guatemalan coffee. Guatemala only grows Arabica beans, and its coffee history spans over 100 years. In contrast, Korea's coffee history is only 20-30 years old, and I felt there was a lack of clear definition for good coffee in Korea. Thus, I started my company in 2013 and began importing Guatemalan coffee to introduce high-quality coffee to Korea.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. What are the factors you consider important when identifying potential supplier/exporter?
+            </h3>
+            <p class="answer para3 align-justify">
+              I believe the most crucial aspect of identifying suppliers is having a local network. I usually get introduced to potential suppliers through associations like the Coffee Farmers Association. If there is an existing trusted relationship, it is relatively easy to get introductions; otherwise, finding new suppliers without connections can be challenging.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. What difficulties did you face when importing products from Central America, and how did you overcome them?
+            </h3>
+            <p class="answer para3 align-justify">
+              Like all international trade, dealing with volatile foreign exchange rate is challenging as profits are affected by exchange rates. Sometimes, delayed payments can prevent the release of bills of lading. Additionally, the risk varies depending on whether the letter of credit is payable at sight or usance. Moreover, the distance between Korea and Central America make frequent visits difficult.
+            </p>
+          </div>
+          <div class="interview">
+            <h3 class="question head3">
+              Q. Based on the current situation of coffee market in Korea/Central America, how do you predict the demand-supply in the short-term (1-3 years)?
+            </h3>
+            <p class="answer para3 align-justify">
+              I expect the supply from Guatemala and the other five Central American countries to increase due to better pricing conditions following the K-CAFTA agreement. However, coffee prices are generally expected to rise for lack of supply. In Guatemala, for example, avocado farming is more profitable than coffee, leading some farmers to switch crops. Coffee cultivation is also highly sensitive to climate, requiring specific conditions. Thus, climate change is likely to impact the supply.<br>
+              <br>
+              On the other hand, the demand for coffee in Korea is rapidly growing, with significant potential for further development. I personally predict a greater increase in demand for specialty coffee compared to regular coffee.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>

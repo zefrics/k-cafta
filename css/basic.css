@@ -209,26 +209,8 @@ main .main-title#h-2-1 {
 main .main-title#h-2-2 {
   background-image: url("../img/2-2-h.jpg");
 }
-main .main-title#h-2-2-1 {
-  background-image: url("../img/2-2-1-h.jpg");
-}
-main .main-title#h-2-2-2 {
-  background-image: url("../img/2-2-2-h.jpg");
-}
-main .main-title#h-2-2-3 {
-  background-image: url("../img/2-2-3-h.jpg");
-}
-main .main-title#h-2-2-4 {
-  background-image: url("../img/2-2-4-h.jpg");
-}
-main .main-title#h-2-2-5 {
-  background-image: url("../img/2-2-5-h.jpg");
-}
 main .main-title#h-2-3 {
   background-image: url("../img/2-3-h.jpg");
-}
-main .main-title#h-2-4 {
-  background-image: url("../img/2-4-h.jpg");
 }
 main .main-title#h-3-1 {
   background-image: url("../img/3-1-h.jpg");
@@ -242,8 +224,8 @@ main .main-title#h-3-3 {
 main .main-title#h-3-4 {
   background-image: url("../img/3-4-h.jpg");
 }
-main .main-title#h-3-5 {
-  background-image: url("../img/3-5-h.jpg");
+main .main-title#h-4 {
+  background-image: url("../img/4-h.jpg");
 }
 main section#sticky-menu-container {
   position: sticky;
