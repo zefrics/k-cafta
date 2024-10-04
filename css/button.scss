@@ -35,31 +35,32 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
 .btn-1-1 { // Sign in
   cursor: pointer;
-  height: 40rem;
-  padding: 0 21rem;
-  border: 0;
+  display: flex; align-items: center;
+  height: 30rem;
+  padding: 0 15rem;
+  border: 2rem solid $color-m2;
   border-radius: 20rem;
-  font-size: 16.5rem;
+  font-size: 15rem;
   font-weight: 400;
   color: $color-w1;
   background-color: $color-m2;
   text-decoration: none;
-  display: flex; align-items: center;
   &:hover {
     opacity: 0.75;
   }
 }
 .btn-1-2 {
   cursor: pointer;
-  padding: 9rem 15rem;
+  display: flex; align-items: center;
+  height: 30rem;
+  padding: 0 15rem;
   border: 2rem solid $color-m1;
   border-radius: 20rem;
-  font-size: 16.5rem;
+  font-size: 15rem;
   font-weight: 400;
   color: $color-m1;
   background-color: $color-w1;
   text-decoration: none;
-  display: flex; align-items: center;
   &:hover {
     opacity: 0.75;
   }
@@ -85,7 +86,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
     height: 21rem; width: 21rem;
   }
   p {
-    margin-left: 9rem;
+    margin-left: 6rem;
     font-size: 16.5rem; font-weight: 500;
   }
   &:hover {
