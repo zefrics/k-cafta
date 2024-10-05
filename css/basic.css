@@ -247,7 +247,7 @@ main section#sticky-menu-container .sticky-menu .btn-group {
 main .content {
   width: 1200px;
   padding: 90rem 40rem;
-  text-align: center;
+  text-align: left;
   /* Module Starts (페이지 구성의 고유 요소들 묶음) */
   /* Module Ends */
 }
@@ -255,7 +255,6 @@ main .content.module-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 75rem;
-  text-align: left;
 }
 main .content.module-1 .part {
   display: flex;
@@ -303,31 +302,83 @@ main .content.module-1 .part .logo img {
   margin: 0;
   padding: 0;
 }
-main .content.module-2 h2 {
-  margin-bottom: 30rem;
-}
-main .content.module-2 .part-group {
-  margin: 72rem auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60rem;
+main .content.module-2 {
   text-align: left;
-  width: -moz-fit-content;
-  width: fit-content;
+  padding-top: 0;
 }
-main .content.module-2 .part-group .part ul {
+main .content.module-2 .aaa {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45rem;
+}
+main .content.module-2 .aaa .ele a {
+  margin: 18rem 0;
+  display: inline-block;
+  border: 1px solid red;
+}
+main .content.module-2 .aaa .ele a .img {
+  height: 210rem;
+  width: 210rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content.module-2 .bbb {
+  margin-top: 60rem;
+}
+main .content.module-2 .bbb .ele .img-group {
+  margin-top: 18rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 30rem;
+}
+main .content.module-2 .bbb .ele .img-group a {
+  display: inline-block;
+  border: 1px solid red;
+}
+main .content.module-2 .bbb .ele .img-group a .img {
+  height: 90rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content.module-33 h2 {
+  margin-bottom: 45rem;
+}
+main .content.module-33 .img-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 75rem;
+  margin-top: 60rem;
+}
+main .content.module-33 .img-group .img-container .img {
+  height: 300rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content.module-33 .img-group .img-container .para3 {
+  margin-top: 9rem;
+}
+main .content.module-44 h2 {
+  margin-bottom: 45rem;
+}
+main .content.module-44 .country-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45rem;
+}
+main .content.module-44 .country-group .country .img-container {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
+  margin-top: 6rem;
+}
+main .content.module-44 .country-group .country .img-container .img {
+  height: 90rem;
+  width: 150rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content.module-44 .country-group .country .img-container ul {
   display: flex;
   flex-direction: column;
-  gap: 15rem;
-  margin-top: 15rem;
-  padding-left: 18rem;
-}
-main .content.module-2 .part-group .part ul li {
-  color: rgb(53, 99, 233);
-  list-style-type: disc;
-  list-style-position: outside;
-  width: -moz-fit-content;
-  width: fit-content;
+  gap: 9rem;
 }
 main .content.module-3 {
   text-align: left;
@@ -711,55 +762,8 @@ main .content.module-9 .bb-faq-list .item-group details .answer {
   font-size: 16.5rem;
   font-weight: 400;
 }
-main .content#history .calendar {
-  display: flex;
-  flex-direction: column;
-  gap: 48rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: 60rem auto 0 auto;
-}
-main .content#history .calendar .year-group {
-  display: flex;
-  gap: 24rem;
-}
-main .content#history .calendar .year-group h3.year {
-  font-size: 27rem;
-  font-weight: 600;
-  color: rgb(53, 99, 233);
-  width: 120rem;
-  background-color: rgba(53, 99, 233, 0.15);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-main .content#history .calendar .year-group .month-group {
-  display: flex;
-  flex-direction: column;
-  gap: 27rem;
-  text-align: left;
-}
-main .content#history .calendar .year-group .month-group .date-group {
-  padding-bottom: 3rem;
-}
-main .content#history .calendar .year-group .month-group .date-group h4.date {
-  font-size: 18rem;
-  font-weight: 500;
-  color: rgba(53, 99, 233, 0.75);
-}
-main .content#history .calendar .year-group .month-group .date-group .text-group {
-  margin-top: 3rem;
-}
-main .content#history .calendar .year-group .month-group .date-group .text-group p.text {
-  font-size: 18rem;
-  font-weight: 400;
-}
-main .content#history .calendar .year-group .month-group .date-group .text-group p.detail {
-  margin-top: 3rem;
-  padding-left: 12rem;
-  font-size: 15rem;
-  font-weight: 300;
-  text-indent: -10rem;
+main .content#history h2 {
+  margin-bottom: 45rem;
 }
 main .content#before-sticky {
   padding-bottom: 42rem;

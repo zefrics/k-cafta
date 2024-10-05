@@ -255,13 +255,12 @@ main {
     // overflow: hidden;
     width: 1200px;
     padding: 90rem 40rem;
-    text-align: center;
+    text-align: left;
 
     /* Module Starts (페이지 구성의 고유 요소들 묶음) */
 
     &.module-1 { // Index
       display: grid; grid-template-columns: repeat(2, 1fr); gap: 75rem;
-      text-align: left;
       .part {
         display: flex; flex-direction: column; justify-content: center;
         h2 {
@@ -303,25 +302,75 @@ main {
         }
       }
     }
-    &.module-2 { // Extra Link List
-      h2 {
-        margin-bottom: 30rem;
+    &.module-2 { // Index Logo part
+      text-align: left;
+      padding-top:0;
+      .aaa {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 45rem;
+        .ele {
+          a {
+            margin: 18rem 0;
+            display: inline-block;
+            border: 1px solid red;
+            .img {
+              height: 210rem; width: 210rem;
+              background-color: $color-k7;
+            }
+          }
+        }
       }
-      .part-group {
-        margin: 72rem auto 0 auto;
-        display: flex; flex-direction: column; gap: 60rem;
-        text-align: left;
-        width: fit-content;
-        .part {
-          ul {
-            display: flex; flex-direction: column; gap: 15rem;
-            margin-top: 15rem;
-            padding-left: 18rem;
-            li {
-              color: $color-m1;
-              list-style-type: disc;
-              list-style-position: outside;
-              width: fit-content;
+      .bbb {
+        margin-top: 60rem;
+        .ele {
+          .img-group {
+            margin-top: 18rem;
+            display: grid; grid-template-columns: repeat(6, 1fr); gap: 30rem;
+            a {
+              display: inline-block;
+              border: 1px solid red;
+              .img {
+                height: 90rem; width: 100%;
+                background-color: $color-k7;
+              }
+            }
+          }
+        }
+      }
+    }
+    &.module-33 { // About K-CA FTA
+      h2 {
+        margin-bottom: 45rem;
+      }
+      .img-group {
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 75rem;
+        margin-top: 60rem;
+        .img-container {
+          .img {
+            height: 300rem; width: 100%;
+            background-color: $color-k7;
+          }
+          .para3 {
+            margin-top: 9rem;
+          }
+        }
+      }
+    }
+    &.module-44 { // Per Country FTA Text
+      h2 {
+        margin-bottom: 45rem;
+      }
+      .country-group {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 45rem;
+        .country {
+          .img-container {
+            display: flex; gap: 15rem; align-items: center;
+            margin-top: 6rem;
+            .img {
+              height: 90rem; width: 150rem;
+              background-color: $color-k7;
+            }
+            ul {
+              display: flex; flex-direction: column; gap: 9rem;
             }
           }
         }
@@ -702,44 +751,8 @@ main {
     }
 
     &#history {
-      .calendar {
-        display: flex; flex-direction: column; gap: 48rem;
-        width: fit-content;
-        margin: 60rem auto 0 auto;
-        .year-group {
-          display: flex; gap: 24rem;
-          h3.year {
-            font-size: 27rem; font-weight: 600;
-            color: $color-m1;
-            width: 120rem;
-            background-color: $color-m7;
-            display: flex; align-items: center; justify-content: center;
-          }
-          .month-group {
-            display: flex; flex-direction: column; gap: 27rem;
-            text-align: left;
-            .date-group {
-              padding-bottom: 3rem;
-              h4.date {
-                font-size: 18rem; font-weight: 500;
-                color: $color-m3;
-              }
-              .text-group {
-                margin-top: 3rem;
-                p.text {
-                  font-size: 18rem; font-weight: 400;
-                }
-                p.detail {
-                  margin-top: 3rem;
-                  padding-left: 12rem;
-                  font-size: 15rem; font-weight: 300;
-                  text-indent: -10rem;
-                }
-              }
-            }
-          }
-          
-        }
+      h2 {
+        margin-bottom: 45rem;
       }
     }
 
