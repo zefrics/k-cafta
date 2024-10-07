@@ -49,7 +49,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
     opacity: 0.75;
   }
 }
-.btn-1-2 {
+.btn-1-2 { // Log in
   cursor: pointer;
   display: flex; align-items: center;
   height: 30rem;
@@ -96,6 +96,23 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
 .btn-2-1 { // Index Page Buttons
   cursor: pointer;
+  background-color: $color-m3;
+  border: 2rem solid $color-m1;
+  border-radius: 30rem;
+  padding: 12rem 60rem;
+  font-size: 16rem;
+  text-align: center;
+  text-decoration: none;
+  color: $color-w1;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 3rem;
+  }
+}
+
+.btn-2-2 { // Index Page Buttons
+  cursor: pointer;
   border: 2rem solid $color-m1;
   border-radius: 30rem;
   padding: 12rem;
@@ -106,20 +123,41 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   background-color: $color-w1;
   &:hover {
     opacity: 0.75;
+    
   }
 }
-.btn-2-2 { // Index Page Buttons
-  cursor: pointer;
-  background-color: $color-m3;
+
+.btn-dn-1 { // Logistics, FAQ
+  display: inline-block;
+  padding: 12rem 24rem 15rem 24rem;
   border: 2rem solid $color-m1;
   border-radius: 30rem;
-  padding: 12rem;
-  font-size: 16rem;
-  text-align: center;
-  text-decoration: none;
+  font-size: 19.5rem; font-weight: 400;
   color: $color-w1;
+  background-color: $color-m3;
+  text-decoration: none;
+  transition: 0.1s;
   &:hover {
     opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 5rem;
+  }
+}
+
+.btn-dn-2 { // E-learning, Publication
+  display: flex; align-items: center; justify-content: center;
+  width: fit-content;
+  padding: 4rem 18rem 6rem 18rem;
+  border: 2px solid $color-m1;
+  border-radius: 30rem;
+  font-size: 16.5rem; font-weight: 400;
+  background-color: $color-m3;
+  color: $color-w1;
+  text-decoration: none;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 2rem;
   }
 }
 
@@ -130,7 +168,6 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   font-size: 18rem;
   color: $color-m1;
   background-color: $color-w1;
-  
   transition: 0.1s;
   &.active {
     color: $color-w1;
@@ -143,7 +180,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   }
 }
 
-.btn-text-1 { // 자료 외부 링크
+.btn-text-1 { // Per Country FTA Text : Extra link
   cursor: pointer;
   color:$color-m1;
   text-underline-offset: 4rem;
@@ -152,7 +189,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   }
 }
 
-.btn-text-2 { // Learn more
+.btn-text-2 { // ROK Market Info : Learn more
   cursor: pointer;
   margin-top: 6rem;
   font-size: 18rem;
@@ -163,10 +200,20 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   }
 }
 
-.btn-text-3 { // 회사 웹사이트
+.btn-text-3 { // LATIDA, EREZ Info 회사 웹사이트
   color: $color-m1;
   text-decoration: underline;
   text-underline-offset: 4rem;
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.btn-text-4 { // Events : Go to the website
+  font-size: 16.5rem;
+  color: $color-m1;
+  text-decoration: underline;
+  text-underline-offset: 3rem;
   &:hover {
     opacity: 0.6;
   }

@@ -187,7 +187,7 @@ header nav .function .my-container #my-menu a.sign-out {
 }
 
 main .main-title {
-  height: 300rem;
+  height: 600rem;
   background-color: rgba(53, 99, 233, 0.45);
   background-blend-mode: screen;
   background-position: center;
@@ -228,12 +228,12 @@ main .main-title#h-4 {
   background-image: url("../img/4-h.jpg");
 }
 main section#sticky-menu-container {
-  position: sticky;
-  top: 60rem;
-  padding-bottom: 66rem;
+  position: fixed;
+  bottom: 0;
+  box-shadow: 0 6rem 6rem 6rem rgba(0, 0, 0, 0.15);
 }
 main section#sticky-menu-container .sticky-menu {
-  padding: 6rem 0 24rem 0;
+  padding: 21rem 0;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -242,7 +242,7 @@ main section#sticky-menu-container .sticky-menu {
 main section#sticky-menu-container .sticky-menu .btn-group {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 75rem;
+  gap: 30rem;
 }
 main .content {
   width: 1200px;
@@ -250,6 +250,12 @@ main .content {
   text-align: left;
   /* Module Starts (페이지 구성의 고유 요소들 묶음) */
   /* Module Ends */
+}
+main .content .source {
+  margin-top: 9rem;
+  font-size: 16.5rem;
+  text-align: left;
+  color: rgba(53, 99, 233, 0.75);
 }
 main .content.module-1 {
   display: grid;
@@ -261,7 +267,7 @@ main .content.module-1 .part {
   flex-direction: column;
   justify-content: center;
 }
-main .content.module-1 .part h2 {
+main .content.module-1 .part .head2 {
   margin-bottom: 21rem;
 }
 main .content.module-1 .part ul {
@@ -275,14 +281,11 @@ main .content.module-1 .part ul li {
   list-style-position: outside;
 }
 main .content.module-1 .part .btn-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 30rem;
-  gap: 24rem;
+  margin-top: 42rem;
 }
 main .content.module-1 .part img {
   border-radius: 15rem;
-  height: 360rem;
+  height: 390rem;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -302,311 +305,380 @@ main .content.module-1 .part .logo img {
   margin: 0;
   padding: 0;
 }
-main .content.module-2 {
+main .content#index-logo {
   text-align: left;
   padding-top: 0;
 }
-main .content.module-2 .aaa {
+main .content#index-logo .aaa {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45rem;
 }
-main .content.module-2 .aaa .ele a {
-  margin: 18rem 0;
+main .content#index-logo .aaa .ele a {
+  margin: 12rem 0 15rem 0;
   display: inline-block;
-  border: 1px solid red;
+  transition: 0.1s;
 }
-main .content.module-2 .aaa .ele a .img {
+main .content#index-logo .aaa .ele a .img {
   height: 210rem;
   width: 210rem;
   background-color: rgba(0, 0, 0, 0.15);
 }
-main .content.module-2 .bbb {
+main .content#index-logo .aaa .ele a:hover {
+  opacity: 0.75;
+}
+main .content#index-logo .bbb {
   margin-top: 60rem;
 }
-main .content.module-2 .bbb .ele .img-group {
-  margin-top: 18rem;
+main .content#index-logo .bbb .ele .img-group {
+  margin-top: 15rem;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 30rem;
+  -moz-column-gap: 45rem;
+       column-gap: 45rem;
+  row-gap: 36rem;
 }
-main .content.module-2 .bbb .ele .img-group a {
+main .content#index-logo .bbb .ele .img-group a {
   display: inline-block;
-  border: 1px solid red;
+  transition: 0.1s;
 }
-main .content.module-2 .bbb .ele .img-group a .img {
+main .content#index-logo .bbb .ele .img-group a .img {
   height: 90rem;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.15);
 }
-main .content.module-33 h2 {
+main .content#index-logo .bbb .ele .img-group a:hover {
+  opacity: 0.75;
+}
+main .content.module-2 .head2 {
   margin-bottom: 45rem;
 }
-main .content.module-33 .img-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 75rem;
-  margin-top: 60rem;
+main .content.module-2 .head3 {
+  margin: 60rem 0 9rem 0;
 }
-main .content.module-33 .img-group .img-container .img {
-  height: 300rem;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-main .content.module-33 .img-group .img-container .para3 {
-  margin-top: 9rem;
-}
-main .content.module-44 h2 {
-  margin-bottom: 45rem;
-}
-main .content.module-44 .country-group {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 45rem;
-}
-main .content.module-44 .country-group .country .img-container {
-  display: flex;
-  gap: 15rem;
-  align-items: center;
-  margin-top: 6rem;
-}
-main .content.module-44 .country-group .country .img-container .img {
-  height: 90rem;
-  width: 150rem;
-  background-color: rgba(0, 0, 0, 0.15);
-}
-main .content.module-44 .country-group .country .img-container ul {
-  display: flex;
-  flex-direction: column;
-  gap: 9rem;
-}
-main .content.module-3 {
-  text-align: left;
-}
-main .content.module-3 h2 {
-  margin-bottom: 30rem;
-}
-main .content.module-3 h3 {
-  margin-top: 45rem;
-}
-main .content.module-3 ul {
+main .content.module-2 ul {
   display: flex;
   flex-direction: column;
   gap: 15rem;
   padding-left: 18rem;
 }
-main .content.module-3 ul li {
+main .content.module-2 ul li {
   list-style-type: disc;
   list-style-position: outside;
   width: -moz-fit-content;
   width: fit-content;
 }
-main .content.module-3 table {
+main .content.module-2 table {
   width: 100%;
-  margin: 12rem 0 30rem 0;
   font-size: 18rem;
   caption-side: bottom;
 }
-main .content.module-3 table th, main .content.module-3 table td {
+main .content.module-2 table th, main .content.module-2 table td {
   border: 1rem solid black;
-  padding: 24rem 30rem;
+  padding: 18rem 21rem;
   text-align: center;
   vertical-align: middle;
 }
-main .content.module-3 table th ul, main .content.module-3 table td ul {
+main .content.module-2 table th ul, main .content.module-2 table td ul {
   display: inline-flex;
 }
-main .content.module-3 table thead th {
+main .content.module-2 table thead th {
   font-weight: 500;
   color: rgb(255, 255, 255);
   background-color: rgba(53, 99, 233, 0.9);
 }
-main .content.module-3 table tbody th {
+main .content.module-2 table tbody th {
   background-color: rgba(53, 99, 233, 0.15);
 }
-main .content.module-3 table caption {
-  padding-top: 6rem;
-  font-size: 16.5rem;
-  text-align: left;
-  color: rgba(53, 99, 233, 0.75);
-}
-main .content.module-3 table.table-even {
+main .content.module-2 table.table-even {
   table-layout: fixed;
 }
-main .content.module-3 table#cost-table {
-  font-size: 15rem;
+main .content.module-2 table#table-1 {
+  margin-bottom: 30rem;
 }
-main .content.module-3 table#cost-table th, main .content.module-3 table#cost-table td {
-  padding: 3rem 0;
+main .content.module-2 #signing {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45rem;
 }
-main .content.module-3 table#cost-table caption {
-  text-indent: -27rem;
-  font-size: 15rem;
+main .content.module-2 #signing .img-container .head3 span {
+  font-size: 16.5rem;
+  font-weight: 400;
+  line-height: 21rem;
 }
-main .content.module-3 table#cost-table caption ul {
-  gap: 9rem;
-  padding-left: 27rem;
-}
-main .content.module-3 table#cost-table caption ul li {
-  list-style: none;
-}
-main .content.module-3 .img {
+main .content.module-2 #signing .img-container .img {
+  height: 300rem;
   width: 100%;
-  height: 600rem;
-  margin-bottom: 21rem;
   background-color: rgba(53, 99, 233, 0.15);
 }
-main .content.module-4 {
-  text-align: left;
+main .content.module-2 #signing .img-container .para3 {
+  margin-top: 6rem;
 }
-main .content.module-4 .logo {
+main .content.module-2 #per-country {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 45rem;
+       column-gap: 45rem;
+  row-gap: 30rem;
+}
+main .content.module-2 #per-country .country .head3 {
+  margin: 0;
+}
+main .content.module-2 #per-country .country .img-container {
+  display: flex;
+  gap: 15rem;
+  align-items: center;
+  margin-top: 6rem;
+}
+main .content.module-2 #per-country .country .img-container .img {
+  height: 90rem;
+  width: 150rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content.module-2 #per-country .country .img-container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+  padding-left: 0;
+}
+main .content.module-2 #per-country .country .img-container ul li {
+  list-style-type: none;
+}
+main .content.module-2 #country-profile {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 60rem;
+  margin-top: 45rem;
+  padding: 45rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+main .content.module-2 #maritime {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60rem;
+  margin-bottom: 60rem;
+}
+main .content.module-2 #img-1 {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(53, 99, 233, 0.15);
+}
+main .content.module-2 #img-con-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15rem;
+  padding: 45rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+main .content.module-2 #img-con-2 #img-2 {
+  width: 600rem;
+  height: 300rem;
+  background-color: rgba(53, 99, 233, 0.15);
+}
+main .content.module-2 #img-con-3 #img-3 {
+  width: 100%;
+  height: 270rem;
+  background-color: rgba(53, 99, 233, 0.15);
+}
+main .content.module-2 #img-con-4 {
+  margin-bottom: 45rem;
+}
+main .content.module-2 #img-con-4 #img-4 {
+  width: 100%;
+  height: 450rem;
+  background-color: rgba(53, 99, 233, 0.15);
+}
+main .content.module-2 #btn-group-dn-1 {
+  margin-top: 75rem;
+  display: flex;
+  justify-content: center;
+}
+main .content.module-3 {
+  text-align: center;
+}
+main .content.module-3 .logo {
   display: inline-block;
   height: 90rem;
   width: 450rem;
   background-color: rgba(53, 99, 233, 0.15);
-  margin-bottom: 75rem;
+  margin-bottom: 60rem;
 }
-main .content.module-4 .profile {
+main .content.module-3 .img-group {
+  margin-top: 60rem;
   display: grid;
-  grid-gap: 75rem;
   grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
 }
-main .content.module-4 .profile .info-container .info {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  text-align: left;
-  list-style-type: disc;
-  margin-bottom: 24rem;
-  padding-left: 18rem;
+main .content.module-3 .img-group .img {
+  background-color: rgba(53, 99, 233, 0.15);
 }
-main .content.module-4 .profile img {
+main .content.module-3 .img-group img {
   width: 100%;
   height: auto;
 }
-main .content.module-4 .interview-group {
+main .content.module-3 .interview-group {
   display: flex;
   flex-direction: column;
   gap: 60rem;
   margin-top: 75rem;
+  text-align: left;
 }
-main .content.module-4 .interview-group .interview .question {
+main .content.module-3 .interview-group .interview .question {
   padding-left: 28rem;
   text-indent: -28rem;
 }
-main .content.module-4 .interview-group .interview .answer {
+main .content.module-3 .interview-group .interview .answer {
   margin: 15rem 0 0 30rem;
   padding-left: 15rem;
   border-left: 6rem solid rgba(0, 0, 0, 0.15);
 }
-main .content.module-5 {
-  padding-top: 0;
+main .content.module-3 .info-container {
+  margin-top: 75rem;
+  text-align: left;
 }
-main .content.module-5 .bb-lecture-list .item-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 45rem;
+main .content.module-3 .info-container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 18rem;
+  padding-left: 18rem;
+  text-align: left;
+  list-style-type: disc;
 }
-main .content.module-5 .bb-lecture-list .item-group .item {
+main .content#lecture .head2 {
+  margin-bottom: 45rem;
+}
+main .content#lecture .bb-lecture .item-group {
+  display: flex;
+  flex-direction: column;
+  gap: 45rem;
+}
+main .content#lecture .bb-lecture .item-group .item {
   display: flex;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.15);
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-main .content.module-5 .bb-lecture-list .item-group .item:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+main .content#lecture .bb-lecture .item-group .item .thumb {
+  height: 200rem;
+  min-width: 320rem;
+  background-color: rgba(0, 0, 0, 0.15);
+  transition: 0.1s;
 }
-main .content.module-5 .bb-lecture-list .item-group .item .thumb {
-  height: 135rem;
-  min-width: 240rem;
-  background-color: rgba(0, 0, 0, 0.05);
+main .content#lecture .bb-lecture .item-group .item .thumb:hover {
+  opacity: 0.6;
 }
-main .content.module-5 .bb-lecture-list .item-group .item .info {
-  padding: 24rem;
+main .content#lecture .bb-lecture .item-group .item .info {
+  padding: 21rem 30rem;
   text-align: left;
 }
-main .content.module-5 .bb-lecture-list .item-group .item .info h2.title {
+main .content#lecture .bb-lecture .item-group .item .info .title {
+  margin-bottom: 12rem;
   font-size: 18rem;
   font-weight: 500;
+  line-height: 18rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
-main .content.module-5 .bb-lecture-list .item-group .item .info .duration {
-  margin-top: 3rem;
+main .content#lecture .bb-lecture .item-group .item .info .title .sector {
+  border-right: 1rem solid rgba(0, 0, 0, 0.3);
+  margin-right: 12rem;
+  padding-right: 12rem;
+}
+main .content#lecture .bb-lecture .item-group .item .info .des {
   font-size: 15rem;
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
-main .content.module-6 {
-  padding-top: 0;
+main .content#lecture .bb-lecture .item-group .item .info .btn-group {
+  margin-top: 15rem;
 }
-main .content.module-6 .bb-pub-list .item-group {
+main .content#publication .head2 {
+  margin-bottom: 45rem;
+}
+main .content#publication .bb-publication .item-group {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
-main .content.module-6 .bb-pub-list .item-group details {
+main .content#publication .bb-publication .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
   box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
 }
-main .content.module-6 .bb-pub-list .item-group details:not([open]) {
+main .content#publication .bb-publication .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
 }
-main .content.module-6 .bb-pub-list .item-group details summary {
+main .content#publication .bb-publication .item-group details summary {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   padding: 24rem;
 }
-main .content.module-6 .bb-pub-list .item-group details summary:hover {
+main .content#publication .bb-publication .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
-main .content.module-6 .bb-pub-list .item-group details summary .title-container {
+main .content#publication .bb-publication .item-group details summary .title-container {
   display: grid;
   grid-template-columns: 1fr 15fr 2.5fr;
   font-size: 18rem;
   font-weight: 600;
 }
-main .content.module-6 .bb-pub-list .item-group details summary .title-container .title {
+main .content#publication .bb-publication .item-group details summary .title-container .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
-main .content.module-6 .bb-pub-list .item-group details summary .title-container .date {
+main .content#publication .bb-publication .item-group details summary .title-container .date {
   text-align: right;
   font-weight: 300;
 }
-main .content.module-6 .bb-pub-list .item-group details .detail-container {
+main .content#publication .bb-publication .item-group details .detail-container {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   margin: 0 24rem;
   padding: 24rem 24rem 24rem 62rem;
+}
+main .content#publication .bb-publication .item-group details .detail-container .detail {
   font-size: 16.5rem;
   font-weight: 400;
 }
-main .content.module-7 {
-  padding-top: 0;
+main .content#publication .bb-publication .item-group details .detail-container .btn-group {
+  margin-top: 15rem;
 }
-main .content.module-7 .bb-event-list {
+main .content#events .head2 {
+  margin-bottom: 60rem;
+}
+main .content#events .bb-events {
   display: flex;
   gap: 75rem;
 }
-main .content.module-7 .bb-event-list .filter-group {
+main .content#events .bb-events .filter-group {
   min-width: -moz-max-content;
   min-width: max-content;
 }
-main .content.module-7 .bb-event-list .filter-group .filter {
+main .content#events .bb-events .filter-group .filter {
   text-align: left;
 }
-main .content.module-7 .bb-event-list .filter-group .filter .title {
+main .content#events .bb-events .filter-group .filter .title {
   margin-bottom: 6rem;
   font-size: 18rem;
   font-weight: 600;
 }
-main .content.module-7 .bb-event-list .filter-group .filter .check-group {
+main .content#events .bb-events .filter-group .filter .check-group {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   display: flex;
   flex-direction: column;
 }
-main .content.module-7 .bb-event-list .filter-group .filter .check-group .check label {
+main .content#events .bb-events .filter-group .filter .check-group .check label {
   padding: 9rem;
   cursor: pointer;
   width: -moz-fit-content;
@@ -615,133 +687,181 @@ main .content.module-7 .bb-event-list .filter-group .filter .check-group .check 
   align-items: center;
   font-size: 15rem;
 }
-main .content.module-7 .bb-event-list .filter-group .filter .check-group .check label:hover {
+main .content#events .bb-events .filter-group .filter .check-group .check label:hover {
   background-color: rgba(53, 99, 233, 0.15);
 }
-main .content.module-7 .bb-event-list .filter-group .filter .check-group .check label input {
+main .content#events .bb-events .filter-group .filter .check-group .check label input {
   margin: 0 9rem 0 0;
   height: 18rem;
   width: 18rem;
 }
-main .content.module-7 .bb-event-list .filter-group hr {
+main .content#events .bb-events .filter-group hr {
   margin: 33rem 0;
   border-color: rgba(0, 0, 0, 0.15);
 }
-main .content.module-7 .bb-event-list .item-group {
+main .content#events .bb-events .item-group {
   width: 100%;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
-main .content.module-7 .bb-event-list .item-group details {
+main .content#events .bb-events .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
   box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
 }
-main .content.module-7 .bb-event-list .item-group details:not([open]) {
+main .content#events .bb-events .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
 }
-main .content.module-7 .bb-event-list .item-group details summary {
+main .content#events .bb-events .item-group details summary {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   display: flex;
-  gap: 24rem;
-  padding: 24rem;
+  gap: 30rem;
+  padding: 30rem;
 }
-main .content.module-7 .bb-event-list .item-group details summary:hover {
+main .content#events .bb-events .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
-main .content.module-7 .bb-event-list .item-group details summary .thumb {
+main .content#events .bb-events .item-group details summary .thumb {
   height: 90rem;
   width: 160rem;
   min-width: 160rem;
   background-color: rgba(0, 0, 0, 0.15);
 }
-main .content.module-7 .bb-event-list .item-group details summary .info-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-1 {
-  width: 100%;
-}
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-1 .title {
+main .content#events .bb-events .item-group details summary .info-container .title {
   margin-bottom: 3rem;
   font-size: 21rem;
   font-weight: 600;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-1 .date {
+main .content#events .bb-events .item-group details summary .info-container .info-container {
+  margin-top: 9rem;
   font-size: 15rem;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.45);
-}
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-2 {
   display: flex;
-  gap: 30rem;
-  font-size: 15rem;
+  gap: 45rem;
 }
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-2 .detail {
+main .content#events .bb-events .item-group details summary .info-container .info-container .info-1 {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 6rem;
 }
-main .content.module-7 .bb-event-list .item-group details summary .info-container .info-2 .detail .icon {
+main .content#events .bb-events .item-group details summary .info-container .info-container .container {
+  display: flex;
+}
+main .content#events .bb-events .item-group details summary .info-container .info-container .container .icon {
   height: 21rem;
   width: 21rem;
-  margin-right: 6rem;
+  margin-right: 9rem;
   border-radius: 21rem;
   background-color: rgba(53, 99, 233, 0.3);
 }
-main .content.module-7 .bb-event-list .item-group details .detail-container {
-  margin: 0 24rem;
-  padding: 24rem 0;
+main .content#events .bb-events .item-group details summary .info-container .info-container .container .date, main .content#events .bb-events .item-group details summary .info-container .info-container .container .location, main .content#events .bb-events .item-group details summary .info-container .info-container .container .sector {
+  margin-top: 1rem;
+  font-size: 15rem;
+  font-weight: 300;
+}
+main .content#events .bb-events .item-group details .detail-container {
+  margin: 0 30rem;
+  padding: 30rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+main .content#events .bb-events .item-group details .detail-container .detail {
   font-size: 16.5rem;
   font-weight: 400;
 }
-main .content.module-8 {
-  padding-top: 0;
+main .content#events .bb-events .item-group details .detail-container .btn-group {
+  margin-top: 15rem;
 }
-main .content.module-8 .bb-site-list .item-group {
+main .content#history .head2 {
+  margin-bottom: 60rem;
+}
+main .content#history .bb-history .item-group {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+main .content#history .bb-history .item-group details {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: left;
+  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+}
+main .content#history .bb-history .item-group details:not([open]) {
+  box-shadow: 0 0 0 0;
+}
+main .content#history .bb-history .item-group details .question {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  padding: 24rem 30rem;
+  font-size: 18rem;
+  font-weight: 600;
+}
+main .content#history .bb-history .item-group details .question:hover {
+  background-color: rgba(53, 99, 233, 0.05);
+}
+main .content#history .bb-history .item-group details .question .date {
+  width: 180rem;
+}
+main .content#history .bb-history .item-group details .answer {
+  margin: 0 24rem 0 30rem;
+  padding: 24rem 0 30rem 180rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 16.5rem;
+  font-weight: 400;
+  line-height: 24rem;
+}
+main .content#related .head2 {
+  margin-bottom: 45rem;
+}
+main .content#related .bb-related .item-group {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 45rem;
 }
-main .content.module-8 .bb-site-list .item-group .item {
+main .content#related .bb-related .item-group .item {
   background-color: rgba(255, 255, 255, 0.75);
   border: 1px solid rgba(0, 0, 0, 0.15);
   display: block;
   text-decoration: none;
   color: rgb(0, 0, 0);
   padding: 24rem;
+  text-align: center;
 }
-main .content.module-8 .bb-site-list .item-group .item:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+main .content#related .bb-related .item-group .item:hover .logo, main .content#related .bb-related .item-group .item:hover .title {
+  opacity: 0.6;
+  text-decoration: underline;
+  text-underline-offset: 4rem;
 }
-main .content.module-8 .bb-site-list .item-group .item .logo .test-img {
+main .content#related .bb-related .item-group .item .logo .test-img {
   height: 180rem;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.15);
 }
-main .content.module-8 .bb-site-list .item-group .item h2.title {
+main .content#related .bb-related .item-group .item .title {
   margin-top: 12rem;
   font-size: 18rem;
   font-weight: 500;
 }
-main .content.module-9 {
-  padding-top: 0;
+main .content#faq .para1 {
+  text-align: center;
+  margin-bottom: 75rem;
 }
-main .content.module-9 .bb-faq-list .item-group {
+main .content#faq .bb-faq .item-group {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
-main .content.module-9 .bb-faq-list .item-group details {
+main .content#faq .bb-faq .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
   box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
 }
-main .content.module-9 .bb-faq-list .item-group details:not([open]) {
+main .content#faq .bb-faq .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
 }
-main .content.module-9 .bb-faq-list .item-group details .question {
+main .content#faq .bb-faq .item-group details .question {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -752,21 +872,22 @@ main .content.module-9 .bb-faq-list .item-group details .question {
   font-weight: 600;
   text-indent: -22rem;
 }
-main .content.module-9 .bb-faq-list .item-group details .question:hover {
+main .content#faq .bb-faq .item-group details .question:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
-main .content.module-9 .bb-faq-list .item-group details .answer {
+main .content#faq .bb-faq .item-group details .answer {
   margin: 0 24rem 0 45rem;
   padding: 15rem 0 24rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 16.5rem;
   font-weight: 400;
 }
-main .content#history h2 {
-  margin-bottom: 45rem;
+main .content#faq .more-question {
+  margin-top: 75rem;
+  text-align: center;
 }
-main .content#before-sticky {
-  padding-bottom: 42rem;
+main .content#faq .more-question .head2 {
+  margin-bottom: 30rem;
 }
 
 footer {
@@ -780,6 +901,9 @@ footer .content p.copyright {
   font-weight: 300;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+footer#success .content {
+  padding: 15rem 40rem 105rem 40rem;
 }
 
 /* Important */
@@ -800,6 +924,10 @@ footer .content p.copyright {
 }
 
 /* Important Ends */
+.test .aaa {
+  font-size: 30rem;
+  position: relative;
+}
 .test details summary {
   position: sticky;
   top: 60rem;

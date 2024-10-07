@@ -70,6 +70,23 @@
 
 .btn-2-1 {
   cursor: pointer;
+  background-color: rgba(53, 99, 233, 0.75);
+  border: 2rem solid rgb(53, 99, 233);
+  border-radius: 30rem;
+  padding: 12rem 60rem;
+  font-size: 16rem;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.btn-2-1:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 3rem;
+}
+
+.btn-2-2 {
+  cursor: pointer;
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 30rem;
   padding: 12rem;
@@ -79,23 +96,47 @@
   color: rgb(53, 99, 233);
   background-color: rgb(255, 255, 255);
 }
-.btn-2-1:hover {
+.btn-2-2:hover {
   opacity: 0.75;
 }
 
-.btn-2-2 {
-  cursor: pointer;
-  background-color: rgba(53, 99, 233, 0.75);
+.btn-dn-1 {
+  display: inline-block;
+  padding: 12rem 24rem 15rem 24rem;
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 30rem;
-  padding: 12rem;
-  font-size: 16rem;
-  text-align: center;
-  text-decoration: none;
+  font-size: 19.5rem;
+  font-weight: 400;
   color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.75);
+  text-decoration: none;
+  transition: 0.1s;
 }
-.btn-2-2:hover {
+.btn-dn-1:hover {
   opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 5rem;
+}
+
+.btn-dn-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 4rem 18rem 6rem 18rem;
+  border: 2px solid rgb(53, 99, 233);
+  border-radius: 30rem;
+  font-size: 16.5rem;
+  font-weight: 400;
+  background-color: rgba(53, 99, 233, 0.75);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.btn-dn-2:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 2rem;
 }
 
 .btn-tab {
@@ -144,5 +185,15 @@
   text-underline-offset: 4rem;
 }
 .btn-text-3:hover {
+  opacity: 0.6;
+}
+
+.btn-text-4 {
+  font-size: 16.5rem;
+  color: rgb(53, 99, 233);
+  text-decoration: underline;
+  text-underline-offset: 3rem;
+}
+.btn-text-4:hover {
   opacity: 0.6;
 }/*# sourceMappingURL=button.css.map */
