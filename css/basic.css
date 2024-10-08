@@ -735,34 +735,33 @@ main .content#events .bb-events .item-group details summary .info-container .tit
   font-weight: 600;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
+  -webkit-line-clamp: 2;
   overflow: hidden;
 }
 main .content#events .bb-events .item-group details summary .info-container .info-container {
   margin-top: 9rem;
-  font-size: 15rem;
   display: flex;
   gap: 45rem;
 }
 main .content#events .bb-events .item-group details summary .info-container .info-container .info-1 {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 9rem;
 }
 main .content#events .bb-events .item-group details summary .info-container .info-container .container {
   display: flex;
 }
 main .content#events .bb-events .item-group details summary .info-container .info-container .container .icon {
-  height: 21rem;
-  width: 21rem;
+  height: 18rem;
+  width: 18rem;
   margin-right: 9rem;
-  border-radius: 21rem;
-  background-color: rgba(53, 99, 233, 0.3);
+  opacity: 0.4;
 }
 main .content#events .bb-events .item-group details summary .info-container .info-container .container .date, main .content#events .bb-events .item-group details summary .info-container .info-container .container .location, main .content#events .bb-events .item-group details summary .info-container .info-container .container .sector {
-  margin-top: 1rem;
   font-size: 15rem;
   font-weight: 300;
+  line-height: 21rem;
+  margin-top: -1rem;
 }
 main .content#events .bb-events .item-group details .detail-container {
   margin: 0 30rem;
@@ -780,39 +779,31 @@ main .content#history .head2 {
   margin-bottom: 60rem;
 }
 main .content#history .bb-history .item-group {
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
 }
-main .content#history .bb-history .item-group details {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-  text-align: left;
-  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+main .content#history .bb-history .item-group .item {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
-main .content#history .bb-history .item-group details:not([open]) {
-  box-shadow: 0 0 0 0;
-}
-main .content#history .bb-history .item-group details .question {
+main .content#history .bb-history .item-group .item .question {
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
   display: flex;
-  padding: 24rem 30rem;
+  padding: 30rem;
   font-size: 18rem;
   font-weight: 600;
 }
-main .content#history .bb-history .item-group details .question:hover {
-  background-color: rgba(53, 99, 233, 0.05);
-}
-main .content#history .bb-history .item-group details .question .date {
+main .content#history .bb-history .item-group .item .question .date {
   width: 180rem;
 }
-main .content#history .bb-history .item-group details .answer {
-  margin: 0 24rem 0 30rem;
-  padding: 24rem 0 30rem 180rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+main .content#history .bb-history .item-group .item .answer {
+  margin: 0 0 0 202rem;
+  padding: 24rem 24rem 24rem 3rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 16.5rem;
   font-weight: 400;
-  line-height: 24rem;
+  line-height: 27rem;
 }
 main .content#related .head2 {
   margin-bottom: 45rem;
