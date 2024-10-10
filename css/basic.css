@@ -9,9 +9,9 @@ body {
 
 * .head1 {
   color: rgb(255, 255, 255);
-  font-size: 45rem;
+  font-size: 48rem;
   font-weight: 700;
-  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.9);
 }
 * .head2 {
   font-size: 36rem;
@@ -188,44 +188,42 @@ header nav .function .my-container #my-menu a.sign-out {
 
 main .main-title {
   height: 600rem;
-  background-color: rgba(53, 99, 233, 0.45);
-  background-blend-mode: screen;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 main .main-title#h-index {
-  background-image: url("../img/index-h.jpg");
+  background-image: url("../img/cover/index-h.jpg");
 }
 main .main-title#h-1-1 {
-  background-image: url("../img/1-1-h.jpg");
+  background-image: url("../img/cover/1-1-h.jpg");
 }
 main .main-title#h-1-2 {
-  background-image: url("../img/1-2-h.jpg");
+  background-image: url("../img/cover/1-2-h.jpg");
 }
 main .main-title#h-2-1 {
-  background-image: url("../img/2-1-h.jpg");
+  background-image: url("../img/cover/2-1-h.jpg");
 }
 main .main-title#h-2-2 {
-  background-image: url("../img/2-2-h.jpg");
+  background-image: url("../img/cover/2-2-h.jpg");
 }
 main .main-title#h-2-3 {
-  background-image: url("../img/2-3-h.jpg");
+  background-image: url("../img/cover/2-3-h.jpg");
 }
 main .main-title#h-3-1 {
-  background-image: url("../img/3-1-h.jpg");
+  background-image: url("../img/cover/3-1-h.jpg");
 }
 main .main-title#h-3-2 {
-  background-image: url("../img/3-2-h.jpg");
+  background-image: url("../img/cover/3-2-h.jpg");
 }
 main .main-title#h-3-3 {
-  background-image: url("../img/3-3-h.jpg");
+  background-image: url("../img/cover/3-3-h.jpg");
 }
 main .main-title#h-3-4 {
-  background-image: url("../img/3-4-h.jpg");
+  background-image: url("../img/cover/3-4-h.jpg");
 }
 main .main-title#h-4 {
-  background-image: url("../img/4-h.jpg");
+  background-image: url("../img/cover/4-h.jpg");
 }
 main section#sticky-menu-container {
   position: fixed;
@@ -546,6 +544,69 @@ main .content.module-3 .info-container .info {
   text-align: left;
   list-style-type: disc;
 }
+main .content#market .head2 {
+  margin-bottom: 60rem;
+}
+main .content#market .bb-market .item-group {
+  width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+main .content#market .bb-market .item-group details {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  text-align: left;
+  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+}
+main .content#market .bb-market .item-group details:not([open]) {
+  box-shadow: 0 0 0 0;
+}
+main .content#market .bb-market .item-group details summary {
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  gap: 60rem;
+  align-items: center;
+  padding: 45rem;
+}
+main .content#market .bb-market .item-group details summary:hover {
+  background-color: rgba(53, 99, 233, 0.05);
+}
+main .content#market .bb-market .item-group details summary .thumb {
+  height: 270rem;
+  width: 420rem;
+  min-width: 420rem;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content#market .bb-market .item-group details summary .info-container .head2 {
+  margin-bottom: 15rem;
+}
+main .content#market .bb-market .item-group details .detail-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45rem;
+  margin: 0 45rem;
+  padding: 45rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+main .content#market .bb-market .item-group details .detail-group .detail .title-container {
+  margin-bottom: 9rem;
+}
+main .content#market .bb-market .item-group details .detail-group .detail .title-container .title {
+  margin-bottom: 3rem;
+  font-size: 27rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.3);
+}
+main .content#market .bb-market .item-group details .detail-group .detail .title-container .code {
+  font-size: 16.5rem;
+  font-weight: 400;
+}
+main .content#market .bb-market .item-group details .detail-group .detail .img {
+  height: 210rem;
+  min-width: 210rem;
+  background-color: rgba(0, 0, 0, 0.05);
+}
 main .content#lecture .head2 {
   margin-bottom: 45rem;
 }
@@ -619,7 +680,7 @@ main .content#publication .bb-publication .item-group details summary {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding: 24rem;
+  padding: 30rem;
 }
 main .content#publication .bb-publication .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
@@ -642,15 +703,15 @@ main .content#publication .bb-publication .item-group details summary .title-con
 }
 main .content#publication .bb-publication .item-group details .detail-container {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  margin: 0 24rem;
-  padding: 24rem 24rem 24rem 62rem;
+  margin: 0 30rem;
+  padding: 30rem 30rem 30rem 62rem;
 }
 main .content#publication .bb-publication .item-group details .detail-container .detail {
   font-size: 16.5rem;
   font-weight: 400;
 }
 main .content#publication .bb-publication .item-group details .detail-container .btn-group {
-  margin-top: 15rem;
+  margin-top: 18rem;
 }
 main .content#events .head2 {
   margin-bottom: 60rem;
@@ -667,7 +728,7 @@ main .content#events .bb-events .filter-group .filter {
   text-align: left;
 }
 main .content#events .bb-events .filter-group .filter .title {
-  margin-bottom: 6rem;
+  margin-bottom: 9rem;
   font-size: 18rem;
   font-weight: 600;
 }
@@ -679,7 +740,7 @@ main .content#events .bb-events .filter-group .filter .check-group {
   flex-direction: column;
 }
 main .content#events .bb-events .filter-group .filter .check-group .check label {
-  padding: 9rem;
+  padding: 6rem 0;
   cursor: pointer;
   width: -moz-fit-content;
   width: fit-content;
@@ -688,9 +749,10 @@ main .content#events .bb-events .filter-group .filter .check-group .check label 
   font-size: 15rem;
 }
 main .content#events .bb-events .filter-group .filter .check-group .check label:hover {
-  background-color: rgba(53, 99, 233, 0.15);
+  text-decoration: underline;
 }
 main .content#events .bb-events .filter-group .filter .check-group .check label input {
+  cursor: pointer;
   margin: 0 9rem 0 0;
   height: 18rem;
   width: 18rem;
@@ -766,7 +828,7 @@ main .content#events .bb-events .item-group details summary .info-container .inf
 main .content#events .bb-events .item-group details .detail-container {
   margin: 0 30rem;
   padding: 30rem 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 main .content#events .bb-events .item-group details .detail-container .detail {
   font-size: 16.5rem;
@@ -785,10 +847,6 @@ main .content#history .bb-history .item-group .item {
   border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 main .content#history .bb-history .item-group .item .question {
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
   display: flex;
   padding: 30rem;
   font-size: 18rem;
@@ -858,7 +916,7 @@ main .content#faq .bb-faq .item-group details .question {
      -moz-user-select: none;
           user-select: none;
   display: block;
-  padding: 24rem 24rem 24rem 46rem;
+  padding: 30rem 30rem 30rem 46rem;
   font-size: 18rem;
   font-weight: 600;
   text-indent: -22rem;
@@ -867,8 +925,8 @@ main .content#faq .bb-faq .item-group details .question:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
 main .content#faq .bb-faq .item-group details .answer {
-  margin: 0 24rem 0 45rem;
-  padding: 15rem 0 24rem 0;
+  margin: 0 30rem 0 45rem;
+  padding: 15rem 0 30rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 16.5rem;
   font-weight: 400;

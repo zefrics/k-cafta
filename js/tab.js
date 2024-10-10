@@ -21,7 +21,7 @@ function openCompany(e, companyName) {
   element.classList.remove("hide");
   e.currentTarget.classList.add("active");
 
-  var headerOffset = 135; // Height of (Menu + Sticky)
+  var headerOffset = 60; // Height of (Menu + Sticky)
   var elementPosition = element.getBoundingClientRect().top;
   var offsetPosition = elementPosition - headerOffset;
 

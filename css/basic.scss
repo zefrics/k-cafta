@@ -46,8 +46,8 @@ body {
 * {
   .head1 {
     color: $color-w1;
-    font-size: 45rem; font-weight: 700;
-    text-shadow: 3rem 3rem 3rem $color-k3;
+    font-size: 48rem; font-weight: 700;
+    text-shadow: 3rem 3rem 3rem $color-k2;
   }
   .head2 {
     font-size: 36rem; font-weight: 700;
@@ -193,44 +193,44 @@ header {
 main {
   .main-title {
     height: 600rem;
-    background-color: $color-m5;
-    background-blend-mode: screen;
+    // background-color: $color-m5;
+    // background-blend-mode: screen;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   
     &#h-index {
-      background-image: url('../img/index-h.jpg');
+      background-image: url('../img/cover/index-h.jpg');
     }
     &#h-1-1 {
-      background-image: url('../img/1-1-h.jpg');
+      background-image: url('../img/cover/1-1-h.jpg');
     }
     &#h-1-2 {
-      background-image: url('../img/1-2-h.jpg');
+      background-image: url('../img/cover/1-2-h.jpg');
     }
     &#h-2-1 {
-      background-image: url('../img/2-1-h.jpg');
+      background-image: url('../img/cover/2-1-h.jpg');
     }
     &#h-2-2 {
-      background-image: url('../img/2-2-h.jpg');
+      background-image: url('../img/cover/2-2-h.jpg');
     }
     &#h-2-3 {
-      background-image: url('../img/2-3-h.jpg');
+      background-image: url('../img/cover/2-3-h.jpg');
     }
     &#h-3-1 {
-      background-image: url('../img/3-1-h.jpg');
+      background-image: url('../img/cover/3-1-h.jpg');
     }
     &#h-3-2 {
-      background-image: url('../img/3-2-h.jpg');
+      background-image: url('../img/cover/3-2-h.jpg');
     }
     &#h-3-3 {
-      background-image: url('../img/3-3-h.jpg');
+      background-image: url('../img/cover/3-3-h.jpg');
     }
     &#h-3-4 {
-      background-image: url('../img/3-4-h.jpg');
+      background-image: url('../img/cover/3-4-h.jpg');
     }
     &#h-4 {
-      background-image: url('../img/4-h.jpg');
+      background-image: url('../img/cover/4-h.jpg');
     }
   }
 
@@ -545,6 +545,69 @@ main {
 
     }
 
+    &#market { // bb-market
+      .head2 {
+        margin-bottom: 60rem;
+      }
+      .bb-market {
+        .item-group {
+          width: 100%;
+          border-top: 1px solid $color-k7;
+          details {
+            border-bottom: 1px solid $color-k7;
+            text-align: left;
+            box-shadow: 0 0 0 6rem $color-m7 inset;
+            &:not([open]) {
+              box-shadow: 0 0 0 0;
+            }
+            summary {
+              cursor: pointer;
+              user-select: none;
+              display: flex; gap: 60rem; align-items: center;
+              padding: 45rem;
+              &:hover {
+                background-color: $color-m8;
+              }
+              .thumb {
+                height: 270rem;
+                width: 420rem; min-width: 420rem;
+                background-color: $color-k7;
+              }
+              .info-container {
+                .head2 {
+                  margin-bottom: 15rem;
+                }
+              }
+            }
+            
+            .detail-group {
+              display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 45rem;
+              margin: 0 45rem; padding: 45rem 0;
+              border-top: 1px solid $color-k7;
+              .detail {
+                .title-container {
+                  margin-bottom: 9rem;
+                  .title {
+                    margin-bottom: 3rem;
+                    font-size: 27rem; font-weight: 600;
+                    color: $color-k6;
+                  }
+                  .code {
+                    font-size: 16.5rem; font-weight: 400;
+                  }
+                }
+                .img {
+                  height: 210rem; min-width: 210rem;
+                  background-color: $color-k8;
+                }
+              }
+            }
+          }
+        }
+        
+      }
+    }
+
     &#lecture { // bb-lecture
       .head2 {
         margin-bottom: 45rem;
@@ -615,7 +678,7 @@ main {
             summary {
               cursor: pointer;
               user-select: none;
-              padding: 24rem;
+              padding: 30rem;
               &:hover {
                 background-color: $color-m8;
               }
@@ -636,13 +699,13 @@ main {
             }
             .detail-container {
               border-top: 1px solid $color-k8;
-              margin: 0 24rem;
-              padding: 24rem 24rem 24rem 62rem;
+              margin: 0 30rem;
+              padding: 30rem 30rem 30rem 62rem;
               .detail {
                 font-size: 16.5rem; font-weight: 400;
               }
               .btn-group {
-                margin-top: 15rem;
+                margin-top: 18rem;
               }
             }
           }
@@ -662,7 +725,7 @@ main {
           .filter {
             text-align: left;
             .title {
-              margin-bottom: 6rem;
+              margin-bottom: 9rem;
               font-size: 18rem; font-weight: 600;
             }
             .check-group {
@@ -670,15 +733,17 @@ main {
               display: flex; flex-direction: column;
               .check {
                 label {
-                  padding: 9rem;
+                  padding: 6rem 0;
                   cursor: pointer;
                   width: fit-content;
                   display: flex; align-items: center;
                   font-size: 15rem;
                   &:hover {
-                    background-color: $color-m7;
+                    // background-color: $color-m7;
+                    text-decoration: underline;
                   }
                   input {
+                    cursor: pointer;
                     margin: 0 9rem 0 0;
                     height: 18rem; width: 18rem;
                   }
@@ -752,7 +817,7 @@ main {
             .detail-container {
               margin: 0 30rem;
               padding: 30rem 0;
-              border-top: 1px solid $color-k8;
+              border-top: 1px solid $color-k7;
               .detail {
                 font-size: 16.5rem; font-weight: 400;
               }
@@ -776,8 +841,6 @@ main {
           .item {
             border-bottom: 2px solid $color-k7;
             .question {
-              cursor: pointer;
-              user-select: none;
               display: flex;
               padding: 30rem;
               font-size: 18rem; font-weight: 600;
@@ -857,7 +920,7 @@ main {
               cursor: pointer;
               user-select: none;
               display: block;
-              padding: 24rem 24rem 24rem 46rem;
+              padding: 30rem 30rem 30rem 46rem;
               font-size: 18rem; font-weight: 600;
               text-indent: -22rem;
               &:hover {
@@ -865,8 +928,8 @@ main {
               }
             }
             .answer {
-              margin: 0 24rem 0 45rem;
-              padding: 15rem 0 24rem 0;
+              margin: 0 30rem 0 45rem;
+              padding: 15rem 0 30rem 0;
               border-top: 1px solid $color-k8;
               font-size: 16.5rem; font-weight: 400;
             }
