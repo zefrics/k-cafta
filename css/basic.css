@@ -404,10 +404,10 @@ main .content.module-2 #signing .img-container .head3 span {
   font-weight: 400;
   line-height: 21rem;
 }
-main .content.module-2 #signing .img-container .img {
-  height: 300rem;
+main .content.module-2 #signing .img-container img {
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
-  background-color: rgba(53, 99, 233, 0.15);
 }
 main .content.module-2 #signing .img-container .para3 {
   margin-top: 6rem;
@@ -424,14 +424,15 @@ main .content.module-2 #per-country .country .head3 {
 }
 main .content.module-2 #per-country .country .img-container {
   display: flex;
-  gap: 15rem;
+  gap: 18rem;
   align-items: center;
   margin-top: 6rem;
 }
-main .content.module-2 #per-country .country .img-container .img {
-  height: 90rem;
-  width: 150rem;
-  background-color: rgba(0, 0, 0, 0.15);
+main .content.module-2 #per-country .country .img-container img {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 165rem;
+  border: 1rem solid rgba(0, 0, 0, 0.3);
 }
 main .content.module-2 #per-country .country .img-container ul {
   display: flex;
@@ -450,18 +451,11 @@ main .content.module-2 #country-profile {
   padding: 45rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
-main .content.module-2 #maritime {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 60rem;
-  margin-bottom: 60rem;
-}
-main .content.module-2 #img-1 {
-  width: 100%;
+main .content.module-2 #country-profile img {
   height: 100%;
-  background-color: rgba(53, 99, 233, 0.15);
+  width: 100%;
 }
-main .content.module-2 #img-con-2 {
+main .content.module-2 #fta-partners {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -469,20 +463,24 @@ main .content.module-2 #img-con-2 {
   padding: 45rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
-main .content.module-2 #img-con-2 #img-2 {
+main .content.module-2 #fta-partners #img-2 {
   width: 600rem;
   height: 300rem;
   background-color: rgba(53, 99, 233, 0.15);
 }
-main .content.module-2 #img-con-3 #img-3 {
-  width: 100%;
-  height: 270rem;
-  background-color: rgba(53, 99, 233, 0.15);
+main .content.module-2 #maritime {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60rem;
+  margin-bottom: 60rem;
 }
-main .content.module-2 #img-con-4 {
+main .content.module-2 #maritime .img-container img {
+  width: 100%;
+}
+main .content.module-2 #shipping {
   margin-bottom: 45rem;
 }
-main .content.module-2 #img-con-4 #img-4 {
+main .content.module-2 #shipping #img-4 {
   width: 100%;
   height: 450rem;
   background-color: rgba(53, 99, 233, 0.15);
@@ -496,9 +494,8 @@ main .content.module-3 {
   text-align: center;
 }
 main .content.module-3 .logo {
-  display: inline-block;
-  height: 90rem;
-  width: 450rem;
+  height: 100%;
+  width: 300rem;
   background-color: rgba(53, 99, 233, 0.15);
   margin-bottom: 60rem;
 }
@@ -573,10 +570,10 @@ main .content#market .bb-market .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
 main .content#market .bb-market .item-group details summary .thumb {
-  height: 270rem;
+  height: -moz-fit-content;
+  height: fit-content;
   width: 420rem;
   min-width: 420rem;
-  background-color: rgba(0, 0, 0, 0.15);
 }
 main .content#market .bb-market .item-group details summary .info-container .head2 {
   margin-bottom: 15rem;
@@ -584,7 +581,8 @@ main .content#market .bb-market .item-group details summary .info-container .hea
 main .content#market .bb-market .item-group details .detail-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 45rem;
+  justify-content: space-between;
+  gap: 45rem;
   margin: 0 45rem;
   padding: 45rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -602,10 +600,10 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
   font-size: 16.5rem;
   font-weight: 400;
 }
-main .content#market .bb-market .item-group details .detail-group .detail .img {
+main .content#market .bb-market .item-group details .detail-group .detail .thumb {
+  border: 1rem solid rgba(0, 0, 0, 0.15);
   height: 210rem;
-  min-width: 210rem;
-  background-color: rgba(0, 0, 0, 0.05);
+  min-width: 330rem;
 }
 main .content#lecture .head2 {
   margin-bottom: 45rem;
@@ -857,7 +855,7 @@ main .content#history .bb-history .item-group .item .question .date {
 }
 main .content#history .bb-history .item-group .item .answer {
   margin: 0 0 0 202rem;
-  padding: 24rem 24rem 24rem 3rem;
+  padding: 24rem 24rem 24rem 6rem;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
   font-size: 16.5rem;
   font-weight: 400;

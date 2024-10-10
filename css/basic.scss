@@ -407,9 +407,8 @@ main {
               font-size: 16.5rem; font-weight: 400; line-height: 21rem;
             }
           }
-          .img {
-            height: 300rem; width: 100%;
-            background-color: $color-m7;
+          img {
+            height: fit-content; width: 100%;
           }
           .para3 {
             margin-top: 6rem;
@@ -425,11 +424,11 @@ main {
             margin: 0;
           }
           .img-container {
-            display: flex; gap: 15rem; align-items: center;
+            display: flex; gap: 18rem; align-items: center;
             margin-top: 6rem;
-            .img {
-              height: 90rem; width: 150rem;
-              background-color: $color-k7;
+            img {
+              height: fit-content; width: 165rem;
+              border: 1rem solid $color-k6;
             }
             ul {
               display: flex; flex-direction: column; gap: 9rem;
@@ -442,23 +441,17 @@ main {
         }
       }
 
-      #country-profile {
+      #country-profile { // Overview - Korean Map
         display: grid; grid-template-columns: 3fr 2fr; gap: 60rem;
         margin-top: 45rem;
         padding: 45rem;
         background-color: $color-k8;
+        img {
+          height: 100%; width: 100%; 
+        }
       }
 
-      #maritime {
-        display: grid; grid-template-columns: repeat(2, 1fr); gap: 60rem;
-        margin-bottom: 60rem;
-      }
-
-      #img-1 {
-        width: 100%; height: 100%;
-        background-color: $color-m7;
-      }
-      #img-con-2 {
+      #fta-partners { // Overview - FTA Partners
         display: flex; flex-direction: column; align-items: center;
         margin-bottom: 15rem;
         padding: 45rem;
@@ -469,20 +462,24 @@ main {
         }
       }
 
-      #img-con-3 {
-        #img-3 {
-          width: 100%; height: 270rem;
-          background-color: $color-m7;
+      #maritime { // Logistics - Busan Port
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 60rem;
+        margin-bottom: 60rem;
+        .img-container {
+          img {
+            width: 100%;
+          }
         }
       }
 
-      #img-con-4 {
+      #shipping { // Logistics - Shipping Route
         margin-bottom: 45rem;
         #img-4 {
           width: 100%; height: 450rem;
           background-color: $color-m7;
         }
       }
+
       #btn-group-dn-1 {
         margin-top: 75rem;
         display: flex; justify-content: center;
@@ -492,8 +489,7 @@ main {
     &.module-3 { // Success
       text-align: center;
       .logo {
-        display: inline-block;
-        height: 90rem; width: 450rem;
+        height: 100%; width: 300rem;
         background-color: $color-m7;
         margin-bottom: 60rem;
       }
@@ -542,10 +538,6 @@ main {
     }
 
     &#market { // ROK Market Info
-
-    }
-
-    &#market { // bb-market
       .head2 {
         margin-bottom: 60rem;
       }
@@ -569,9 +561,8 @@ main {
                 background-color: $color-m8;
               }
               .thumb {
-                height: 270rem;
+                height: fit-content;
                 width: 420rem; min-width: 420rem;
-                background-color: $color-k7;
               }
               .info-container {
                 .head2 {
@@ -581,7 +572,9 @@ main {
             }
             
             .detail-group {
-              display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 45rem;
+              display: grid; grid-template-columns: repeat(3, 1fr);
+              justify-content: space-between; gap: 45rem;
+              
               margin: 0 45rem; padding: 45rem 0;
               border-top: 1px solid $color-k7;
               .detail {
@@ -596,9 +589,9 @@ main {
                     font-size: 16.5rem; font-weight: 400;
                   }
                 }
-                .img {
-                  height: 210rem; min-width: 210rem;
-                  background-color: $color-k8;
+                .thumb {
+                  border: 1rem solid $color-k7;
+                  height: 210rem; min-width: 330rem;
                 }
               }
             }
@@ -851,7 +844,7 @@ main {
             }
             .answer {
               margin: 0 0 0 202rem;
-              padding: 24rem 24rem 24rem 3rem;
+              padding: 24rem 24rem 24rem 6rem;
               border-top: 1px solid $color-k7;
               font-size: 16.5rem; font-weight: 400; line-height: 27rem;
             }
