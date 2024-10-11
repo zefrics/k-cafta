@@ -15,6 +15,7 @@ $color-k5: rgba(0, 0, 0, 0.45);
 $color-k6: rgba(0, 0, 0, 0.3);
 $color-k7: rgba(0, 0, 0, 0.15);
 $color-k8: rgba(0, 0, 0, 0.05);
+$color-k9: rgba(0, 0, 0, 0.03);
 
 $color-m1: rgba(53, 99, 233, 1);
 $color-m2: rgba(53, 99, 233, 0.9);
@@ -193,7 +194,7 @@ header {
 main {
   .main-title {
     height: 600rem;
-    // background-color: $color-m5;
+    background-color: $color-m5;
     // background-blend-mode: screen;
     background-position: center;
     background-repeat: no-repeat;
@@ -306,43 +307,53 @@ main {
       }
     }
 
-    &#index-logo { // Index Logo
+    &#partner { // Index partner
       text-align: left;
       padding-top:0;
-      .aaa {
+      .part1 {
         display: grid; grid-template-columns: repeat(3, 1fr); gap: 45rem;
-        .ele {
-          a {
-            margin: 12rem 0 15rem 0;
-            display: inline-block;
+        .item {
+          .head3 {
+            margin-bottom: 18rem;
+          }
+          .img-container {
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 15rem;
+            height: 240rem;
+            border: 1rem solid $color-k7;
+            // background-color: $color-k9;
             transition: 0.1s;
-            .img {
-              height: 210rem; width: 210rem;
-              background-color: $color-k7;
+            img {
+              height: 150rem; width: fit-content;
+              &#cabei {
+                height: 135rem;
+              }
             }
             &:hover {
-              opacity: 0.75;
+              opacity: 0.6;
             }
           }
         }
       }
-      .bbb {
+      .part2 {
         margin-top: 60rem;
-        .ele {
-          .img-group {
-            margin-top: 15rem;
-            display: grid; grid-template-columns: repeat(6, 1fr);
-            column-gap: 45rem; row-gap: 36rem;
-            a {
-              display: inline-block;
-              transition: 0.1s;
-              .img {
-                height: 90rem; width: 100%;
-                background-color: $color-k7;
-              }
-              &:hover {
-                opacity: 0.75;
-              }
+        .head3 {
+          margin-bottom: 18rem;
+        }
+        .img-group {
+          display: grid; grid-template-columns: repeat(6, 1fr);
+          column-gap: 45rem; row-gap: 36rem;
+          .img-container {
+            display: flex; align-items: center;
+            transition: 0.1s;
+            border: 1rem solid $color-k7;
+            padding: 18rem;
+            height: 120rem;
+            img {
+              width: 100%;
+            }
+            &:hover {
+              opacity: 0.6;
             }
           }
         }
@@ -862,31 +873,27 @@ main {
         .item-group {
           display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 45rem;
           .item {
-            background-color: $color-w3;
+            padding: 30rem;
             border: 1px solid $color-k7;
-            display: block;
+            text-align: center;
             text-decoration: none;
             color: $color-k1;
-            padding: 24rem;
-            text-align: center;
-  
             &:hover {
-              .logo, .title {
-                opacity: 0.6;
+              opacity: 0.6;
+              .title {
                 text-decoration: underline;
                 text-underline-offset: 4rem;
               }
             }
-  
-            .logo {
-              .test-img {
-                height: 180rem; width: 100%;
-                background-color: $color-k7;
+            .img-container {
+              height: 135rem;
+              display: flex; align-items: center;
+              img {
+                width: 100%;
               }
             }
-  
             .title {
-              margin-top: 12rem;
+              margin-top: 18rem;
               font-size: 18rem; font-weight: 500;
             }
           }

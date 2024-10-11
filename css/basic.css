@@ -188,6 +188,7 @@ header nav .function .my-container #my-menu a.sign-out {
 
 main .main-title {
   height: 600rem;
+  background-color: rgba(53, 99, 233, 0.45);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -303,50 +304,64 @@ main .content.module-1 .part .logo img {
   margin: 0;
   padding: 0;
 }
-main .content#index-logo {
+main .content#partner {
   text-align: left;
   padding-top: 0;
 }
-main .content#index-logo .aaa {
+main .content#partner .part1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 45rem;
 }
-main .content#index-logo .aaa .ele a {
-  margin: 12rem 0 15rem 0;
-  display: inline-block;
+main .content#partner .part1 .item .head3 {
+  margin-bottom: 18rem;
+}
+main .content#partner .part1 .item .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15rem;
+  height: 240rem;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
   transition: 0.1s;
 }
-main .content#index-logo .aaa .ele a .img {
-  height: 210rem;
-  width: 210rem;
-  background-color: rgba(0, 0, 0, 0.15);
+main .content#partner .part1 .item .img-container img {
+  height: 150rem;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-main .content#index-logo .aaa .ele a:hover {
-  opacity: 0.75;
+main .content#partner .part1 .item .img-container img#cabei {
+  height: 135rem;
 }
-main .content#index-logo .bbb {
+main .content#partner .part1 .item .img-container:hover {
+  opacity: 0.6;
+}
+main .content#partner .part2 {
   margin-top: 60rem;
 }
-main .content#index-logo .bbb .ele .img-group {
-  margin-top: 15rem;
+main .content#partner .part2 .head3 {
+  margin-bottom: 18rem;
+}
+main .content#partner .part2 .img-group {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   -moz-column-gap: 45rem;
        column-gap: 45rem;
   row-gap: 36rem;
 }
-main .content#index-logo .bbb .ele .img-group a {
-  display: inline-block;
+main .content#partner .part2 .img-group .img-container {
+  display: flex;
+  align-items: center;
   transition: 0.1s;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
+  padding: 18rem;
+  height: 120rem;
 }
-main .content#index-logo .bbb .ele .img-group a .img {
-  height: 90rem;
+main .content#partner .part2 .img-group .img-container img {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
 }
-main .content#index-logo .bbb .ele .img-group a:hover {
-  opacity: 0.75;
+main .content#partner .part2 .img-group .img-container:hover {
+  opacity: 0.6;
 }
 main .content.module-2 .head2 {
   margin-bottom: 45rem;
@@ -870,26 +885,29 @@ main .content#related .bb-related .item-group {
   grid-gap: 45rem;
 }
 main .content#related .bb-related .item-group .item {
-  background-color: rgba(255, 255, 255, 0.75);
+  padding: 30rem;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  display: block;
+  text-align: center;
   text-decoration: none;
   color: rgb(0, 0, 0);
-  padding: 24rem;
-  text-align: center;
 }
-main .content#related .bb-related .item-group .item:hover .logo, main .content#related .bb-related .item-group .item:hover .title {
+main .content#related .bb-related .item-group .item:hover {
   opacity: 0.6;
+}
+main .content#related .bb-related .item-group .item:hover .title {
   text-decoration: underline;
   text-underline-offset: 4rem;
 }
-main .content#related .bb-related .item-group .item .logo .test-img {
-  height: 180rem;
+main .content#related .bb-related .item-group .item .img-container {
+  height: 135rem;
+  display: flex;
+  align-items: center;
+}
+main .content#related .bb-related .item-group .item .img-container img {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.15);
 }
 main .content#related .bb-related .item-group .item .title {
-  margin-top: 12rem;
+  margin-top: 18rem;
   font-size: 18rem;
   font-weight: 500;
 }
