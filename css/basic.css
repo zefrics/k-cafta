@@ -314,13 +314,13 @@ main .content#partner .part1 {
   gap: 45rem;
 }
 main .content#partner .part1 .item .head3 {
-  margin-bottom: 18rem;
+  margin-bottom: 12rem;
 }
 main .content#partner .part1 .item .img-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 15rem;
+  margin-bottom: 12rem;
   height: 240rem;
   border: 1rem solid rgba(0, 0, 0, 0.15);
   transition: 0.1s;
@@ -340,7 +340,7 @@ main .content#partner .part2 {
   margin-top: 60rem;
 }
 main .content#partner .part2 .head3 {
-  margin-bottom: 18rem;
+  margin-bottom: 12rem;
 }
 main .content#partner .part2 .img-group {
   display: grid;
@@ -618,7 +618,9 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
 main .content#market .bb-market .item-group details .detail-group .detail .thumb {
   border: 1rem solid rgba(0, 0, 0, 0.15);
   height: 210rem;
-  min-width: 330rem;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 main .content#lecture .head2 {
   margin-bottom: 45rem;
@@ -971,6 +973,25 @@ footer#success .content {
   padding: 15rem 40rem 105rem 40rem;
 }
 
+.to-top {
+  cursor: pointer;
+  position: fixed;
+  bottom: 60rem;
+  right: 60rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60rem;
+  height: 60rem;
+  border-radius: 60rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1rem 1rem 3rem 1rem rgba(0, 0, 0, 0.45);
+}
+.to-top img {
+  width: 30rem;
+  height: 100%;
+}
+
 /* Important */
 .hide {
   display: none !important;
@@ -988,19 +1009,4 @@ footer#success .content {
   text-align: justify !important;
 }
 
-/* Important Ends */
-.test .aaa {
-  font-size: 30rem;
-  position: relative;
-}
-.test details summary {
-  position: sticky;
-  top: 60rem;
-  padding: 60rem;
-  border: 1px solid red;
-  background-color: #dddddd;
-}
-.test details .text {
-  height: 500rem;
-  background-color: rgba(0, 0, 0, 0.05);
-}/*# sourceMappingURL=basic.css.map */
+/* Important Ends *//*# sourceMappingURL=basic.css.map */
