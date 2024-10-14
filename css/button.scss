@@ -218,3 +218,18 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
     opacity: 0.6;
   }
 }
+
+.btn-text-5 { // Publication : File download
+  width: fit-content;
+  margin-left: 15rem;
+  font-size: 16.5rem; line-height: 30rem;
+  list-style-type: disc;
+  color: $color-m1;
+  a {
+    color: $color-m1; 
+    text-underline-offset: 4rem;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}

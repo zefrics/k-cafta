@@ -414,11 +414,6 @@ main .content.module-2 #signing {
   grid-template-columns: repeat(2, 1fr);
   gap: 45rem;
 }
-main .content.module-2 #signing .img-container .head3 span {
-  font-size: 16.5rem;
-  font-weight: 400;
-  line-height: 21rem;
-}
 main .content.module-2 #signing .img-container img {
   height: -moz-fit-content;
   height: fit-content;
@@ -480,7 +475,7 @@ main .content.module-2 #fta-partners {
 }
 main .content.module-2 #fta-partners #img-2 {
   width: 600rem;
-  height: 300rem;
+  height: 100%;
   background-color: rgba(53, 99, 233, 0.15);
 }
 main .content.module-2 #maritime {
@@ -496,8 +491,9 @@ main .content.module-2 #shipping {
   margin-bottom: 45rem;
 }
 main .content.module-2 #shipping #img-4 {
-  width: 100%;
-  height: 450rem;
+  height: 100%;
+  width: 1200rem;
+  max-width: 1200rem;
   background-color: rgba(53, 99, 233, 0.15);
 }
 main .content.module-2 #btn-group-dn-1 {
@@ -518,14 +514,14 @@ main .content.module-3 .img-group {
   margin-top: 60rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30rem;
+  gap: 45rem;
 }
 main .content.module-3 .img-group .img {
   background-color: rgba(53, 99, 233, 0.15);
 }
 main .content.module-3 .img-group img {
+  height: 100%;
   width: 100%;
-  height: auto;
 }
 main .content.module-3 .interview-group {
   display: flex;
@@ -556,6 +552,32 @@ main .content.module-3 .info-container .info {
   text-align: left;
   list-style-type: disc;
 }
+main .content#history .head2 {
+  margin-bottom: 60rem;
+}
+main .content#history .bb-history .item-group {
+  border-top: 2px solid rgba(0, 0, 0, 0.15);
+}
+main .content#history .bb-history .item-group .item {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+}
+main .content#history .bb-history .item-group .item .question {
+  display: flex;
+  padding: 30rem;
+  font-size: 18rem;
+  font-weight: 600;
+}
+main .content#history .bb-history .item-group .item .question .date {
+  width: 180rem;
+}
+main .content#history .bb-history .item-group .item .answer {
+  margin: 0 0 0 202rem;
+  padding: 24rem 24rem 24rem 6rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  font-size: 16.5rem;
+  font-weight: 400;
+  line-height: 27rem;
+}
 main .content#market .head2 {
   margin-bottom: 60rem;
 }
@@ -577,7 +599,7 @@ main .content#market .bb-market .item-group details summary {
      -moz-user-select: none;
           user-select: none;
   display: flex;
-  gap: 60rem;
+  gap: 45rem;
   align-items: center;
   padding: 45rem;
 }
@@ -585,8 +607,7 @@ main .content#market .bb-market .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
 main .content#market .bb-market .item-group details summary .thumb {
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100%;
   width: 420rem;
   min-width: 420rem;
 }
@@ -638,8 +659,8 @@ main .content#lecture .bb-lecture .item-group .item {
   color: rgb(0, 0, 0);
 }
 main .content#lecture .bb-lecture .item-group .item .thumb {
-  height: 200rem;
-  min-width: 320rem;
+  height: 210rem;
+  min-width: 330rem;
   background-color: rgba(0, 0, 0, 0.15);
   transition: 0.1s;
 }
@@ -647,14 +668,14 @@ main .content#lecture .bb-lecture .item-group .item .thumb:hover {
   opacity: 0.6;
 }
 main .content#lecture .bb-lecture .item-group .item .info {
-  padding: 21rem 30rem;
+  padding: 27rem 36rem;
   text-align: left;
 }
 main .content#lecture .bb-lecture .item-group .item .info .title {
-  margin-bottom: 12rem;
-  font-size: 18rem;
-  font-weight: 500;
-  line-height: 18rem;
+  margin-bottom: 18rem;
+  font-size: 21rem;
+  font-weight: 600;
+  line-height: 24rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
@@ -666,15 +687,19 @@ main .content#lecture .bb-lecture .item-group .item .info .title .sector {
   padding-right: 12rem;
 }
 main .content#lecture .bb-lecture .item-group .item .info .des {
-  font-size: 15rem;
+  font-size: 16.5rem;
   font-weight: 300;
+  line-height: 21rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-main .content#lecture .bb-lecture .item-group .item .info .btn-group {
-  margin-top: 15rem;
+main .content#lecture .bb-lecture .item-group .item .info .des .bold {
+  font-weight: 500;
+}
+main .content#lecture .bb-lecture .item-group .item .info .down {
+  margin-top: 12rem;
 }
 main .content#publication .head2 {
   margin-bottom: 45rem;
@@ -718,15 +743,16 @@ main .content#publication .bb-publication .item-group details summary .title-con
 }
 main .content#publication .bb-publication .item-group details .detail-container {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
-  margin: 0 30rem;
-  padding: 30rem 30rem 30rem 62rem;
+  margin: 0 30rem 0 90rem;
+  padding: 30rem 0rem;
 }
 main .content#publication .bb-publication .item-group details .detail-container .detail {
   font-size: 16.5rem;
   font-weight: 400;
+  line-height: 24rem;
 }
-main .content#publication .bb-publication .item-group details .detail-container .btn-group {
-  margin-top: 18rem;
+main .content#publication .bb-publication .item-group details .detail-container .down {
+  margin-top: 24rem;
 }
 main .content#events .head2 {
   margin-bottom: 60rem;
@@ -765,6 +791,7 @@ main .content#events .bb-events .filter-group .filter .check-group .check label 
 }
 main .content#events .bb-events .filter-group .filter .check-group .check label:hover {
   text-decoration: underline;
+  text-underline-offset: 4rem;
 }
 main .content#events .bb-events .filter-group .filter .check-group .check label input {
   cursor: pointer;
@@ -806,8 +833,8 @@ main .content#events .bb-events .item-group details summary .thumb {
   min-width: 160rem;
   background-color: rgba(0, 0, 0, 0.15);
 }
-main .content#events .bb-events .item-group details summary .info-container .title {
-  margin-bottom: 3rem;
+main .content#events .bb-events .item-group details summary .aaaa .title {
+  margin-bottom: 12rem;
   font-size: 21rem;
   font-weight: 600;
   display: -webkit-box;
@@ -815,26 +842,25 @@ main .content#events .bb-events .item-group details summary .info-container .tit
   -webkit-line-clamp: 2;
   overflow: hidden;
 }
-main .content#events .bb-events .item-group details summary .info-container .info-container {
-  margin-top: 9rem;
+main .content#events .bb-events .item-group details summary .aaaa .info-container {
   display: flex;
   gap: 45rem;
 }
-main .content#events .bb-events .item-group details summary .info-container .info-container .info-1 {
+main .content#events .bb-events .item-group details summary .aaaa .info-container .info-1 {
   display: flex;
   flex-direction: column;
-  gap: 9rem;
+  gap: 6rem;
 }
-main .content#events .bb-events .item-group details summary .info-container .info-container .container {
+main .content#events .bb-events .item-group details summary .aaaa .info-container .container {
   display: flex;
 }
-main .content#events .bb-events .item-group details summary .info-container .info-container .container .icon {
+main .content#events .bb-events .item-group details summary .aaaa .info-container .container .icon {
   height: 18rem;
   width: 18rem;
   margin-right: 9rem;
   opacity: 0.4;
 }
-main .content#events .bb-events .item-group details summary .info-container .info-container .container .date, main .content#events .bb-events .item-group details summary .info-container .info-container .container .location, main .content#events .bb-events .item-group details summary .info-container .info-container .container .sector {
+main .content#events .bb-events .item-group details summary .aaaa .info-container .container .date, main .content#events .bb-events .item-group details summary .aaaa .info-container .container .location, main .content#events .bb-events .item-group details summary .aaaa .info-container .container .sector {
   font-size: 15rem;
   font-weight: 300;
   line-height: 21rem;
@@ -848,35 +874,10 @@ main .content#events .bb-events .item-group details .detail-container {
 main .content#events .bb-events .item-group details .detail-container .detail {
   font-size: 16.5rem;
   font-weight: 400;
+  line-height: 24rem;
 }
 main .content#events .bb-events .item-group details .detail-container .btn-group {
-  margin-top: 15rem;
-}
-main .content#history .head2 {
-  margin-bottom: 60rem;
-}
-main .content#history .bb-history .item-group {
-  border-top: 2px solid rgba(0, 0, 0, 0.15);
-}
-main .content#history .bb-history .item-group .item {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-}
-main .content#history .bb-history .item-group .item .question {
-  display: flex;
-  padding: 30rem;
-  font-size: 18rem;
-  font-weight: 600;
-}
-main .content#history .bb-history .item-group .item .question .date {
-  width: 180rem;
-}
-main .content#history .bb-history .item-group .item .answer {
-  margin: 0 0 0 202rem;
-  padding: 24rem 24rem 24rem 6rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
-  font-size: 16.5rem;
-  font-weight: 400;
-  line-height: 27rem;
+  margin-top: 18rem;
 }
 main .content#related .head2 {
   margin-bottom: 45rem;
@@ -898,7 +899,7 @@ main .content#related .bb-related .item-group .item:hover {
 }
 main .content#related .bb-related .item-group .item:hover .title {
   text-decoration: underline;
-  text-underline-offset: 4rem;
+  text-underline-offset: 3rem;
 }
 main .content#related .bb-related .item-group .item .img-container {
   height: 135rem;
@@ -934,20 +935,24 @@ main .content#faq .bb-faq .item-group details .question {
      -moz-user-select: none;
           user-select: none;
   display: block;
-  padding: 30rem 30rem 30rem 46rem;
+  padding: 30rem 30rem 30rem 60rem;
   font-size: 18rem;
   font-weight: 600;
-  text-indent: -22rem;
+  text-indent: -30rem;
 }
 main .content#faq .bb-faq .item-group details .question:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
+main .content#faq .bb-faq .item-group details .question .head {
+  margin-right: 12rem;
+}
 main .content#faq .bb-faq .item-group details .answer {
-  margin: 0 30rem 0 45rem;
-  padding: 15rem 0 30rem 0;
+  margin: 0 30rem 0 60rem;
+  padding: 30rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   font-size: 16.5rem;
   font-weight: 400;
+  line-height: 24rem;
 }
 main .content#faq .more-question {
   margin-top: 75rem;
@@ -991,7 +996,6 @@ footer#success .content {
   width: 30rem;
   height: 100%;
 }
-
 /* Important */
 .hide {
   display: none !important;

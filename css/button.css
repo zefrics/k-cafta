@@ -196,4 +196,21 @@
 }
 .btn-text-4:hover {
   opacity: 0.6;
+}
+
+.btn-text-5 {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 15rem;
+  font-size: 16.5rem;
+  line-height: 30rem;
+  list-style-type: disc;
+  color: rgb(53, 99, 233);
+}
+.btn-text-5 a {
+  color: rgb(53, 99, 233);
+  text-underline-offset: 4rem;
+}
+.btn-text-5:hover {
+  opacity: 0.6;
 }/*# sourceMappingURL=button.css.map */

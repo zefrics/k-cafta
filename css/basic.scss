@@ -412,11 +412,6 @@ main {
       #signing {
         display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
         .img-container {
-          .head3 {
-            span {
-              font-size: 16.5rem; font-weight: 400; line-height: 21rem;
-            }
-          }
           img {
             height: fit-content; width: 100%;
           }
@@ -467,7 +462,7 @@ main {
         padding: 45rem;
         background-color: $color-k8;
         #img-2 {
-          width: 600rem; height: 300rem;
+          width: 600rem; height: 100%;
           background-color: $color-m7;
         }
       }
@@ -485,7 +480,7 @@ main {
       #shipping { // Logistics - Shipping Route
         margin-bottom: 45rem;
         #img-4 {
-          width: 100%; height: 450rem;
+          height: 100%; width: 1200rem; max-width: 1200rem;
           background-color: $color-m7;
         }
       }
@@ -506,12 +501,12 @@ main {
 
       .img-group {
         margin-top: 60rem;
-        display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
         .img {
           background-color: $color-m7;
         }
         img {
-          width: 100%; height: auto;
+          height: 100%; width: 100%;
         }
       }
 
@@ -547,6 +542,36 @@ main {
 
     }
 
+    &#history { // bb-history
+      .head2 {
+        margin-bottom: 60rem;
+      }
+      .bb-history {
+        .item-group {
+          border-top: 2px solid $color-k7;
+          .item {
+            border-bottom: 2px solid $color-k7;
+            .question {
+              display: flex;
+              padding: 30rem;
+              font-size: 18rem; font-weight: 600;
+              // background-color: $color-m8;
+              .date {
+                width: 180rem;
+              }
+            }
+            .answer {
+              margin: 0 0 0 202rem;
+              padding: 24rem 24rem 24rem 6rem;
+              border-top: 1px solid $color-k7;
+              font-size: 16.5rem; font-weight: 400; line-height: 27rem;
+            }
+          }
+        }
+        
+      }
+    }
+
     &#market { // ROK Market Info
       .head2 {
         margin-bottom: 60rem;
@@ -565,13 +590,13 @@ main {
             summary {
               cursor: pointer;
               user-select: none;
-              display: flex; gap: 60rem; align-items: center;
+              display: flex; gap: 45rem; align-items: center;
               padding: 45rem;
               &:hover {
                 background-color: $color-m8;
               }
               .thumb {
-                height: fit-content;
+                height: 100%;
                 width: 420rem; min-width: 420rem;
               }
               .info-container {
@@ -625,7 +650,7 @@ main {
             text-decoration: none;
             color: $color-k1;
             .thumb {
-              height: 200rem; min-width: 320rem;
+              height: 210rem; min-width: 330rem;
               background-color: $color-k7;
               transition: 0.1s;
               &:hover {
@@ -633,8 +658,7 @@ main {
               }
             }
             .info {
-              // display: flex; flex-direction: column;
-              padding: 21rem 30rem;
+              padding: 27rem 36rem;
               text-align: left;
               .title {
                 .sector {
@@ -642,22 +666,25 @@ main {
                   margin-right: 12rem;
                   padding-right: 12rem;
                 }
-                margin-bottom: 12rem;
-                font-size: 18rem; font-weight: 500; line-height: 18rem;
+                margin-bottom: 18rem;
+                font-size: 21rem; font-weight: 600; line-height: 24rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
                 overflow: hidden;
               }
               .des {
-                font-size: 15rem; font-weight: 300;
+                .bold {
+                  font-weight: 500;
+                }
+                font-size: 16.5rem; font-weight: 300; line-height: 21rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 3;
                 overflow: hidden;
               }
-              .btn-group {
-                margin-top: 15rem;
+              .down {
+                margin-top: 12rem;
               }
             }
           }
@@ -703,18 +730,17 @@ main {
             }
             .detail-container {
               border-top: 1px solid $color-k8;
-              margin: 0 30rem;
-              padding: 30rem 30rem 30rem 62rem;
+              margin: 0 30rem 0 90rem;
+              padding: 30rem 0rem;
               .detail {
-                font-size: 16.5rem; font-weight: 400;
+                font-size: 16.5rem; font-weight: 400; line-height: 24rem;
               }
-              .btn-group {
-                margin-top: 18rem;
+              .down {
+                margin-top: 24rem;
               }
             }
           }
         }
-        
       }
     }
 
@@ -745,6 +771,7 @@ main {
                   &:hover {
                     // background-color: $color-m7;
                     text-decoration: underline;
+                    text-underline-offset: 4rem;
                   }
                   input {
                     cursor: pointer;
@@ -786,9 +813,9 @@ main {
                 background-color: $color-k7;
               }
 
-              .info-container {
+              .aaaa {
                 .title {
-                  margin-bottom: 3rem;
+                  margin-bottom: 12rem;
                   font-size: 21rem; font-weight: 600;
                   display: -webkit-box;
                   -webkit-box-orient: vertical;
@@ -796,10 +823,9 @@ main {
                   overflow: hidden;
                 }
                 .info-container {
-                  margin-top: 9rem;
                   display: flex; gap: 45rem;
                   .info-1 {
-                    display: flex; flex-direction: column; gap: 9rem;
+                    display: flex; flex-direction: column; gap: 6rem;
                   }
                   .container {
                     display: flex;
@@ -823,41 +849,11 @@ main {
               padding: 30rem 0;
               border-top: 1px solid $color-k7;
               .detail {
-                font-size: 16.5rem; font-weight: 400;
+                font-size: 16.5rem; font-weight: 400; line-height: 24rem;
               }
               .btn-group {
-                margin-top: 15rem;
+                margin-top: 18rem;
               }
-            }
-          }
-        }
-        
-      }
-    }
-
-    &#history { // bb-history
-      .head2 {
-        margin-bottom: 60rem;
-      }
-      .bb-history {
-        .item-group {
-          border-top: 2px solid $color-k7;
-          .item {
-            border-bottom: 2px solid $color-k7;
-            .question {
-              display: flex;
-              padding: 30rem;
-              font-size: 18rem; font-weight: 600;
-              // background-color: $color-m8;
-              .date {
-                width: 180rem;
-              }
-            }
-            .answer {
-              margin: 0 0 0 202rem;
-              padding: 24rem 24rem 24rem 6rem;
-              border-top: 1px solid $color-k7;
-              font-size: 16.5rem; font-weight: 400; line-height: 27rem;
             }
           }
         }
@@ -882,7 +878,7 @@ main {
               opacity: 0.6;
               .title {
                 text-decoration: underline;
-                text-underline-offset: 4rem;
+                text-underline-offset: 3rem;
               }
             }
             .img-container {
@@ -920,18 +916,21 @@ main {
               cursor: pointer;
               user-select: none;
               display: block;
-              padding: 30rem 30rem 30rem 46rem;
+              padding: 30rem 30rem 30rem 60rem;
               font-size: 18rem; font-weight: 600;
-              text-indent: -22rem;
+              text-indent: -30rem;
               &:hover {
                 background-color: $color-m8;
               }
+              .head {
+                margin-right: 12rem;
+              }
             }
             .answer {
-              margin: 0 30rem 0 45rem;
-              padding: 15rem 0 30rem 0;
+              margin: 0 30rem 0 60rem;
+              padding: 30rem 0;
               border-top: 1px solid $color-k8;
-              font-size: 16.5rem; font-weight: 400;
+              font-size: 16.5rem; font-weight: 400; line-height: 24rem;
             }
           }
         }
@@ -979,6 +978,9 @@ footer {
   box-shadow: 1rem 1rem 3rem 1rem $color-k5;
   img {
     width: 30rem; height: 100%;
+  }
+  &:hover {
+    // opacity: 0.6;
   }
 
 }
