@@ -56,6 +56,9 @@ body {
   .head3 {
     font-size: 24rem; font-weight: 600;
   }
+  .head4 {
+    font-size: 21rem; font-weight: 600;
+  }
   
   .para1 {
     font-size: 21rem; font-weight: 400; line-height: 27rem;
@@ -69,7 +72,7 @@ body {
       font-weight: 600;
     }
   }
-  .para3 { // Text parts of History
+  .para3 {
     font-size: 16.5rem; font-weight: 400; line-height: 21rem;
     span {
       font-weight: 600;
@@ -77,6 +80,9 @@ body {
   }
   .para4 { // Detail parts of History
     font-size: 15rem; font-weight: 300;
+    span {
+      font-weight: 500;
+    }
   }
 }
 
@@ -977,6 +983,35 @@ main {
         text-align: center;
         .head2 {
           margin-bottom: 30rem;
+        }
+      }
+    }
+
+    &.module-4 { // Privacy Policy, Terms and conditions
+      .head2 {
+        margin-bottom: 60rem;
+      }
+      .head3 {
+        margin-top: 45rem;
+        margin-bottom: 15rem;
+        line-height: 24rem;
+        // line-height: 24rem;
+      }
+      .head4 {
+        margin-top: 30rem;
+        margin-bottom: 12rem;
+        margin-left: 45rem;
+      }
+      
+      .aaa {
+        margin-left: 45rem;
+        font-size: 15rem; font-weight: 300;
+        .bold {
+          font-weight: 600;
+        }
+        .email {
+          color: $color-m1;
+          text-underline-offset: 4rem;
         }
       }
     }

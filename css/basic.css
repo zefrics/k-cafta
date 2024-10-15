@@ -21,6 +21,10 @@ body {
   font-size: 24rem;
   font-weight: 600;
 }
+* .head4 {
+  font-size: 21rem;
+  font-weight: 600;
+}
 * .para1 {
   font-size: 21rem;
   font-weight: 400;
@@ -48,6 +52,9 @@ body {
 * .para4 {
   font-size: 15rem;
   font-weight: 300;
+}
+* .para4 span {
+  font-weight: 500;
 }
 
 header, .main-title, section, footer {
@@ -1000,6 +1007,31 @@ main .content#faq .more-question {
 }
 main .content#faq .more-question .head2 {
   margin-bottom: 30rem;
+}
+main .content.module-4 .head2 {
+  margin-bottom: 60rem;
+}
+main .content.module-4 .head3 {
+  margin-top: 45rem;
+  margin-bottom: 15rem;
+  line-height: 24rem;
+}
+main .content.module-4 .head4 {
+  margin-top: 30rem;
+  margin-bottom: 12rem;
+  margin-left: 45rem;
+}
+main .content.module-4 .aaa {
+  margin-left: 45rem;
+  font-size: 15rem;
+  font-weight: 300;
+}
+main .content.module-4 .aaa .bold {
+  font-weight: 600;
+}
+main .content.module-4 .aaa .email {
+  color: rgb(53, 99, 233);
+  text-underline-offset: 4rem;
 }
 
 footer {
