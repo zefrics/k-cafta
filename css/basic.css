@@ -187,14 +187,54 @@ header nav .function .my-container #my-menu a.sign-out {
 }
 
 main .main-title {
+  margin-top: -60rem;
   height: 600rem;
   background-color: rgba(53, 99, 233, 0.45);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .main-title#h-index {
-  background-image: url("../img/cover/index-h.jpg");
+main .main-title .title-container {
+  width: 1200px;
+  padding: 0 40rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .main-title .title-container .title {
+  font-size: 54rem;
+  font-weight: 700;
+  line-height: 57rem;
+  margin-bottom: 48rem;
+  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+}
+main .main-title .title-container .sentence {
+  font-size: 30rem;
+  font-weight: 400;
+  line-height: 39rem;
+  text-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.75);
+}
+main .main-title#h-index1 {
+  background-color: rgba(21, 9, 64, 0.5);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h1.jpg");
+  height: 100vh;
+  min-height: 750rem;
+}
+main .main-title#h-index2 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h2.jpg");
+  height: 100vh;
+  min-height: 750rem;
+  margin-top: 120rem;
+}
+main .main-title#h-index3 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h3.jpg");
+  height: 100vh;
+  min-height: 750rem;
+  margin-top: 120rem;
 }
 main .main-title#h-1-1 {
   background-image: url("../img/cover/1-1-h.jpg");

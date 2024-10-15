@@ -193,15 +193,51 @@ header {
 
 main {
   .main-title {
+    margin-top: -60rem;
     height: 600rem;
     background-color: $color-m5;
     // background-blend-mode: screen;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    .title-container {
+      width: 1200px;
+      padding: 0 40rem;
+      text-align: left;
+      color: $color-w1;
+      .title {
+        font-size: 54rem; font-weight: 700; line-height: 57rem;
+        margin-bottom: 48rem;
+        text-shadow: 3rem 3rem 3rem $color-k3;
+      }
+      .sentence {
+        font-size: 30rem; font-weight: 400; line-height: 39rem;
+        text-shadow: 2rem 2rem 2rem $color-k3;
+      }
+      
+    }
   
-    &#h-index {
-      background-image: url('../img/cover/index-h.jpg');
+    &#h-index1 {
+      background-color: rgba(21, 9, 64, 0.5);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h1.jpg');
+      height: 100vh; min-height: 750rem;
+      
+    }
+    &#h-index2 {
+      background-color: rgba(21, 9, 64, 0.6);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h2.jpg');
+      height: 100vh; min-height: 750rem;
+      margin-top: 120rem;
+    }
+    &#h-index3 {
+      background-color: rgba(21, 9, 64, 0.6);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h3.jpg');
+      height: 100vh; min-height: 750rem;
+      margin-top: 120rem;
     }
     &#h-1-1 {
       background-image: url('../img/cover/1-1-h.jpg');
