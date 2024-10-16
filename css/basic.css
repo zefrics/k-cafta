@@ -270,8 +270,8 @@ main .main-title#h-3-3 {
 main .main-title#h-3-4 {
   background-image: url("../img/cover/3-4-h.jpg");
 }
-main .main-title#h-4 {
-  background-image: url("../img/cover/4-h.jpg");
+main .main-title#h-4-1 {
+  background-image: url("../img/cover/4-1-h.jpg");
 }
 main section#sticky-menu-container {
   position: fixed;
@@ -331,7 +331,7 @@ main .content.module-1 .part .btn-group {
 }
 main .content.module-1 .part img {
   border-radius: 15rem;
-  height: 390rem;
+  height: 360rem;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -541,7 +541,6 @@ main .content.module-2 #shipping #img-4 {
   height: 100%;
   width: 1200rem;
   max-width: 1200rem;
-  background-color: rgba(53, 99, 233, 0.15);
 }
 main .content.module-2 #btn-group-dn-1 {
   margin-top: 75rem;
@@ -684,7 +683,13 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
   font-weight: 400;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .thumb {
+  display: block;
   border: 1rem solid rgba(0, 0, 0, 0.15);
+}
+main .content#market .bb-market .item-group details .detail-group .detail .thumb:hover {
+  opacity: 0.6;
+}
+main .content#market .bb-market .item-group details .detail-group .detail .thumb img {
   height: 210rem;
   width: 100%;
   -o-object-fit: cover;
@@ -708,11 +713,18 @@ main .content#lecture .bb-lecture .item-group .item {
 main .content#lecture .bb-lecture .item-group .item .thumb {
   height: 210rem;
   min-width: 330rem;
-  background-color: rgba(0, 0, 0, 0.15);
   transition: 0.1s;
+  border: 1rem solid rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
 }
 main .content#lecture .bb-lecture .item-group .item .thumb:hover {
   opacity: 0.6;
+}
+main .content#lecture .bb-lecture .item-group .item .thumb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 main .content#lecture .bb-lecture .item-group .item .info {
   padding: 27rem 36rem;
@@ -1021,15 +1033,15 @@ main .content.module-4 .head4 {
   margin-bottom: 12rem;
   margin-left: 45rem;
 }
-main .content.module-4 .aaa {
+main .content.module-4 .para {
   margin-left: 45rem;
   font-size: 15rem;
   font-weight: 300;
 }
-main .content.module-4 .aaa .bold {
+main .content.module-4 .para .bold {
   font-weight: 600;
 }
-main .content.module-4 .aaa .email {
+main .content.module-4 .para .email {
   color: rgb(53, 99, 233);
   text-underline-offset: 4rem;
 }
@@ -1038,13 +1050,31 @@ footer {
   background-color: rgb(53, 99, 233);
 }
 footer .content {
-  padding: 15rem 40rem;
+  width: 1200px;
+  padding: 18rem 40rem;
+  display: flex;
+  justify-content: space-between;
 }
-footer .content p.copyright {
-  font-size: 16rem;
+footer .content .copyright {
+  font-size: 16.5rem;
   font-weight: 300;
   text-align: center;
   color: rgb(255, 255, 255);
+}
+footer .content .footer-menu {
+  display: flex;
+  gap: 45rem;
+  font-size: 16.5rem;
+  font-weight: 300;
+}
+footer .content .footer-menu a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+footer .content .footer-menu a:hover {
+  opacity: 0.6;
+  text-decoration: underline;
+  text-underline-offset: 4rem;
 }
 footer#success .content {
   padding: 15rem 40rem 105rem 40rem;

@@ -34,10 +34,6 @@ $fs-menu2: 15rem; // 드롭 메뉴 폰트 사이즈
 $fw-menu2: 300; // 드롭 메뉴 폰트 웨이트2
 $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
-$fs-copy: 16rem; // 카피라이트 폰트 사이즈
-$fw-copy: 300; // 카피라이트 폰트 웨이트
-
-
 html {
   font-size: 1px; //rem 사용
 }
@@ -229,7 +225,6 @@ main {
       background-blend-mode: overlay;
       background-image: url('../img/cover/index-h1.jpg');
       height: 100vh; min-height: 750rem;
-      
     }
     &#h-index2 {
       background-color: rgba(21, 9, 64, 0.6);
@@ -272,8 +267,8 @@ main {
     &#h-3-4 {
       background-image: url('../img/cover/3-4-h.jpg');
     }
-    &#h-4 {
-      background-image: url('../img/cover/4-h.jpg');
+    &#h-4-1 {
+      background-image: url('../img/cover/4-1-h.jpg');
     }
   }
 
@@ -329,7 +324,7 @@ main {
 
         img {
           border-radius: 15rem;
-          height: 390rem;
+          height: 360rem;
           width: 100%;
           margin: 0; padding: 0;
         }
@@ -523,7 +518,6 @@ main {
         margin-bottom: 45rem;
         #img-4 {
           height: 100%; width: 1200rem; max-width: 1200rem;
-          background-color: $color-m7;
         }
       }
 
@@ -667,9 +661,15 @@ main {
                   }
                 }
                 .thumb {
+                  display: block;
                   border: 1rem solid $color-k7;
-                  height: 210rem; width: 100%;
-                  object-fit: cover;
+                  &:hover {
+                    opacity: 0.6;
+                  }
+                  img {
+                    height: 210rem; width: 100%;
+                    object-fit: cover;
+                  }
                 }
               }
             }
@@ -693,10 +693,15 @@ main {
             color: $color-k1;
             .thumb {
               height: 210rem; min-width: 330rem;
-              background-color: $color-k7;
               transition: 0.1s;
+              border: 1rem solid $color-k8;
+              box-sizing: border-box;
               &:hover {
                 opacity: 0.6;
+              }
+              img {
+                object-fit: cover;
+                height: 100%; width: 100%;
               }
             }
             .info {
@@ -1003,7 +1008,7 @@ main {
         margin-left: 45rem;
       }
       
-      .aaa {
+      .para {
         margin-left: 45rem;
         font-size: 15rem; font-weight: 300;
         .bold {
@@ -1024,11 +1029,27 @@ main {
 footer {
   background-color: $color-m1;
   .content {
-    padding: 15rem 40rem;
-    p.copyright {
-      font-size: $fs-copy; font-weight: $fw-copy;
+    width: 1200px;
+    padding: 18rem 40rem;
+    display: flex; justify-content: space-between;
+    .copyright {
+      font-size: 16.5rem; font-weight: 300;
       text-align: center;
       color: $color-w1;
+    }
+    .footer-menu {
+      display: flex; gap: 45rem;
+      font-size: 16.5rem; font-weight: 300;
+      a {
+        color: $color-w1;
+        text-decoration: none;
+        
+        &:hover {
+          opacity: 0.6;
+          text-decoration: underline;
+          text-underline-offset: 4rem;
+        }
+      }
     }
   }
   &#success {
