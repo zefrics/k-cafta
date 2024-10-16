@@ -858,10 +858,13 @@ main {
               .thumb {
                 height: 90rem;
                 width: 160rem; min-width: 160rem;
-                background-color: $color-k7;
+                border: 1rem solid $color-k7;
+                img {
+                  height: 100%; width: 100%;
+                  object-fit: cover;
+                }
               }
-
-              .aaaa {
+              .title-container {
                 .title {
                   margin-bottom: 12rem;
                   font-size: 21rem; font-weight: 600;
