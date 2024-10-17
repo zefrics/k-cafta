@@ -194,54 +194,11 @@ header nav .function .my-container #my-menu a.sign-out {
 }
 
 main .main-title {
-  margin-top: -60rem;
   height: 600rem;
   background-color: rgba(53, 99, 233, 0.45);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-main .main-title .title-container {
-  width: 1200px;
-  padding: 0 40rem;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-main .main-title .title-container .title {
-  font-size: 54rem;
-  font-weight: 700;
-  line-height: 57rem;
-  margin-bottom: 48rem;
-  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
-}
-main .main-title .title-container .sentence {
-  font-size: 30rem;
-  font-weight: 400;
-  line-height: 39rem;
-  text-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.75);
-}
-main .main-title#h-index1 {
-  background-color: rgba(21, 9, 64, 0.5);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h1.jpg");
-  height: 100vh;
-  min-height: 750rem;
-}
-main .main-title#h-index2 {
-  background-color: rgba(21, 9, 64, 0.6);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h2.jpg");
-  height: 100vh;
-  min-height: 750rem;
-  margin-top: 120rem;
-}
-main .main-title#h-index3 {
-  background-color: rgba(21, 9, 64, 0.6);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h3.jpg");
-  height: 100vh;
-  min-height: 750rem;
-  margin-top: 120rem;
 }
 main .main-title#h-1-1 {
   background-image: url("../img/cover/1-1-h.jpg");
@@ -1123,4 +1080,113 @@ footer#success .content {
   text-align: justify !important;
 }
 
-/* Important Ends *//*# sourceMappingURL=basic.css.map */
+/* Important Ends */
+.slider {
+  position: relative;
+}
+.slider .arrow-group {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  min-width: 1200px;
+  padding: 0 40rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 180rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.slider .arrow-group #leftArrow {
+  cursor: pointer;
+}
+.slider .arrow-group #leftArrow:hover {
+  opacity: 0.75;
+}
+.slider .arrow-group #rightArrow {
+  cursor: pointer;
+}
+.slider .arrow-group #rightArrow:hover {
+  opacity: 0.75;
+}
+.slider .circle-group {
+  position: absolute;
+  left: 50%;
+  bottom: 60rem;
+  transform: translate(-50%, 0);
+  display: flex;
+  gap: 15rem;
+}
+.slider .circle-group .circle {
+  height: 15rem;
+  width: 15rem;
+  border: 2rem solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transition: 0.15s ease-in-out;
+}
+.slider .circle-group .dot {
+  border: 2rem solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+.imageSlides {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60rem;
+  width: 100%;
+  min-width: 1280px;
+  height: 100vh;
+  min-height: 750rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imageSlides.fade {
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.imageSlides .title-container {
+  width: 1200px;
+  padding: 0 40rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.imageSlides .title-container .title {
+  font-size: 54rem;
+  font-weight: 700;
+  line-height: 57rem;
+  margin-bottom: 48rem;
+  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+}
+.imageSlides .title-container .sentence {
+  font-size: 30rem;
+  font-weight: 400;
+  line-height: 39rem;
+  text-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.75);
+}
+.imageSlides#h-index1 {
+  background-color: rgba(21, 9, 64, 0.5);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h1.jpg");
+}
+.imageSlides#h-index2 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h2.jpg");
+}
+.imageSlides#h-index3 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h3.jpg");
+}/*# sourceMappingURL=basic.css.map */
