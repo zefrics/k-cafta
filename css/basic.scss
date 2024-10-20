@@ -106,12 +106,8 @@ header {
         position: relative;
         .logo {
           display: block;
-          line-height: 0;
-          height: 40rem; width: 40rem;
-          background-color: $color-m4;
-          border-radius: 20rem;
           img {
-            height: 40rem;
+            height: 21rem; width: 100%;
           }
         }
         .title {
@@ -201,36 +197,59 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    letter-spacing: 1.2rem;
 
     &#h-1-1 {
       background-image: url('../img/cover/1-1-h.jpg');
+      background-color: rgba(21, 9, 64, 0.5);
+      background-blend-mode: overlay;
+      
     }
     &#h-1-2 {
       background-image: url('../img/cover/1-2-h.jpg');
+      background-color: rgba(0, 0, 0, 0.45);
+      // background-color: rgba(21, 9, 64, 0.6);
+      background-blend-mode: overlay;
     }
     &#h-2-1 {
       background-image: url('../img/cover/2-1-h.jpg');
+      background-color: rgba(0, 0, 0, 0.35);
+      background-blend-mode: overlay;
     }
     &#h-2-2 {
       background-image: url('../img/cover/2-2-h.jpg');
+      background-color: rgba(0, 0, 0, 0.45);
+      background-blend-mode: overlay;
     }
     &#h-2-3 {
       background-image: url('../img/cover/2-3-h.jpg');
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay;
     }
     &#h-3-1 {
       background-image: url('../img/cover/3-1-h.jpg');
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay;
     }
     &#h-3-2 {
       background-image: url('../img/cover/3-2-h.jpg');
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay;
     }
     &#h-3-3 {
       background-image: url('../img/cover/3-3-h.jpg');
+      background-color: rgba(0, 0, 0, 0.6);
+      background-blend-mode: overlay; 
     }
     &#h-3-4 {
       background-image: url('../img/cover/3-4-h.jpg');
+      background-color: rgba(0, 0, 0, 0.45);
+      background-blend-mode: overlay; 
     }
     &#h-4-1 {
       background-image: url('../img/cover/4-1-h.jpg');
+      background-color: rgba(0, 0, 0, 0.3);
+      background-blend-mode: overlay; 
     }
   }
 
@@ -685,7 +704,7 @@ main {
               }
               .des {
                 .bold {
-                  font-weight: 500;
+                  // font-weight: 500;
                 }
                 font-size: 16.5rem; font-weight: 300; line-height: 21rem;
                 display: -webkit-box;
@@ -1060,42 +1079,35 @@ footer {
 
 .slider {
   position: relative;
-  .arrow-group {
-    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    display: flex; justify-content: space-between;
-    min-width: 1200px;
-    padding: 0 40rem;
-    user-select: none;
-    font-size: 180rem;
-    color: $color-w4;
-    #leftArrow {
-      cursor: pointer;
-      &:hover {
-        opacity: 0.75;
-      }
-    }
-    #rightArrow {
-      cursor: pointer;
-      &:hover {
-        opacity: 0.75;
-      }
-    }
-  }
-  
-  .circle-group {
+  .controller {
     position: absolute; left: 50%; bottom: 60rem; transform: translate(-50%, 0);
-    display: flex; gap: 15rem;
-    .circle {
-      height: 15rem; width: 15rem;
-      border: 2rem solid $color-w4;
-      border-radius: 50%;
-      transition: 0.15s ease-in-out;
+    display: flex; align-items: center; gap: 45rem;
+    .arrow {
+      display: inline-block;
+      cursor: pointer;
+      user-select: none;
+      font-size: 75rem; height: 30rem; line-height: 21rem;
+      color: $color-w4;
+      &:hover {
+        opacity: 0.75;
+      }
     }
-    .dot {
-      border: 2rem solid $color-w1;
-      background-color: $color-w5;
+    .circle-group {
+      display: flex; gap: 30rem;
+      .circle {
+        height: 15rem; width: 15rem;
+        border: 2rem solid $color-w4;
+        border-radius: 50%;
+        transition: 0.15s ease-in-out;
+      }
+      .dot {
+        border: 2rem solid $color-w1;
+        background-color: $color-w5;
+      }
     }
   }
+
+  
 }
 
 .imageSlides {
@@ -1118,7 +1130,7 @@ footer {
   .title-container {
     width: 1200px;
     padding: 0 40rem;
-    text-align: center;
+    text-align: left;
     color: $color-w1;
     .title {
       font-size: 54rem; font-weight: 700; line-height: 57rem;

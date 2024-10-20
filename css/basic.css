@@ -98,14 +98,10 @@ header nav .mega-menu li {
 }
 header nav .mega-menu li .logo {
   display: block;
-  line-height: 0;
-  height: 40rem;
-  width: 40rem;
-  background-color: rgba(53, 99, 233, 0.6);
-  border-radius: 20rem;
 }
 header nav .mega-menu li .logo img {
-  height: 40rem;
+  height: 21rem;
+  width: 100%;
 }
 header nav .mega-menu li .title {
   text-decoration: none;
@@ -199,36 +195,57 @@ main .main-title {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  letter-spacing: 1.2rem;
 }
 main .main-title#h-1-1 {
   background-image: url("../img/cover/1-1-h.jpg");
+  background-color: rgba(21, 9, 64, 0.5);
+  background-blend-mode: overlay;
 }
 main .main-title#h-1-2 {
   background-image: url("../img/cover/1-2-h.jpg");
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
 }
 main .main-title#h-2-1 {
   background-image: url("../img/cover/2-1-h.jpg");
+  background-color: rgba(0, 0, 0, 0.35);
+  background-blend-mode: overlay;
 }
 main .main-title#h-2-2 {
   background-image: url("../img/cover/2-2-h.jpg");
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
 }
 main .main-title#h-2-3 {
   background-image: url("../img/cover/2-3-h.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 main .main-title#h-3-1 {
   background-image: url("../img/cover/3-1-h.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 main .main-title#h-3-2 {
   background-image: url("../img/cover/3-2-h.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 main .main-title#h-3-3 {
   background-image: url("../img/cover/3-3-h.jpg");
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: overlay;
 }
 main .main-title#h-3-4 {
   background-image: url("../img/cover/3-4-h.jpg");
+  background-color: rgba(0, 0, 0, 0.45);
+  background-blend-mode: overlay;
 }
 main .main-title#h-4-1 {
   background-image: url("../img/cover/4-1-h.jpg");
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: overlay;
 }
 main section#sticky-menu-container {
   position: fixed;
@@ -713,9 +730,6 @@ main .content#lecture .bb-lecture .item-group .item .info .des {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-main .content#lecture .bb-lecture .item-group .item .info .des .bold {
-  font-weight: 500;
-}
 main .content#lecture .bb-lecture .item-group .item .info .down {
   margin-top: 12rem;
 }
@@ -1084,49 +1098,41 @@ footer#success .content {
 .slider {
   position: relative;
 }
-.slider .arrow-group {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: space-between;
-  min-width: 1200px;
-  padding: 0 40rem;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 180rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-.slider .arrow-group #leftArrow {
-  cursor: pointer;
-}
-.slider .arrow-group #leftArrow:hover {
-  opacity: 0.75;
-}
-.slider .arrow-group #rightArrow {
-  cursor: pointer;
-}
-.slider .arrow-group #rightArrow:hover {
-  opacity: 0.75;
-}
-.slider .circle-group {
+.slider .controller {
   position: absolute;
   left: 50%;
   bottom: 60rem;
   transform: translate(-50%, 0);
   display: flex;
-  gap: 15rem;
+  align-items: center;
+  gap: 45rem;
 }
-.slider .circle-group .circle {
+.slider .controller .arrow {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 75rem;
+  height: 30rem;
+  line-height: 21rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.slider .controller .arrow:hover {
+  opacity: 0.75;
+}
+.slider .controller .circle-group {
+  display: flex;
+  gap: 30rem;
+}
+.slider .controller .circle-group .circle {
   height: 15rem;
   width: 15rem;
   border: 2rem solid rgba(255, 255, 255, 0.6);
   border-radius: 50%;
   transition: 0.15s ease-in-out;
 }
-.slider .circle-group .dot {
+.slider .controller .circle-group .dot {
   border: 2rem solid rgb(255, 255, 255);
   background-color: rgba(255, 255, 255, 0.45);
 }
@@ -1159,7 +1165,7 @@ footer#success .content {
 .imageSlides .title-container {
   width: 1200px;
   padding: 0 40rem;
-  text-align: center;
+  text-align: left;
   color: rgb(255, 255, 255);
 }
 .imageSlides .title-container .title {
