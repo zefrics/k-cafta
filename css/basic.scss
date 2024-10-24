@@ -276,7 +276,7 @@ main {
     text-align: left;
 
     .source {
-      margin-top: 9rem;
+      margin-top: 12rem;
       font-size: 16.5rem;
       text-align: left;
       color: $color-m3;
@@ -290,6 +290,9 @@ main {
         display: flex; flex-direction: column; justify-content: center;
         .head2 {
           margin-bottom: 21rem;
+        }
+        .head3 {
+          margin-bottom: 15rem;
         }
         ul {
           display: flex; flex-direction: column; gap: 6rem;
@@ -383,7 +386,7 @@ main {
         margin-bottom: 45rem;
       }
       .head3 {
-        margin: 60rem 0 9rem 0;
+        margin-bottom: 15rem;
       }
       ul {
         display: flex; flex-direction: column; gap: 15rem;
@@ -424,12 +427,22 @@ main {
           table-layout: fixed;
         }
         &#table-1 {
-          margin-bottom: 30rem;
+          margin: 30rem 0;
+        }
+        &#table-2 {
+          margin-top: 30rem;
+        }
+        &#table-3 {
+          margin-top: 45rem;
         }
       }
 
       #signing {
+        margin-top: 75rem;
         display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
+        .head3 {
+          margin-bottom: 12rem;
+        }
         .img-container {
           img {
             height: fit-content; width: 100%;
@@ -441,24 +454,26 @@ main {
       }
 
       #per-country {
-        display: grid; grid-template-columns: repeat(3, 1fr);
-        column-gap: 45rem; row-gap: 30rem;
-        .country {
-          .head3 {
-            margin: 0;
-          }
-          .img-container {
-            display: flex; gap: 18rem; align-items: center;
-            margin-top: 6rem;
-            img {
-              height: fit-content; width: 165rem;
-              border: 1rem solid $color-k6;
+        .country-item {
+          display: grid; grid-template-columns: repeat(3, 1fr);
+          column-gap: 45rem; row-gap: 30rem;
+          .country {
+            .head3 {
+              margin: 0;
             }
-            ul {
-              display: flex; flex-direction: column; gap: 9rem;
-              padding-left: 0;
-              li {
-                list-style-type: none;
+            .img-container {
+              display: flex; gap: 18rem; align-items: center;
+              margin-top: 6rem;
+              img {
+                height: fit-content; width: 165rem;
+                border: 1rem solid $color-k6;
+              }
+              ul {
+                display: flex; flex-direction: column; gap: 9rem;
+                padding-left: 0;
+                li {
+                  list-style-type: none;
+                }
               }
             }
           }
@@ -467,7 +482,7 @@ main {
 
       #country-profile { // Overview - Korean Map
         display: grid; grid-template-columns: 3fr 2fr; gap: 60rem;
-        margin-top: 45rem;
+        margin-top: 30rem;
         padding: 45rem;
         background-color: $color-k8;
         img {
@@ -476,19 +491,21 @@ main {
       }
 
       #fta-partners { // Overview - FTA Partners
-        display: flex; flex-direction: column; align-items: center;
-        margin-bottom: 15rem;
-        padding: 45rem;
-        background-color: $color-k8;
+        display: flex; flex-direction: column;
+         align-items: center;
+        margin-bottom: 45rem;
+        background-color: $color-w1;
+
         #img-2 {
-          width: 600rem; height: 100%;
+          margin-top: 30rem;
+          width: 990rem; height: 100%;
           background-color: $color-m7;
         }
       }
 
       #maritime { // Logistics - Busan Port
         display: grid; grid-template-columns: repeat(2, 1fr); gap: 60rem;
-        margin-bottom: 60rem;
+        margin-bottom: 30rem;
         .img-container {
           img {
             width: 100%;
@@ -497,16 +514,21 @@ main {
       }
 
       #shipping { // Logistics - Shipping Route
-        margin-bottom: 45rem;
-        #img-4 {
-          height: 100%; width: 1200rem; max-width: 1200rem;
+        margin-top: 60rem;
+        .img-container {
+          margin-bottom: 30rem;
+          #img-4 {
+            height: 100%; width: 1200rem; max-width: 1200rem;
+          }
+        }
+        
+        #btn-group-dn-1 {
+          margin-top: 75rem;
+          display: flex; justify-content: center;
         }
       }
 
-      #btn-group-dn-1 {
-        margin-top: 75rem;
-        display: flex; justify-content: center;
-      }
+      
     }
 
     &.module-3 { // Success
@@ -643,11 +665,7 @@ main {
                   }
                 }
                 .thumb {
-                  display: block;
                   border: 1rem solid $color-k7;
-                  &:hover {
-                    opacity: 0.6;
-                  }
                   img {
                     height: 210rem; width: 100%;
                     object-fit: cover;
@@ -930,10 +948,6 @@ main {
     }
 
     &#faq { // bb-faq
-      .para1 {
-        text-align: center;
-        margin-bottom: 75rem;
-      }
       .bb-faq {
         .item-group {
           border-top: 1px solid $color-k7;
@@ -966,17 +980,8 @@ main {
             }
           }
         }
-        
-      }
-      .more-question {
-        margin-top: 75rem;
-        text-align: center;
-        .head2 {
-          margin-bottom: 30rem;
-        }
       }
     }
-
     &.module-4 { // Privacy Policy, Terms and conditions
       .head2 {
         margin-bottom: 60rem;
@@ -1002,6 +1007,23 @@ main {
         .email {
           color: $color-m1;
           text-underline-offset: 4rem;
+        }
+      }
+    }
+
+    &.module-5 { // more question
+      padding-top: 18rem;
+      text-align: center;
+      display: flex; flex-direction: column; align-items: center;
+      .head2 {
+        margin-bottom: 30rem;
+      }
+      .btn-group-2 {
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
+        width: fit-content;
+        img {
+          border: 1px solid red;
+          width: 105rem; height: 105rem;
         }
       }
     }
@@ -1079,8 +1101,59 @@ footer {
 
 .slider {
   position: relative;
+  .imageSlides {
+    user-select: none;
+    display: flex; align-items: center; justify-content: center;
+    margin-top: -60rem;
+    width: 100%; min-width: 1280px;
+    height: 100vh; min-height: 750rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &.fade {
+      animation-name: fade;
+      animation-duration: 0.75s;
+      @keyframes fade {
+        from {opacity: .75}
+        to {opacity: 1}
+      }
+    }
+  
+    .title-container {
+      width: 1200px;
+      padding: 0 40rem;
+      text-align: left;
+      color: $color-w1;
+      .title {
+        font-size: 54rem; font-weight: 700; line-height: 57rem;
+        margin-bottom: 48rem;
+        text-shadow: 3rem 3rem 3rem $color-k3;
+      }
+      .sentence {
+        font-size: 30rem; font-weight: 400; line-height: 39rem;
+        text-shadow: 2rem 2rem 2rem $color-k3;
+      }
+    }
+
+    &#h-index1 {
+      background-color: rgba(21, 9, 64, 0.5);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h1.jpg');
+    }
+    &#h-index2 {
+      background-color: rgba(21, 9, 64, 0.6);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h2.jpg');
+    }
+    &#h-index3 {
+      background-color: rgba(21, 9, 64, 0.6);
+      background-blend-mode: overlay;
+      background-image: url('../img/cover/index-h3.jpg');
+    }
+  }
   .controller {
-    position: absolute; left: 50%; bottom: 60rem; transform: translate(-50%, 0);
+    position: absolute; bottom: 60rem;
+    left: 50%; transform: translate(-50%, 0);
     display: flex; align-items: center; gap: 45rem;
     .arrow {
       display: inline-block;
@@ -1106,57 +1179,4 @@ footer {
       }
     }
   }
-
-  
 }
-
-.imageSlides {
-  display: flex; align-items: center; justify-content: center;
-  margin-top: -60rem;
-  width: 100%; min-width: 1280px;
-  height: 100vh; min-height: 750rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &.fade {
-    animation-name: fade;
-    animation-duration: 0.75s;
-    @keyframes fade {
-      from {opacity: .75}
-      to {opacity: 1}
-    }
-  }
-  
-  .title-container {
-    width: 1200px;
-    padding: 0 40rem;
-    text-align: left;
-    color: $color-w1;
-    .title {
-      font-size: 54rem; font-weight: 700; line-height: 57rem;
-      margin-bottom: 48rem;
-      text-shadow: 3rem 3rem 3rem $color-k3;
-    }
-    .sentence {
-      font-size: 30rem; font-weight: 400; line-height: 39rem;
-      text-shadow: 2rem 2rem 2rem $color-k3;
-    }
-  }
-
-  &#h-index1 {
-    background-color: rgba(21, 9, 64, 0.5);
-    background-blend-mode: overlay;
-    background-image: url('../img/cover/index-h1.jpg');
-  }
-  &#h-index2 {
-    background-color: rgba(21, 9, 64, 0.6);
-    background-blend-mode: overlay;
-    background-image: url('../img/cover/index-h2.jpg');
-  }
-  &#h-index3 {
-    background-color: rgba(21, 9, 64, 0.6);
-    background-blend-mode: overlay;
-    background-image: url('../img/cover/index-h3.jpg');
-  }
-}
-

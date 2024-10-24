@@ -129,6 +129,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
 .btn-dn-1 { // Logistics, FAQ
   display: inline-block;
+  width: fit-content;
   padding: 12rem 24rem 15rem 24rem;
   border: 2rem solid $color-m1;
   border-radius: 30rem;

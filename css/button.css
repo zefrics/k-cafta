@@ -102,6 +102,8 @@
 
 .btn-dn-1 {
   display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
   padding: 12rem 24rem 15rem 24rem;
   border: 2rem solid rgb(53, 99, 233);
   border-radius: 30rem;
