@@ -662,7 +662,7 @@ main .content#market .bb-market .item-group details .detail-group {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container {
-  margin-bottom: 9rem;
+  margin-bottom: 3rem;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .title {
   margin-bottom: 3rem;
@@ -674,6 +674,18 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
   font-size: 16.5rem;
   font-weight: 400;
 }
+main .content#market .bb-market .item-group details .detail-group .detail .file-group {
+  display: flex;
+  gap: 9rem;
+  margin-bottom: 15rem;
+}
+main .content#market .bb-market .item-group details .detail-group .detail .file-group img {
+  height: 30rem;
+  width: 21rem;
+}
+main .content#market .bb-market .item-group details .detail-group .detail .file-group img:hover {
+  opacity: 0.6;
+}
 main .content#market .bb-market .item-group details .detail-group .detail .thumb {
   border: 1rem solid rgba(0, 0, 0, 0.15);
 }
@@ -683,42 +695,44 @@ main .content#market .bb-market .item-group details .detail-group .detail .thumb
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .content#lecture .head2 {
+main .content#e-learning .head2 {
   margin-bottom: 45rem;
 }
-main .content#lecture .bb-lecture .item-group {
+main .content#e-learning .bb-e-learning .item-group {
   display: flex;
   flex-direction: column;
   gap: 45rem;
 }
-main .content#lecture .bb-lecture .item-group .item {
+main .content#e-learning .bb-e-learning .item-group .item {
   display: flex;
   align-items: center;
   border: 1px solid rgba(0, 0, 0, 0.15);
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-main .content#lecture .bb-lecture .item-group .item .thumb {
+main .content#e-learning .bb-e-learning .item-group .item .thumb {
   height: 210rem;
+  width: 330rem;
   min-width: 330rem;
+  max-width: 330rem;
   transition: 0.1s;
   border: 1rem solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
 }
-main .content#lecture .bb-lecture .item-group .item .thumb:hover {
+main .content#e-learning .bb-e-learning .item-group .item .thumb:hover {
   opacity: 0.6;
 }
-main .content#lecture .bb-lecture .item-group .item .thumb img {
+main .content#e-learning .bb-e-learning .item-group .item .thumb img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 100%;
   width: 100%;
 }
-main .content#lecture .bb-lecture .item-group .item .info {
+main .content#e-learning .bb-e-learning .item-group .item .info {
   padding: 27rem 36rem;
   text-align: left;
 }
-main .content#lecture .bb-lecture .item-group .item .info .title {
+main .content#e-learning .bb-e-learning .item-group .item .info .title {
   margin-bottom: 18rem;
   font-size: 21rem;
   font-weight: 600;
@@ -728,12 +742,12 @@ main .content#lecture .bb-lecture .item-group .item .info .title {
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
-main .content#lecture .bb-lecture .item-group .item .info .title .sector {
+main .content#e-learning .bb-e-learning .item-group .item .info .title .sector {
   border-right: 1rem solid rgba(0, 0, 0, 0.3);
   margin-right: 12rem;
   padding-right: 12rem;
 }
-main .content#lecture .bb-lecture .item-group .item .info .des {
+main .content#e-learning .bb-e-learning .item-group .item .info .des {
   font-size: 16.5rem;
   font-weight: 300;
   line-height: 21rem;
@@ -742,7 +756,7 @@ main .content#lecture .bb-lecture .item-group .item .info .des {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-main .content#lecture .bb-lecture .item-group .item .info .down {
+main .content#e-learning .bb-e-learning .item-group .item .info .down {
   margin-top: 12rem;
 }
 main .content#publication .head2 {
@@ -872,13 +886,15 @@ main .content#events .bb-events .item-group details summary:hover {
   background-color: rgba(53, 99, 233, 0.05);
 }
 main .content#events .bb-events .item-group details summary .thumb {
-  height: 90rem;
-  width: 160rem;
-  min-width: 160rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 105rem;
+  width: 105rem;
+  min-width: 105rem;
   border: 1rem solid rgba(0, 0, 0, 0.15);
 }
 main .content#events .bb-events .item-group details summary .thumb img {
-  height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1038,14 +1054,22 @@ main .content.module-5 .head2 {
 main .content.module-5 .btn-group-2 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 45rem;
+  gap: 30rem;
   width: -moz-fit-content;
   width: fit-content;
 }
-main .content.module-5 .btn-group-2 img {
-  border: 1px solid red;
-  width: 105rem;
-  height: 105rem;
+main .content.module-5 .btn-group-2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 21rem;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
+}
+main .content.module-5 .btn-group-2 a:hover {
+  opacity: 0.6;
+}
+main .content.module-5 .btn-group-2 a img {
+  height: 30rem;
 }
 
 footer {

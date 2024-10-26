@@ -654,7 +654,7 @@ main {
               border-top: 1px solid $color-k7;
               .detail {
                 .title-container {
-                  margin-bottom: 9rem;
+                  margin-bottom: 3rem;
                   .title {
                     margin-bottom: 3rem;
                     font-size: 27rem; font-weight: 600;
@@ -662,6 +662,16 @@ main {
                   }
                   .code {
                     font-size: 16.5rem; font-weight: 400;
+                  }
+                }
+                .file-group {
+                  display: flex; gap: 9rem;
+                  margin-bottom: 15rem;
+                  img {
+                    height: 30rem; width: 21rem;
+                    &:hover {
+                      opacity: 0.6;
+                    }
                   }
                 }
                 .thumb {
@@ -679,11 +689,11 @@ main {
       }
     }
 
-    &#lecture { // bb-lecture
+    &#e-learning { // bb-e-learning
       .head2 {
         margin-bottom: 45rem;
       }
-      .bb-lecture {
+      .bb-e-learning {
         .item-group {
           display: flex; flex-direction: column; gap: 45rem;
           .item {
@@ -692,7 +702,8 @@ main {
             text-decoration: none;
             color: $color-k1;
             .thumb {
-              height: 210rem; min-width: 330rem;
+              height: 210rem;
+              width: 330rem; min-width: 330rem; max-width: 330rem;
               transition: 0.1s;
               border: 1rem solid $color-k8;
               box-sizing: border-box;
@@ -855,15 +866,17 @@ main {
                 background-color: $color-m8;
               }
               .thumb {
-                height: 90rem;
-                width: 160rem; min-width: 160rem;
+                display: flex; align-items: center; justify-content: center;
+                height: 105rem;
+                width: 105rem; min-width: 105rem;
                 border: 1rem solid $color-k7;
                 img {
-                  height: 100%; width: 100%;
+                  width: 100%;
                   object-fit: cover;
                 }
               }
               .title-container {
+                // display: flex; flex-direction: column; justify-content: space-between;
                 .title {
                   margin-bottom: 12rem;
                   font-size: 21rem; font-weight: 600;
@@ -1019,12 +1032,20 @@ main {
         margin-bottom: 30rem;
       }
       .btn-group-2 {
-        display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
         width: fit-content;
-        img {
-          border: 1px solid red;
-          width: 105rem; height: 105rem;
+        a {
+          display: flex; align-items: center; justify-content: center;
+          padding: 21rem;
+          border: 1rem solid $color-k7;
+          &:hover {
+            opacity: 0.6;
+          }
+          img {
+            height: 30rem;
+          }
         }
+        
       }
     }
 
