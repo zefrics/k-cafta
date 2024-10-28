@@ -702,8 +702,8 @@ main {
             text-decoration: none;
             color: $color-k1;
             .thumb {
-              height: 210rem;
-              width: 330rem; min-width: 330rem; max-width: 330rem;
+              height: 220rem;
+              width: 330rem; min-width: 320rem; max-width: 320rem;
               transition: 0.1s;
               border: 1rem solid $color-k8;
               box-sizing: border-box;
@@ -741,8 +741,15 @@ main {
                 -webkit-line-clamp: 3;
                 overflow: hidden;
               }
-              .down {
-                margin-top: 12rem;
+              .file-group {
+                display: flex; gap: 9rem;
+                margin-top: 15rem;
+                img {
+                  height: 30rem; width: 21rem;
+                  &:hover {
+                    opacity: 0.6;
+                  }
+                }
               }
             }
           }
@@ -870,6 +877,7 @@ main {
                 height: 105rem;
                 width: 105rem; min-width: 105rem;
                 border: 1rem solid $color-k7;
+                background-color: $color-w1;
                 img {
                   width: 100%;
                   object-fit: cover;

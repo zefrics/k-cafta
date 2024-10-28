@@ -711,10 +711,10 @@ main .content#e-learning .bb-e-learning .item-group .item {
   color: rgb(0, 0, 0);
 }
 main .content#e-learning .bb-e-learning .item-group .item .thumb {
-  height: 210rem;
+  height: 220rem;
   width: 330rem;
-  min-width: 330rem;
-  max-width: 330rem;
+  min-width: 320rem;
+  max-width: 320rem;
   transition: 0.1s;
   border: 1rem solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
@@ -756,8 +756,17 @@ main .content#e-learning .bb-e-learning .item-group .item .info .des {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }
-main .content#e-learning .bb-e-learning .item-group .item .info .down {
-  margin-top: 12rem;
+main .content#e-learning .bb-e-learning .item-group .item .info .file-group {
+  display: flex;
+  gap: 9rem;
+  margin-top: 15rem;
+}
+main .content#e-learning .bb-e-learning .item-group .item .info .file-group img {
+  height: 30rem;
+  width: 21rem;
+}
+main .content#e-learning .bb-e-learning .item-group .item .info .file-group img:hover {
+  opacity: 0.6;
 }
 main .content#publication .head2 {
   margin-bottom: 45rem;
@@ -893,6 +902,7 @@ main .content#events .bb-events .item-group details summary .thumb {
   width: 105rem;
   min-width: 105rem;
   border: 1rem solid rgba(0, 0, 0, 0.15);
+  background-color: rgb(255, 255, 255);
 }
 main .content#events .bb-events .item-group details summary .thumb img {
   width: 100%;
