@@ -702,17 +702,25 @@ main {
             text-decoration: none;
             color: $color-k1;
             .thumb {
-              height: 220rem;
-              width: 330rem; min-width: 320rem; max-width: 320rem;
+              position: relative;
+              height: 225rem;
+              width: 400rem; min-width: 400rem; max-width: 400rem;
               transition: 0.1s;
               border: 1rem solid $color-k8;
               box-sizing: border-box;
               &:hover {
                 opacity: 0.6;
               }
-              img {
+              .main {
                 object-fit: cover;
                 height: 100%; width: 100%;
+              }
+              .play {
+                z-index: 1;
+                position: absolute; top: 50%; left: 50%;
+                transform: translate(-50%, -50%);
+                height: 60rem;
+                opacity: 0.7;
               }
             }
             .info {
