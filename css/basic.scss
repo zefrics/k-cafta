@@ -654,7 +654,7 @@ main {
               border-top: 1px solid $color-k7;
               .detail {
                 .title-container {
-                  margin-bottom: 3rem;
+                  margin-bottom: 12rem;
                   .title {
                     margin-bottom: 3rem;
                     font-size: 27rem; font-weight: 600;
@@ -665,10 +665,10 @@ main {
                   }
                 }
                 .file-group {
-                  display: flex; gap: 9rem;
-                  margin-bottom: 15rem;
+                  display: flex; gap: 12rem;
+                  margin-bottom: 18rem;
                   img {
-                    height: 30rem; width: 21rem;
+                    height: 30rem;
                     &:hover {
                       opacity: 0.6;
                     }
@@ -732,9 +732,6 @@ main {
                 overflow: hidden;
               }
               .des {
-                .bold {
-                  // font-weight: 500;
-                }
                 font-size: 16.5rem; font-weight: 300; line-height: 21rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
@@ -742,10 +739,10 @@ main {
                 overflow: hidden;
               }
               .file-group {
-                display: flex; gap: 9rem;
-                margin-top: 15rem;
+                display: flex; gap: 15rem;
+                margin-top: 18rem;
                 img {
-                  height: 30rem; width: 21rem;
+                  height: 36rem;
                   &:hover {
                     opacity: 0.6;
                   }
@@ -1050,7 +1047,12 @@ main {
             opacity: 0.6;
           }
           img {
-            height: 30rem;
+            &#hapag-lloyd {
+              height: 24rem;
+            }
+            &#maersk {
+              height: 30rem;
+            }
           }
         }
         

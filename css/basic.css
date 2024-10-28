@@ -662,7 +662,7 @@ main .content#market .bb-market .item-group details .detail-group {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container {
-  margin-bottom: 3rem;
+  margin-bottom: 12rem;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .title {
   margin-bottom: 3rem;
@@ -676,12 +676,11 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group {
   display: flex;
-  gap: 9rem;
-  margin-bottom: 15rem;
+  gap: 12rem;
+  margin-bottom: 18rem;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group img {
   height: 30rem;
-  width: 21rem;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group img:hover {
   opacity: 0.6;
@@ -758,12 +757,11 @@ main .content#e-learning .bb-e-learning .item-group .item .info .des {
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group {
   display: flex;
-  gap: 9rem;
-  margin-top: 15rem;
+  gap: 15rem;
+  margin-top: 18rem;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group img {
-  height: 30rem;
-  width: 21rem;
+  height: 36rem;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group img:hover {
   opacity: 0.6;
@@ -1078,7 +1076,10 @@ main .content.module-5 .btn-group-2 a {
 main .content.module-5 .btn-group-2 a:hover {
   opacity: 0.6;
 }
-main .content.module-5 .btn-group-2 a img {
+main .content.module-5 .btn-group-2 a img#hapag-lloyd {
+  height: 24rem;
+}
+main .content.module-5 .btn-group-2 a img#maersk {
   height: 30rem;
 }
 
