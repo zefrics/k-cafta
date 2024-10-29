@@ -164,7 +164,7 @@
 .btn-text-1 {
   cursor: pointer;
   color: rgb(53, 99, 233);
-  text-underline-offset: 4rem;
+  text-underline-offset: 2rem;
 }
 .btn-text-1:hover {
   opacity: 0.6;

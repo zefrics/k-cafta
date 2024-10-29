@@ -184,7 +184,7 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 .btn-text-1 { // Per Country FTA Text : Extra link
   cursor: pointer;
   color:$color-m1;
-  text-underline-offset: 4rem;
+  text-underline-offset: 2rem;
   &:hover {
     opacity: 0.6;
   }
