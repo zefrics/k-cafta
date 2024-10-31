@@ -1199,11 +1199,8 @@ main .content.module-4 .para .email {
   text-underline-offset: 4rem;
 }
 main .content.module-5 {
-  padding-top: 18rem;
+  padding: 30rem 40rem 120rem 40rem;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 main .content.module-5 .title2 {
   margin-bottom: 30rem;
