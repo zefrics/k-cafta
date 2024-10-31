@@ -193,15 +193,18 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 120rem);
   .slider {
     position: relative;
     margin-top: -60rem;
+    width: 100%; min-width: 1280px;
+    display: flex; justify-content: center; align-items: center;
+
     .imageSlides {
       user-select: none;
       display: flex; align-items: center; justify-content: center;
-      width: 100%; min-width: 1280px;
       height: 100vh; min-height: 750rem;
+      width: 100%;
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -246,10 +249,13 @@ main {
         background-image: url('../img/cover/index-h3.jpg');
       }
     }
+
     .controller {
       position: absolute; bottom: 60rem;
-      left: 50%; transform: translate(-50%, 0);
       display: flex; align-items: center; gap: 45rem;
+      justify-content: center;
+      width: 1200px;
+      padding: 0 40rem;
       .arrow {
         display: inline-block;
         cursor: pointer;
@@ -277,7 +283,6 @@ main {
   }
   .main-title {
     height: 600rem;
-    margin-top: -60rem;
     background-color: $color-m5;
     // background-blend-mode: screen;
     background-position: center;
@@ -527,10 +532,34 @@ main {
       }
 
       #shipping { // Logistics - Shipping Route
-        margin-bottom: 30rem;
-          #img-4 {
+        .img-container {
+          margin-bottom: 21rem;
+          img {
             height: 100%; width: 1200px; max-width: 1200px;
           }
+        }
+        .btn-group-2 {
+          display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
+          width: fit-content;
+          margin-top: 21rem;
+          a {
+            display: flex; align-items: center; justify-content: center;
+            padding: 15rem 21rem;
+            border: 1rem solid $color-k7;
+            &:hover {
+              opacity: 0.6;
+            }
+            img {
+              &#hapag-lloyd {
+                height: 24rem;
+              }
+              &#maersk {
+                height: 30rem;
+              }
+            }
+          }
+          
+        }
       }
     }
 
@@ -1128,27 +1157,6 @@ main {
       display: flex; flex-direction: column; align-items: center;
       .title2 {
         margin-bottom: 30rem;
-      }
-      .btn-group-2 {
-        display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
-        width: fit-content;
-        a {
-          display: flex; align-items: center; justify-content: center;
-          padding: 21rem;
-          border: 1rem solid $color-k7;
-          &:hover {
-            opacity: 0.6;
-          }
-          img {
-            &#hapag-lloyd {
-              height: 24rem;
-            }
-            &#maersk {
-              height: 30rem;
-            }
-          }
-        }
-        
       }
     }
 

@@ -194,11 +194,16 @@ header nav .function .my-container #my-menu a.sign-out {
 }
 
 main {
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 120rem);
 }
 main .slider {
   position: relative;
   margin-top: -60rem;
+  width: 100%;
+  min-width: 1280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .slider .imageSlides {
   -webkit-user-select: none;
@@ -207,10 +212,9 @@ main .slider .imageSlides {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  min-width: 1280px;
   height: 100vh;
   min-height: 750rem;
+  width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -264,11 +268,12 @@ main .slider .imageSlides#h-index3 {
 main .slider .controller {
   position: absolute;
   bottom: 60rem;
-  left: 50%;
-  transform: translate(-50%, 0);
   display: flex;
   align-items: center;
   gap: 45rem;
+  justify-content: center;
+  width: 1200px;
+  padding: 0 40rem;
 }
 main .slider .controller .arrow {
   display: inline-block;
@@ -301,7 +306,6 @@ main .slider .controller .circle-group .dot {
 }
 main .main-title {
   height: 600rem;
-  margin-top: -60rem;
   background-color: rgba(53, 99, 233, 0.45);
   background-position: center;
   background-repeat: no-repeat;
@@ -553,13 +557,37 @@ main .content.module-2 #maritime {
 main .content.module-2 #maritime .img-container img {
   width: 100%;
 }
-main .content.module-2 #shipping {
-  margin-bottom: 30rem;
+main .content.module-2 #shipping .img-container {
+  margin-bottom: 21rem;
 }
-main .content.module-2 #shipping #img-4 {
+main .content.module-2 #shipping .img-container img {
   height: 100%;
   width: 1200px;
   max-width: 1200px;
+}
+main .content.module-2 #shipping .btn-group-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: 21rem;
+}
+main .content.module-2 #shipping .btn-group-2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 21rem;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
+}
+main .content.module-2 #shipping .btn-group-2 a:hover {
+  opacity: 0.6;
+}
+main .content.module-2 #shipping .btn-group-2 a img#hapag-lloyd {
+  height: 24rem;
+}
+main .content.module-2 #shipping .btn-group-2 a img#maersk {
+  height: 30rem;
 }
 main .content.module-3 {
   text-align: center;
@@ -1179,29 +1207,6 @@ main .content.module-5 {
 }
 main .content.module-5 .title2 {
   margin-bottom: 30rem;
-}
-main .content.module-5 .btn-group-2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-main .content.module-5 .btn-group-2 a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 21rem;
-  border: 1rem solid rgba(0, 0, 0, 0.15);
-}
-main .content.module-5 .btn-group-2 a:hover {
-  opacity: 0.6;
-}
-main .content.module-5 .btn-group-2 a img#hapag-lloyd {
-  height: 24rem;
-}
-main .content.module-5 .btn-group-2 a img#maersk {
-  height: 30rem;
 }
 
 footer {
