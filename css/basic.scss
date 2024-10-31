@@ -193,8 +193,91 @@ header {
 }
 
 main {
+  min-height: calc(100vh - 60px);
+  .slider {
+    position: relative;
+    margin-top: -60rem;
+    .imageSlides {
+      user-select: none;
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; min-width: 1280px;
+      height: 100vh; min-height: 750rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      &.fade {
+        animation-name: fade;
+        animation-duration: 0.75s;
+        @keyframes fade {
+          from {opacity: .75}
+          to {opacity: 1}
+        }
+      }
+    
+      .title-container {
+        width: 1200px;
+        padding: 0 40rem;
+        text-align: left;
+        color: $color-w1;
+        .title {
+          font-size: 54rem; font-weight: 700; line-height: 57rem;
+          margin-bottom: 48rem;
+          text-shadow: 3rem 3rem 3rem $color-k3;
+        }
+        .sentence {
+          font-size: 30rem; font-weight: 400; line-height: 39rem;
+          text-shadow: 2rem 2rem 2rem $color-k3;
+        }
+      }
+  
+      &#h-index1 {
+        background-color: rgba(21, 9, 64, 0.5);
+        background-blend-mode: overlay;
+        background-image: url('../img/cover/index-h1.jpg');
+      }
+      &#h-index2 {
+        background-color: rgba(21, 9, 64, 0.6);
+        background-blend-mode: overlay;
+        background-image: url('../img/cover/index-h2.jpg');
+      }
+      &#h-index3 {
+        background-color: rgba(21, 9, 64, 0.6);
+        background-blend-mode: overlay;
+        background-image: url('../img/cover/index-h3.jpg');
+      }
+    }
+    .controller {
+      position: absolute; bottom: 60rem;
+      left: 50%; transform: translate(-50%, 0);
+      display: flex; align-items: center; gap: 45rem;
+      .arrow {
+        display: inline-block;
+        cursor: pointer;
+        user-select: none;
+        font-size: 75rem; height: 30rem; line-height: 21rem;
+        color: $color-w4;
+        &:hover {
+          opacity: 0.75;
+        }
+      }
+      .circle-group {
+        display: flex; gap: 30rem;
+        .circle {
+          height: 15rem; width: 15rem;
+          border: 2rem solid $color-w4;
+          border-radius: 50%;
+          transition: 0.15s ease-in-out;
+        }
+        .dot {
+          border: 2rem solid $color-w1;
+          background-color: $color-w5;
+        }
+      }
+    }
+  }
   .main-title {
     height: 600rem;
+    margin-top: -60rem;
     background-color: $color-m5;
     // background-blend-mode: screen;
     background-position: center;
@@ -1135,85 +1218,3 @@ footer {
   text-align: justify !important;
 }
 /* Important Ends */
-
-.slider {
-  position: relative;
-  .imageSlides {
-    user-select: none;
-    display: flex; align-items: center; justify-content: center;
-    margin-top: -60rem;
-    width: 100%; min-width: 1280px;
-    height: 100vh; min-height: 750rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    &.fade {
-      animation-name: fade;
-      animation-duration: 0.75s;
-      @keyframes fade {
-        from {opacity: .75}
-        to {opacity: 1}
-      }
-    }
-  
-    .title-container {
-      width: 1200px;
-      padding: 0 40rem;
-      text-align: left;
-      color: $color-w1;
-      .title {
-        font-size: 54rem; font-weight: 700; line-height: 57rem;
-        margin-bottom: 48rem;
-        text-shadow: 3rem 3rem 3rem $color-k3;
-      }
-      .sentence {
-        font-size: 30rem; font-weight: 400; line-height: 39rem;
-        text-shadow: 2rem 2rem 2rem $color-k3;
-      }
-    }
-
-    &#h-index1 {
-      background-color: rgba(21, 9, 64, 0.5);
-      background-blend-mode: overlay;
-      background-image: url('../img/cover/index-h1.jpg');
-    }
-    &#h-index2 {
-      background-color: rgba(21, 9, 64, 0.6);
-      background-blend-mode: overlay;
-      background-image: url('../img/cover/index-h2.jpg');
-    }
-    &#h-index3 {
-      background-color: rgba(21, 9, 64, 0.6);
-      background-blend-mode: overlay;
-      background-image: url('../img/cover/index-h3.jpg');
-    }
-  }
-  .controller {
-    position: absolute; bottom: 60rem;
-    left: 50%; transform: translate(-50%, 0);
-    display: flex; align-items: center; gap: 45rem;
-    .arrow {
-      display: inline-block;
-      cursor: pointer;
-      user-select: none;
-      font-size: 75rem; height: 30rem; line-height: 21rem;
-      color: $color-w4;
-      &:hover {
-        opacity: 0.75;
-      }
-    }
-    .circle-group {
-      display: flex; gap: 30rem;
-      .circle {
-        height: 15rem; width: 15rem;
-        border: 2rem solid $color-w4;
-        border-radius: 50%;
-        transition: 0.15s ease-in-out;
-      }
-      .dot {
-        border: 2rem solid $color-w1;
-        background-color: $color-w5;
-      }
-    }
-  }
-}

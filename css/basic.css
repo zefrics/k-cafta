@@ -193,8 +193,115 @@ header nav .function .my-container #my-menu a.sign-out {
   color: rgb(255, 0, 0);
 }
 
+main {
+  min-height: calc(100vh - 60px);
+}
+main .slider {
+  position: relative;
+  margin-top: -60rem;
+}
+main .slider .imageSlides {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 1280px;
+  height: 100vh;
+  min-height: 750rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .slider .imageSlides.fade {
+  animation-name: fade;
+  animation-duration: 0.75s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.75;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main .slider .imageSlides .title-container {
+  width: 1200px;
+  padding: 0 40rem;
+  text-align: left;
+  color: rgb(255, 255, 255);
+}
+main .slider .imageSlides .title-container .title {
+  font-size: 54rem;
+  font-weight: 700;
+  line-height: 57rem;
+  margin-bottom: 48rem;
+  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
+}
+main .slider .imageSlides .title-container .sentence {
+  font-size: 30rem;
+  font-weight: 400;
+  line-height: 39rem;
+  text-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.75);
+}
+main .slider .imageSlides#h-index1 {
+  background-color: rgba(21, 9, 64, 0.5);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h1.jpg");
+}
+main .slider .imageSlides#h-index2 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h2.jpg");
+}
+main .slider .imageSlides#h-index3 {
+  background-color: rgba(21, 9, 64, 0.6);
+  background-blend-mode: overlay;
+  background-image: url("../img/cover/index-h3.jpg");
+}
+main .slider .controller {
+  position: absolute;
+  bottom: 60rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  gap: 45rem;
+}
+main .slider .controller .arrow {
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  font-size: 75rem;
+  height: 30rem;
+  line-height: 21rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+main .slider .controller .arrow:hover {
+  opacity: 0.75;
+}
+main .slider .controller .circle-group {
+  display: flex;
+  gap: 30rem;
+}
+main .slider .controller .circle-group .circle {
+  height: 15rem;
+  width: 15rem;
+  border: 2rem solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  transition: 0.15s ease-in-out;
+}
+main .slider .controller .circle-group .dot {
+  border: 2rem solid rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.45);
+}
 main .main-title {
   height: 600rem;
+  margin-top: -60rem;
   background-color: rgba(53, 99, 233, 0.45);
   background-position: center;
   background-repeat: no-repeat;
@@ -1167,107 +1274,4 @@ footer#success .content {
   text-align: justify !important;
 }
 
-/* Important Ends */
-.slider {
-  position: relative;
-}
-.slider .imageSlides {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -60rem;
-  width: 100%;
-  min-width: 1280px;
-  height: 100vh;
-  min-height: 750rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.slider .imageSlides.fade {
-  animation-name: fade;
-  animation-duration: 0.75s;
-}
-@keyframes fade {
-  from {
-    opacity: 0.75;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.slider .imageSlides .title-container {
-  width: 1200px;
-  padding: 0 40rem;
-  text-align: left;
-  color: rgb(255, 255, 255);
-}
-.slider .imageSlides .title-container .title {
-  font-size: 54rem;
-  font-weight: 700;
-  line-height: 57rem;
-  margin-bottom: 48rem;
-  text-shadow: 3rem 3rem 3rem rgba(0, 0, 0, 0.75);
-}
-.slider .imageSlides .title-container .sentence {
-  font-size: 30rem;
-  font-weight: 400;
-  line-height: 39rem;
-  text-shadow: 2rem 2rem 2rem rgba(0, 0, 0, 0.75);
-}
-.slider .imageSlides#h-index1 {
-  background-color: rgba(21, 9, 64, 0.5);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h1.jpg");
-}
-.slider .imageSlides#h-index2 {
-  background-color: rgba(21, 9, 64, 0.6);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h2.jpg");
-}
-.slider .imageSlides#h-index3 {
-  background-color: rgba(21, 9, 64, 0.6);
-  background-blend-mode: overlay;
-  background-image: url("../img/cover/index-h3.jpg");
-}
-.slider .controller {
-  position: absolute;
-  bottom: 60rem;
-  left: 50%;
-  transform: translate(-50%, 0);
-  display: flex;
-  align-items: center;
-  gap: 45rem;
-}
-.slider .controller .arrow {
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  font-size: 75rem;
-  height: 30rem;
-  line-height: 21rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-.slider .controller .arrow:hover {
-  opacity: 0.75;
-}
-.slider .controller .circle-group {
-  display: flex;
-  gap: 30rem;
-}
-.slider .controller .circle-group .circle {
-  height: 15rem;
-  width: 15rem;
-  border: 2rem solid rgba(255, 255, 255, 0.6);
-  border-radius: 50%;
-  transition: 0.15s ease-in-out;
-}
-.slider .controller .circle-group .dot {
-  border: 2rem solid rgb(255, 255, 255);
-  background-color: rgba(255, 255, 255, 0.45);
-}/*# sourceMappingURL=basic.css.map */
+/* Important Ends *//*# sourceMappingURL=basic.css.map */
