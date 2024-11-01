@@ -1223,9 +1223,10 @@ main .content.module-5 .title2 {
 }
 #login .content .login-container form .label-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 6rem;
-  font-size: 16.5rem;
+  font-size: 18rem;
   font-weight: 500;
 }
 #login .content .login-container form input {

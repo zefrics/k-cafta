@@ -249,6 +249,9 @@
   display: block;
   font-size: 15rem;
   font-weight: 400;
-  text-underline-offset: 4rem;
+  text-decoration: none;
   color: rgb(53, 99, 233);
+}
+.btn-forget:hover {
+  opacity: 0.6;
 }/*# sourceMappingURL=button.css.map */
