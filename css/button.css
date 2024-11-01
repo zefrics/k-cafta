@@ -215,4 +215,40 @@
 }
 .btn-text-5:hover {
   opacity: 0.6;
+}
+
+.btn-login {
+  cursor: pointer;
+  margin: 0;
+  padding: 9rem;
+  font-size: 18rem;
+  border: 2rem solid rgb(53, 99, 233);
+  background-color: rgba(53, 99, 233, 0.75);
+  color: rgb(255, 255, 255);
+}
+.btn-login:hover {
+  opacity: 0.75;
+}
+
+.btn-signup {
+  cursor: pointer;
+  margin: 0;
+  font-size: 18rem;
+  padding: 9rem;
+  border: 2rem solid rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  text-decoration: none;
+  color: rgb(53, 99, 233);
+}
+.btn-signup:hover {
+  opacity: 0.6;
+}
+
+.btn-forget {
+  display: block;
+  font-size: 15rem;
+  font-weight: 400;
+  text-underline-offset: 4rem;
+  color: rgb(53, 99, 233);
 }/*# sourceMappingURL=button.css.map */

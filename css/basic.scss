@@ -193,7 +193,6 @@ header {
 }
 
 main {
-  min-height: calc(100vh - 120rem);
   .slider {
     position: relative;
     margin-top: -60rem;
@@ -801,8 +800,6 @@ main {
       }
     }
 
-
-
     &#e-learning { // bb-e-learning
       .title2 {
         margin-bottom: 45rem;
@@ -1161,7 +1158,48 @@ main {
 
     /* Module Ends */
   }
+}
 
+#login {
+  min-height: calc(100vh - 115rem);
+  .content {
+    display: flex; justify-content: center; align-items: center;
+    .login-container {
+      width: fit-content;
+      padding: 60rem;
+      border: 2rem solid $color-k7;
+      border-radius: 18rem;
+      .title2 {
+        margin-bottom: 45rem;
+      }
+      form {
+        .label-container {
+          display: flex; justify-content: space-between;
+          margin-bottom: 6rem;
+          font-size: 16.5rem; font-weight: 500;
+        }
+        input {
+          width: 360rem;
+          padding: 9rem 12rem;
+          font-size: 16.5rem;
+          &::placeholder {
+            color: $color-k6;
+          }
+        }
+        .id-container {
+          display: flex; flex-direction: column;
+          margin-bottom: 30rem;
+        }
+        .pw-container {
+          display: flex; flex-direction: column;
+        }
+        .btn-group {
+          display: flex; flex-direction: column; gap: 15rem;
+          margin-top: 45rem;
+        }
+      }
+    }
+  }
 }
 
 footer {
