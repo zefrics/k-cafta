@@ -1,0 +1,26 @@
+main .content {
+  display: flex;
+  gap: 60rem;
+}
+main .content nav {
+  height: 100%;
+  width: 270rem;
+  border: 1px solid red;
+}
+main .content nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 15rem;
+}
+main .content nav ul li {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 15rem;
+  font-size: 16.5rem;
+}
+main .content nav ul li:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+main .content .bbb {
+  min-height: 100vh;
+}/*# sourceMappingURL=admin.css.map */

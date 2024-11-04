@@ -1,0 +1,62 @@
+$color-w1: rgba(255, 255, 255, 1);
+$color-w2: rgba(255, 255, 255, 0.95);
+$color-w3: rgba(255, 255, 255, 0.75);
+$color-w4: rgba(255, 255, 255, 0.6);
+$color-w5: rgba(255, 255, 255, 0.45);
+$color-w6: rgba(255, 255, 255, 0.3);
+$color-w7: rgba(255, 255, 255, 0.15);
+$color-w8: rgba(255, 255, 255, 0.05);
+
+$color-k1: rgba(0, 0, 0, 1);
+$color-k2: rgba(0, 0, 0, 0.9);
+$color-k3: rgba(0, 0, 0, 0.75);
+$color-k4: rgba(0, 0, 0, 0.6);
+$color-k5: rgba(0, 0, 0, 0.45);
+$color-k6: rgba(0, 0, 0, 0.3);
+$color-k7: rgba(0, 0, 0, 0.15);
+$color-k8: rgba(0, 0, 0, 0.05);
+$color-k9: rgba(0, 0, 0, 0.03);
+
+$color-m1: rgba(53, 99, 233, 1);
+$color-m2: rgba(53, 99, 233, 0.9);
+$color-m3: rgba(53, 99, 233, 0.75);
+$color-m4: rgba(53, 99, 233, 0.6);
+$color-m5: rgba(53, 99, 233, 0.45);
+$color-m6: rgba(53, 99, 233, 0.3);
+$color-m7: rgba(53, 99, 233, 0.15);
+$color-m8: rgba(53, 99, 233, 0.05);
+
+$color-r1: rgba(255, 0, 0, 1);
+
+$fs-menu1: 16.5rem; // 메뉴1 폰트 사이즈
+$fw-menu1: 300; // 메뉴1 폰트 웨이트1 (일반)
+$fs-menu2: 15rem; // 드롭 메뉴 폰트 사이즈
+$fw-menu2: 300; // 드롭 메뉴 폰트 웨이트2
+$fw-menu-active: 500; // 메뉴 active 폰트 웨이트
+
+main {
+  .content {
+    display: flex; gap: 60rem;
+    nav {
+      height: 100%;
+      width: 270rem;
+      border: 1px solid red;
+      ul {
+        display: flex; flex-direction: column;
+        padding: 15rem;
+        li {
+          cursor: pointer;
+          background-color: $color-k8;
+          padding: 15rem;
+          font-size: 16.5rem;
+          &:hover {
+            background-color: $color-k7;
+          }
+        }
+      }
+    }
+    .bbb {
+      min-height: 100vh;
+    }
+  }
+}
