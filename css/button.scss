@@ -85,10 +85,12 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 .btn-lang {
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
+  text-decoration: none;
+  color: $color-k1;
   img {
     height: 21rem; width: 21rem;
   }
-  p {
+  .text {
     margin-left: 6rem;
     font-size: 16.5rem; font-weight: 500;
   }

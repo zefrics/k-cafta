@@ -874,7 +874,7 @@ main .content#e-learning .bb-e-learning .item-group .item .thumb .play {
   opacity: 0.7;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info {
-  padding: 27rem 36rem;
+  padding: 21rem 36rem;
   text-align: left;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .title {
@@ -898,7 +898,7 @@ main .content#e-learning .bb-e-learning .item-group .item .info .des {
   line-height: 21rem;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   overflow: hidden;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group {

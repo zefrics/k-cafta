@@ -56,12 +56,14 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 .btn-lang img {
   height: 21rem;
   width: 21rem;
 }
-.btn-lang p {
+.btn-lang .text {
   margin-left: 6rem;
   font-size: 16.5rem;
   font-weight: 500;

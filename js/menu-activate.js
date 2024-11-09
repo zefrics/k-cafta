@@ -1,8 +1,8 @@
 // 만약 url에 index이 있으면 -> id="p-index"의 클래스에 active추가
 // 만약 url에 2-1이 있으면 -> id="p-2","p-2-1"의 클래스에 active추가
 
-var current = window.location.href //ex. "http://www.naver.com/2-2-1.html"
-var lastItem = current.substring(current.lastIndexOf('/') + 1) //ex. 2-2-1.html 
+var current = window.location.href //ex. "http://www.naver.com/2-2-1_en.html"
+var lastItem = current.substring(current.lastIndexOf('/') + 1) //ex. 2-2-1_en.html 
 
 var extract1 = lastItem.replace("/","").replace(".html","") //ex. "2-2-1"
 var extract2 = extract1.substring(0, 3) // 첫 세글자만 가져오기 ex. "2-2"
