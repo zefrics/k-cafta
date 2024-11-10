@@ -198,7 +198,7 @@
   font-size: 16.5rem;
   color: rgb(53, 99, 233);
   text-decoration: underline;
-  text-underline-offset: 3rem;
+  text-underline-offset: 4rem;
 }
 .btn-text-4:hover {
   opacity: 0.6;

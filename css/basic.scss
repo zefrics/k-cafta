@@ -768,11 +768,11 @@ main {
                   margin-bottom: 12rem;
                   .title {
                     margin-bottom: 3rem;
-                    font-size: 27rem; font-weight: 600;
-                    color: $color-k6;
+                    font-size: 19.5rem; font-weight: 600;
                   }
                   .code {
-                    font-size: 16.5rem; font-weight: 400;
+                    font-size: 15rem; font-weight: 400;
+                    color: $color-k6;
                   }
                 }
                 .file-group {
@@ -1025,6 +1025,9 @@ main {
                       font-size: 15rem; font-weight: 300;
                       line-height: 21rem;
                       margin-top: -1rem;
+                    }
+                    .date {
+                      width: 210rem;
                     }
                   }
                 }

@@ -802,13 +802,13 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .title {
   margin-bottom: 3rem;
-  font-size: 27rem;
+  font-size: 19.5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.3);
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .code {
-  font-size: 16.5rem;
+  font-size: 15rem;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group {
   display: flex;
@@ -1085,6 +1085,9 @@ main .content#events .bb-events .item-group details summary .title-container .in
   font-weight: 300;
   line-height: 21rem;
   margin-top: -1rem;
+}
+main .content#events .bb-events .item-group details summary .title-container .info-container .container .date {
+  width: 210rem;
 }
 main .content#events .bb-events .item-group details .detail-container {
   margin: 0 30rem;
