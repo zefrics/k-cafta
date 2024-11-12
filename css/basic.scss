@@ -788,9 +788,10 @@ main {
                     color: $color-k6;
                   }
                 }
+                
                 .file-group {
                   display: flex; gap: 12rem;
-                  margin-bottom: 18rem;
+                  margin-bottom: 15rem;
                   img {
                     height: 30rem;
                     &:hover {
@@ -827,8 +828,8 @@ main {
             color: $color-k1;
             .thumb {
               position: relative;
-              height: 225rem;
-              width: 400rem; min-width: 400rem; max-width: 400rem;
+              height: 240rem;
+              width: 375rem; min-width: 375rem; max-width: 375rem;
               transition: 0.1s;
               border: 1rem solid $color-k8;
               box-sizing: border-box;
@@ -848,21 +849,22 @@ main {
               }
             }
             .info {
-              padding: 21rem 36rem;
+              padding: 27rem 36rem;
               text-align: left;
+              .sector {
+                margin-bottom: 3rem;
+                font-size: 15rem;
+                color: $color-k5;
+              }
               .title {
-                .sector {
-                  border-right: 1rem solid $color-k6;
-                  margin-right: 12rem;
-                  padding-right: 12rem;
-                }
-                margin-bottom: 18rem;
+                margin-bottom: 12rem;
                 font-size: 21rem; font-weight: 600; line-height: 24rem;
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
                 overflow: hidden;
               }
+              
               .des {
                 font-size: 16.5rem; font-weight: 300; line-height: 21rem;
                 display: -webkit-box;
@@ -871,10 +873,10 @@ main {
                 overflow: hidden;
               }
               .file-group {
-                display: flex; gap: 15rem;
-                margin-top: 18rem;
+                display: flex; gap: 12rem;
+                margin-top: 12rem;
                 img {
-                  height: 36rem;
+                  height: 33rem;
                   &:hover {
                     opacity: 0.6;
                   }

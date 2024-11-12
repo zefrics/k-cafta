@@ -822,7 +822,7 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
 main .content#market .bb-market .item-group details .detail-group .detail .file-group {
   display: flex;
   gap: 12rem;
-  margin-bottom: 18rem;
+  margin-bottom: 15rem;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group img {
   height: 30rem;
@@ -856,10 +856,10 @@ main .content#e-learning .bb-e-learning .item-group .item {
 }
 main .content#e-learning .bb-e-learning .item-group .item .thumb {
   position: relative;
-  height: 225rem;
-  width: 400rem;
-  min-width: 400rem;
-  max-width: 400rem;
+  height: 240rem;
+  width: 375rem;
+  min-width: 375rem;
+  max-width: 375rem;
   transition: 0.1s;
   border: 1rem solid rgba(0, 0, 0, 0.05);
   box-sizing: border-box;
@@ -883,11 +883,16 @@ main .content#e-learning .bb-e-learning .item-group .item .thumb .play {
   opacity: 0.75;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info {
-  padding: 21rem 36rem;
+  padding: 27rem 36rem;
   text-align: left;
 }
+main .content#e-learning .bb-e-learning .item-group .item .info .sector {
+  margin-bottom: 3rem;
+  font-size: 15rem;
+  color: rgba(0, 0, 0, 0.45);
+}
 main .content#e-learning .bb-e-learning .item-group .item .info .title {
-  margin-bottom: 18rem;
+  margin-bottom: 12rem;
   font-size: 21rem;
   font-weight: 600;
   line-height: 24rem;
@@ -895,11 +900,6 @@ main .content#e-learning .bb-e-learning .item-group .item .info .title {
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
-}
-main .content#e-learning .bb-e-learning .item-group .item .info .title .sector {
-  border-right: 1rem solid rgba(0, 0, 0, 0.3);
-  margin-right: 12rem;
-  padding-right: 12rem;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .des {
   font-size: 16.5rem;
@@ -912,11 +912,11 @@ main .content#e-learning .bb-e-learning .item-group .item .info .des {
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group {
   display: flex;
-  gap: 15rem;
-  margin-top: 18rem;
+  gap: 12rem;
+  margin-top: 12rem;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group img {
-  height: 36rem;
+  height: 33rem;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group img:hover {
   opacity: 0.6;
