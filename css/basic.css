@@ -80,46 +80,37 @@ header {
   background-color: rgba(255, 255, 255, 0.95);
 }
 header nav {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 75rem;
+  display: flex;
+  justify-content: space-between;
   height: 60px;
   width: 1200px;
   padding: 0 40rem;
   font-size: 16.5rem !important;
   font-weight: 300 !important;
 }
-header nav .mega-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header nav .logo img {
+  height: 21rem;
+  width: 100%;
 }
-header nav .mega-menu li {
+header nav .mega-menu li, header nav .admin-menu li {
   display: flex;
   align-items: center;
   height: 100%;
   position: relative;
 }
-header nav .mega-menu li .logo {
-  display: block;
-}
-header nav .mega-menu li .logo img {
-  height: 21rem;
-  width: 100%;
-}
-header nav .mega-menu li .title {
+header nav .mega-menu li .title, header nav .admin-menu li .title {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-header nav .mega-menu li .title:hover {
+header nav .mega-menu li .title:hover, header nav .admin-menu li .title:hover {
   cursor: pointer;
   color: rgb(53, 99, 233);
 }
-header nav .mega-menu li .title.active {
+header nav .mega-menu li .title.active, header nav .admin-menu li .title.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-header nav .mega-menu li .menu-drop {
+header nav .mega-menu li .menu-drop, header nav .admin-menu li .menu-drop {
   position: absolute;
   top: 80%;
   left: 50%;
@@ -132,39 +123,49 @@ header nav .mega-menu li .menu-drop {
   background-color: rgb(255, 255, 255);
   box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
 }
-header nav .mega-menu li .menu-drop li {
+header nav .mega-menu li .menu-drop li, header nav .admin-menu li .menu-drop li {
   display: block;
 }
-header nav .mega-menu li .menu-drop li a {
+header nav .mega-menu li .menu-drop li a, header nav .admin-menu li .menu-drop li a {
   display: block;
   padding: 6rem 21rem;
   font-size: 15rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-header nav .mega-menu li .menu-drop li a.active {
+header nav .mega-menu li .menu-drop li a.active, header nav .admin-menu li .menu-drop li a.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-header nav .mega-menu li .menu-drop li a:hover {
+header nav .mega-menu li .menu-drop li a:hover, header nav .admin-menu li .menu-drop li a:hover {
   background-color: rgba(53, 99, 233, 0.15);
+}
+header nav .mega-menu {
+  display: flex;
+  align-items: center;
+  gap: 36rem;
+}
+header nav .admin-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 header nav .function {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 24rem;
+  gap: 30rem;
 }
-header nav .function .my-container {
+header nav .my-container {
   position: relative;
   display: flex;
   align-items: center;
   height: 100%;
 }
-header nav .function .my-container #my-menu {
+header nav .my-container #my-menu {
   position: absolute;
   top: 96%;
-  right: 0;
   width: -moz-max-content;
   width: max-content;
   padding: 9rem 0;
@@ -173,7 +174,7 @@ header nav .function .my-container #my-menu {
   background-color: rgb(255, 255, 255);
   box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
 }
-header nav .function .my-container #my-menu a {
+header nav .my-container #my-menu a {
   display: block;
   padding: 6rem 21rem;
   font-size: 15rem;
@@ -181,14 +182,14 @@ header nav .function .my-container #my-menu a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-header nav .function .my-container #my-menu a.active {
+header nav .my-container #my-menu a.active {
   color: rgb(53, 99, 233);
   font-weight: 500;
 }
-header nav .function .my-container #my-menu a:hover {
+header nav .my-container #my-menu a:hover {
   background-color: rgba(53, 99, 233, 0.15);
 }
-header nav .function .my-container #my-menu a.sign-out {
+header nav .my-container #my-menu a.sign-out {
   font-weight: 500;
   color: rgb(255, 0, 0);
 }
@@ -491,6 +492,63 @@ main .content.module-2 table#table-2 {
 main .content.module-2 table#table-3 {
   margin-top: 45rem;
 }
+main .content.module-2 #sponsor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45rem;
+  margin-top: 72rem;
+}
+main .content.module-2 #sponsor h3 {
+  margin-bottom: 9rem;
+}
+main .content.module-2 #sponsor .item .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12rem;
+  height: 240rem;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: 0.1s;
+}
+main .content.module-2 #sponsor .item .img-container img {
+  height: 150rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main .content.module-2 #sponsor .item .img-container img#cabei {
+  height: 135rem;
+}
+main .content.module-2 #sponsor .item .img-container:hover {
+  opacity: 0.6;
+}
+main .content.module-2 #partner {
+  margin-top: 72rem;
+}
+main .content.module-2 #partner h3 {
+  margin-bottom: 9rem;
+}
+main .content.module-2 #partner .img-group {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -moz-column-gap: 45rem;
+       column-gap: 45rem;
+  row-gap: 36rem;
+}
+main .content.module-2 #partner .img-group .img-container {
+  display: flex;
+  align-items: center;
+  transition: 0.1s;
+  border: 1rem solid rgba(0, 0, 0, 0.15);
+  padding: 18rem;
+  height: 120rem;
+}
+main .content.module-2 #partner .img-group .img-container img {
+  width: 100%;
+}
+main .content.module-2 #partner .img-group .img-container:hover {
+  opacity: 0.6;
+}
 main .content.module-2 #signing {
   margin-top: 60rem;
   display: grid;
@@ -637,59 +695,6 @@ main .content.module-3 .info-container .info {
   text-align: left;
   list-style-type: disc;
 }
-main .content#sponsor {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 45rem;
-}
-main .content#sponsor .title3 {
-  margin-bottom: 15rem;
-}
-main .content#sponsor .item .img-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 12rem;
-  height: 240rem;
-  border: 1rem solid rgba(0, 0, 0, 0.15);
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: 0.1s;
-}
-main .content#sponsor .item .img-container img {
-  height: 150rem;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-main .content#sponsor .item .img-container img#cabei {
-  height: 135rem;
-}
-main .content#sponsor .item .img-container:hover {
-  opacity: 0.6;
-}
-main .content#partner .title3 {
-  margin-bottom: 15rem;
-}
-main .content#partner .img-group {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  -moz-column-gap: 45rem;
-       column-gap: 45rem;
-  row-gap: 36rem;
-}
-main .content#partner .img-group .img-container {
-  display: flex;
-  align-items: center;
-  transition: 0.1s;
-  border: 1rem solid rgba(0, 0, 0, 0.15);
-  padding: 18rem;
-  height: 120rem;
-}
-main .content#partner .img-group .img-container img {
-  width: 100%;
-}
-main .content#partner .img-group .img-container:hover {
-  opacity: 0.6;
-}
 main .content#history .title3 {
   margin-bottom: 45rem;
 }
@@ -739,7 +744,7 @@ main .content#per-country .country-item .country .info-container img {
   border: 1rem solid rgba(0, 0, 0, 0.3);
 }
 main .content#per-country .country-item .country .info-container .title5 {
-  margin-bottom: 7.5rem;
+  margin-bottom: 6rem;
 }
 main .content#per-country .country-item .country .info-container ul {
   display: flex;
@@ -802,13 +807,17 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .title {
   margin-bottom: 3rem;
-  font-size: 27rem;
+  font-size: 19.5rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .code {
-  font-size: 16.5rem;
+  font-size: 15rem;
   font-weight: 400;
+  color: rgba(0, 0, 0, 0.3);
 }
 main .content#market .bb-market .item-group details .detail-group .detail .file-group {
   display: flex;
@@ -870,8 +879,8 @@ main .content#e-learning .bb-e-learning .item-group .item .thumb .play {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 60rem;
-  opacity: 0.7;
+  height: 72rem;
+  opacity: 0.75;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info {
   padding: 21rem 36rem;
