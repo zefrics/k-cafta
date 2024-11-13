@@ -1211,8 +1211,10 @@ main .content.module-5 {
   padding: 30rem 40rem 120rem 40rem;
   text-align: center;
 }
-main .content.module-5 .title2 {
+main .content.module-5 .text {
   margin-bottom: 30rem;
+  font-size: 30rem;
+  font-weight: 700;
 }
 
 #login {

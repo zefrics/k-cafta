@@ -46,7 +46,7 @@ body {
     font-size: 48rem; font-weight: 700;
     text-shadow: 3rem 3rem 3rem $color-k2;
   }
-  .title2 { // Module-5, 
+  .title2 { // Main Page, Market Information
     font-size: 36rem; font-weight: 700;
   }
   .title3 {
@@ -1169,8 +1169,9 @@ main {
     &.module-5 { // more question
       padding: 30rem 40rem 120rem 40rem;
       text-align: center;
-      .title2 {
+      .text {
         margin-bottom: 30rem;
+        font-size: 30rem; font-weight: 700;
       }
     }
 
