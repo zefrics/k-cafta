@@ -1223,82 +1223,109 @@ main {
 }
 
 #signup {
-  .content {
-    display: flex; justify-content: center; align-items: center;
-    .signup-container {
-      width: fit-content;
-      padding: 60rem;
-      border: 2rem solid $color-k7;
-      border-radius: 18rem;
-      form {
-        .title3 {
-          margin-top: 60rem;
-        }
-        .input-group {
-          margin-top: 27rem;
-          display: flex; flex-direction: column; gap: 27rem;
-          .input-container {
-            display: flex; flex-direction: column;
-            .label-container {
-              display: flex; align-items: center; justify-content: space-between;
-              margin-bottom: 6rem;
-              font-size: 15rem; font-weight: 500;
-            }
+  display: flex; justify-content: center; align-items: center;
+  .signup-container {
+    width: fit-content;
+    padding: 60rem;
+    border: 2rem solid $color-k7;
+    border-radius: 18rem;
+    .title2 {
+      margin-bottom: 45rem;
+    }
+    form {
+      .title3 {
+        margin-top: 60rem;
+      }
+      .input-group {
+        margin-top: 27rem;
+        display: flex; flex-direction: column; gap: 27rem;
+        .input-container {
+          display: flex; flex-direction: column;
+          .label-container {
+            display: flex; align-items: center; justify-content: space-between;
+            margin-bottom: 6rem;
+            font-size: 15rem; font-weight: 500;
+          }
 
-            input[type="text"],
-            input[type="email"],
-            input[type="password"] {
-              width: 450rem;
-              padding: 6rem 9rem;
-              border: 1px solid $color-k6;
-              font-size: 15rem;
-              &::placeholder {
-                color: $color-k6;
+          input[type="text"],
+          input[type="email"],
+          input[type="password"]
+          {
+            width: 450rem;
+            padding: 9rem;
+            border: 1px solid $color-k6;
+            font-size: 15rem;
+            &::placeholder {
+              color: $color-k6;
+            }
+          }
+          input[type="file"] {
+            border: 1px solid $color-k6;
+            padding: 9rem;
+            cursor: pointer;
+            font-size: 15rem;
+            &:hover {
+              background-color: $color-k8;
+
+            }
+            &::file-selector-button {
+              display: none;
+            }
+          }
+          textarea {
+            resize: none;
+            min-height: 150rem;
+            width: 450rem;
+            padding: 9rem;
+            border: 1px solid $color-k6;
+            font-size: 15rem;
+            &::placeholder {
+              color: $color-k6;
+            }
+          }
+
+          .check-container {
+            display: flex; flex-direction: column; gap: 12rem;
+            margin: 6rem 0 0 9rem;
+            label {
+              display: flex; align-items: center;
+              cursor: pointer;
+              user-select: none;
+              width: max-content;
+              font-size: 15rem; font-weight: 300;
+              white-space: nowrap;
+              &:hover {
+                .label-text {
+                  text-decoration: underline;
+                  text-underline-offset: 3rem;
+                }
               }
-            }
-
-            .check-container {
-              display: flex; flex-direction: column; gap: 12rem;
-              margin: 6rem 0 0 9rem;
-              label {
-                display: flex; align-items: center;
+              input[type="checkbox"],
+              input[type="radio"] {
                 cursor: pointer;
-                user-select: none;
-                width: max-content;
-                font-size: 15rem; font-weight: 300;
-                white-space: nowrap;
-                &:hover {
-                  .label-text {
-                    text-decoration: underline;
-                    text-underline-offset: 3rem;
-                  }
-                }
-                input[type="checkbox"] {
-                  cursor: pointer;
-                  height: 21rem; width: 21rem;
-                  min-height: 21rem; min-width: 21rem;
-                  margin: 0 7.5rem 0 0;
-                }
-                .input-others {
-                  width: 360rem;
-                  margin: 0 0 0 9rem;
-                  padding: 1.5rem 3rem 0rem 3rem;
-                  border: 0;
-                  border-bottom: 1px solid $color-k6;
-                  &:focus {
-                    outline: 0;
-                    border-bottom: 1px solid $color-m1;
-                  }
+                height: 21rem; width: 21rem;
+                min-height: 21rem; min-width: 21rem;
+                margin: 0 7.5rem 0 0;
+              }
+              .input-others {
+                width: 360rem;
+                margin: 0 0 0 9rem;
+                padding: 1.5rem 3rem 0rem 3rem;
+                border: 0;
+                border-bottom: 1px solid $color-k6;
+                &:focus {
+                  outline: 0;
+                  border-bottom: 1px solid $color-m1;
                 }
               }
             }
           }
         }
-        
-        .btn-group {
-          display: flex; flex-direction: column; gap: 15rem;
-          margin-top: 45rem;
-        }
+      }
+      
+      .btn-group {
+        display: flex; flex-direction: column; gap: 15rem;
+        margin-top: 45rem;
       }
     }
   }
