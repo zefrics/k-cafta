@@ -352,12 +352,12 @@ main {
   section {
     &#sticky-menu-container { 
       position: sticky; bottom: 0;
-      box-shadow: 0 6rem 6rem 6rem $color-k7;
+      background-color: $color-w2;
+      box-shadow: 0 -3rem 3rem $color-k7;
       .sticky-menu {
         display: flex; justify-content: center;
         width: 1200px;
         padding: 21rem 40rem;
-        background-color: $color-w2;
         .btn-group {
           display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
         }
@@ -1222,15 +1222,15 @@ main {
   }
 }
 
-#signup {
+.bb-create {
   display: flex; justify-content: center; align-items: center;
-  .signup-container {
+  .create-container {
     width: fit-content;
     padding: 60rem;
     border: 2rem solid $color-k7;
     border-radius: 18rem;
     .title2 {
-      margin-bottom: 45rem;
+      margin-bottom: 36rem;
     }
     form {
       .title3 {
@@ -1359,7 +1359,7 @@ footer {
   }
   &#success {
     .content {
-      padding: 15rem 40rem 105rem 40rem;
+      // padding: 15rem 40rem 105rem 40rem;
     }
   }
 }

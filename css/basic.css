@@ -363,14 +363,14 @@ main .main-title#h-4-1 {
 main section#sticky-menu-container {
   position: sticky;
   bottom: 0;
-  box-shadow: 0 6rem 6rem 6rem rgba(0, 0, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 -3rem 3rem rgba(0, 0, 0, 0.15);
 }
 main section#sticky-menu-container .sticky-menu {
   display: flex;
   justify-content: center;
   width: 1200px;
   padding: 21rem 40rem;
-  background-color: rgba(255, 255, 255, 0.95);
 }
 main section#sticky-menu-container .sticky-menu .btn-group {
   display: grid;
@@ -1269,35 +1269,35 @@ main .content.module-5 .text {
   margin-top: 45rem;
 }
 
-#signup {
+.bb-create {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#signup .signup-container {
+.bb-create .create-container {
   width: -moz-fit-content;
   width: fit-content;
   padding: 60rem;
   border: 2rem solid rgba(0, 0, 0, 0.15);
   border-radius: 18rem;
 }
-#signup .signup-container .title2 {
-  margin-bottom: 45rem;
+.bb-create .create-container .title2 {
+  margin-bottom: 36rem;
 }
-#signup .signup-container form .title3 {
+.bb-create .create-container form .title3 {
   margin-top: 60rem;
 }
-#signup .signup-container form .input-group {
+.bb-create .create-container form .input-group {
   margin-top: 27rem;
   display: flex;
   flex-direction: column;
   gap: 27rem;
 }
-#signup .signup-container form .input-group .input-container {
+.bb-create .create-container form .input-group .input-container {
   display: flex;
   flex-direction: column;
 }
-#signup .signup-container form .input-group .input-container .label-container {
+.bb-create .create-container form .input-group .input-container .label-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1305,35 +1305,35 @@ main .content.module-5 .text {
   font-size: 15rem;
   font-weight: 500;
 }
-#signup .signup-container form .input-group .input-container input[type=text],
-#signup .signup-container form .input-group .input-container input[type=email],
-#signup .signup-container form .input-group .input-container input[type=password] {
+.bb-create .create-container form .input-group .input-container input[type=text],
+.bb-create .create-container form .input-group .input-container input[type=email],
+.bb-create .create-container form .input-group .input-container input[type=password] {
   width: 450rem;
   padding: 9rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-#signup .signup-container form .input-group .input-container input[type=text]::-moz-placeholder, #signup .signup-container form .input-group .input-container input[type=email]::-moz-placeholder, #signup .signup-container form .input-group .input-container input[type=password]::-moz-placeholder {
+.bb-create .create-container form .input-group .input-container input[type=text]::-moz-placeholder, .bb-create .create-container form .input-group .input-container input[type=email]::-moz-placeholder, .bb-create .create-container form .input-group .input-container input[type=password]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .signup-container form .input-group .input-container input[type=text]::placeholder,
-#signup .signup-container form .input-group .input-container input[type=email]::placeholder,
-#signup .signup-container form .input-group .input-container input[type=password]::placeholder {
+.bb-create .create-container form .input-group .input-container input[type=text]::placeholder,
+.bb-create .create-container form .input-group .input-container input[type=email]::placeholder,
+.bb-create .create-container form .input-group .input-container input[type=password]::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .signup-container form .input-group .input-container input[type=file] {
+.bb-create .create-container form .input-group .input-container input[type=file] {
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 9rem;
   cursor: pointer;
   font-size: 15rem;
 }
-#signup .signup-container form .input-group .input-container input[type=file]:hover {
+.bb-create .create-container form .input-group .input-container input[type=file]:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-#signup .signup-container form .input-group .input-container input[type=file]::file-selector-button {
+.bb-create .create-container form .input-group .input-container input[type=file]::file-selector-button {
   display: none;
 }
-#signup .signup-container form .input-group .input-container textarea {
+.bb-create .create-container form .input-group .input-container textarea {
   resize: none;
   min-height: 150rem;
   width: 450rem;
@@ -1341,19 +1341,19 @@ main .content.module-5 .text {
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-#signup .signup-container form .input-group .input-container textarea::-moz-placeholder {
+.bb-create .create-container form .input-group .input-container textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .signup-container form .input-group .input-container textarea::placeholder {
+.bb-create .create-container form .input-group .input-container textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .signup-container form .input-group .input-container .check-container {
+.bb-create .create-container form .input-group .input-container .check-container {
   display: flex;
   flex-direction: column;
   gap: 12rem;
   margin: 6rem 0 0 9rem;
 }
-#signup .signup-container form .input-group .input-container .check-container label {
+.bb-create .create-container form .input-group .input-container .check-container label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1366,12 +1366,12 @@ main .content.module-5 .text {
   font-weight: 300;
   white-space: nowrap;
 }
-#signup .signup-container form .input-group .input-container .check-container label:hover .label-text {
+.bb-create .create-container form .input-group .input-container .check-container label:hover .label-text {
   text-decoration: underline;
   text-underline-offset: 3rem;
 }
-#signup .signup-container form .input-group .input-container .check-container label input[type=checkbox],
-#signup .signup-container form .input-group .input-container .check-container label input[type=radio] {
+.bb-create .create-container form .input-group .input-container .check-container label input[type=checkbox],
+.bb-create .create-container form .input-group .input-container .check-container label input[type=radio] {
   cursor: pointer;
   height: 21rem;
   width: 21rem;
@@ -1379,18 +1379,18 @@ main .content.module-5 .text {
   min-width: 21rem;
   margin: 0 7.5rem 0 0;
 }
-#signup .signup-container form .input-group .input-container .check-container label .input-others {
+.bb-create .create-container form .input-group .input-container .check-container label .input-others {
   width: 360rem;
   margin: 0 0 0 9rem;
   padding: 1.5rem 3rem 0rem 3rem;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-#signup .signup-container form .input-group .input-container .check-container label .input-others:focus {
+.bb-create .create-container form .input-group .input-container .check-container label .input-others:focus {
   outline: 0;
   border-bottom: 1px solid rgb(53, 99, 233);
 }
-#signup .signup-container form .btn-group {
+.bb-create .create-container form .btn-group {
   display: flex;
   flex-direction: column;
   gap: 15rem;
@@ -1427,10 +1427,6 @@ footer .content .footer-menu a:hover {
   text-decoration: underline;
   text-underline-offset: 4rem;
 }
-footer#success .content {
-  padding: 15rem 40rem 105rem 40rem;
-}
-
 .to-top {
   cursor: pointer;
   position: fixed;
