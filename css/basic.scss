@@ -1066,42 +1066,6 @@ main {
       }
     }
 
-    &#related { // bb-related site
-      .title2 {
-        margin-bottom: 45rem;
-      }
-      .bb-related {
-        .item-group {
-          display: grid; grid-template-columns: repeat(4, 1fr); grid-gap: 45rem;
-          .item {
-            padding: 30rem;
-            border: 1px solid $color-k7;
-            text-align: center;
-            text-decoration: none;
-            color: $color-k1;
-            &:hover {
-              opacity: 0.6;
-              .title {
-                text-decoration: underline;
-                text-underline-offset: 3rem;
-              }
-            }
-            .img-container {
-              height: 135rem;
-              display: flex; align-items: center;
-              img {
-                width: 100%;
-              }
-            }
-            .title {
-              margin-top: 18rem;
-              font-size: 18rem; font-weight: 500;
-            }
-          }
-        }
-      }
-    }
-
     &#faq { // bb-faq
       .bb-faq {
         .item-group {
@@ -1211,8 +1175,6 @@ main {
             }
           }
         }
-        
-        
         .btn-group {
           display: flex; flex-direction: column; gap: 15rem;
           margin-top: 45rem;
@@ -1329,6 +1291,61 @@ main {
       }
     }
   }
+}
+
+.bb-list {
+  min-height: 60vh;
+  .title2 {
+    margin-bottom: 36rem;
+  }
+  .list-container {
+    font-size: 16.5rem;
+    .head {
+      font-weight: 600;
+    }
+    .test {
+      display: grid; grid-template-columns: 60rem 1fr 18fr 120rem;
+      align-items: center;
+      gap: 21rem;
+      text-align: center;
+      padding: 24rem 15rem;
+      border-bottom: 1px solid $color-k7;
+      
+      .select {
+        display: flex; justify-content: center;
+        input[type='checkbox'] {
+          width: 24rem; height: 24rem;
+          margin:0;
+        }
+
+        
+      }
+      .order {
+      }
+      .title {
+        text-align: center;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+      }
+      .date {
+        border: 1px solid red;
+      }
+    }
+  }
+  .page {
+    display: none;
+    // display: flex; align-items: center; justify-content: center; gap: 30rem;
+    margin-top: 30rem;
+    font-size: 18rem;
+    button {
+      display: flex; align-items: center; justify-content: center;
+      height: 30rem; width: 30rem;
+      font-size: 18rem; font-weight: 600;
+    }
+  }
+
 }
 
 footer {

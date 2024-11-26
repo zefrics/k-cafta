@@ -1111,41 +1111,6 @@ main .content#events .bb-events .item-group details .detail-container .detail {
 main .content#events .bb-events .item-group details .detail-container .btn-group {
   margin-top: 18rem;
 }
-main .content#related .title2 {
-  margin-bottom: 45rem;
-}
-main .content#related .bb-related .item-group {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 45rem;
-}
-main .content#related .bb-related .item-group .item {
-  padding: 30rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  text-align: center;
-  text-decoration: none;
-  color: rgb(0, 0, 0);
-}
-main .content#related .bb-related .item-group .item:hover {
-  opacity: 0.6;
-}
-main .content#related .bb-related .item-group .item:hover .title {
-  text-decoration: underline;
-  text-underline-offset: 3rem;
-}
-main .content#related .bb-related .item-group .item .img-container {
-  height: 135rem;
-  display: flex;
-  align-items: center;
-}
-main .content#related .bb-related .item-group .item .img-container img {
-  width: 100%;
-}
-main .content#related .bb-related .item-group .item .title {
-  margin-top: 18rem;
-  font-size: 18rem;
-  font-weight: 500;
-}
 main .content#faq .bb-faq .item-group {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
 }
@@ -1395,6 +1360,61 @@ main .content.module-5 .text {
   flex-direction: column;
   gap: 15rem;
   margin-top: 45rem;
+}
+
+.bb-list {
+  min-height: 60vh;
+}
+.bb-list .title2 {
+  margin-bottom: 36rem;
+}
+.bb-list .list-container {
+  font-size: 16.5rem;
+}
+.bb-list .list-container .head {
+  font-weight: 600;
+}
+.bb-list .list-container .test {
+  display: grid;
+  grid-template-columns: 60rem 1fr 18fr 120rem;
+  align-items: center;
+  gap: 21rem;
+  text-align: center;
+  padding: 24rem 15rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.bb-list .list-container .test .select {
+  display: flex;
+  justify-content: center;
+}
+.bb-list .list-container .test .select input[type=checkbox] {
+  width: 24rem;
+  height: 24rem;
+  margin: 0;
+}
+.bb-list .list-container .test .title {
+  text-align: center;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+.bb-list .list-container .test .date {
+  border: 1px solid red;
+}
+.bb-list .page {
+  display: none;
+  margin-top: 30rem;
+  font-size: 18rem;
+}
+.bb-list .page button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30rem;
+  width: 30rem;
+  font-size: 18rem;
+  font-weight: 600;
 }
 
 footer {
