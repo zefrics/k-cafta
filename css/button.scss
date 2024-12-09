@@ -26,6 +26,13 @@ $color-m7: rgba(53, 99, 233, 0.15);
 $color-m8: rgba(53, 99, 233, 0.05);
 
 $color-r1: rgba(255, 0, 0, 1);
+$color-r2: rgba(255, 0, 0, 0.9);
+$color-r3: rgba(255, 0, 0, 0.75);
+$color-r4: rgba(255, 0, 0, 0.6);
+$color-r5: rgba(255, 0, 0, 0.45);
+$color-r6: rgba(255, 0, 0, 0.3);
+$color-r7: rgba(255, 0, 0, 0.15);
+$color-r8: rgba(255, 0, 0, 0.05);
 
 $fs-menu1: 16.5rem; // 메뉴1 폰트 사이즈
 $fw-menu1: 300; // 메뉴1 폰트 웨이트1 (일반)
@@ -169,20 +176,75 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
 
 .btn-tab { // LATIDA, EREZ Buttons
   cursor: pointer;
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
   height: 48rem; width: 330rem;
   border: 2rem solid $color-m1;
+  box-sizing: border-box;
   font-size: 18rem;
   color: $color-m1;
   background-color: $color-w1;
   transition: 0.1s;
   &.active {
     color: $color-w1;
-    background-color: $color-m3;
+    background-color: $color-m2;
   }
   &:hover {
     opacity: 0.75;
     text-decoration: underline;
-    text-underline-offset: 6rem;
+    text-underline-offset: 4rem;
+  }
+}
+
+.btn-con-1 { // Confirm
+  cursor: pointer;
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  height: 48rem; width: 330rem;
+  border: 2rem solid $color-m1;
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: $color-m1;
+  background-color: $color-w1;
+  transition: 0.1s;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 4rem;
+  }
+}
+.btn-con-2 { // Confirm
+  cursor: pointer;
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  height: 48rem; width: 330rem;
+  border: 2rem solid $color-m1;
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: $color-w1;
+  background-color: $color-m2;
+  transition: 0.1s;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 4rem;
+  }
+}
+.btn-con-3 { // Confirm
+  cursor: pointer;
+  text-decoration: none;
+  display: flex; align-items: center; justify-content: center;
+  height: 48rem; width: 330rem;
+  border: 2rem solid $color-r1;
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: $color-w1;
+  background-color: $color-r2;
+  transition: 0.1s;
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+    text-underline-offset: 4rem;
   }
 }
 

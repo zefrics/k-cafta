@@ -147,9 +147,14 @@
 
 .btn-tab {
   cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 48rem;
   width: 330rem;
   border: 2rem solid rgb(53, 99, 233);
+  box-sizing: border-box;
   font-size: 18rem;
   color: rgb(53, 99, 233);
   background-color: rgb(255, 255, 255);
@@ -157,12 +162,75 @@
 }
 .btn-tab.active {
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.75);
+  background-color: rgba(53, 99, 233, 0.9);
 }
 .btn-tab:hover {
   opacity: 0.75;
   text-decoration: underline;
-  text-underline-offset: 6rem;
+  text-underline-offset: 4rem;
+}
+
+.btn-con-1 {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48rem;
+  width: 330rem;
+  border: 2rem solid rgb(53, 99, 233);
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: rgb(53, 99, 233);
+  background-color: rgb(255, 255, 255);
+  transition: 0.1s;
+}
+.btn-con-1:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 4rem;
+}
+
+.btn-con-2 {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48rem;
+  width: 330rem;
+  border: 2rem solid rgb(53, 99, 233);
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(53, 99, 233, 0.9);
+  transition: 0.1s;
+}
+.btn-con-2:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 4rem;
+}
+
+.btn-con-3 {
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48rem;
+  width: 330rem;
+  border: 2rem solid rgb(255, 0, 0);
+  box-sizing: border-box;
+  font-size: 18rem;
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 0, 0, 0.9);
+  transition: 0.1s;
+}
+.btn-con-3:hover {
+  opacity: 0.75;
+  text-decoration: underline;
+  text-underline-offset: 4rem;
 }
 
 .btn-text-1 {
