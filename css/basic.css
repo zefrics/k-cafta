@@ -360,23 +360,6 @@ main .main-title#h-4-1 {
   background-color: rgba(0, 0, 0, 0.3);
   background-blend-mode: overlay;
 }
-main section.sticky-menu-container {
-  position: sticky;
-  bottom: 0;
-  background-color: rgba(255, 255, 255, 0.95);
-  box-shadow: 0 -3rem 3rem rgba(0, 0, 0, 0.15);
-}
-main section.sticky-menu-container .sticky-menu {
-  display: flex;
-  justify-content: center;
-  width: 1200px;
-  padding: 21rem 40rem;
-}
-main section.sticky-menu-container .sticky-menu .btn-group {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30rem;
-}
 main .content {
   width: 1200px;
   padding: 90rem 40rem;
@@ -1181,33 +1164,32 @@ main .content.module-5 .text {
   font-size: 30rem;
   font-weight: 700;
 }
-
-#login {
+main #login {
   min-height: calc(100vh - 115rem);
 }
-#login .content {
+main #login .content {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#login .content .create-container {
+main #login .content .create-container {
   width: -moz-fit-content;
   width: fit-content;
   padding: 60rem;
   border: 2rem solid rgba(0, 0, 0, 0.15);
   border-radius: 18rem;
 }
-#login .content .create-container form .input-group {
+main #login .content .create-container form .input-group {
   margin-top: 45rem;
   display: flex;
   flex-direction: column;
   gap: 30rem;
 }
-#login .content .create-container form .input-group .input-container {
+main #login .content .create-container form .input-group .input-container {
   display: flex;
   flex-direction: column;
 }
-#login .content .create-container form .input-group .input-container .label-container {
+main #login .content .create-container form .input-group .input-container .label-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1215,54 +1197,53 @@ main .content.module-5 .text {
   font-size: 18rem;
   font-weight: 500;
 }
-#login .content .create-container form .input-group .input-container input {
+main #login .content .create-container form .input-group .input-container input {
   width: 360rem;
   padding: 9rem 12rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 16.5rem;
 }
-#login .content .create-container form .input-group .input-container input::-moz-placeholder {
+main #login .content .create-container form .input-group .input-container input::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#login .content .create-container form .input-group .input-container input::placeholder {
+main #login .content .create-container form .input-group .input-container input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#login .content .create-container form .btn-group {
+main #login .content .create-container form .btn-group {
   display: flex;
   flex-direction: column;
   gap: 15rem;
   margin-top: 45rem;
 }
-
-#signup {
+main #signup {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#signup .create-container {
+main #signup .create-container {
   width: -moz-fit-content;
   width: fit-content;
   padding: 60rem;
   border: 2rem solid rgba(0, 0, 0, 0.15);
   border-radius: 18rem;
 }
-#signup .create-container .title2 {
+main #signup .create-container .title2 {
   margin-bottom: 36rem;
 }
-#signup .create-container form .title3 {
+main #signup .create-container form .title3 {
   margin-top: 60rem;
 }
-#signup .create-container form .input-group {
+main #signup .create-container form .input-group {
   margin-top: 27rem;
   display: flex;
   flex-direction: column;
   gap: 27rem;
 }
-#signup .create-container form .input-group .input-container {
+main #signup .create-container form .input-group .input-container {
   display: flex;
   flex-direction: column;
 }
-#signup .create-container form .input-group .input-container .label-container {
+main #signup .create-container form .input-group .input-container .label-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1270,35 +1251,35 @@ main .content.module-5 .text {
   font-size: 15rem;
   font-weight: 500;
 }
-#signup .create-container form .input-group .input-container input[type=text],
-#signup .create-container form .input-group .input-container input[type=email],
-#signup .create-container form .input-group .input-container input[type=password] {
+main #signup .create-container form .input-group .input-container input[type=text],
+main #signup .create-container form .input-group .input-container input[type=email],
+main #signup .create-container form .input-group .input-container input[type=password] {
   width: 450rem;
   padding: 9rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-#signup .create-container form .input-group .input-container input[type=text]::-moz-placeholder, #signup .create-container form .input-group .input-container input[type=email]::-moz-placeholder, #signup .create-container form .input-group .input-container input[type=password]::-moz-placeholder {
+main #signup .create-container form .input-group .input-container input[type=text]::-moz-placeholder, main #signup .create-container form .input-group .input-container input[type=email]::-moz-placeholder, main #signup .create-container form .input-group .input-container input[type=password]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .create-container form .input-group .input-container input[type=text]::placeholder,
-#signup .create-container form .input-group .input-container input[type=email]::placeholder,
-#signup .create-container form .input-group .input-container input[type=password]::placeholder {
+main #signup .create-container form .input-group .input-container input[type=text]::placeholder,
+main #signup .create-container form .input-group .input-container input[type=email]::placeholder,
+main #signup .create-container form .input-group .input-container input[type=password]::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .create-container form .input-group .input-container input[type=file] {
+main #signup .create-container form .input-group .input-container input[type=file] {
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 9rem;
   cursor: pointer;
   font-size: 15rem;
 }
-#signup .create-container form .input-group .input-container input[type=file]:hover {
+main #signup .create-container form .input-group .input-container input[type=file]:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-#signup .create-container form .input-group .input-container input[type=file]::file-selector-button {
+main #signup .create-container form .input-group .input-container input[type=file]::file-selector-button {
   display: none;
 }
-#signup .create-container form .input-group .input-container textarea {
+main #signup .create-container form .input-group .input-container textarea {
   resize: none;
   min-height: 150rem;
   width: 450rem;
@@ -1306,19 +1287,19 @@ main .content.module-5 .text {
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-#signup .create-container form .input-group .input-container textarea::-moz-placeholder {
+main #signup .create-container form .input-group .input-container textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .create-container form .input-group .input-container textarea::placeholder {
+main #signup .create-container form .input-group .input-container textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-#signup .create-container form .input-group .input-container .check-container {
+main #signup .create-container form .input-group .input-container .check-container {
   display: flex;
   flex-direction: column;
   gap: 12rem;
   margin: 6rem 0 0 9rem;
 }
-#signup .create-container form .input-group .input-container .check-container label {
+main #signup .create-container form .input-group .input-container .check-container label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1331,12 +1312,12 @@ main .content.module-5 .text {
   font-weight: 300;
   white-space: nowrap;
 }
-#signup .create-container form .input-group .input-container .check-container label:hover .label-text {
+main #signup .create-container form .input-group .input-container .check-container label:hover .label-text {
   text-decoration: underline;
   text-underline-offset: 3rem;
 }
-#signup .create-container form .input-group .input-container .check-container label input[type=checkbox],
-#signup .create-container form .input-group .input-container .check-container label input[type=radio] {
+main #signup .create-container form .input-group .input-container .check-container label input[type=checkbox],
+main #signup .create-container form .input-group .input-container .check-container label input[type=radio] {
   cursor: pointer;
   height: 21rem;
   width: 21rem;
@@ -1344,37 +1325,44 @@ main .content.module-5 .text {
   min-width: 21rem;
   margin: 0 7.5rem 0 0;
 }
-#signup .create-container form .input-group .input-container .check-container label .input-others {
+main #signup .create-container form .input-group .input-container .check-container label .input-others {
   width: 360rem;
   margin: 0 0 0 9rem;
   padding: 1.5rem 3rem 0rem 3rem;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-#signup .create-container form .input-group .input-container .check-container label .input-others:focus {
+main #signup .create-container form .input-group .input-container .check-container label .input-others:focus {
   outline: 0;
   border-bottom: 1px solid rgb(53, 99, 233);
 }
-#signup .create-container form .btn-group {
+main #signup .create-container form .btn-group {
   display: flex;
   flex-direction: column;
   gap: 15rem;
   margin-top: 45rem;
 }
-
-.bb-create .create-container .title2, .bb-create .update-container .title2, .bb-update .create-container .title2, .bb-update .update-container .title2 {
+main .bb-create, main .bb-update {
+  padding-bottom: 150rem;
+}
+main .bb-create .create-container .title2, main .bb-create .update-container .title2, main .bb-update .create-container .title2, main .bb-update .update-container .title2 {
   margin-bottom: 45rem;
 }
-.bb-create .create-container form .input-group, .bb-create .update-container form .input-group, .bb-update .create-container form .input-group, .bb-update .update-container form .input-group {
+main .bb-create .create-container .input-group, main .bb-create .update-container .input-group, main .bb-update .create-container .input-group, main .bb-update .update-container .input-group {
   display: flex;
   flex-direction: column;
   gap: 27rem;
 }
-.bb-create .create-container form .input-group .input-container, .bb-create .update-container form .input-group .input-container, .bb-update .create-container form .input-group .input-container, .bb-update .update-container form .input-group .input-container {
+main .bb-create .create-container .input-group .row-2, main .bb-create .update-container .input-group .row-2, main .bb-update .create-container .input-group .row-2, main .bb-update .update-container .input-group .row-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
+main .bb-create .create-container .input-group .input-container, main .bb-create .update-container .input-group .input-container, main .bb-update .create-container .input-group .input-container, main .bb-update .update-container .input-group .input-container {
   display: flex;
   flex-direction: column;
 }
-.bb-create .create-container form .input-group .input-container .label-container, .bb-create .update-container form .input-group .input-container .label-container, .bb-update .create-container form .input-group .input-container .label-container, .bb-update .update-container form .input-group .input-container .label-container {
+main .bb-create .create-container .input-group .input-container .label-container, main .bb-create .update-container .input-group .input-container .label-container, main .bb-update .create-container .input-group .input-container .label-container, main .bb-update .update-container .input-group .input-container .label-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1382,65 +1370,65 @@ main .content.module-5 .text {
   font-size: 15rem;
   font-weight: 500;
 }
-.bb-create .create-container form .input-group .input-container input[type=text],
-.bb-create .create-container form .input-group .input-container input[type=email],
-.bb-create .create-container form .input-group .input-container input[type=password], .bb-create .update-container form .input-group .input-container input[type=text],
-.bb-create .update-container form .input-group .input-container input[type=email],
-.bb-create .update-container form .input-group .input-container input[type=password], .bb-update .create-container form .input-group .input-container input[type=text],
-.bb-update .create-container form .input-group .input-container input[type=email],
-.bb-update .create-container form .input-group .input-container input[type=password], .bb-update .update-container form .input-group .input-container input[type=text],
-.bb-update .update-container form .input-group .input-container input[type=email],
-.bb-update .update-container form .input-group .input-container input[type=password] {
+main .bb-create .create-container .input-group .input-container input[type=text],
+main .bb-create .create-container .input-group .input-container input[type=email],
+main .bb-create .create-container .input-group .input-container input[type=password], main .bb-create .update-container .input-group .input-container input[type=text],
+main .bb-create .update-container .input-group .input-container input[type=email],
+main .bb-create .update-container .input-group .input-container input[type=password], main .bb-update .create-container .input-group .input-container input[type=text],
+main .bb-update .create-container .input-group .input-container input[type=email],
+main .bb-update .create-container .input-group .input-container input[type=password], main .bb-update .update-container .input-group .input-container input[type=text],
+main .bb-update .update-container .input-group .input-container input[type=email],
+main .bb-update .update-container .input-group .input-container input[type=password] {
   padding: 12rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-.bb-create .create-container form .input-group .input-container input[type=text]::-moz-placeholder, .bb-create .create-container form .input-group .input-container input[type=email]::-moz-placeholder, .bb-create .create-container form .input-group .input-container input[type=password]::-moz-placeholder, .bb-create .update-container form .input-group .input-container input[type=text]::-moz-placeholder, .bb-create .update-container form .input-group .input-container input[type=email]::-moz-placeholder, .bb-create .update-container form .input-group .input-container input[type=password]::-moz-placeholder, .bb-update .create-container form .input-group .input-container input[type=text]::-moz-placeholder, .bb-update .create-container form .input-group .input-container input[type=email]::-moz-placeholder, .bb-update .create-container form .input-group .input-container input[type=password]::-moz-placeholder, .bb-update .update-container form .input-group .input-container input[type=text]::-moz-placeholder, .bb-update .update-container form .input-group .input-container input[type=email]::-moz-placeholder, .bb-update .update-container form .input-group .input-container input[type=password]::-moz-placeholder {
+main .bb-create .create-container .input-group .input-container input[type=text]::-moz-placeholder, main .bb-create .create-container .input-group .input-container input[type=email]::-moz-placeholder, main .bb-create .create-container .input-group .input-container input[type=password]::-moz-placeholder, main .bb-create .update-container .input-group .input-container input[type=text]::-moz-placeholder, main .bb-create .update-container .input-group .input-container input[type=email]::-moz-placeholder, main .bb-create .update-container .input-group .input-container input[type=password]::-moz-placeholder, main .bb-update .create-container .input-group .input-container input[type=text]::-moz-placeholder, main .bb-update .create-container .input-group .input-container input[type=email]::-moz-placeholder, main .bb-update .create-container .input-group .input-container input[type=password]::-moz-placeholder, main .bb-update .update-container .input-group .input-container input[type=text]::-moz-placeholder, main .bb-update .update-container .input-group .input-container input[type=email]::-moz-placeholder, main .bb-update .update-container .input-group .input-container input[type=password]::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.bb-create .create-container form .input-group .input-container input[type=text]::placeholder,
-.bb-create .create-container form .input-group .input-container input[type=email]::placeholder,
-.bb-create .create-container form .input-group .input-container input[type=password]::placeholder, .bb-create .update-container form .input-group .input-container input[type=text]::placeholder,
-.bb-create .update-container form .input-group .input-container input[type=email]::placeholder,
-.bb-create .update-container form .input-group .input-container input[type=password]::placeholder, .bb-update .create-container form .input-group .input-container input[type=text]::placeholder,
-.bb-update .create-container form .input-group .input-container input[type=email]::placeholder,
-.bb-update .create-container form .input-group .input-container input[type=password]::placeholder, .bb-update .update-container form .input-group .input-container input[type=text]::placeholder,
-.bb-update .update-container form .input-group .input-container input[type=email]::placeholder,
-.bb-update .update-container form .input-group .input-container input[type=password]::placeholder {
+main .bb-create .create-container .input-group .input-container input[type=text]::placeholder,
+main .bb-create .create-container .input-group .input-container input[type=email]::placeholder,
+main .bb-create .create-container .input-group .input-container input[type=password]::placeholder, main .bb-create .update-container .input-group .input-container input[type=text]::placeholder,
+main .bb-create .update-container .input-group .input-container input[type=email]::placeholder,
+main .bb-create .update-container .input-group .input-container input[type=password]::placeholder, main .bb-update .create-container .input-group .input-container input[type=text]::placeholder,
+main .bb-update .create-container .input-group .input-container input[type=email]::placeholder,
+main .bb-update .create-container .input-group .input-container input[type=password]::placeholder, main .bb-update .update-container .input-group .input-container input[type=text]::placeholder,
+main .bb-update .update-container .input-group .input-container input[type=email]::placeholder,
+main .bb-update .update-container .input-group .input-container input[type=password]::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.bb-create .create-container form .input-group .input-container input[type=file], .bb-create .update-container form .input-group .input-container input[type=file], .bb-update .create-container form .input-group .input-container input[type=file], .bb-update .update-container form .input-group .input-container input[type=file] {
+main .bb-create .create-container .input-group .input-container input[type=file], main .bb-create .update-container .input-group .input-container input[type=file], main .bb-update .create-container .input-group .input-container input[type=file], main .bb-update .update-container .input-group .input-container input[type=file] {
   border: 1px solid rgba(0, 0, 0, 0.3);
   padding: 12rem;
   cursor: pointer;
   font-size: 15rem;
 }
-.bb-create .create-container form .input-group .input-container input[type=file]:hover, .bb-create .update-container form .input-group .input-container input[type=file]:hover, .bb-update .create-container form .input-group .input-container input[type=file]:hover, .bb-update .update-container form .input-group .input-container input[type=file]:hover {
+main .bb-create .create-container .input-group .input-container input[type=file]:hover, main .bb-create .update-container .input-group .input-container input[type=file]:hover, main .bb-update .create-container .input-group .input-container input[type=file]:hover, main .bb-update .update-container .input-group .input-container input[type=file]:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.bb-create .create-container form .input-group .input-container input[type=file]::file-selector-button, .bb-create .update-container form .input-group .input-container input[type=file]::file-selector-button, .bb-update .create-container form .input-group .input-container input[type=file]::file-selector-button, .bb-update .update-container form .input-group .input-container input[type=file]::file-selector-button {
+main .bb-create .create-container .input-group .input-container input[type=file]::file-selector-button, main .bb-create .update-container .input-group .input-container input[type=file]::file-selector-button, main .bb-update .create-container .input-group .input-container input[type=file]::file-selector-button, main .bb-update .update-container .input-group .input-container input[type=file]::file-selector-button {
   display: none;
 }
-.bb-create .create-container form .input-group .input-container textarea, .bb-create .update-container form .input-group .input-container textarea, .bb-update .create-container form .input-group .input-container textarea, .bb-update .update-container form .input-group .input-container textarea {
+main .bb-create .create-container .input-group .input-container textarea, main .bb-create .update-container .input-group .input-container textarea, main .bb-update .create-container .input-group .input-container textarea, main .bb-update .update-container .input-group .input-container textarea {
   resize: none;
   min-height: 150rem;
   padding: 12rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
   font-size: 15rem;
 }
-.bb-create .create-container form .input-group .input-container textarea::-moz-placeholder, .bb-create .update-container form .input-group .input-container textarea::-moz-placeholder, .bb-update .create-container form .input-group .input-container textarea::-moz-placeholder, .bb-update .update-container form .input-group .input-container textarea::-moz-placeholder {
+main .bb-create .create-container .input-group .input-container textarea::-moz-placeholder, main .bb-create .update-container .input-group .input-container textarea::-moz-placeholder, main .bb-update .create-container .input-group .input-container textarea::-moz-placeholder, main .bb-update .update-container .input-group .input-container textarea::-moz-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.bb-create .create-container form .input-group .input-container textarea::placeholder, .bb-create .update-container form .input-group .input-container textarea::placeholder, .bb-update .create-container form .input-group .input-container textarea::placeholder, .bb-update .update-container form .input-group .input-container textarea::placeholder {
+main .bb-create .create-container .input-group .input-container textarea::placeholder, main .bb-create .update-container .input-group .input-container textarea::placeholder, main .bb-update .create-container .input-group .input-container textarea::placeholder, main .bb-update .update-container .input-group .input-container textarea::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
-.bb-create .create-container form .input-group .input-container .check-container, .bb-create .update-container form .input-group .input-container .check-container, .bb-update .create-container form .input-group .input-container .check-container, .bb-update .update-container form .input-group .input-container .check-container {
+main .bb-create .create-container .input-group .input-container .check-container, main .bb-create .update-container .input-group .input-container .check-container, main .bb-update .create-container .input-group .input-container .check-container, main .bb-update .update-container .input-group .input-container .check-container {
   display: flex;
   flex-direction: column;
   gap: 12rem;
   margin: 6rem 0 0 9rem;
 }
-.bb-create .create-container form .input-group .input-container .check-container label, .bb-create .update-container form .input-group .input-container .check-container label, .bb-update .create-container form .input-group .input-container .check-container label, .bb-update .update-container form .input-group .input-container .check-container label {
+main .bb-create .create-container .input-group .input-container .check-container label, main .bb-create .update-container .input-group .input-container .check-container label, main .bb-update .create-container .input-group .input-container .check-container label, main .bb-update .update-container .input-group .input-container .check-container label {
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -1453,15 +1441,15 @@ main .content.module-5 .text {
   font-weight: 300;
   white-space: nowrap;
 }
-.bb-create .create-container form .input-group .input-container .check-container label:hover .label-text, .bb-create .update-container form .input-group .input-container .check-container label:hover .label-text, .bb-update .create-container form .input-group .input-container .check-container label:hover .label-text, .bb-update .update-container form .input-group .input-container .check-container label:hover .label-text {
+main .bb-create .create-container .input-group .input-container .check-container label:hover .label-text, main .bb-create .update-container .input-group .input-container .check-container label:hover .label-text, main .bb-update .create-container .input-group .input-container .check-container label:hover .label-text, main .bb-update .update-container .input-group .input-container .check-container label:hover .label-text {
   text-decoration: underline;
   text-underline-offset: 3rem;
 }
-.bb-create .create-container form .input-group .input-container .check-container label input[type=checkbox],
-.bb-create .create-container form .input-group .input-container .check-container label input[type=radio], .bb-create .update-container form .input-group .input-container .check-container label input[type=checkbox],
-.bb-create .update-container form .input-group .input-container .check-container label input[type=radio], .bb-update .create-container form .input-group .input-container .check-container label input[type=checkbox],
-.bb-update .create-container form .input-group .input-container .check-container label input[type=radio], .bb-update .update-container form .input-group .input-container .check-container label input[type=checkbox],
-.bb-update .update-container form .input-group .input-container .check-container label input[type=radio] {
+main .bb-create .create-container .input-group .input-container .check-container label input[type=checkbox],
+main .bb-create .create-container .input-group .input-container .check-container label input[type=radio], main .bb-create .update-container .input-group .input-container .check-container label input[type=checkbox],
+main .bb-create .update-container .input-group .input-container .check-container label input[type=radio], main .bb-update .create-container .input-group .input-container .check-container label input[type=checkbox],
+main .bb-update .create-container .input-group .input-container .check-container label input[type=radio], main .bb-update .update-container .input-group .input-container .check-container label input[type=checkbox],
+main .bb-update .update-container .input-group .input-container .check-container label input[type=radio] {
   cursor: pointer;
   height: 21rem;
   width: 21rem;
@@ -1469,72 +1457,67 @@ main .content.module-5 .text {
   min-width: 21rem;
   margin: 0 7.5rem 0 0;
 }
-.bb-create .create-container form .input-group .input-container .check-container label .input-others, .bb-create .update-container form .input-group .input-container .check-container label .input-others, .bb-update .create-container form .input-group .input-container .check-container label .input-others, .bb-update .update-container form .input-group .input-container .check-container label .input-others {
+main .bb-create .create-container .input-group .input-container .check-container label .input-others, main .bb-create .update-container .input-group .input-container .check-container label .input-others, main .bb-update .create-container .input-group .input-container .check-container label .input-others, main .bb-update .update-container .input-group .input-container .check-container label .input-others {
   width: 360rem;
   margin: 0 0 0 9rem;
   padding: 1.5rem 3rem 0rem 3rem;
   border: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
-.bb-create .create-container form .input-group .input-container .check-container label .input-others:focus, .bb-create .update-container form .input-group .input-container .check-container label .input-others:focus, .bb-update .create-container form .input-group .input-container .check-container label .input-others:focus, .bb-update .update-container form .input-group .input-container .check-container label .input-others:focus {
+main .bb-create .create-container .input-group .input-container .check-container label .input-others:focus, main .bb-create .update-container .input-group .input-container .check-container label .input-others:focus, main .bb-update .create-container .input-group .input-container .check-container label .input-others:focus, main .bb-update .update-container .input-group .input-container .check-container label .input-others:focus {
   outline: 0;
   border-bottom: 1px solid rgb(53, 99, 233);
 }
-.bb-create .create-container form .btn-group, .bb-create .update-container form .btn-group, .bb-update .create-container form .btn-group, .bb-update .update-container form .btn-group {
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
-  margin-top: 45rem;
+main .bb-create .create-container .log-container, main .bb-create .update-container .log-container, main .bb-update .create-container .log-container, main .bb-update .update-container .log-container {
+  margin-top: 27rem;
+  font-size: 15rem;
+  font-weight: 300;
 }
-
-.bb-list {
-  min-height: 75vh;
-}
-.bb-list#bb-list-members .row {
+main .bb-list#bb-list-members .row {
   display: grid;
-  grid-template-columns: 60rem 1fr 81rem;
+  grid-template-columns: 60rem 1fr 84rem;
 }
-.bb-list .title2 {
+main .bb-list .title2 {
   margin-bottom: 45rem;
 }
-.bb-list .list-container {
+main .bb-list .list-container {
   font-size: 15rem;
 }
-.bb-list .list-container .row {
+main .bb-list .list-container .row {
   align-items: center;
   gap: 30rem;
   padding: 12rem 15rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
-.bb-list .list-container .row .title-container {
+main .bb-list .list-container .row .title-container {
   display: flex;
   flex-direction: column;
   gap: 6rem;
 }
-.bb-list .list-container .row .title-container .title {
+main .bb-list .list-container .row .title-container .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
-.bb-list .list-container .head {
+main .bb-list .list-container .head {
   font-weight: 600;
 }
-.bb-list .list-container .body .row {
+main .bb-list .list-container .body .row {
   cursor: pointer;
   text-decoration: none;
   font-weight: 300;
   color: rgb(0, 0, 0);
 }
-.bb-list .list-container .body .row:hover {
+main .bb-list .list-container .body .row:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
-.bb-list .page {
+main .bb-list .page {
   display: none;
   margin-top: 30rem;
   font-size: 18rem;
 }
-.bb-list .page button {
+main .bb-list .page button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1543,69 +1526,64 @@ main .content.module-5 .text {
   font-size: 18rem;
   font-weight: 600;
 }
-
-.bb-list-update {
-  min-height: 75vh;
-}
-.bb-list-update .title2 {
+main .bb-list-update .title2 {
   margin-bottom: 45rem;
 }
-.bb-list-update .list-container {
+main .bb-list-update .list-container {
   font-size: 15rem;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-.bb-list-update .list-container .head {
+main .bb-list-update .list-container .head {
   font-weight: 600;
 }
-.bb-list-update .list-container .body .row {
+main .bb-list-update .list-container .body .row {
   font-weight: 300;
 }
-.bb-list-update .list-container .body .row .title-container {
+main .bb-list-update .list-container .body .row .title-container {
   display: flex;
   flex-direction: column;
   gap: 6rem;
 }
-.bb-list-update .list-container .body .row .title-container .title {
+main .bb-list-update .list-container .body .row .title-container .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
-.bb-list-update .list-container .body .row:has(.btn-group:hover) {
-  background-color: rgba(0, 0, 0, 0.05);
+main .bb-list-update .list-container .body .row:has(.btn-arrow:hover, .btn-delete:hover) {
+  background-color: rgba(0, 0, 0, 0.03);
 }
-.bb-list-update .list-container .body .btn-group {
+main .bb-list-update .list-container .body .btn-group {
   display: flex;
   gap: 12rem;
 }
-.bb-list-update .list-container .body .btn-group .btn-arrow {
+main .bb-list-update .list-container .body .btn-group .btn-arrow {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 36rem;
-  height: 36rem;
-  border: 2rem solid rgba(0, 0, 0, 0.45);
+  width: 33rem;
+  height: 33rem;
+  border: 2rem solid rgb(0, 0, 0);
   border-radius: 6rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
-.bb-list-update .list-container .body .btn-group .btn-arrow img {
-  height: 21rem;
-  width: 21rem;
-  background-color: rgba(0, 0, 0, 0.45);
+main .bb-list-update .list-container .body .btn-group .btn-arrow img {
+  height: 18rem;
+  width: 18rem;
 }
-.bb-list-update .list-container .body .btn-group .btn-arrow:hover {
-  opacity: 0.75;
+main .bb-list-update .list-container .body .btn-group .btn-arrow:hover {
+  opacity: 0.45;
 }
-.bb-list-update .list-container .body .btn-group .btn-delete {
+main .bb-list-update .list-container .body .btn-group .btn-delete {
   cursor: pointer;
   font-size: 15rem;
   font-weight: 400;
-  height: 36rem;
+  height: 33rem;
   margin: 0 0 0 18rem;
   padding: 0 12rem;
   color: rgb(255, 0, 0);
@@ -1613,17 +1591,38 @@ main .content.module-5 .text {
   border-radius: 6rem;
   background-color: rgb(255, 255, 255);
 }
-.bb-list-update .list-container .body .btn-group .btn-delete:hover {
+main .bb-list-update .list-container .body .btn-group .btn-delete:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 0, 0);
 }
-.bb-list-update .list-container .row {
+main .bb-list-update .list-container .row {
   display: grid;
   grid-template-columns: 60rem 1fr auto;
   align-items: center;
   gap: 30rem;
   padding: 12rem 15rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+main .bottom-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 -3rem 3rem rgba(0, 0, 0, 0.15);
+}
+main .bottom-section .bottom-content {
+  display: flex;
+  justify-content: center;
+  width: 1200px;
+  padding: 21rem 40rem;
+}
+main .bottom-section .bottom-content .btn-group-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
 }
 
 footer {

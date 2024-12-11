@@ -355,23 +355,6 @@ main {
       background-blend-mode: overlay; 
     }
   }
-
-  section {
-    &.sticky-menu-container { 
-      position: sticky; bottom: 0;
-      background-color: $color-w2;
-      box-shadow: 0 -3rem 3rem $color-k7;
-      .sticky-menu {
-        display: flex; justify-content: center;
-        width: 1200px;
-        padding: 21rem 40rem;
-        .btn-group {
-          display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
-        }
-      }
-    }
-  }
-
   .content {
     // overflow: hidden;
     width: 1200px;
@@ -1148,40 +1131,149 @@ main {
 
     /* Module Ends */
   }
-}
 
-#login {
-  min-height: calc(100vh - 115rem);
-  .content {
+  #login {
+    min-height: calc(100vh - 115rem);
+    .content {
+      display: flex; justify-content: center; align-items: center;
+      .create-container {
+        width: fit-content;
+        padding: 60rem;
+        border: 2rem solid $color-k7;
+        border-radius: 18rem;
+        form {
+          .input-group {
+            margin-top: 45rem;
+            display: flex; flex-direction: column; gap: 30rem;
+            .input-container {
+              display: flex; flex-direction: column;
+              .label-container {
+                display: flex; align-items: center; justify-content: space-between;
+                margin-bottom: 6rem;
+                font-size: 18rem; font-weight: 500;
+              }
+              input {
+                width: 360rem;
+                padding: 9rem 12rem;
+                border: 1px solid $color-k6;
+                font-size: 16.5rem;
+                
+                &::placeholder {
+                  color: $color-k6;
+                }
+              }
+            }
+          }
+          .btn-group {
+            display: flex; flex-direction: column; gap: 15rem;
+            margin-top: 45rem;
+          }
+        }
+      }
+    }
+  }
+  
+  #signup {
     display: flex; justify-content: center; align-items: center;
     .create-container {
       width: fit-content;
       padding: 60rem;
       border: 2rem solid $color-k7;
       border-radius: 18rem;
+      .title2 {
+        margin-bottom: 36rem;
+      }
       form {
+        .title3 {
+          margin-top: 60rem;
+        }
         .input-group {
-          margin-top: 45rem;
-          display: flex; flex-direction: column; gap: 30rem;
+          margin-top: 27rem;
+          display: flex; flex-direction: column; gap: 27rem;
           .input-container {
             display: flex; flex-direction: column;
             .label-container {
               display: flex; align-items: center; justify-content: space-between;
               margin-bottom: 6rem;
-              font-size: 18rem; font-weight: 500;
+              font-size: 15rem; font-weight: 500;
             }
-            input {
-              width: 360rem;
-              padding: 9rem 12rem;
+  
+            input[type="text"],
+            input[type="email"],
+            input[type="password"]
+            {
+              width: 450rem;
+              padding: 9rem;
               border: 1px solid $color-k6;
-              font-size: 16.5rem;
-              
+              font-size: 15rem;
               &::placeholder {
                 color: $color-k6;
               }
             }
+            input[type="file"] {
+              border: 1px solid $color-k6;
+              padding: 9rem;
+              cursor: pointer;
+              font-size: 15rem;
+              &:hover {
+                background-color: $color-k8;
+  
+              }
+              &::file-selector-button {
+                display: none;
+              }
+            }
+            textarea {
+              resize: none;
+              min-height: 150rem;
+              width: 450rem;
+              padding: 9rem;
+              border: 1px solid $color-k6;
+              font-size: 15rem;
+              &::placeholder {
+                color: $color-k6;
+              }
+            }
+  
+            .check-container {
+              display: flex; flex-direction: column; gap: 12rem;
+              margin: 6rem 0 0 9rem;
+              label {
+                display: flex; align-items: center;
+                cursor: pointer;
+                user-select: none;
+                width: max-content;
+                font-size: 15rem; font-weight: 300;
+                white-space: nowrap;
+                &:hover {
+                  .label-text {
+                    text-decoration: underline;
+                    text-underline-offset: 3rem;
+                  }
+                }
+                input[type="checkbox"],
+                input[type="radio"] {
+                  cursor: pointer;
+                  height: 21rem; width: 21rem;
+                  min-height: 21rem; min-width: 21rem;
+                  margin: 0 7.5rem 0 0;
+                }
+                .input-others {
+                  width: 360rem;
+                  margin: 0 0 0 9rem;
+                  padding: 1.5rem 3rem 0rem 3rem;
+                  border: 0;
+                  border-bottom: 1px solid $color-k6;
+                  &:focus {
+                    outline: 0;
+                    border-bottom: 1px solid $color-m1;
+                  }
+                }
+              }
+            }
           }
         }
+        
         .btn-group {
           display: flex; flex-direction: column; gap: 15rem;
           margin-top: 45rem;
@@ -1189,25 +1281,18 @@ main {
       }
     }
   }
-}
-
-#signup {
-  display: flex; justify-content: center; align-items: center;
-  .create-container {
-    width: fit-content;
-    padding: 60rem;
-    border: 2rem solid $color-k7;
-    border-radius: 18rem;
-    .title2 {
-      margin-bottom: 36rem;
-    }
-    form {
-      .title3 {
-        margin-top: 60rem;
+  
+  .bb-create, .bb-update {
+    padding-bottom: 150rem;
+    .create-container, .update-container {
+      .title2 {
+        margin-bottom: 45rem;
       }
       .input-group {
-        margin-top: 27rem;
         display: flex; flex-direction: column; gap: 27rem;
+        .row-2 {
+          display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
+        }
         .input-container {
           display: flex; flex-direction: column;
           .label-container {
@@ -1215,13 +1300,12 @@ main {
             margin-bottom: 6rem;
             font-size: 15rem; font-weight: 500;
           }
-
+  
           input[type="text"],
           input[type="email"],
           input[type="password"]
           {
-            width: 450rem;
-            padding: 9rem;
+            padding: 12rem;
             border: 1px solid $color-k6;
             font-size: 15rem;
             &::placeholder {
@@ -1230,12 +1314,12 @@ main {
           }
           input[type="file"] {
             border: 1px solid $color-k6;
-            padding: 9rem;
+            padding: 12rem;
             cursor: pointer;
             font-size: 15rem;
             &:hover {
               background-color: $color-k8;
-
+  
             }
             &::file-selector-button {
               display: none;
@@ -1244,15 +1328,14 @@ main {
           textarea {
             resize: none;
             min-height: 150rem;
-            width: 450rem;
-            padding: 9rem;
+            padding: 12rem;
             border: 1px solid $color-k6;
             font-size: 15rem;
             &::placeholder {
               color: $color-k6;
             }
           }
-
+  
           .check-container {
             display: flex; flex-direction: column; gap: 12rem;
             margin: 6rem 0 0 9rem;
@@ -1291,184 +1374,28 @@ main {
           }
         }
       }
-      
-      .btn-group {
-        display: flex; flex-direction: column; gap: 15rem;
-        margin-top: 45rem;
+      .log-container {
+        margin-top: 27rem;
+        font-size: 15rem; font-weight: 300;
       }
     }
   }
-}
-
-.bb-create, .bb-update {
-  .create-container, .update-container {
+  
+  .bb-list {
+    &#bb-list-members {
+      .row {
+        display: grid; grid-template-columns: 60rem 1fr 84rem;
+      }
+    }
     .title2 {
       margin-bottom: 45rem;
     }
-    form {
-      .input-group {
-        display: flex; flex-direction: column; gap: 27rem;
-        .input-container {
-          display: flex; flex-direction: column;
-          .label-container {
-            display: flex; align-items: center; justify-content: space-between;
-            margin-bottom: 6rem;
-            font-size: 15rem; font-weight: 500;
-          }
-
-          input[type="text"],
-          input[type="email"],
-          input[type="password"]
-          {
-            padding: 12rem;
-            border: 1px solid $color-k6;
-            font-size: 15rem;
-            &::placeholder {
-              color: $color-k6;
-            }
-          }
-          input[type="file"] {
-            border: 1px solid $color-k6;
-            padding: 12rem;
-            cursor: pointer;
-            font-size: 15rem;
-            &:hover {
-              background-color: $color-k8;
-
-            }
-            &::file-selector-button {
-              display: none;
-            }
-          }
-          textarea {
-            resize: none;
-            min-height: 150rem;
-            padding: 12rem;
-            border: 1px solid $color-k6;
-            font-size: 15rem;
-            &::placeholder {
-              color: $color-k6;
-            }
-          }
-
-          .check-container {
-            display: flex; flex-direction: column; gap: 12rem;
-            margin: 6rem 0 0 9rem;
-            label {
-              display: flex; align-items: center;
-              cursor: pointer;
-              user-select: none;
-              width: max-content;
-              font-size: 15rem; font-weight: 300;
-              white-space: nowrap;
-              &:hover {
-                .label-text {
-                  text-decoration: underline;
-                  text-underline-offset: 3rem;
-                }
-              }
-              input[type="checkbox"],
-              input[type="radio"] {
-                cursor: pointer;
-                height: 21rem; width: 21rem;
-                min-height: 21rem; min-width: 21rem;
-                margin: 0 7.5rem 0 0;
-              }
-              .input-others {
-                width: 360rem;
-                margin: 0 0 0 9rem;
-                padding: 1.5rem 3rem 0rem 3rem;
-                border: 0;
-                border-bottom: 1px solid $color-k6;
-                &:focus {
-                  outline: 0;
-                  border-bottom: 1px solid $color-m1;
-                }
-              }
-            }
-          }
-        }
-      }
-      
-      .btn-group {
-        display: flex; flex-direction: column; gap: 15rem;
-        margin-top: 45rem;
-      }
-    }
-  }
-}
-
-.bb-list {
-  &#bb-list-members {
-    .row {
-      display: grid; grid-template-columns: 60rem 1fr 81rem;
-    }
-  }
-  min-height: 75vh;
-  .title2 {
-    margin-bottom: 45rem;
-  }
-  .list-container {
-    font-size: 15rem;
-    .row {
-      align-items: center; gap: 30rem;
-      padding: 12rem 15rem;
-      border-bottom: 1px solid $color-k7;
-      .title-container {
-        display: flex; flex-direction: column; gap: 6rem;
-        .title {
-          display: -webkit-box;
-          -webkit-box-orient: vertical;
-          -webkit-line-clamp: 1;
-          overflow: hidden;
-        }
-      }
-    }
-    .head {
-      font-weight: 600;
-    }
-    .body {
+    .list-container {
+      font-size: 15rem;
       .row {
-        cursor: pointer;
-        text-decoration: none;
-        font-weight: 300;
-        color: $color-k1;
-        &:hover {
-          background-color: $color-k8;
-        }
-      }
-    }
-    
-  }
-  
-  .page {
-    display: none;
-    // display: flex; align-items: center; justify-content: center; gap: 30rem;
-    margin-top: 30rem;
-    font-size: 18rem;
-    button {
-      display: flex; align-items: center; justify-content: center;
-      height: 30rem; width: 30rem;
-      font-size: 18rem; font-weight: 600;
-    }
-  }
-
-}
-
-.bb-list-update {
-  min-height: 75vh;
-  .title2 {
-    margin-bottom: 45rem;
-  }
-  .list-container {
-    font-size: 15rem;
-    user-select: none;
-    .head {
-      font-weight: 600;
-    }
-    .body {
-      .row {
-        font-weight: 300;
+        align-items: center; gap: 30rem;
+        padding: 12rem 15rem;
+        border-bottom: 1px solid $color-k7;
         .title-container {
           display: flex; flex-direction: column; gap: 6rem;
           .title {
@@ -1478,53 +1405,126 @@ main {
             overflow: hidden;
           }
         }
-        &:has(.btn-group:hover) {
-          background-color: $color-k8;
+      }
+      .head {
+        font-weight: 600;
+      }
+      .body {
+        .row {
+          cursor: pointer;
+          text-decoration: none;
+          font-weight: 300;
+          color: $color-k1;
+          &:hover {
+            background-color: $color-k8;
+          }
         }
       }
-      .btn-group {
-        display: flex; gap: 12rem;
-        .btn-arrow {
-          cursor: pointer;
-          display: flex; align-items: center; justify-content: center;
-          margin: 0; padding: 0;
-          width: 36rem; height: 36rem;
-          border: 2rem solid $color-k5;
-          border-radius: 6rem;
-          background-color: $color-k8;
-          img {
-            height: 21rem; width: 21rem;
-            background-color: $color-k5;
-          }
-          &:hover {
-            opacity: 0.75;
-          }
-        }
-        .btn-delete {
-          cursor: pointer;
-          font-size: 15rem;
-          font-weight: 400;
-          height: 36rem;
-          margin: 0 0 0 18rem; padding: 0 12rem;
-          color: $color-r1;
-          border: 2px solid $color-r1;
-          border-radius: 6rem;
-          background-color: $color-w1;
-          &:hover {
-            color: $color-w1;
-            background-color: $color-r1;
-          }
-        }
+      
+    }
+    
+    .page {
+      display: none;
+      // display: flex; align-items: center; justify-content: center; gap: 30rem;
+      margin-top: 30rem;
+      font-size: 18rem;
+      button {
+        display: flex; align-items: center; justify-content: center;
+        height: 30rem; width: 30rem;
+        font-size: 18rem; font-weight: 600;
       }
     }
-    .row {
-      display: grid; grid-template-columns: 60rem 1fr auto;
-       align-items: center; gap: 30rem;
-      padding: 12rem 15rem;
-      border-bottom: 1px solid $color-k7;
+  
+  }
+  
+  .bb-list-update {
+    .title2 {
+      margin-bottom: 45rem;
+    }
+    .list-container {
+      font-size: 15rem;
+      user-select: none;
+      .head {
+        font-weight: 600;
+      }
+      .body {
+        .row {
+          font-weight: 300;
+          .title-container {
+            display: flex; flex-direction: column; gap: 6rem;
+            .title {
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 1;
+              overflow: hidden;
+            }
+          }
+          &:has(.btn-arrow:hover, .btn-delete:hover) {
+            background-color: $color-k9;
+          }
+        }
+        .btn-group {
+          display: flex; gap: 12rem;
+          .btn-arrow {
+            cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            margin: 0; padding: 0;
+            width: 33rem; height: 33rem;
+            border: 2rem solid $color-k1;
+            border-radius: 6rem;
+            background-color: $color-k8;
+            img {
+              height: 18rem; width: 18rem;
+            }
+            &:hover {
+              opacity: 0.45;
+            }
+          }
+          .btn-delete {
+            cursor: pointer;
+            font-size: 15rem;
+            font-weight: 400;
+            height: 33rem;
+            margin: 0 0 0 18rem; padding: 0 12rem;
+            color: $color-r1;
+            border: 2px solid $color-r1;
+            border-radius: 6rem;
+            background-color: $color-w1;
+            &:hover {
+              color: $color-w1;
+              background-color: $color-r1;
+            }
+          }
+        }
+      }
+      .row {
+        display: grid; grid-template-columns: 60rem 1fr auto;
+        align-items: center; gap: 30rem;
+        padding: 12rem 15rem;
+        border-bottom: 1px solid $color-k7;
+      }
     }
   }
+  
+  .bottom-section {
+    width: 100%;
+    // min-width: 1280px;
+    display: flex; justify-content: center;
+    position: fixed; bottom: 0; left: 0;
+    background-color: $color-w2;
+    box-shadow: 0 -3rem 3rem $color-k7;
+    .bottom-content {
+      display: flex; justify-content: center;
+      width: 1200px;
+      padding: 21rem 40rem;
+      .btn-group-2 {
+        display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
+      }
+    }
+  }
+
 }
+
 
 
 footer {
