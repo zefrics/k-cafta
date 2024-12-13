@@ -4,9 +4,10 @@
 var current = window.location.href //ex. "http://www.naver.com/2-2-1_en.html"
 var lastItem = current.substring(current.lastIndexOf('/') + 1) //ex. 2-2-1_en.html 
 
-var extract1 = lastItem.replace("/","").replace(".html","") //ex. "2-2-1"
-var extract2 = extract1.substring(0, 3) // 첫 세글자만 가져오기 ex. "2-2"
-var extract3 = extract1.substring(0, 1) // 첫 글자만 가져오기 ex. "2"
+var extract0 = lastItem.replace("/","").replace(".html","") //ex. "2-2-1_en"
+var extract1 = extract0.substring(0, 5) // 첫 다섯글자만 가져오기 ex. "2-2-1"
+var extract2 = extract0.substring(0, 3) // 첫 세글자만 가져오기 ex. "2-2"
+var extract3 = extract0.substring(0, 1) // 첫 글자만 가져오기 ex. "2"
 
 if (document.getElementById("p-"+extract1)) {
   document.getElementById("p-"+extract1).classList.add('active')

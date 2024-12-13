@@ -17,6 +17,11 @@ body {
   font-size: 36rem;
   font-weight: 700;
 }
+* .title2 .sub-title {
+  margin-left: 21rem;
+  font-size: 21rem;
+  font-weight: 300;
+}
 * .title3 {
   font-size: 27rem;
   font-weight: 600;
@@ -1285,6 +1290,7 @@ main #signup .create-container form .input-group .input-container textarea {
   width: 450rem;
   padding: 9rem;
   border: 1px solid rgba(0, 0, 0, 0.3);
+  font-family: "Pretendard", sans-serif;
   font-size: 15rem;
 }
 main #signup .create-container form .input-group .input-container textarea::-moz-placeholder {
@@ -1345,7 +1351,7 @@ main #signup .create-container form .btn-group {
 main .bb-create, main .bb-update {
   padding-bottom: 150rem;
 }
-main .bb-create .create-container .title2, main .bb-create .update-container .title2, main .bb-update .create-container .title2, main .bb-update .update-container .title2 {
+main .bb-create .title2, main .bb-update .title2 {
   margin-bottom: 45rem;
 }
 main .bb-create .create-container .input-group, main .bb-create .update-container .input-group, main .bb-update .create-container .input-group, main .bb-update .update-container .input-group {
@@ -1410,6 +1416,7 @@ main .bb-create .create-container .input-group .input-container input[type=file]
   display: none;
 }
 main .bb-create .create-container .input-group .input-container textarea, main .bb-create .update-container .input-group .input-container textarea, main .bb-update .create-container .input-group .input-container textarea, main .bb-update .update-container .input-group .input-container textarea {
+  font-family: "Pretendard", sans-serif;
   resize: none;
   min-height: 150rem;
   padding: 12rem;
@@ -1473,9 +1480,26 @@ main .bb-create .create-container .log-container, main .bb-create .update-contai
   font-size: 15rem;
   font-weight: 300;
 }
-main .bb-list#bb-list-members .row {
-  display: grid;
-  grid-template-columns: 60rem 1fr 84rem;
+main .bb-list {
+  padding-bottom: 150rem;
+}
+main .bb-list#bb-li-members .row {
+  grid-template-columns: 45rem 210rem 210rem 1fr;
+}
+main .bb-list#bb-li-partners .row, main .bb-list#bb-li-faq .row {
+  grid-template-columns: 45rem 1fr;
+}
+main .bb-list#bb-li-history .row, main .bb-list#bb-li-publication .row {
+  grid-template-columns: 45rem 90rem 1fr;
+}
+main .bb-list#bb-li-market .row {
+  grid-template-columns: 45rem 1fr 66rem;
+}
+main .bb-list#bb-li-e-learning .row {
+  grid-template-columns: 45rem 270rem 1fr;
+}
+main .bb-list#bb-li-events .row {
+  grid-template-columns: 45rem 195rem 1fr;
 }
 main .bb-list .title2 {
   margin-bottom: 45rem;
@@ -1484,24 +1508,16 @@ main .bb-list .list-container {
   font-size: 15rem;
 }
 main .bb-list .list-container .row {
+  display: grid;
   align-items: center;
   gap: 30rem;
-  padding: 12rem 15rem;
+  padding: 15rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
-}
-main .bb-list .list-container .row .title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
-}
-main .bb-list .list-container .row .title-container .title {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
 }
 main .bb-list .list-container .head {
   font-weight: 600;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 main .bb-list .list-container .body .row {
   cursor: pointer;
@@ -1511,6 +1527,23 @@ main .bb-list .list-container .body .row {
 }
 main .bb-list .list-container .body .row:hover {
   background-color: rgba(0, 0, 0, 0.05);
+}
+main .bb-list .list-container .body .row .title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+main .bb-list .list-container .body .row .row-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+}
+main .bb-list .list-container .body .row .row-container .row-first, main .bb-list .list-container .body .row .row-container .row-second {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
 }
 main .bb-list .page {
   display: none;
@@ -1526,6 +1559,27 @@ main .bb-list .page button {
   font-size: 18rem;
   font-weight: 600;
 }
+main .bb-list-update {
+  padding-bottom: 150rem;
+}
+main .bb-list-update#bb-lu-members .row {
+  grid-template-columns: 45rem 210rem 210rem 1fr auto;
+}
+main .bb-list-update#bb-lu-partners .row, main .bb-list-update#bb-lu-market .row, main .bb-list-update#bb-lu-faq .row {
+  display: grid;
+  grid-template-columns: 45rem 1fr auto;
+}
+main .bb-list-update#bb-lu-history .row, main .bb-list-update#bb-lu-publication .row {
+  display: grid;
+  grid-template-columns: 45rem 90rem 1fr auto;
+}
+main .bb-list-update#bb-lu-e-learning .row {
+  display: grid;
+  grid-template-columns: 45rem 270rem 1fr auto;
+}
+main .bb-list-update#bb-lu-events .row {
+  grid-template-columns: 45rem 195rem 1fr auto;
+}
 main .bb-list-update .title2 {
   margin-bottom: 45rem;
 }
@@ -1535,73 +1589,80 @@ main .bb-list-update .list-container {
      -moz-user-select: none;
           user-select: none;
 }
+main .bb-list-update .list-container .row {
+  display: grid;
+  align-items: center;
+  gap: 30rem;
+  padding: 15rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
 main .bb-list-update .list-container .head {
   font-weight: 600;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.03);
 }
 main .bb-list-update .list-container .body .row {
   font-weight: 300;
 }
-main .bb-list-update .list-container .body .row .title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 6rem;
+main .bb-list-update .list-container .body .row:has(.btn-arrow:hover, .btn-delete:hover) {
+  background-color: rgba(0, 0, 0, 0.03);
 }
-main .bb-list-update .list-container .body .row .title-container .title {
+main .bb-list-update .list-container .body .row .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
   overflow: hidden;
 }
-main .bb-list-update .list-container .body .row:has(.btn-arrow:hover, .btn-delete:hover) {
-  background-color: rgba(0, 0, 0, 0.03);
-}
-main .bb-list-update .list-container .body .btn-group {
+main .bb-list-update .list-container .body .row .row-container {
   display: flex;
-  gap: 12rem;
+  flex-direction: column;
+  gap: 6rem;
 }
-main .bb-list-update .list-container .body .btn-group .btn-arrow {
+main .bb-list-update .list-container .body .row .row-container .row-first, main .bb-list-update .list-container .body .row .row-container .row-second {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+main .bb-list-update .list-container .body .row .btn-group {
+  display: flex;
+  gap: 9rem;
+}
+main .bb-list-update .list-container .body .row .btn-group .btn-arrow {
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0;
   padding: 0;
-  width: 33rem;
-  height: 33rem;
+  height: 30rem;
+  width: 30rem;
   border: 2rem solid rgb(0, 0, 0);
   border-radius: 6rem;
   background-color: rgba(0, 0, 0, 0.05);
 }
-main .bb-list-update .list-container .body .btn-group .btn-arrow img {
-  height: 18rem;
-  width: 18rem;
+main .bb-list-update .list-container .body .row .btn-group .btn-arrow img {
+  height: 15rem;
+  width: 15rem;
 }
-main .bb-list-update .list-container .body .btn-group .btn-arrow:hover {
+main .bb-list-update .list-container .body .row .btn-group .btn-arrow:hover {
   opacity: 0.45;
 }
-main .bb-list-update .list-container .body .btn-group .btn-delete {
+main .bb-list-update .list-container .body .row .btn-group .btn-delete {
   cursor: pointer;
   font-size: 15rem;
   font-weight: 400;
-  height: 33rem;
-  margin: 0 0 0 18rem;
-  padding: 0 12rem;
+  height: 30rem;
+  margin: 0 0 0 12rem;
+  padding: 0 9rem;
   color: rgb(255, 0, 0);
   border: 2px solid rgb(255, 0, 0);
   border-radius: 6rem;
   background-color: rgb(255, 255, 255);
 }
-main .bb-list-update .list-container .body .btn-group .btn-delete:hover {
+main .bb-list-update .list-container .body .row .btn-group .btn-delete:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(255, 0, 0);
-}
-main .bb-list-update .list-container .row {
-  display: grid;
-  grid-template-columns: 60rem 1fr auto;
-  align-items: center;
-  gap: 30rem;
-  padding: 12rem 15rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 main .bottom-section {
   width: 100%;
@@ -1655,6 +1716,10 @@ footer .content .footer-menu a:hover {
   text-decoration: underline;
   text-underline-offset: 4rem;
 }
+footer#success .content {
+  padding: 15rem 40rem 105rem 40rem;
+}
+
 .to-top {
   cursor: pointer;
   position: fixed;

@@ -43,7 +43,25 @@
           <a id="p-6-3" href="6-3-li.html" class="title">History of K-CA FTA</a>
         </li>
         <li>
-          <a id="p-6-4" href="6-4-li.html" class="title">Market Information</a>
+          <div id="p-6-4" class="title btn-menu-drop" onclick="menuDrop(event)">Market Information</div>
+          <ul class="menu-drop hide">
+            <li>
+              <a id="p-6-4-1" href="6-4-1-li.html">Animal & Vegetable Products</a>
+            </li>
+            <li>
+              <a id="p-6-4-2" href="6-4-2-li.html">Prepared Foodstuffs</a>
+            </li>
+            <li>
+              <a id="p-6-4-3" href="6-4-3-li.html">Metal & Mineral Products</a>
+            </li>
+            <li>
+              <a id="p-6-4-4" href="6-4-4-li.html">Chemicals & Machinery Parts</a>
+            </li>
+            <li>
+              <a id="p-6-4-5" href="6-4-5-li.html">Medical Instruments</a>
+            </li>
+            
+          </ul>
         </li>
         <li>
           <a id="p-6-5" href="6-5-li.html" class="title">E-learning</a>
@@ -61,10 +79,10 @@
           <button class="btn-menu-drop btn-1-1" onclick="menuDrop(event)">My Page</button>
           <ul class="menu-drop hide" id="my-menu">
             <li>
-              <a id="p-my-account" class="list" href="">Admin Page</a>
+              <a id="p-admin" class="list" href="">Admin Page</a>
             </li>
             <li>
-              <a id="p-my-account" class="list" href="">My Account</a>
+              <a id="p-my-account" class="list" href="myaccount.html">My Account</a>
             </li>
             <li>
               <a id="p-sign-out" class="list sign-out" href="">Sign out</a>
@@ -77,40 +95,44 @@
   </header>
   <main>
     <section class="first">
-      <div class="content bb-list" id="bb-list-members">
-        <h2 class="title2">Members (List)</h2> 
+      <div class="content bb-list" id="bb-li-members">
+        <h2 class="title2">Members</h2>
         <div class="list-container">
           <div class="head">
             <div class="row">
               <div class="order">Order</div>
-              <div class="title">Title</div>
-              <div class="date">Date</div>
+              <div class="name">Name</div>
+              <div class="organization">Organization</div>
+              <div class="email">E-mail</div>
             </div>
           </div>
           <div class="body">
             <a class="row" href="6-1-u.html">
               <div class="order">03</div>
-              <div class="title-container">
-                <div class="title en">
-                  Hello, How are you today?
-                </div>
-                <div class="title es">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non molestias repudiandae quidem consequuntur ipsum officiis animi doloremque omnis. Consequatur maiores, illo officiis quae corporis pariatur corrupti! Eligendi, obcaecati in!
-                </div>
+              <div class="row-container">
+                <div class="row-first">Alejandro</div>
+                <div class="row-second">Marinez Zubimendi</div>
               </div>
-              <div class="date">11-11-1111</div>
+              <div class="organization">Organization</div>
+              <div class="email">abcdefghijklmnop@gmail.com</div>
             </a>
             <a class="row" href="6-1-u.html">
-              <div class="order">03</div>
-              <div class="title-container">
-                <div class="title en">
-                  Hello, How are you today?
-                </div>
-                <div class="title es">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci non molestias repudiandae quidem consequuntur ipsum officiis animi doloremque omnis. Consequatur maiores, illo officiis quae corporis pariatur corrupti! Eligendi, obcaecati in!
-                </div>
+              <div class="order">02</div>
+              <div class="row-container">
+                <div class="row-first">Rafael</div>
+                <div class="row-second">Marinez</div>
               </div>
-              <div class="date">00-00-0000</div>
+              <div class="organization">Organization</div>
+              <div class="email">abcdefghijklmnop@gmail.com</div>
+            </a>
+            <a class="row" href="6-1-u.html">
+              <div class="order">01</div>
+              <div class="row-container">
+                <div class="row-first">Ana Luisa</div>
+                <div class="row-second">Martin</div>
+              </div>
+              <div class="organization">Organization</div>
+              <div class="email">abcdefghijklmnop@gmail.com</div>
             </a>
           </div>
         </div>
@@ -127,11 +149,10 @@
           <div class="bottom-content">
             <div class="btn-group-2">
               <a class="btn-con-2" href="6-1-lu.html">Edit the list</a>
-              <a class="btn-con-2" href="6-1-c.html">Create</a>
+              <a class="btn-con-2" href="">Create</a>
             </div>
           </div>
         </div>
-
       </div>
     </section>
   </main>

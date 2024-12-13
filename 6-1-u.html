@@ -43,7 +43,25 @@
           <a id="p-6-3" href="6-3-li.html" class="title">History of K-CA FTA</a>
         </li>
         <li>
-          <a id="p-6-4" href="6-4-li.html" class="title">Market Information</a>
+          <div id="p-6-4" class="title btn-menu-drop" onclick="menuDrop(event)">Market Information</div>
+          <ul class="menu-drop hide">
+            <li>
+              <a id="p-6-4-1" href="6-4-1-li.html">Animal & Vegetable Products</a>
+            </li>
+            <li>
+              <a id="p-6-4-2" href="6-4-2-li.html">Prepared Foodstuffs</a>
+            </li>
+            <li>
+              <a id="p-6-4-3" href="6-4-3-li.html">Metal & Mineral Products</a>
+            </li>
+            <li>
+              <a id="p-6-4-4" href="6-4-4-li.html">Chemicals & Machinery Parts</a>
+            </li>
+            <li>
+              <a id="p-6-4-5" href="6-4-5-li.html">Medical Instruments</a>
+            </li>
+            
+          </ul>
         </li>
         <li>
           <a id="p-6-5" href="6-5-li.html" class="title">E-learning</a>
@@ -61,10 +79,10 @@
           <button class="btn-menu-drop btn-1-1" onclick="menuDrop(event)">My Page</button>
           <ul class="menu-drop hide" id="my-menu">
             <li>
-              <a id="p-my-account" class="list" href="">Admin Page</a>
+              <a id="p-admin" class="list" href="">Admin Page</a>
             </li>
             <li>
-              <a id="p-my-account" class="list" href="">My Account</a>
+              <a id="p-my-account" class="list" href="myaccount.html">My Account</a>
             </li>
             <li>
               <a id="p-sign-out" class="list sign-out" href="">Sign out</a>
@@ -78,8 +96,8 @@
   <main>
     <section class="first">
       <div class="content bb-update">
+        <h2 class="title2">Members</h2>  
         <div class="update-container">
-          <h2 class="title2">Members (Read & Update)</h2>  
           <form action="">
             <div class="input-group">
               <div class="input-container">
@@ -90,27 +108,27 @@
               </div>
               <div class="input-container">
                 <div class="label-container">
-                  <div class="label">Title (English)</div>
+                  <div class="label">First Name</div>
                 </div>
-                <input type="text" value="Hello" required>
+                <input type="text" value="Alejandro" required>
               </div>
               <div class="input-container">
                 <div class="label-container">
-                  <div class="label">Title (Spanish)</div>
+                  <div class="label">Last Name</div>
                 </div>
-                <input type="text" value="Hola" required>
+                <input type="text" value="Martinez" required>
               </div>
               <div class="input-container">
                 <div class="label-container">
-                  <div class="label">Website URL</div>
+                  <div class="label">Organization</div>
                 </div>
-                <input type="text" value="https://www.google.com" required>
+                <input type="text" value="CABEI" required>
               </div>
               <div class="input-container">
                 <div class="label-container">
-                  <div class="label">Logo Image Upload</div>
+                  <div class="label">E-mail</div>
                 </div>
-                <input type="file" value="1-2-1.jpg" required>
+                <input type="email" value="abc@gmail.com" required>
               </div>
             </div>
             <div class="bottom-section">
