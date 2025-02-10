@@ -625,9 +625,6 @@ main {
       .img-group {
         margin-top: 60rem;
         display: grid; grid-template-columns: repeat(2, 1fr); gap: 45rem;
-        .img {
-          background-color: $color-m7;
-        }
         img {
           height: 100%; width: 100%;
         }
@@ -1598,8 +1595,8 @@ main {
       display: flex; justify-content: center;
       width: 1200px;
       padding: 21rem 40rem;
-      .btn-group-2 {
-        display: grid; grid-template-columns: repeat(2, 1fr); gap: 30rem;
+      .btn-group-3 {
+        display: grid; grid-template-columns: repeat(3, 1fr); gap: 30rem;
       }
     }
   }

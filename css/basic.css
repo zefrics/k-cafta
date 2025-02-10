@@ -647,9 +647,6 @@ main .content.module-3 .img-group {
   grid-template-columns: repeat(2, 1fr);
   gap: 45rem;
 }
-main .content.module-3 .img-group .img {
-  background-color: rgba(53, 99, 233, 0.15);
-}
 main .content.module-3 .img-group img {
   height: 100%;
   width: 100%;
@@ -1680,9 +1677,9 @@ main .bottom-section .bottom-content {
   width: 1200px;
   padding: 21rem 40rem;
 }
-main .bottom-section .bottom-content .btn-group-2 {
+main .bottom-section .bottom-content .btn-group-3 {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30rem;
 }
 
