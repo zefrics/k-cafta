@@ -1677,6 +1677,11 @@ main .bottom-section .bottom-content {
   width: 1200px;
   padding: 21rem 40rem;
 }
+main .bottom-section .bottom-content .btn-group-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30rem;
+}
 main .bottom-section .bottom-content .btn-group-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
