@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/button.css">
 
-    <script type="text/javascript" src="js/menu-drop.js" defer></script>
     <script type="text/javascript" src="js/menu-activate.js" defer></script>
-    <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
 
     <title>Plataforma de TLC C-CA</title>
@@ -33,9 +31,9 @@
         <li>
           <a id="p-index" href="index_es.html" class="title">Inicio</a>
         </li>
-        <li>
-          <div id="p-1" class="title btn-menu-drop" onclick="menuDrop(event)">Sobre nosotros</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-1" class="title">Sobre nosotros</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-1-1" href="1-1_es.html">Sobre la Plataforma</a>
             </li>
@@ -44,9 +42,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-2" class="title btn-menu-drop" onclick="menuDrop(event)">Sobre Corea del Sur</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-2" class="title">Sobre Corea del Sur</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-2-1" href="2-1_es.html">Descripción General</a>
             </li>
@@ -58,9 +56,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-3" class="title btn-menu-drop" onclick="menuDrop(event)">Recursos</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-3" class="title">Recursos</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-3-1" href="3-1_es.html">Aprendizaje en Línea</a>
             </li>
@@ -91,9 +89,9 @@
         <li>
           <a class="btn-1-1" href='login_es.html'>Log in</a>
         </li>
-        <li class="my-container hide">
-          <button class="btn-menu-drop btn-1-1" onclick="menuDrop(event)">My Page</button>
-          <ul class="menu-drop hide" id="my-menu">
+        <li class="my-container menu-drop-container">
+          <button class="btn-1-1">My Page</button>
+          <ul class="menu-drop" id="my-menu">
             <li>
               <a id="p-my-account" class="list" href="myaccount.html">My Account</a>
             </li>
@@ -357,7 +355,7 @@
 
   <footer>
     <div class="content">
-      <div class="copyright">TLC C-CA 2024 &copy;</div>
+      <div class="copyright">TLC C-CA 2025 &copy;</div>
       <ul class="footer-menu">
         <li>
           <a href="5-1.html">Términos y Condiciones</a>
@@ -372,7 +370,7 @@
     </div>
   </footer>
 
-  <div class="to-top" onClick="toTop()">
+  <div class="to-top" onClick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });">
     <img src="img/icon/totop.svg" alt="">
   </div>
 

@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/button.css">
 
-    <script type="text/javascript" src="js/menu-drop.js" defer></script>
     <script type="text/javascript" src="js/menu-activate.js" defer></script>
-    <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
 
     <title>Plataforma de TLC C-CA</title>
@@ -33,9 +31,9 @@
         <li>
           <a id="p-index" href="index_es.html" class="title">Inicio</a>
         </li>
-        <li>
-          <div id="p-1" class="title btn-menu-drop" onclick="menuDrop(event)">Sobre nosotros</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-1" class="title">Sobre nosotros</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-1-1" href="1-1_es.html">Sobre la Plataforma</a>
             </li>
@@ -44,9 +42,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-2" class="title btn-menu-drop" onclick="menuDrop(event)">Sobre Corea del Sur</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-2" class="title">Sobre Corea del Sur</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-2-1" href="2-1_es.html">Descripción General</a>
             </li>
@@ -58,9 +56,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-3" class="title btn-menu-drop" onclick="menuDrop(event)">Recursos</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-3" class="title">Recursos</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-3-1" href="3-1_es.html">Aprendizaje en Línea</a>
             </li>
@@ -91,9 +89,9 @@
         <li>
           <a class="btn-1-1" href='login_es.html'>Log in</a>
         </li>
-        <li class="my-container hide">
-          <button class="btn-menu-drop btn-1-1" onclick="menuDrop(event)">My Page</button>
-          <ul class="menu-drop hide" id="my-menu">
+        <li class="my-container menu-drop-container">
+          <button class="btn-1-1">My Page</button>
+          <ul class="menu-drop" id="my-menu">
             <li>
               <a id="p-my-account" class="list" href="myaccount.html">My Account</a>
             </li>
@@ -318,9 +316,7 @@
               P. ¿Cómo empezó a exportar este producto a Corea?
             </h3>
             <p class="answer para3 align-justify">
-              Mientras vivía en Corea con mi esposo, quien es coreano, me interesé en el potencial del negocio de reciclaje de baterías. Inicialmente, exportábamos baterías usadas de plomo-ácido desde Corea a Guatemala. Sin embargo, a diferencia de nuestro negocio actual, estas baterías no estaban completamente agotadas; solo habían sido utilizadas brevemente para pruebas. Aplicábamos tratamientos químicos para prolongar su vida útil antes de exportarlas a Guatemala.<br>
-              <br>
-              Cuando regresamos a Guatemala, comencé a importar baterías poco usadas desde Corea. Sin embargo, este negocio fue de corta duración debido a los altos aranceles, que lo hicieron financieramente insostenible. En su lugar, cambié mi enfoque hacia la exportación de baterías de desecho a Corea. Desde su fundación en 2013, Baretec Guatemala ha exportado aproximadamente 58,000 toneladas de baterías de plomo-ácido usadas.
+              Mientras vivía en Corea con mi esposo, quien es coreano, me interesé en el potencial del negocio de reciclaje de baterías. Inicialmente, exportábamos baterías usadas de plomo-ácido desde Corea a Guatemala. Sin embargo, a diferencia de nuestro negocio actual, estas baterías no estaban completamente agotadas; solo habían sido utilizadas brevemente para pruebas. Entonces las importabamos en  Guatemala, Sin embargo, este negocio fue de corta duración debido a los altos aranceles de importacion y costos logisticos lo hicieron financieramente insostenible. En su lugar, cambié mi enfoque hacia la exportación de baterías de desecho a Corea. Desde su fundación en 2009, Baretec Guatemala ha exportado mas de 65 mil toneladas de baterías de plomo-ácido usadas para su adecuado reciclaje en Corea.
             </p>
           </div>
           <div class="interview">
@@ -360,7 +356,7 @@
             <p class="answer para3 align-justify">
               Dado que las baterías usadas con plomo-ácido se consideran residuos peligrosos, obtener los permisos de exportación es un proceso complejo. Según la legislación guatemalteca y la Convención de Basilea—un tratado internacional que regula el movimiento transfronterizo de residuos peligrosos—, a Baretec Guatemala le tomó dos años obtener los permisos necesarios.<br>
               <br>
-              Otro desafío es la falta de incentivos y beneficios para los negocios ecológicos en Guatemala en comparación con países como Colombia y Chile.<br>
+              Otro desafío es la falta de incentivos y beneficios para los negocios ecológicos en Guatemala en comparación con países como Colombia, Chile y Panama incluso.<br>
               <br>
               A nivel personal, uno de los mayores retos en esta industria es el contrabando ilegal de baterías a otros países a precios más bajos. Esto genera una competencia de precios muy fuerte, lo que dificulta mantener la rentabilidad del negocio.
             </p>
@@ -372,7 +368,7 @@
             <p class="answer para3 align-justify">
               En general, la demanda de plomo está disminuyendo gradualmente a medida que avanza la transición hacia los vehículos eléctricos. Sin embargo, creo que el suministro de baterías usadas con plomo-ácido en América Latina seguirá siendo estable y suficiente por al menos una década más, hasta que la mayoría del transporte se convierta en eléctrico.<br>
               <br>
-              El mercado también está altamente influenciado por el precio global del plomo, que fluctúa según las condiciones de la cadena de suministro, la demanda industrial y los cambios en las políticas de los principales países importadores como Corea. Por ejemplo, el año pasado no pudimos exportar a Corea debido a la caída en los precios del plomo, lo que redujo la demanda.<br>
+              El mercado también está altamente influenciado por el precio global del plomo, que fluctúa según las condiciones de la cadena de suministro, la demanda industrial y los cambios en las políticas de los principales países importadores como Corea. Por ejemplo, en el año 2023 se reducieron considerablemente nuestras exportaciones a Corea debido a la caída en los precios del plomo, lo que redujo la demanda.
               <br>
               De cara al futuro, creo que la industria del reciclaje de residuos en América Latina tiene un gran potencial sin explotar. Fortalecer los lazos comerciales con Corea y otros países será clave para generar oportunidades de negocio sostenibles en los próximos años.
             </p>
@@ -404,7 +400,7 @@
   
   <footer>
     <div class="content">
-      <div class="copyright">TLC C-CA 2024 &copy;</div>
+      <div class="copyright">TLC C-CA 2025 &copy;</div>
       <ul class="footer-menu">
         <li>
           <a href="5-1.html">Términos y Condiciones</a>
@@ -419,7 +415,7 @@
     </div>
   </footer>
 
-  <div class="to-top" onClick="toTop()">
+  <div class="to-top" onClick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });">
     <img src="img/icon/totop.svg" alt="">
   </div>
 

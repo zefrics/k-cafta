@@ -127,7 +127,6 @@ header {
           text-decoration: none;  
           color: $color-k5;
           &:hover {
-            cursor: pointer;
             color: $color-m1;
           }
           &.active {
@@ -136,6 +135,7 @@ header {
           }
         }
         .menu-drop {
+          display: none;
           position: absolute; top: 80%; left: 50%; transform: translateX(-50%);
           width: max-content;
           padding: 9rem 0;
@@ -162,6 +162,16 @@ header {
           }
         }
       }
+      .menu-drop-container {
+        &:hover {
+          .title {
+            color: $color-m1;
+          }
+          .menu-drop {
+            display: block !important;
+          }
+        }
+      }
     }
     .mega-menu {
       display: flex; align-items: center; gap: 36rem;
@@ -177,7 +187,11 @@ header {
       position: relative;
       display: flex; align-items: center;
       height: 100%;
+      button {
+        cursor: default;
+      }
       #my-menu {
+        display: none;
         position: absolute; top: 96%;
         width: max-content;
         padding: 9rem 0;
@@ -772,6 +786,7 @@ main {
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     -webkit-line-clamp: 1;
+                    line-clamp: 1;
                     overflow: hidden;
                   }
                   .code {
@@ -853,6 +868,7 @@ main {
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 1;
+                line-clamp: 1;
                 overflow: hidden;
               }
               
@@ -861,6 +877,7 @@ main {
                 display: -webkit-box;
                 -webkit-box-orient: vertical;
                 -webkit-line-clamp: 4;
+                line-clamp: 4;
                 overflow: hidden;
               }
               .file-group {
@@ -907,6 +924,7 @@ main {
                   display: -webkit-box;
                   -webkit-box-orient: vertical;
                   -webkit-line-clamp: 1;
+                  line-clamp: 1;
                   overflow: hidden;
                 }
                 .date {
@@ -1013,6 +1031,7 @@ main {
                   display: -webkit-box;
                   -webkit-box-orient: vertical;
                   -webkit-line-clamp: 2;
+                  line-clamp: 2;
                   overflow: hidden;
                 }
                 .info-container {
@@ -1449,6 +1468,7 @@ main {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 1;
+            line-clamp: 1;
             overflow: hidden;
           }
           .row-container {
@@ -1457,6 +1477,7 @@ main {
               display: -webkit-box;
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 1;
+              line-clamp: 1;
               overflow: hidden;
             }
           }
@@ -1535,6 +1556,7 @@ main {
             display: -webkit-box;
             -webkit-box-orient: vertical;
             -webkit-line-clamp: 1;
+            line-clamp: 1;
             overflow: hidden;
           }
           .row-container {
@@ -1543,6 +1565,7 @@ main {
               display: -webkit-box;
               -webkit-box-orient: vertical;
               -webkit-line-clamp: 1;
+              line-clamp: 1;
               overflow: hidden;
             }
           }

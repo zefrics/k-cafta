@@ -14,9 +14,7 @@
     <link rel="stylesheet" href="css/basic.css">
     <link rel="stylesheet" href="css/button.css">
 
-    <script type="text/javascript" src="js/menu-drop.js" defer></script>
     <script type="text/javascript" src="js/menu-activate.js" defer></script>
-    <script type="text/javascript" src="js/toggle.js" defer></script>
     <script type="text/javascript" src="js/tab.js" defer></script>
 
     <title>K-CAFTA Online Platform</title>
@@ -33,9 +31,9 @@
         <li>
           <a id="p-index" href="index.html" class="title">Home</a>
         </li>
-        <li>
-          <div id="p-1" class="title btn-menu-drop" onclick="menuDrop(event)">About Us</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-1" class="title">About Us</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-1-1" href="1-1_en.html">About Platform</a>
             </li>
@@ -44,9 +42,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-2" class="title btn-menu-drop" onclick="menuDrop(event)">About ROK</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-2" class="title">About ROK</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-2-1" href="2-1_en.html">Country Overview</a>
             </li>
@@ -58,9 +56,9 @@
             </li>
           </ul>
         </li>
-        <li>
-          <div id="p-3" class="title btn-menu-drop" onclick="menuDrop(event)">Resources</div>
-          <ul class="menu-drop hide">
+        <li class="menu-drop-container">
+          <div id="p-3" class="title">Resources</div>
+          <ul class="menu-drop">
             <li>
               <a id="p-3-1" href="3-1_en.html">E-learning</a>
             </li>
@@ -90,9 +88,9 @@
         <li>
           <a class="btn-1-1" href='login_en.html'>Log in</a>
         </li>
-        <li class="my-container hide">
-          <button class="btn-menu-drop btn-1-1" onclick="menuDrop(event)">My Page</button>
-          <ul class="menu-drop hide" id="my-menu">
+        <li class="my-container menu-drop-container">
+          <button class="btn-1-1">My Page</button>
+          <ul class="menu-drop" id="my-menu">
             <li>
               <a id="p-my-account" class="list" href="myaccount.html">My Account</a>
             </li>
@@ -315,9 +313,9 @@
               Q. How did you start exporting this product to Korea?
             </h3>
             <p class="answer para3 align-justify">
-              While living in Korea with my husband, who is Korean, I became fascinated by the potential of recycled batteries. We initially exported used lead-acid vehicle batteries from Korea to Guatemala. However, unlike our current business, these batteries were not completely depleted—they had only been used briefly for testing purposes. We applied chemical treatments to extend their lifespan before exporting them to Guatemala.<br>
+              While living in Korea with my husband, who is Korean, I became fascinated by the potential of the battery recycling business. We initially exported used lead-acid vehicle batteries from Korea to Guatemala. Initially, we exported used lead-acid batteries from Korea to Guatemala. However, unlike our current business, these batteries were not fully depleted; they had only been briefly used for testing.<br>
               <br>
-              When we returned to Guatemala, I started importing lightly used batteries from Korea. However, this venture was short-lived due to high tariffs, which made it financially unsustainable. Instead, I shifted my focus to exporting waste batteries to Korea. Since its founding in 2013, Baretec Guatemala has exported approximately 58,000 tons of waste lead-acid batteries.
+              When we returned to Guatemala, we imported them into Guatemala, but this business was short-lived due to high import tariffs and logistical costs, which made it financially unsustainable. Instead, I shifted my focus to exporting waste batteries to Korea. Since its founding in 2009, Baretec Guatemala has exported more than 65,000 tons of used lead-acid batteries for proper recycling in Korea.
             </p>
           </div>
           <div class="interview">
@@ -353,11 +351,11 @@
               Q. What challenges have you faced when exporting products from Central America to Korea?
             </h3>
             <p class="answer para3 align-justify">
-              Since used lead-acid batteries are classified as hazardous waste, obtaining export permits is a complex process. In accordance with Guatemalan law and the Basel Convention—an international treaty that regulates the transboundary movement of hazardous waste—it took Baretec Guatemala two years to secure the necessary permits.<br>
+              Since used lead-acid batteries are considered hazardous waste, obtaining export permits is a complex process. According to Guatemalan legislation and the Basel Convention—an international treaty that regulates the transboundary movement of hazardous waste—it took Baretec Guatemala two years to obtain the necessary permits.<br>
               <br>
-              Another challenge is the lack of incentives and benefits for eco-friendly businesses in Guatemala compared to countries like Colombia and Chile.<br>
+              Another challenge is the lack of incentives and benefits for green businesses in Guatemala compared to countries like Colombia, Chile, and even Panama.<br>
               <br>
-              On a personal level, one of the biggest difficulties in this industry is the illegal smuggling of batteries to other countries at lower prices. This creates intense price competition, making it challenging to maintain profitability.
+              On a personal level, one of the biggest challenges in this industry is the illegal smuggling of batteries to other countries at lower prices. This creates intense price competition, making it difficult to maintain business profitability.
             </p>
           </div>
           <div class="interview">
@@ -365,9 +363,9 @@
               Q. Given the current market situation in Korea and Central America, how do you foresee supply and demand trends?
             </h3>
             <p class="answer para3 align-justify">
-              Overall, the demand for lead is gradually decreasing as the transition to electric vehicles accelerates. However, I believe the supply of waste lead-acid batteries in Latin America will remain stable and sufficient for at least another decade, until the majority of transportation shifts to electric vehicles.<br>
+              Overall, the demand for lead is gradually decreasing as the transition to electric vehicles progresses. However, I believe that the supply of used lead-acid batteries in Latin America will remain stable and sufficient for at least another decade, until most transportation becomes electric.<br>
               <br>
-              The market is also heavily influenced by global lead prices, which fluctuate based on supply chain conditions, industrial demand, and policy changes in key importing countries like Korea. For example, last year, we were unable to export to Korea due to a drop in lead prices, which led to decreased demand.<br>
+              The market is also highly influenced by the global price of lead, which fluctuates based on supply chain conditions, industrial demand, and policy changes in major importing countries like Korea. For example, in 2023, our exports to Korea decreased significantly due to a drop in lead prices, which reduced demand.<br>
               <br>
               Looking ahead, I believe Latin America’s waste recycling industry has significant untapped potential. Strengthening trade ties with Korea and other countries will be key to driving sustainable business opportunities in the years to come.
             </p>
@@ -399,7 +397,7 @@
   
   <footer id="success">
     <div class="content">
-      <div class="copyright">&copy; 2024 K-CA FTA</div>
+      <div class="copyright">&copy; 2025 K-CA FTA</div>
       <ul class="footer-menu">
         <li>
           <a href="5-1.html">Terms and Conditions</a>
@@ -414,7 +412,7 @@
     </div>
   </footer>
 
-  <div class="to-top" onClick="toTop()">
+  <div class="to-top" onClick="window.scrollTo({ left: 0, top: 0, behavior: 'smooth' });">
     <img src="img/icon/totop.svg" alt="">
   </div>
 

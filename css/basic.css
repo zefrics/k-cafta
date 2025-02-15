@@ -108,7 +108,6 @@ header nav .mega-menu li .title, header nav .admin-menu li .title {
   color: rgba(0, 0, 0, 0.45);
 }
 header nav .mega-menu li .title:hover, header nav .admin-menu li .title:hover {
-  cursor: pointer;
   color: rgb(53, 99, 233);
 }
 header nav .mega-menu li .title.active, header nav .admin-menu li .title.active {
@@ -116,6 +115,7 @@ header nav .mega-menu li .title.active, header nav .admin-menu li .title.active 
   font-weight: 500;
 }
 header nav .mega-menu li .menu-drop, header nav .admin-menu li .menu-drop {
+  display: none;
   position: absolute;
   top: 80%;
   left: 50%;
@@ -145,6 +145,12 @@ header nav .mega-menu li .menu-drop li a.active, header nav .admin-menu li .menu
 header nav .mega-menu li .menu-drop li a:hover, header nav .admin-menu li .menu-drop li a:hover {
   background-color: rgba(53, 99, 233, 0.15);
 }
+header nav .mega-menu .menu-drop-container:hover .title, header nav .admin-menu .menu-drop-container:hover .title {
+  color: rgb(53, 99, 233);
+}
+header nav .mega-menu .menu-drop-container:hover .menu-drop, header nav .admin-menu .menu-drop-container:hover .menu-drop {
+  display: block !important;
+}
 header nav .mega-menu {
   display: flex;
   align-items: center;
@@ -168,7 +174,11 @@ header nav .my-container {
   align-items: center;
   height: 100%;
 }
+header nav .my-container button {
+  cursor: default;
+}
 header nav .my-container #my-menu {
+  display: none;
   position: absolute;
   top: 96%;
   width: -moz-max-content;
@@ -797,6 +807,7 @@ main .content#market .bb-market .item-group details .detail-group .detail .title
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .content#market .bb-market .item-group details .detail-group .detail .title-container .code {
@@ -884,6 +895,7 @@ main .content#e-learning .bb-e-learning .item-group .item .info .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .des {
@@ -893,6 +905,7 @@ main .content#e-learning .bb-e-learning .item-group .item .info .des {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
+  line-clamp: 4;
   overflow: hidden;
 }
 main .content#e-learning .bb-e-learning .item-group .item .info .file-group {
@@ -940,6 +953,7 @@ main .content#publication .bb-publication .item-group details summary .title-con
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .content#publication .bb-publication .item-group details summary .title-container .date {
@@ -1054,6 +1068,7 @@ main .content#events .bb-events .item-group details summary .title-container .ti
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
 }
 main .content#events .bb-events .item-group details summary .title-container .info-container {
@@ -1529,6 +1544,7 @@ main .bb-list .list-container .body .row .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .bb-list .list-container .body .row .row-container {
@@ -1540,6 +1556,7 @@ main .bb-list .list-container .body .row .row-container .row-first, main .bb-lis
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .bb-list .page {
@@ -1608,6 +1625,7 @@ main .bb-list-update .list-container .body .row .title {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .bb-list-update .list-container .body .row .row-container {
@@ -1619,6 +1637,7 @@ main .bb-list-update .list-container .body .row .row-container .row-first, main 
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
 }
 main .bb-list-update .list-container .body .row .btn-group {
