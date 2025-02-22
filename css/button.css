@@ -4,12 +4,12 @@
   align-items: center;
   height: 33rem;
   padding: 0 15rem;
-  border: 2rem solid rgba(53, 99, 233, 0.9);
+  border: 2rem solid rgba(58, 81, 159, 0.9);
   border-radius: 20rem;
   font-size: 15rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
+  background-color: rgba(58, 81, 159, 0.9);
   text-decoration: none;
   box-sizing: border-box;
 }
@@ -23,11 +23,11 @@
   align-items: center;
   height: 33rem;
   padding: 0 15rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   border-radius: 20rem;
   font-size: 15rem;
   font-weight: 400;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   background-color: rgb(255, 255, 255);
   text-decoration: none;
   box-sizing: border-box;
@@ -45,7 +45,7 @@
   font-size: 16.5rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
+  background-color: rgba(58, 81, 159, 0.9);
 }
 #btn-my:hover {
   opacity: 0.75;
@@ -74,8 +74,8 @@
 
 .btn-2-1 {
   cursor: pointer;
-  background-color: rgba(53, 99, 233, 0.75);
-  border: 2rem solid rgb(53, 99, 233);
+  background-color: rgba(58, 81, 159, 0.75);
+  border: 2rem solid rgb(58, 81, 159);
   border-radius: 30rem;
   padding: 12rem 60rem;
   font-size: 16rem;
@@ -91,13 +91,13 @@
 
 .btn-2-2 {
   cursor: pointer;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   border-radius: 30rem;
   padding: 12rem;
   font-size: 16rem;
   text-align: center;
   text-decoration: none;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   background-color: rgb(255, 255, 255);
 }
 .btn-2-2:hover {
@@ -109,12 +109,12 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 12rem 24rem 15rem 24rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   border-radius: 30rem;
   font-size: 19.5rem;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.75);
+  background-color: rgba(58, 81, 159, 0.75);
   text-decoration: none;
   transition: 0.1s;
 }
@@ -131,11 +131,11 @@
   width: -moz-fit-content;
   width: fit-content;
   padding: 4rem 18rem 6rem 18rem;
-  border: 2px solid rgb(53, 99, 233);
+  border: 2px solid rgb(58, 81, 159);
   border-radius: 30rem;
   font-size: 16.5rem;
   font-weight: 400;
-  background-color: rgba(53, 99, 233, 0.75);
+  background-color: rgba(58, 81, 159, 0.75);
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
@@ -153,16 +153,16 @@
   justify-content: center;
   height: 48rem;
   width: 330rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   box-sizing: border-box;
   font-size: 18rem;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   background-color: rgb(255, 255, 255);
   transition: 0.1s;
 }
 .btn-tab.active {
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
+  background-color: rgba(58, 81, 159, 0.9);
 }
 .btn-tab:hover {
   opacity: 0.75;
@@ -178,10 +178,10 @@
   justify-content: center;
   height: 48rem;
   width: 330rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   box-sizing: border-box;
   font-size: 18rem;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   background-color: rgb(255, 255, 255);
   transition: 0.1s;
 }
@@ -199,11 +199,11 @@
   justify-content: center;
   height: 48rem;
   width: 330rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   box-sizing: border-box;
   font-size: 18rem;
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
+  background-color: rgba(58, 81, 159, 0.9);
   transition: 0.1s;
 }
 .btn-con-2:hover {
@@ -235,7 +235,7 @@
 
 .btn-text-1 {
   cursor: pointer;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-underline-offset: 2rem;
 }
 .btn-text-1:hover {
@@ -246,7 +246,7 @@
   cursor: pointer;
   margin-top: 6rem;
   font-size: 18rem;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-underline-offset: 3rem;
 }
 .btn-text-2:hover {
@@ -254,7 +254,7 @@
 }
 
 .btn-text-3 {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-decoration: underline;
   text-underline-offset: 4rem;
 }
@@ -264,7 +264,7 @@
 
 .btn-text-4 {
   font-size: 16.5rem;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-decoration: underline;
   text-underline-offset: 4rem;
 }
@@ -279,10 +279,10 @@
   font-size: 16.5rem;
   line-height: 30rem;
   list-style-type: disc;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
 }
 .btn-text-5 a {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-underline-offset: 4rem;
 }
 .btn-text-5:hover {
@@ -294,8 +294,8 @@
   margin: 0;
   padding: 9rem;
   font-size: 18rem;
-  border: 2rem solid rgb(53, 99, 233);
-  background-color: rgba(53, 99, 233, 0.9);
+  border: 2rem solid rgb(58, 81, 159);
+  background-color: rgba(58, 81, 159, 0.9);
   color: rgb(255, 255, 255);
 }
 .btn-login:hover {
@@ -307,11 +307,11 @@
   margin: 0;
   font-size: 18rem;
   padding: 9rem;
-  border: 2rem solid rgb(53, 99, 233);
+  border: 2rem solid rgb(58, 81, 159);
   background-color: rgb(255, 255, 255);
   text-align: center;
   text-decoration: none;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
 }
 .btn-signup:hover {
   opacity: 0.6;
@@ -322,7 +322,7 @@
   font-size: 15rem;
   font-weight: 400;
   text-decoration: none;
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
 }
 .btn-forget:hover {
   opacity: 0.6;

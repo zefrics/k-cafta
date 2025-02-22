@@ -93,8 +93,12 @@ header nav {
   font-size: 16.5rem !important;
   font-weight: 300 !important;
 }
+header nav .logo {
+  display: flex;
+  align-items: center;
+}
 header nav .logo img {
-  height: 21rem;
+  height: 42rem;
   width: 100%;
 }
 header nav .mega-menu li, header nav .admin-menu li {
@@ -108,10 +112,10 @@ header nav .mega-menu li .title, header nav .admin-menu li .title {
   color: rgba(0, 0, 0, 0.45);
 }
 header nav .mega-menu li .title:hover, header nav .admin-menu li .title:hover {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
 }
 header nav .mega-menu li .title.active, header nav .admin-menu li .title.active {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   font-weight: 500;
 }
 header nav .mega-menu li .menu-drop, header nav .admin-menu li .menu-drop {
@@ -139,14 +143,14 @@ header nav .mega-menu li .menu-drop li a, header nav .admin-menu li .menu-drop l
   color: rgba(0, 0, 0, 0.45);
 }
 header nav .mega-menu li .menu-drop li a.active, header nav .admin-menu li .menu-drop li a.active {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   font-weight: 500;
 }
 header nav .mega-menu li .menu-drop li a:hover, header nav .admin-menu li .menu-drop li a:hover {
-  background-color: rgba(53, 99, 233, 0.15);
+  background-color: rgba(58, 81, 159, 0.15);
 }
 header nav .mega-menu .menu-drop-container:hover .title, header nav .admin-menu .menu-drop-container:hover .title {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
 }
 header nav .mega-menu .menu-drop-container:hover .menu-drop, header nav .admin-menu .menu-drop-container:hover .menu-drop {
   display: block !important;
@@ -198,11 +202,11 @@ header nav .my-container #my-menu a {
   color: rgba(0, 0, 0, 0.45);
 }
 header nav .my-container #my-menu a.active {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   font-weight: 500;
 }
 header nav .my-container #my-menu a:hover {
-  background-color: rgba(53, 99, 233, 0.15);
+  background-color: rgba(58, 81, 159, 0.15);
 }
 header nav .my-container #my-menu a.sign-out {
   font-weight: 500;
@@ -319,7 +323,7 @@ main .slider .controller .circle-group .dot {
 }
 main .main-title {
   height: 600rem;
-  background-color: rgba(53, 99, 233, 0.45);
+  background-color: rgba(58, 81, 159, 0.45);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -386,7 +390,7 @@ main .content .source {
   margin-top: 9rem;
   font-size: 16.5rem;
   text-align: left;
-  color: rgba(53, 99, 233, 0.75);
+  color: rgba(58, 81, 159, 0.75);
 }
 main .content.module-1 {
   display: grid;
@@ -473,10 +477,10 @@ main .content.module-2 table th ul, main .content.module-2 table td ul {
 main .content.module-2 table thead th {
   font-weight: 500;
   color: rgb(255, 255, 255);
-  background-color: rgba(53, 99, 233, 0.9);
+  background-color: rgba(58, 81, 159, 0.9);
 }
 main .content.module-2 table tbody th {
-  background-color: rgba(53, 99, 233, 0.15);
+  background-color: rgba(58, 81, 159, 0.15);
 }
 main .content.module-2 table.table-even {
   table-layout: fixed;
@@ -514,8 +518,10 @@ main .content.module-2 #sponsor .item .img-container img {
   width: -moz-fit-content;
   width: fit-content;
 }
-main .content.module-2 #sponsor .item .img-container img#cabei {
-  height: 135rem;
+main .content.module-2 #sponsor .item .img-container img#cabei, main .content.module-2 #sponsor .item .img-container img#bcie {
+  width: 270rem;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 main .content.module-2 #sponsor .item .img-container:hover {
   opacity: 0.6;
@@ -599,7 +605,7 @@ main .content.module-2 #trade-status #img-2 {
   margin-top: 30rem;
   width: 990rem;
   height: 100%;
-  background-color: rgba(53, 99, 233, 0.15);
+  background-color: rgba(58, 81, 159, 0.15);
 }
 main .content.module-2 #maritime {
   display: grid;
@@ -648,7 +654,7 @@ main .content.module-3 {
 main .content.module-3 .logo {
   height: 100%;
   width: 300rem;
-  background-color: rgba(53, 99, 233, 0.15);
+  background-color: rgba(58, 81, 159, 0.15);
   margin-bottom: 60rem;
 }
 main .content.module-3 .img-group {
@@ -762,7 +768,7 @@ main .content#market .bb-market .item-group {
 main .content#market .bb-market .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
-  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+  box-shadow: 0 0 0 6rem rgba(58, 81, 159, 0.15) inset;
 }
 main .content#market .bb-market .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
@@ -778,7 +784,7 @@ main .content#market .bb-market .item-group details summary {
   padding: 45rem;
 }
 main .content#market .bb-market .item-group details summary:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+  background-color: rgba(58, 81, 159, 0.05);
 }
 main .content#market .bb-market .item-group details summary .thumb {
   height: 100%;
@@ -928,7 +934,7 @@ main .content#publication .bb-publication .item-group {
 main .content#publication .bb-publication .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
-  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+  box-shadow: 0 0 0 6rem rgba(58, 81, 159, 0.15) inset;
 }
 main .content#publication .bb-publication .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
@@ -941,7 +947,7 @@ main .content#publication .bb-publication .item-group details summary {
   padding: 30rem;
 }
 main .content#publication .bb-publication .item-group details summary:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+  background-color: rgba(58, 81, 159, 0.05);
 }
 main .content#publication .bb-publication .item-group details summary .title-container {
   display: grid;
@@ -1029,7 +1035,7 @@ main .content#events .bb-events .item-group {
 main .content#events .bb-events .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
-  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+  box-shadow: 0 0 0 6rem rgba(58, 81, 159, 0.15) inset;
 }
 main .content#events .bb-events .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
@@ -1044,7 +1050,7 @@ main .content#events .bb-events .item-group details summary {
   padding: 30rem;
 }
 main .content#events .bb-events .item-group details summary:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+  background-color: rgba(58, 81, 159, 0.05);
 }
 main .content#events .bb-events .item-group details summary .thumb {
   display: flex;
@@ -1117,7 +1123,7 @@ main .content#faq .bb-faq .item-group {
 main .content#faq .bb-faq .item-group details {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
   text-align: left;
-  box-shadow: 0 0 0 6rem rgba(53, 99, 233, 0.15) inset;
+  box-shadow: 0 0 0 6rem rgba(58, 81, 159, 0.15) inset;
 }
 main .content#faq .bb-faq .item-group details:not([open]) {
   box-shadow: 0 0 0 0;
@@ -1134,7 +1140,7 @@ main .content#faq .bb-faq .item-group details .question {
   text-indent: -30rem;
 }
 main .content#faq .bb-faq .item-group details .question:hover {
-  background-color: rgba(53, 99, 233, 0.05);
+  background-color: rgba(58, 81, 159, 0.05);
 }
 main .content#faq .bb-faq .item-group details .question .head {
   margin-right: 12rem;
@@ -1169,7 +1175,7 @@ main .content.module-4 .para .bold {
   font-weight: 600;
 }
 main .content.module-4 .para .email {
-  color: rgb(53, 99, 233);
+  color: rgb(58, 81, 159);
   text-underline-offset: 4rem;
 }
 main .content.module-5 {
@@ -1352,7 +1358,7 @@ main #signup .create-container form .input-group .input-container .check-contain
 }
 main #signup .create-container form .input-group .input-container .check-container label .input-others:focus {
   outline: 0;
-  border-bottom: 1px solid rgb(53, 99, 233);
+  border-bottom: 1px solid rgb(58, 81, 159);
 }
 main #signup .create-container form .btn-group {
   display: flex;
@@ -1485,7 +1491,7 @@ main .bb-create .create-container .input-group .input-container .check-container
 }
 main .bb-create .create-container .input-group .input-container .check-container label .input-others:focus, main .bb-create .update-container .input-group .input-container .check-container label .input-others:focus, main .bb-update .create-container .input-group .input-container .check-container label .input-others:focus, main .bb-update .update-container .input-group .input-container .check-container label .input-others:focus {
   outline: 0;
-  border-bottom: 1px solid rgb(53, 99, 233);
+  border-bottom: 1px solid rgb(58, 81, 159);
 }
 main .bb-create .create-container .log-container, main .bb-create .update-container .log-container, main .bb-update .create-container .log-container, main .bb-update .update-container .log-container {
   margin-top: 27rem;
@@ -1708,7 +1714,7 @@ main .bottom-section .bottom-content .btn-group-3 {
 }
 
 footer {
-  background-color: rgb(53, 99, 233);
+  background-color: rgb(58, 81, 159);
 }
 footer .content {
   width: 1200px;
@@ -1770,7 +1776,7 @@ footer#success .content {
 }
 
 .second {
-  background-color: rgba(53, 99, 233, 0.05) !important;
+  background-color: rgba(58, 81, 159, 0.05) !important;
 }
 
 .align-justify {
