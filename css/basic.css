@@ -955,8 +955,38 @@ main .content#publication .bb-publication .item-group details .detail-container 
   font-weight: 400;
   line-height: 24rem;
 }
-main .content#publication .bb-publication .item-group details .detail-container .down {
-  margin-top: 24rem;
+main .content#publication .bb-publication .item-group details .detail-container .down-group {
+  margin-top: 27rem;
+  display: flex;
+  flex-direction: column;
+  gap: 9rem;
+}
+main .content#publication .bb-publication .item-group details .detail-container .down-group .down-container {
+  display: grid;
+  align-items: center;
+  gap: 15rem;
+  grid-template-columns: auto 1fr auto;
+  padding: 12rem 15rem;
+  border-radius: 9rem;
+  font-size: 16.5rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+main .content#publication .bb-publication .item-group details .detail-container .down-group .down-container:hover {
+  opacity: 0.6;
+}
+main .content#publication .bb-publication .item-group details .detail-container .down-group .down-container img {
+  width: 18rem;
+  height: auto;
+}
+main .content#publication .bb-publication .item-group details .detail-container .down-group .down-container .filename {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
 }
 main .content#events .title2 {
   margin-bottom: 60rem;

@@ -932,8 +932,34 @@ main {
               .detail {
                 font-size: 16.5rem; font-weight: 400; line-height: 24rem;
               }
-              .down {
-                margin-top: 24rem;
+              .down-group {
+                margin-top: 27rem;
+                display: flex; flex-direction: column; gap: 9rem;
+                .down-container {
+                  display: grid; align-items: center; gap: 15rem;
+                  grid-template-columns: auto 1fr auto;
+                  padding: 12rem 15rem;
+                  border-radius: 9rem;
+                  font-size: 16.5rem; font-weight: 400;
+                  color: $color-k1;
+                  text-decoration: none;
+                  background-color: $color-k8;
+                  &:hover {
+                    opacity: 0.6;
+                  }
+                  img {
+                    width: 18rem; height: auto;
+                  }
+                  .filename {
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 1;
+                    line-clamp: 1;
+                    overflow: hidden;
+                  }
+
+                }
+
               }
             }
           }
