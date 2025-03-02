@@ -101,27 +101,16 @@ header nav .logo img {
   height: 42rem;
   width: 100%;
 }
-header nav .mega-menu li, header nav .admin-menu li {
-  display: flex;
-  align-items: center;
-  height: 100%;
+header nav .menu-drop-container {
   position: relative;
 }
-header nav .mega-menu li .title, header nav .admin-menu li .title {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.45);
+header nav .menu-drop-container .title {
+  height: 30rem;
 }
-header nav .mega-menu li .title:hover, header nav .admin-menu li .title:hover {
-  color: rgb(58, 81, 159);
-}
-header nav .mega-menu li .title.active, header nav .admin-menu li .title.active {
-  color: rgb(58, 81, 159);
-  font-weight: 500;
-}
-header nav .mega-menu li .menu-drop, header nav .admin-menu li .menu-drop {
+header nav .menu-drop-container .menu-drop {
   display: none;
   position: absolute;
-  top: 80%;
+  top: 30rem;
   left: 50%;
   transform: translateX(-50%);
   width: -moz-max-content;
@@ -132,85 +121,75 @@ header nav .mega-menu li .menu-drop, header nav .admin-menu li .menu-drop {
   background-color: rgb(255, 255, 255);
   box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
 }
-header nav .mega-menu li .menu-drop li, header nav .admin-menu li .menu-drop li {
-  display: block;
-}
-header nav .mega-menu li .menu-drop li a, header nav .admin-menu li .menu-drop li a {
+header nav .menu-drop-container .menu-drop li a {
   display: block;
   padding: 6rem 21rem;
   font-size: 15rem;
   text-decoration: none;
   color: rgba(0, 0, 0, 0.45);
 }
-header nav .mega-menu li .menu-drop li a.active, header nav .admin-menu li .menu-drop li a.active {
+header nav .menu-drop-container .menu-drop li a.active {
   color: rgb(58, 81, 159);
   font-weight: 500;
 }
-header nav .mega-menu li .menu-drop li a:hover, header nav .admin-menu li .menu-drop li a:hover {
+header nav .menu-drop-container .menu-drop li a:hover {
   background-color: rgba(58, 81, 159, 0.15);
 }
-header nav .mega-menu .menu-drop-container:hover .title, header nav .admin-menu .menu-drop-container:hover .title {
-  color: rgb(58, 81, 159);
-}
-header nav .mega-menu .menu-drop-container:hover .menu-drop, header nav .admin-menu .menu-drop-container:hover .menu-drop {
-  display: block !important;
-}
-header nav .mega-menu {
-  display: flex;
-  align-items: center;
-  gap: 36rem;
-}
-header nav .admin-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-header nav .function {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 30rem;
-}
-header nav .my-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-header nav .my-container button {
-  cursor: default;
-}
-header nav .my-container #my-menu {
-  display: none;
-  position: absolute;
-  top: 96%;
-  width: -moz-max-content;
-  width: max-content;
-  padding: 9rem 0;
-  border: 1rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 9rem;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 1rem 1rem 3rem 0rem rgba(0, 0, 0, 0.3);
-}
-header nav .my-container #my-menu a {
-  display: block;
-  padding: 6rem 21rem;
-  font-size: 15rem;
-  text-align: right;
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.45);
-}
-header nav .my-container #my-menu a.active {
-  color: rgb(58, 81, 159);
-  font-weight: 500;
-}
-header nav .my-container #my-menu a:hover {
-  background-color: rgba(58, 81, 159, 0.15);
-}
-header nav .my-container #my-menu a.sign-out {
+header nav .menu-drop-container .menu-drop li #p-sign-out {
   font-weight: 500;
   color: rgb(255, 0, 0);
+}
+header nav .menu-drop-container:hover .title {
+  color: rgb(58, 81, 159);
+}
+header nav .menu-drop-container:hover .menu-drop {
+  display: block;
+}
+header nav #my .title {
+  border-radius: 12rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45rem;
+  width: 45rem;
+}
+header nav #my .title img {
+  display: block;
+  height: 30rem;
+  padding: 6rem 0;
+}
+header nav #my .menu-drop {
+  top: 45rem;
+}
+header nav #my:hover .title {
+  background-color: rgba(58, 81, 159, 0.05);
+}
+header nav .ele-container {
+  display: flex;
+  align-items: center;
+}
+header nav .ele-container li .title {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.45);
+}
+header nav .ele-container li .title:hover {
+  color: rgb(58, 81, 159);
+}
+header nav .ele-container li .title.active {
+  color: rgb(58, 81, 159);
+  font-weight: 500;
+}
+header nav .ele-container.public {
+  gap: 36rem;
+}
+header nav .ele-container.admin {
+  width: 100%;
+  justify-content: space-between;
+}
+header nav .ele-container.function {
+  gap: 27rem;
 }
 
 main .slider {

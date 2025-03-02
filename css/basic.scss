@@ -113,20 +113,81 @@ header {
     padding: 0 40rem;
     font-size: $fs-menu1 !important; font-weight: $fw-menu1 !important;
 
-
-
     .logo {
       display: flex; align-items: center;
       img {
         height: 42rem; width: 100%;
       }
     }
-    .mega-menu, .admin-menu {
-      li {
-        display: flex; align-items: center;
-        height: 100%;
-        position: relative;
+    .menu-drop-container {
+      position: relative;
+      .title {
+        height: 30rem;
+      }
+      .menu-drop {
+        display: none;
+        position: absolute; top: 30rem; left: 50%; transform: translateX(-50%);
+        width: max-content;
+        padding: 9rem 0;
+        border: 1rem solid $color-k7;
+        border-radius: 9rem;
+        background-color: $color-w1;
+        box-shadow: 1rem 1rem 3rem 0rem $color-k6;
+        li {
+          a {
+            display: block;
+            padding: 6rem 21rem;
+            font-size: $fs-menu2;
+            text-decoration: none;
+            color: $color-k5;
+            &.active {
+              color: $color-m1;
+              font-weight: $fw-menu-active;
+            }
+            &:hover {
+              background-color: $color-m7;
+            }
+          }
+          #p-sign-out {
+            font-weight: 500;
+            color: $color-r1;
+          }
+        }
+      }
+      &:hover {
         .title {
+          color: $color-m1;
+        }
+        .menu-drop {
+          display: block;
+        }
+      }
+    }
+    #my {
+      .title {
+        border-radius: 12rem;
+        display: flex; align-items: center; justify-content: center;
+        height: 45rem; width: 45rem;
+        img {
+          display: block;
+          height: 30rem;
+          padding: 6rem 0;
+        }
+      }
+      .menu-drop {
+        top: 45rem;
+      }
+      &:hover {
+        .title {
+          background-color: $color-m8;
+        }
+      }
+    }
+    .ele-container {
+      display: flex; align-items: center;
+      li {
+        .title {
+          display: flex; align-items: center;
           text-decoration: none;  
           color: $color-k5;
           &:hover {
@@ -137,92 +198,19 @@ header {
             font-weight: $fw-menu-active;
           }
         }
-        .menu-drop {
-          display: none;
-          position: absolute; top: 80%; left: 50%; transform: translateX(-50%);
-          width: max-content;
-          padding: 9rem 0;
-          border: 1rem solid $color-k7;
-          border-radius: 9rem;
-          background-color: $color-w1;
-          box-shadow: 1rem 1rem 3rem 0rem $color-k6;
-          li {
-            display: block;
-            a {
-              display: block;
-              padding: 6rem 21rem;
-              font-size: $fs-menu2;
-              text-decoration: none;
-              color: $color-k5;
-              &.active {
-                color: $color-m1;
-                font-weight: $fw-menu-active;
-              }
-              &:hover {
-                background-color: $color-m7;
-              }
-            }
-          }
-        }
       }
-      .menu-drop-container {
-        &:hover {
-          .title {
-            color: $color-m1;
-          }
-          .menu-drop {
-            display: block !important;
-          }
-        }
+      &.public {
+        gap: 36rem;
+      }
+      &.admin {
+        width: 100%;
+        justify-content: space-between;
+      }
+      &.function {
+        gap: 27rem;
       }
     }
-    .mega-menu {
-      display: flex; align-items: center; gap: 36rem;
-    }
-    .admin-menu {
-      display: flex; align-items: center; justify-content: space-between;
-      width: 100%;
-    }
-    .function {
-      display: flex; align-items: center; justify-content: flex-end; gap: 30rem;
-    }
-    .my-container {
-      position: relative;
-      display: flex; align-items: center;
-      height: 100%;
-      button {
-        cursor: default;
-      }
-      #my-menu {
-        display: none;
-        position: absolute; top: 96%;
-        width: max-content;
-        padding: 9rem 0;
-        border: 1rem solid $color-k7;
-        border-radius: 9rem;
-        background-color: $color-w1;
-        box-shadow: 1rem 1rem 3rem 0rem $color-k6;
-        a {
-          display: block;
-          padding: 6rem 21rem;
-          font-size: $fs-menu2;
-          text-align: right;
-          text-decoration: none;
-          color: $color-k5;
-          &.active {
-            color: $color-m1;
-            font-weight: $fw-menu-active;
-          }
-          &:hover {
-            background-color: $color-m7;
-          }
-          &.sign-out {
-            font-weight: 500;
-            color: $color-r1;
-          }
-        }
-      }
-    }
+    
   }
 }
 

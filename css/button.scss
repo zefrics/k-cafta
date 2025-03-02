@@ -76,24 +76,12 @@ $fw-menu-active: 500; // 메뉴 active 폰트 웨이트
   }
 }
 
-#btn-my {
-  cursor: pointer;
-  height: 40rem; width: 40rem;
-  border: 0;
-  border-radius: 20rem;
-  font-size: 16.5rem; font-weight: 400;
-  color: $color-w1;
-  background-color: $color-m2;
-  &:hover {
-    opacity: 0.75;
-  }
-}
-
 .btn-lang {
   display: flex; align-items: center; justify-content: center;
   cursor: pointer;
   text-decoration: none;
   color: $color-k1;
+  height: 30rem;
   img {
     height: 21rem; width: 21rem;
   }

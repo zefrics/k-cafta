@@ -36,21 +36,6 @@
   opacity: 0.75;
 }
 
-#btn-my {
-  cursor: pointer;
-  height: 40rem;
-  width: 40rem;
-  border: 0;
-  border-radius: 20rem;
-  font-size: 16.5rem;
-  font-weight: 400;
-  color: rgb(255, 255, 255);
-  background-color: rgba(58, 81, 159, 0.9);
-}
-#btn-my:hover {
-  opacity: 0.75;
-}
-
 .btn-lang {
   display: flex;
   align-items: center;
@@ -58,6 +43,7 @@
   cursor: pointer;
   text-decoration: none;
   color: rgb(0, 0, 0);
+  height: 30rem;
 }
 .btn-lang img {
   height: 21rem;
